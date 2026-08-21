@@ -1,0 +1,25 @@
+[
+  {
+    "id": "ai-fundamentals",
+    "title": "أساسيات الذكاء الاصطناعي",
+    "description": "افهم إيه هو الذكاء الاصطناعي، تاريخه، تعلم الآلة، الشبكات العصبية، والذكاء الاصطناعي التوليدي من غير تعقيد.",
+    "levelLabel": "مبتدئ → متقدم",
+    "totalLessons": 9,
+    "publishedLessons": 9,
+    "estimatedReadTime": "~40 دقيقة قراءة",
+    "route": "path/ai-fundamentals",
+    "dataFile": "data/lessons/fundamentals.json"
+  },
+  {
+    "id": "prompt-engineering",
+    "title": "هندسة البرومبت الاحترافية",
+    "description": "اتعلم إزاي تكتب أوامر (Prompts) احترافية توصلك لأفضل نتيجة من أي أداة ذكاء اصطناعي.",
+    "levelLabel": "مبتدئ → محترف",
+    "totalLessons": 17,
+    "publishedLessons": 17,
+    "estimatedReadTime": "~35 دقيقة قراءة",
+    "route": "path/prompt-engineering",
+    "dataFile": "data/lessons/prompt-engineering.json",
+    "note": "نص الصفحة الأصلي بيقول 'من أصل 19' بينما عدد الدروس الفعلي في القائمة 17 — فرق موجود في المحتوى الأصلي نفسه، اتسجل هنا للمراجعة ولم يتم تغييره تلقائيًا."
+  }
+]

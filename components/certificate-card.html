@@ -1,0 +1,17 @@
+<!--
+  Placeholder only — certificates are a later stage in the roadmap
+  (after student accounts + progress tracking exist). Kept here so
+  the components/ folder shape matches the agreed architecture from
+  the start, per the "prepare for scale now" decision. No backend,
+  QR generation, or verification logic exists yet — do not wire this
+  up until that stage is explicitly approved.
+-->
+<div class="a-card certificate-card">
+  <h3>Ahmed AI Academic</h3>
+  <p class="cert-subtitle">Certificate of Completion</p>
+  <p><strong>{{studentName}}</strong></p>
+  <p>{{courseName}}</p>
+  <p class="cert-meta">Completed on {{completionDate}} — Certificate ID: {{certificateId}}</p>
+  <p class="cert-founder">Ahmed Mohamed Abdullah — Founder &amp; Instructor</p>
+  <div class="cert-qr" aria-hidden="true">{{qrCodePlaceholder}}</div>
+</div>

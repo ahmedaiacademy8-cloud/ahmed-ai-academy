@@ -1,0 +1,420 @@
+[
+  {
+    "id": "chatgpt",
+    "name": "ChatGPT",
+    "slug": "chatgpt",
+    "category": "chatbots",
+    "status": "published",
+    "route": "tool/chatgpt",
+    "sections": {
+      "id": "chatgpt",
+      "title": "دليل ChatGPT الشامل",
+      "intro": "<h2><span class=\"dot\"></span> مقدمة</h2>\n<p>ChatGPT هو روبوت محادثة ذكاء اصطناعي طوّرته شركة OpenAI، بيقدر يفهم أسئلتك ويرد عليها بشكل طبيعي، ويساعدك في الكتابة، البرمجة، التحليل، والتعلم. بقى من أشهر أدوات الذكاء الاصطناعي التوليدي في العالم، وبيستخدمه ملايين الناس يوميًا في شغلهم ودراستهم.</p>",
+      "features": "<h2><span class=\"dot\"></span> أهم الميزات</h2>\n<ul class=\"usecase-list\">\n<li>💬 محادثة طبيعية بأي لغة تقريبًا، بما فيها العربية</li>\n<li>📄 تحليل ملفات (PDF، Word، Excel) وصور</li>\n<li>🌐 البحث على الإنترنت لمعلومات حديثة (في النسخ المدعومة بالبحث)</li>\n<li>💻 كتابة وتصحيح الأكواد البرمجية</li>\n<li>🎨 توليد صور (مدمج مع DALL·E في بعض الخطط)</li>\n<li>🧠 \"الذاكرة\" اللي بتخليه يفتكر تفاصيل عنك بين المحادثات (في بعض الخطط)</li>\n</ul>",
+      "plans": "<h2><span class=\"dot\"></span> الخطط: مجاني مقابل مدفوع</h2>\n<table class=\"compare\">\n<tr><th>الخطة</th><th>مناسبة لـ</th></tr>\n<tr><td>مجانية</td><td>الاستخدام العام والأسئلة اليومية، بحدود استخدام معينة في الساعة</td></tr>\n<tr><td>مدفوعة (Plus وما فوق)</td><td>الاستخدام المكثف، أولوية في السرعة، وصول لأحدث النماذج وميزات إضافية زي تحليل ملفات أكبر</td></tr>\n</table>\n<p style=\"font-size:0.85rem;color:var(--text-dim-2);\">ملحوظة: تفاصيل الأسعار والحدود بتتغيّر باستمرار من OpenAI، فراجع الموقع الرسمي دايمًا لأحدث المعلومات.</p>",
+      "tutorial": "<h2><span class=\"dot\"></span> دليل الاستخدام خطوة بخطوة</h2>\n<h3>الخطوة 1: إنشاء حساب</h3>\n<p>ادخل على موقع ChatGPT الرسمي وسجل حساب جديد بالإيميل أو حساب جوجل.</p>\n<h3>الخطوة 2: اكتب أول رسالة</h3>\n<p>اكتب سؤالك أو طلبك في مربع المحادثة واضغط إرسال.</p>\n<h3>الخطوة 3: تابع الحوار</h3>\n<p>لو الرد مش كامل زي ما عايز، رد عليه واطلب تعديل أو إضافة تفاصيل — المحادثة بتفتكر السياق اللي فات.</p>\n<h3>الخطوة 4: استخدم الأدوات الإضافية</h3>\n<p>ارفع ملف، اطلب تحليل صورة، أو فعّل خاصية البحث لو محتاج معلومات حديثة.</p>",
+      "practices": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout tip\"><strong>نصيحة:</strong> ابدأ محادثة جديدة لكل موضوع مختلف عشان تحافظ على وضوح السياق وتحصل على ردود أدق.</div>\n<div class=\"callout tip\"><strong>نصيحة:</strong> استخدم مبادئ هندسة البرومبت (الدور، المهمة، السياق، صيغة المخرج) للحصول على أفضل نتيجة.</div>",
+      "tips": "<h2><span class=\"dot\"></span> نصائح احترافية</h2>\n<div class=\"callout pro\"><strong>Pro Tip:</strong> اطلب من ChatGPT \"اسألني أسئلة توضيحية قبل ما تجاوب\" لو المهمة معقدة — هيساعده يفهم المطلوب بدقة أكبر.</div>\n<div class=\"callout pro\"><strong>Pro Tip:</strong> استخدم خاصية \"التخصيصات\" (Custom Instructions) لو متاحة عشان تحدد أسلوب الرد المفضل عندك مرة واحدة بدل ما تكرره كل مرة.</div>",
+      "usecases": "<h2><span class=\"dot\"></span> استخدامات حقيقية</h2>\n<ul class=\"usecase-list\">\n<li>📧 صياغة إيميلات ورسائل عمل</li>\n<li>📚 شرح مفاهيم دراسية صعبة بأسلوب مبسط</li>\n<li>💻 تصحيح وتحسين كود برمجي</li>\n<li>📝 تلخيص مستندات طويلة</li>\n<li>🗓️ تحضير خطط وجداول أعمال</li>\n</ul>",
+      "mistakes": "<h2><span class=\"dot\"></span> أخطاء شائعة</h2>\n<div class=\"callout mistake\"><strong>خطأ:</strong> الاعتماد الكامل على معلومات تاريخية أو أرقام دقيقة من غير تأكيد من مصدر موثوق.</div>\n<div class=\"callout mistake\"><strong>خطأ:</strong> مشاركة معلومات حساسة أو سرية جدًا في المحادثة.</div>",
+      "alternatives": "<h2><span class=\"dot\"></span> بدائل ChatGPT</h2>\n<p>من أبرز البدائل: Claude من Anthropic (قوي في الكتابة الطويلة والتحليل الدقيق)، وGemini من Google (مدمج بعمق مع خدمات جوجل)، وPerplexity (متخصص في البحث والإجابات الموثقة بمصادر).</p>",
+      "faq": "<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\"><summary>هل ChatGPT مجاني بالكامل؟</summary><p>فيه نسخة مجانية بحدود استخدام، ونسخ مدفوعة بميزات وحدود استخدام أعلى.</p></details>\n<details class=\"faq-item\"><summary>هل ChatGPT بيفهم اللهجة المصرية أو العامية؟</summary><p>أيوه، بيتعامل بشكل جيد جدًا مع العامية المصرية وأغلب اللهجات العربية.</p></details>\n<details class=\"faq-item\"><summary>هل المعلومات اللي بيديها ChatGPT دايمًا صحيحة؟</summary><p>لأ، ممكن يغلط أحيانًا خصوصًا في التفاصيل الدقيقة أو الأحداث الحديثة جدًا، فراجع المعلومات المهمة من مصدر تاني.</p></details>"
+    },
+    "orderedSections": [
+      {
+        "id": "tool-chatgpt-intro",
+        "label": "مقدمة",
+        "key": "intro",
+        "html": "<h2><span class=\"dot\"></span> مقدمة</h2>\n<p>ChatGPT هو روبوت محادثة ذكاء اصطناعي طوّرته شركة OpenAI، بيقدر يفهم أسئلتك ويرد عليها بشكل طبيعي، ويساعدك في الكتابة، البرمجة، التحليل، والتعلم. بقى من أشهر أدوات الذكاء الاصطناعي التوليدي في العالم، وبيستخدمه ملايين الناس يوميًا في شغلهم ودراستهم.</p>"
+      },
+      {
+        "id": "tool-chatgpt-features",
+        "label": "أهم الميزات",
+        "key": "features",
+        "html": "<h2><span class=\"dot\"></span> أهم الميزات</h2>\n<ul class=\"usecase-list\">\n<li>💬 محادثة طبيعية بأي لغة تقريبًا، بما فيها العربية</li>\n<li>📄 تحليل ملفات (PDF، Word، Excel) وصور</li>\n<li>🌐 البحث على الإنترنت لمعلومات حديثة (في النسخ المدعومة بالبحث)</li>\n<li>💻 كتابة وتصحيح الأكواد البرمجية</li>\n<li>🎨 توليد صور (مدمج مع DALL·E في بعض الخطط)</li>\n<li>🧠 \"الذاكرة\" اللي بتخليه يفتكر تفاصيل عنك بين المحادثات (في بعض الخطط)</li>\n</ul>"
+      },
+      {
+        "id": "tool-chatgpt-plans",
+        "label": "الخطط: مجاني مقابل مدفوع",
+        "key": "plans",
+        "html": "<h2><span class=\"dot\"></span> الخطط: مجاني مقابل مدفوع</h2>\n<table class=\"compare\">\n<tr><th>الخطة</th><th>مناسبة لـ</th></tr>\n<tr><td>مجانية</td><td>الاستخدام العام والأسئلة اليومية، بحدود استخدام معينة في الساعة</td></tr>\n<tr><td>مدفوعة (Plus وما فوق)</td><td>الاستخدام المكثف، أولوية في السرعة، وصول لأحدث النماذج وميزات إضافية زي تحليل ملفات أكبر</td></tr>\n</table>\n<p style=\"font-size:0.85rem;color:var(--text-dim-2);\">ملحوظة: تفاصيل الأسعار والحدود بتتغيّر باستمرار من OpenAI، فراجع الموقع الرسمي دايمًا لأحدث المعلومات.</p>"
+      },
+      {
+        "id": "tool-chatgpt-tutorial",
+        "label": "دليل الاستخدام خطوة بخطوة",
+        "key": "tutorial",
+        "html": "<h2><span class=\"dot\"></span> دليل الاستخدام خطوة بخطوة</h2>\n<h3>الخطوة 1: إنشاء حساب</h3>\n<p>ادخل على موقع ChatGPT الرسمي وسجل حساب جديد بالإيميل أو حساب جوجل.</p>\n<h3>الخطوة 2: اكتب أول رسالة</h3>\n<p>اكتب سؤالك أو طلبك في مربع المحادثة واضغط إرسال.</p>\n<h3>الخطوة 3: تابع الحوار</h3>\n<p>لو الرد مش كامل زي ما عايز، رد عليه واطلب تعديل أو إضافة تفاصيل — المحادثة بتفتكر السياق اللي فات.</p>\n<h3>الخطوة 4: استخدم الأدوات الإضافية</h3>\n<p>ارفع ملف، اطلب تحليل صورة، أو فعّل خاصية البحث لو محتاج معلومات حديثة.</p>"
+      },
+      {
+        "id": "tool-chatgpt-practices",
+        "label": "أفضل الممارسات",
+        "key": "practices",
+        "html": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout tip\"><strong>نصيحة:</strong> ابدأ محادثة جديدة لكل موضوع مختلف عشان تحافظ على وضوح السياق وتحصل على ردود أدق.</div>\n<div class=\"callout tip\"><strong>نصيحة:</strong> استخدم مبادئ هندسة البرومبت (الدور، المهمة، السياق، صيغة المخرج) للحصول على أفضل نتيجة.</div>"
+      },
+      {
+        "id": "tool-chatgpt-tips",
+        "label": "نصائح احترافية",
+        "key": "tips",
+        "html": "<h2><span class=\"dot\"></span> نصائح احترافية</h2>\n<div class=\"callout pro\"><strong>Pro Tip:</strong> اطلب من ChatGPT \"اسألني أسئلة توضيحية قبل ما تجاوب\" لو المهمة معقدة — هيساعده يفهم المطلوب بدقة أكبر.</div>\n<div class=\"callout pro\"><strong>Pro Tip:</strong> استخدم خاصية \"التخصيصات\" (Custom Instructions) لو متاحة عشان تحدد أسلوب الرد المفضل عندك مرة واحدة بدل ما تكرره كل مرة.</div>"
+      },
+      {
+        "id": "tool-chatgpt-usecases",
+        "label": "استخدامات حقيقية",
+        "key": "usecases",
+        "html": "<h2><span class=\"dot\"></span> استخدامات حقيقية</h2>\n<ul class=\"usecase-list\">\n<li>📧 صياغة إيميلات ورسائل عمل</li>\n<li>📚 شرح مفاهيم دراسية صعبة بأسلوب مبسط</li>\n<li>💻 تصحيح وتحسين كود برمجي</li>\n<li>📝 تلخيص مستندات طويلة</li>\n<li>🗓️ تحضير خطط وجداول أعمال</li>\n</ul>"
+      },
+      {
+        "id": "tool-chatgpt-mistakes",
+        "label": "أخطاء شائعة",
+        "key": "mistakes",
+        "html": "<h2><span class=\"dot\"></span> أخطاء شائعة</h2>\n<div class=\"callout mistake\"><strong>خطأ:</strong> الاعتماد الكامل على معلومات تاريخية أو أرقام دقيقة من غير تأكيد من مصدر موثوق.</div>\n<div class=\"callout mistake\"><strong>خطأ:</strong> مشاركة معلومات حساسة أو سرية جدًا في المحادثة.</div>"
+      },
+      {
+        "id": "tool-chatgpt-alternatives",
+        "label": "بدائل ChatGPT",
+        "key": "alternatives",
+        "html": "<h2><span class=\"dot\"></span> بدائل ChatGPT</h2>\n<p>من أبرز البدائل: Claude من Anthropic (قوي في الكتابة الطويلة والتحليل الدقيق)، وGemini من Google (مدمج بعمق مع خدمات جوجل)، وPerplexity (متخصص في البحث والإجابات الموثقة بمصادر).</p>"
+      },
+      {
+        "id": "tool-chatgpt-faq",
+        "label": "الأسئلة الشائعة",
+        "key": "faq",
+        "html": "<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\"><summary>هل ChatGPT مجاني بالكامل؟</summary><p>فيه نسخة مجانية بحدود استخدام، ونسخ مدفوعة بميزات وحدود استخدام أعلى.</p></details>\n<details class=\"faq-item\"><summary>هل ChatGPT بيفهم اللهجة المصرية أو العامية؟</summary><p>أيوه، بيتعامل بشكل جيد جدًا مع العامية المصرية وأغلب اللهجات العربية.</p></details>\n<details class=\"faq-item\"><summary>هل المعلومات اللي بيديها ChatGPT دايمًا صحيحة؟</summary><p>لأ، ممكن يغلط أحيانًا خصوصًا في التفاصيل الدقيقة أو الأحداث الحديثة جدًا، فراجع المعلومات المهمة من مصدر تاني.</p></details>"
+      }
+    ],
+    "icon": "💬",
+    "shortDescription": "مساعد OpenAI الأشهر عالميًا — محادثة، كتابة، تحليل، وتوليد صور.",
+    "pricingType": "freemium",
+    "priceLabel": "مجاني / من 20$ شهريًا",
+    "externalUrl": "https://chatgpt.com",
+    "tags": [
+      "chatbot",
+      "writing",
+      "general"
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": "claude",
+    "name": "Claude",
+    "slug": "claude",
+    "category": "chatbots",
+    "status": "published",
+    "route": "tool/claude",
+    "orderedSections": [
+      {
+        "key": "intro",
+        "label": "مقدمة",
+        "anchorId": "tool-claude-intro",
+        "html": "<h2><span class=\"dot\"></span> مقدمة</h2>\n<p>Claude هو مساعد ذكاء اصطناعي من شركة Anthropic، ومعروف بقوته في تحليل المستندات الطويلة، الكتابة الدقيقة، والبرمجة. من أقوى نقاطه إنه بيقدر يقرا ويحلل مستندات ضخمة جدًا في محادثة واحدة (نافذة سياق كبيرة جدًا).</p>"
+      },
+      {
+        "key": "features",
+        "label": "أهم الميزات",
+        "anchorId": "tool-claude-features",
+        "html": "<h2><span class=\"dot\"></span> أهم الميزات</h2>\n<ul class=\"usecase-list\">\n<li>نافذة سياق كبيرة جدًا (يقدر يقرا مستندات طويلة جدًا في مرة واحدة)</li>\n<li>قوي جدًا في البرمجة وتحليل الكود</li>\n<li>كتابة دقيقة ومتزنة، مناسبة للمستندات الرسمية والمهنية</li>\n<li>Projects: مساحات عمل منظمة لمشاريع مستمرة</li>\n</ul>"
+      },
+      {
+        "key": "plans",
+        "label": "الخطط: مجاني مقابل مدفوع",
+        "anchorId": "tool-claude-plans",
+        "html": "<h2><span class=\"dot\"></span> الخطط: مجاني مقابل مدفوع</h2>\n<table class=\"compare\">\n<tr><th>الخطة</th><th>السعر (تقريبي)</th><th>الأنسب لـ</th></tr>\n<tr><td>Free</td><td>مجانًا</td><td>الاستخدام العرضي والتجربة</td></tr>\n<tr><td>Pro</td><td>حوالي 20$/شهريًا</td><td>الاستخدام المنتظم اليومي</td></tr>\n<tr><td>Max</td><td>من 100$ إلى 200$/شهريًا</td><td>الاستخدام المكثف جدًا</td></tr>\n</table>\n<p class=\"tip\">💡 الأسعار بتتغيّر بمرور الوقت — تأكد دايمًا من الصفحة الرسمية لـ Anthropic قبل الاشتراك.</p>"
+      },
+      {
+        "key": "tutorial",
+        "label": "دليل الاستخدام خطوة بخطوة",
+        "anchorId": "tool-claude-tutorial",
+        "html": "<h2><span class=\"dot\"></span> دليل الاستخدام خطوة بخطوة</h2>\n<ol>\n<li>سجّل حساب مجاني على claude.ai</li>\n<li>ابدأ محادثة جديدة واكتب طلبك بوضوح</li>\n<li>لو عندك مستند طويل، ارفعه مباشرة واطلب تحليله</li>\n<li>استخدم Projects لو بتشتغل على مهمة مستمرة عبر عدة جلسات</li>\n</ol>"
+      },
+      {
+        "key": "practices",
+        "label": "أفضل الممارسات",
+        "anchorId": "tool-claude-practices",
+        "html": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout pro\"><strong>نصيحة محترف:</strong> استغل نافذة السياق الكبيرة — ارفع مستندات كاملة (تقارير، عقود، أكواد) واطلب تحليل شامل بدل ما تلخّصها بنفسك الأول.</div>"
+      },
+      {
+        "key": "tips",
+        "label": "نصائح احترافية",
+        "anchorId": "tool-claude-tips",
+        "html": "<h2><span class=\"dot\"></span> نصائح احترافية</h2>\n<div class=\"callout tip\"><strong>نصيحة:</strong> استخدم Projects لو بتشتغل على مشروع مستمر — بيخلي Claude \"فاكر\" السياق العام للمشروع عبر محادثات متعددة.</div>"
+      },
+      {
+        "key": "usecases",
+        "label": "استخدامات حقيقية",
+        "anchorId": "tool-claude-usecases",
+        "html": "<h2><span class=\"dot\"></span> استخدامات حقيقية</h2>\n<ul class=\"usecase-list\">\n<li>تحليل عقود ومستندات قانونية طويلة</li>\n<li>مراجعة وكتابة كود برمجي</li>\n<li>كتابة تقارير ومستندات مهنية دقيقة</li>\n<li>تلخيص أبحاث أو كتب كاملة</li>\n</ul>"
+      },
+      {
+        "key": "mistakes",
+        "label": "أخطاء شائعة",
+        "anchorId": "tool-claude-mistakes",
+        "html": "<h2><span class=\"dot\"></span> أخطاء شائعة</h2>\n<div class=\"callout mistake\"><strong>خطأ شائع:</strong> عدم الاستفادة من رفع المستندات الكاملة، والاكتفاء بلصق أجزاء صغيرة — ده بيضيع أهم ميزة في Claude.</div>"
+      },
+      {
+        "key": "alternatives",
+        "label": "بدائل Claude",
+        "anchorId": "tool-claude-alternatives",
+        "html": "<h2><span class=\"dot\"></span> بدائل Claude</h2>\n<p>أشهر البدائل: ChatGPT (نظام بيئي أوسع)، وGemini (تكامل قوي مع خدمات جوجل). كل أداة ليها نقاط قوة مختلفة.</p>"
+      },
+      {
+        "key": "faq",
+        "label": "الأسئلة الشائعة",
+        "anchorId": "tool-claude-faq",
+        "html": "<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\"><summary>هل Claude بيدعم اللغة العربية؟</summary><p>آه، بيتعامل مع العربية بشكل جيد جدًا في الفهم والكتابة.</p></details>\n<details class=\"faq-item\"><summary>هل فيه خطة مجانية فعلاً مفيدة؟</summary><p>آه، مناسبة للاستخدام العرضي، لكن فيها حدود استخدام يومية.</p></details>"
+      }
+    ],
+    "icon": "🧠",
+    "shortDescription": "الأقوى في تحليل المستندات الطويلة والبرمجة والكتابة الدقيقة.",
+    "pricingType": "freemium",
+    "priceLabel": "مجاني / من 20$ شهريًا",
+    "externalUrl": "https://claude.ai",
+    "tags": [
+      "chatbot",
+      "coding",
+      "writing"
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": "gemini",
+    "name": "Gemini",
+    "slug": "gemini",
+    "category": "chatbots",
+    "status": "published",
+    "route": "tool/gemini",
+    "orderedSections": [
+      {
+        "key": "intro",
+        "label": "مقدمة",
+        "anchorId": "tool-gemini-intro",
+        "html": "<h2><span class=\"dot\"></span> مقدمة</h2>\n<p>Gemini هو مساعد الذكاء الاصطناعي من جوجل، ومتكامل بعمق مع خدمات جوجل (Gmail، Docs، Drive). من أقوى نقاطه توليد الفيديو وتحليل مستندات ضخمة جدًا.</p>"
+      },
+      {
+        "key": "features",
+        "label": "أهم الميزات",
+        "anchorId": "tool-gemini-features",
+        "html": "<h2><span class=\"dot\"></span> أهم الميزات</h2>\n<ul class=\"usecase-list\">\n<li>تكامل مباشر مع Gmail وDocs وSheets وDrive</li>\n<li>توليد فيديو (Veo) في الخطط المدفوعة</li>\n<li>Deep Research: بحث عميق متعدد الخطوات</li>\n<li>مساحة تخزين إضافية على Google Drive مع الاشتراك</li>\n</ul>"
+      },
+      {
+        "key": "plans",
+        "label": "الخطط: مجاني مقابل مدفوع",
+        "anchorId": "tool-gemini-plans",
+        "html": "<h2><span class=\"dot\"></span> الخطط: مجاني مقابل مدفوع</h2>\n<table class=\"compare\">\n<tr><th>الخطة</th><th>السعر (تقريبي)</th><th>الأنسب لـ</th></tr>\n<tr><td>Free</td><td>مجانًا</td><td>الاستخدام اليومي الأساسي</td></tr>\n<tr><td>AI Pro</td><td>حوالي 20$/شهريًا</td><td>مستخدمي Google Workspace المنتظمين</td></tr>\n<tr><td>AI Ultra</td><td>من 100$/شهريًا فأكتر</td><td>الاستخدام الاحترافي المكثف</td></tr>\n</table>\n<p class=\"tip\">💡 جوجل بتغيّر أسماء وأسعار الخطط دي بشكل متكرر — تأكد من الصفحة الرسمية.</p>"
+      },
+      {
+        "key": "tutorial",
+        "label": "دليل الاستخدام خطوة بخطوة",
+        "anchorId": "tool-gemini-tutorial",
+        "html": "<h2><span class=\"dot\"></span> دليل الاستخدام خطوة بخطوة</h2>\n<ol>\n<li>ادخل بحساب Google عندك على gemini.google.com</li>\n<li>ابدأ محادثة جديدة أو افتح Gemini مباشرة جوه Gmail/Docs</li>\n<li>لو محتاج بحث عميق، استخدم وضع Deep Research</li>\n<li>راجع إعدادات الخصوصية لو بتستخدم بيانات حساسة من حسابك</li>\n</ol>"
+      },
+      {
+        "key": "practices",
+        "label": "أفضل الممارسات",
+        "anchorId": "tool-gemini-practices",
+        "html": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout pro\"><strong>نصيحة محترف:</strong> استغل التكامل مع Docs وSheets — تقدر تطلب من Gemini يشتغل مباشرة على مستند مفتوح بدل ما تنسخ وتلصق المحتوى.</div>"
+      },
+      {
+        "key": "tips",
+        "label": "نصائح احترافية",
+        "anchorId": "tool-gemini-tips",
+        "html": "<h2><span class=\"dot\"></span> نصائح احترافية</h2>\n<div class=\"callout tip\"><strong>نصيحة:</strong> لو بتستخدم Google Workspace للشغل أصلاً، Gemini هيوفرلك وقت أكتر من أي أداة تانية بسبب التكامل المباشر.</div>"
+      },
+      {
+        "key": "usecases",
+        "label": "استخدامات حقيقية",
+        "anchorId": "tool-gemini-usecases",
+        "html": "<h2><span class=\"dot\"></span> استخدامات حقيقية</h2>\n<ul class=\"usecase-list\">\n<li>صياغة إيميلات مباشرة جوه Gmail</li>\n<li>تلخيص وتحليل بيانات جوه Google Sheets</li>\n<li>توليد فيديوهات قصيرة (Veo)</li>\n<li>أبحاث عميقة متعددة المصادر</li>\n</ul>"
+      },
+      {
+        "key": "mistakes",
+        "label": "أخطاء شائعة",
+        "anchorId": "tool-gemini-mistakes",
+        "html": "<h2><span class=\"dot\"></span> أخطاء شائعة</h2>\n<div class=\"callout mistake\"><strong>خطأ شائع:</strong> تجاهل التكامل مع تطبيقات جوجل والتعامل معاه كأداة منفصلة بس — ده بيضيع أهم ميزة تنافسية فيه.</div>"
+      },
+      {
+        "key": "alternatives",
+        "label": "بدائل Gemini",
+        "anchorId": "tool-gemini-alternatives",
+        "html": "<h2><span class=\"dot\"></span> بدائل Gemini</h2>\n<p>أشهر البدائل: ChatGPT وClaude — الاختيار بينهم بيعتمد على مدى اعتمادك على نظام جوجل البيئي أصلاً.</p>"
+      },
+      {
+        "key": "faq",
+        "label": "الأسئلة الشائعة",
+        "anchorId": "tool-gemini-faq",
+        "html": "<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\"><summary>هل محتاج حساب Google؟</summary><p>آه، Gemini مرتبط بالكامل بحساب Google بتاعك.</p></details>\n<details class=\"faq-item\"><summary>هل التخزين على Drive بيتضاف تلقائي مع الاشتراك؟</summary><p>آه، الخطط المدفوعة بتيجي عادة مع مساحة تخزين إضافية على Google Drive.</p></details>"
+      }
+    ],
+    "icon": "✨",
+    "shortDescription": "مساعد جوجل المتكامل مع Gmail وDocs وDrive، وتوليد فيديو.",
+    "pricingType": "freemium",
+    "priceLabel": "مجاني / من 20$ شهريًا",
+    "externalUrl": "https://gemini.google.com",
+    "tags": [
+      "chatbot",
+      "google",
+      "video"
+    ],
+    "rating": 4.5
+  },
+  {
+    "id": "midjourney",
+    "name": "Midjourney",
+    "slug": "midjourney",
+    "category": "images",
+    "status": "published",
+    "route": "tool/midjourney",
+    "orderedSections": [
+      {
+        "key": "intro",
+        "label": "مقدمة",
+        "anchorId": "tool-midjourney-intro",
+        "html": "<h2><span class=\"dot\"></span> مقدمة</h2>\n<p>Midjourney واحدة من أقوى أدوات توليد الصور بالذكاء الاصطناعي، ومشهورة بجودة وواقعية وفنية الصور اللي بتطلعها. تعمل عن طريق Discord أو موقعها الرسمي مباشرة.</p>"
+      },
+      {
+        "key": "features",
+        "label": "أهم الميزات",
+        "anchorId": "tool-midjourney-features",
+        "html": "<h2><span class=\"dot\"></span> أهم الميزات</h2>\n<ul class=\"usecase-list\">\n<li>جودة فنية عالية جدًا في الصور الناتجة</li>\n<li>تحكم دقيق في الأسلوب الفني عبر البرومبت</li>\n<li>وضع Stealth للخصوصية في الخطط الأعلى (الصور متتنشرش عام)</li>\n<li>توليد فيديو قصير من نفس المنصة</li>\n</ul>"
+      },
+      {
+        "key": "plans",
+        "label": "الخطط: مجاني مقابل مدفوع",
+        "anchorId": "tool-midjourney-plans",
+        "html": "<h2><span class=\"dot\"></span> الخطط: مجاني مقابل مدفوع</h2>\n<div class=\"callout mistake\"><strong>ملحوظة مهمة:</strong> Midjourney مفيهوش خطة مجانية إطلاقًا — لازم اشتراك من أول استخدام.</div>\n<table class=\"compare\">\n<tr><th>الخطة</th><th>السعر (تقريبي)</th><th>الأنسب لـ</th></tr>\n<tr><td>Basic</td><td>حوالي 10$/شهريًا</td><td>التجربة والاستخدام الخفيف</td></tr>\n<tr><td>Standard</td><td>حوالي 30$/شهريًا</td><td>الاستخدام المنتظم (الأكتر شيوعًا)</td></tr>\n<tr><td>Pro</td><td>حوالي 60$/شهريًا</td><td>العمل مع عملاء (خصوصية Stealth)</td></tr>\n<tr><td>Mega</td><td>حوالي 120$/شهريًا</td><td>الاستخدام الاحترافي المكثف جدًا</td></tr>\n</table>\n<p class=\"tip\">💡 الاشتراك مبني على \"ساعات معالجة\" مش عدد صور ثابت — الأسعار للمرجعية بس، تأكد من الموقع الرسمي.</p>"
+      },
+      {
+        "key": "tutorial",
+        "label": "دليل الاستخدام خطوة بخطوة",
+        "anchorId": "tool-midjourney-tutorial",
+        "html": "<h2><span class=\"dot\"></span> دليل الاستخدام خطوة بخطوة</h2>\n<ol>\n<li>اشترك في خطة من الموقع الرسمي</li>\n<li>ادخل على midjourney.com أو انضم لسيرفر Discord الرسمي</li>\n<li>اكتب برومبت الصورة (راجع درس Image Prompting في مسار هندسة البرومبت)</li>\n<li>اختار أفضل نسخة من الأربع نسخ اللي بتطلع، وحسّنها لو محتاج</li>\n</ol>"
+      },
+      {
+        "key": "practices",
+        "label": "أفضل الممارسات",
+        "anchorId": "tool-midjourney-practices",
+        "html": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout pro\"><strong>نصيحة محترف:</strong> استخدم Relax Mode (متاح من خطة Standard فما فوق) للتجربة الحرة من غير ما تستهلك ساعات المعالجة السريعة بتاعتك.</div>"
+      },
+      {
+        "key": "tips",
+        "label": "نصائح احترافية",
+        "anchorId": "tool-midjourney-tips",
+        "html": "<h2><span class=\"dot\"></span> نصائح احترافية</h2>\n<div class=\"callout tip\"><strong>نصيحة:</strong> لو بتشتغل مع عملاء وعايز خصوصية للصور (متتعرضش في المعرض العام)، لازم خطة Pro على الأقل.</div>"
+      },
+      {
+        "key": "usecases",
+        "label": "استخدامات حقيقية",
+        "anchorId": "tool-midjourney-usecases",
+        "html": "<h2><span class=\"dot\"></span> استخدامات حقيقية</h2>\n<ul class=\"usecase-list\">\n<li>تصميم أعمال فنية وأغلفة</li>\n<li>مصادر بصرية لمشاريع تصميم</li>\n<li>محتوى بصري لسوشيال ميديا</li>\n<li>استكشاف أفكار بصرية سريعة</li>\n</ul>"
+      },
+      {
+        "key": "mistakes",
+        "label": "أخطاء شائعة",
+        "anchorId": "tool-midjourney-mistakes",
+        "html": "<h2><span class=\"dot\"></span> أخطاء شائعة</h2>\n<div class=\"callout mistake\"><strong>خطأ شائع:</strong> الاشتراك في خطة Basic بس وتوقع استخدام يومي مكثف — ساعات المعالجة بتخلص بسرعة، وده بيخلي التجربة محبطة.</div>"
+      },
+      {
+        "key": "alternatives",
+        "label": "بدائل Midjourney",
+        "anchorId": "tool-midjourney-alternatives",
+        "html": "<h2><span class=\"dot\"></span> بدائل Midjourney</h2>\n<p>أشهر البدائل: DALL-E (متكامل مع ChatGPT)، وStable Diffusion (مفتوح المصدر ومجاني لو عندك جهاز قوي).</p>"
+      },
+      {
+        "key": "faq",
+        "label": "الأسئلة الشائعة",
+        "anchorId": "tool-midjourney-faq",
+        "html": "<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\"><summary>هل ممكن أجرب Midjourney مجانًا؟</summary><p>لأ، مفيش تجربة مجانية حاليًا — لازم اشتراك من أول استخدام.</p></details>\n<details class=\"faq-item\"><summary>هل لازم أستخدم Discord؟</summary><p>لأ، بقى فيه موقع رسمي مستقل (midjourney.com) بديل عن Discord.</p></details>"
+      }
+    ],
+    "icon": "🎨",
+    "shortDescription": "أقوى أداة لتوليد صور بجودة فنية عالية جدًا.",
+    "pricingType": "paid",
+    "priceLabel": "من 10$ شهريًا (بدون خطة مجانية)",
+    "externalUrl": "https://midjourney.com",
+    "tags": [
+      "images",
+      "art",
+      "design"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": "perplexity",
+    "name": "Perplexity",
+    "slug": "perplexity",
+    "category": "research",
+    "status": "published",
+    "route": "tool/perplexity",
+    "orderedSections": [
+      {
+        "key": "intro",
+        "label": "مقدمة",
+        "anchorId": "tool-perplexity-intro",
+        "html": "<h2><span class=\"dot\"></span> مقدمة</h2>\n<p>Perplexity هو \"محرك إجابات\" بالذكاء الاصطناعي — بيجاوب على أسئلتك بالبحث الفعلي في الإنترنت ويديك مصادر موثوقة لكل معلومة، بدل ما يعتمد بس على معرفته المخزّنة زي الشات بوتس العادية.</p>"
+      },
+      {
+        "key": "features",
+        "label": "أهم الميزات",
+        "anchorId": "tool-perplexity-features",
+        "html": "<h2><span class=\"dot\"></span> أهم الميزات</h2>\n<ul class=\"usecase-list\">\n<li>إجابات مع مصادر وروابط موثقة لكل معلومة</li>\n<li>وضع Deep Research للأبحاث المعمقة متعددة الخطوات</li>\n<li>متصفح Comet المدمج بالذكاء الاصطناعي</li>\n<li>اختيار من بين عدة نماذج AI مختلفة في الخطط المدفوعة</li>\n</ul>"
+      },
+      {
+        "key": "plans",
+        "label": "الخطط: مجاني مقابل مدفوع",
+        "anchorId": "tool-perplexity-plans",
+        "html": "<h2><span class=\"dot\"></span> الخطط: مجاني مقابل مدفوع</h2>\n<table class=\"compare\">\n<tr><th>الخطة</th><th>السعر (تقريبي)</th><th>الأنسب لـ</th></tr>\n<tr><td>Free</td><td>مجانًا</td><td>بحث محدود يوميًا</td></tr>\n<tr><td>Pro</td><td>حوالي 20$/شهريًا</td><td>البحث والكتابة والتحقق من المعلومات بانتظام</td></tr>\n<tr><td>Max</td><td>حوالي 200$/شهريًا</td><td>الاستخدام الاحترافي المكثف جدًا</td></tr>\n</table>\n<p class=\"tip\">💡 فيه خطة تعليمية مخفّضة للطلاب المسجّلين رسميًا — تأكد من الموقع الرسمي.</p>"
+      },
+      {
+        "key": "tutorial",
+        "label": "دليل الاستخدام خطوة بخطوة",
+        "anchorId": "tool-perplexity-tutorial",
+        "html": "<h2><span class=\"dot\"></span> دليل الاستخدام خطوة بخطوة</h2>\n<ol>\n<li>ادخل على perplexity.ai (فيه خطة مجانية بدون بطاقة ائتمان)</li>\n<li>اكتب سؤالك زي ما تكتبه في محرك بحث عادي</li>\n<li>راجع المصادر المرفقة تحت كل إجابة</li>\n<li>لو محتاج بحث معمق، فعّل وضع Deep Research (له حدود استخدام في الخطة المجانية)</li>\n</ol>"
+      },
+      {
+        "key": "practices",
+        "label": "أفضل الممارسات",
+        "anchorId": "tool-perplexity-practices",
+        "html": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout pro\"><strong>نصيحة محترف:</strong> راجع دايمًا المصادر المرفقة، مش بس النص المولّد — ميزة Perplexity الأساسية هي إمكانية التحقق، فاستغلها فعليًا.</div>"
+      },
+      {
+        "key": "tips",
+        "label": "نصائح احترافية",
+        "anchorId": "tool-perplexity-tips",
+        "html": "<h2><span class=\"dot\"></span> نصائح احترافية</h2>\n<div class=\"callout tip\"><strong>نصيحة:</strong> استخدمه بدل محرك البحث التقليدي في الأسئلة اللي محتاجة إجابة مباشرة ومصادر، مش بس قائمة روابط.</div>"
+      },
+      {
+        "key": "usecases",
+        "label": "استخدامات حقيقية",
+        "anchorId": "tool-perplexity-usecases",
+        "html": "<h2><span class=\"dot\"></span> استخدامات حقيقية</h2>\n<ul class=\"usecase-list\">\n<li>البحث الأكاديمي والتحقق من المعلومات</li>\n<li>متابعة أخبار وتطورات حديثة بمصادرها</li>\n<li>مقارنة منتجات أو خدمات بناءً على مصادر حقيقية</li>\n<li>تلخيص موضوع من مصادر متعددة دفعة واحدة</li>\n</ul>"
+      },
+      {
+        "key": "mistakes",
+        "label": "أخطاء شائعة",
+        "anchorId": "tool-perplexity-mistakes",
+        "html": "<h2><span class=\"dot\"></span> أخطاء شائعة</h2>\n<div class=\"callout mistake\"><strong>خطأ شائع:</strong> نسخ الإجابة النهائية من غير الرجوع للمصادر الأصلية في المواضيع الحساسة أو المهمة.</div>"
+      },
+      {
+        "key": "alternatives",
+        "label": "بدائل Perplexity",
+        "anchorId": "tool-perplexity-alternatives",
+        "html": "<h2><span class=\"dot\"></span> بدائل Perplexity</h2>\n<p>أشهر البدائل: أوضاع البحث الموجودة في ChatGPT وGemini وClaude، لكن Perplexity متخصص بشكل أعمق في التوثيق بالمصادر تحديدًا.</p>"
+      },
+      {
+        "key": "faq",
+        "label": "الأسئلة الشائعة",
+        "anchorId": "tool-perplexity-faq",
+        "html": "<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\"><summary>هل Perplexity بيغني عن محرك البحث التقليدي؟</summary><p>لأغلب الأسئلة اللي محتاجة إجابة مباشرة مع مصادر، آه. للتصفح العام والتسوق، محرك البحث التقليدي لسه مفيد.</p></details>\n<details class=\"faq-item\"><summary>هل المعلومات فيه دايمًا محدّثة؟</summary><p>بيعتمد على بحث حي في الإنترنت وقت السؤال، فبيكون محدّث أكتر من شات بوت عادي، لكن راجع تاريخ المصدر دايمًا.</p></details>"
+      }
+    ],
+    "icon": "🔎",
+    "shortDescription": "محرك إجابات بالذكاء الاصطناعي مع مصادر موثقة لكل معلومة.",
+    "pricingType": "freemium",
+    "priceLabel": "مجاني / من 20$ شهريًا",
+    "externalUrl": "https://perplexity.ai",
+    "tags": [
+      "research",
+      "search"
+    ],
+    "rating": 4.6
+  }
+]

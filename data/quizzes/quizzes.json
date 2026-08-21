@@ -1,0 +1,25 @@
+{
+  "note": "Quiz content lives inside each lesson's 'quiz' field in data/lessons/*.json. This file is a lightweight index for future features (progress tracking, dashboards).",
+  "quizzes": [
+    {
+      "lessonId": "what-is-ai",
+      "pathId": "ai-fundamentals",
+      "questionCount": 6
+    },
+    {
+      "lessonId": "generative-ai",
+      "pathId": "ai-fundamentals",
+      "questionCount": 5
+    },
+    {
+      "lessonId": "what-is-prompt-engineering",
+      "pathId": "prompt-engineering",
+      "questionCount": 3
+    },
+    {
+      "lessonId": "few-shot-prompting",
+      "pathId": "prompt-engineering",
+      "questionCount": 3
+    }
+  ]
+}

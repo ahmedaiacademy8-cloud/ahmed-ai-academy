@@ -1,0 +1,20 @@
+<!--
+  Reference markup for one course/path card (used on the home route).
+  Data shape comes from data/courses.json — one entry looks like:
+  { id, title, description, levelLabel, totalLessons, publishedLessons,
+    estimatedReadTime, route }
+  Not yet wired to render dynamically (home route is still static
+  HTML in this stage) — kept here as the template to reuse when the
+  home route is made data-driven in a later stage.
+-->
+<div class="a-card" data-searchable>
+  <div class="icon-tile">{{icon}}</div>
+  <span class="level {{levelClass}}">{{levelLabel}}</span>
+  <h3>{{title}}</h3>
+  <p>{{description}}</p>
+  <div class="meta">
+    <span>📚 {{publishedLessons}} متاحين الآن من أصل {{totalLessons}}</span>
+    <span>⏱ {{estimatedReadTime}}</span>
+  </div>
+  <a href="#{{route}}" class="go">ابدأ المسار ←</a>
+</div>

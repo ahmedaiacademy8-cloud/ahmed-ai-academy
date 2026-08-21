@@ -1,0 +1,35 @@
+{
+  "siteName": "أكاديمية Ahmed AI Academic",
+  "siteNameShort": "Ahmed AI Academic",
+  "language": "ar",
+  "direction": "rtl",
+  "logo": "assets/images/logo.png",
+  "favicon": "assets/favicon/favicon.ico",
+  "copyrightText": "© 2026 أكاديمية Ahmed AI Academic — منصة تعليمية عربية للذكاء الاصطناعي.",
+  "homeLink": "index.html",
+  "academyLink": "academy.html",
+  "stats": [
+    {
+      "value": "26",
+      "label": "دروس مكتملة الآن"
+    },
+    {
+      "value": "2",
+      "label": "مسارين تعليميين"
+    },
+    {
+      "value": "5",
+      "label": "أدلة أدوات كاملة"
+    },
+    {
+      "value": "+",
+      "label": "محتوى بيتزاد أسبوعيًا"
+    }
+  ],
+  "_todo_fields_not_confirmed": {
+    "founderName": "غير مؤكد بعد من مصدر index.html الخام (النسخة المرفوعة كانت MHTML) — يُملأ لاحقًا",
+    "contactEmail": "غير مؤكد بعد لنفس السبب",
+    "socialLinks": "غير مؤكد بعد لنفس السبب",
+    "note": "هذه الحقول اتسابت فاضية عمدًا بدل ما نخمّن قيم مش موجودة في المصدر اللي فحصناه فعليًا."
+  }
+}

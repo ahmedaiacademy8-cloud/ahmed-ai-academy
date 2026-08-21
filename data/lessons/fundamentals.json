@@ -1,0 +1,1372 @@
+{
+  "pathId": "ai-fundamentals",
+  "pathTitle": "أساسيات الذكاء الاصطناعي",
+  "lessons": [
+    {
+      "id": "what-is-ai",
+      "title": "ما هو الذكاء الاصطناعي؟",
+      "slug": "what-is-ai",
+      "description": "الشرح المبسط (لو أول مرة تسمع عن الموضوع) تخيل إن عندك صاحب ذكي جدًا، قرا ملايين الكتب والمقالات، وبيقدر يرد عليك في أي سؤال، يكتبلك إيميل، يحلل صورة، أو حتى يك",
+      "level": "مبتدئ",
+      "category": "ai-fundamentals",
+      "duration": null,
+      "order": 1,
+      "status": "published",
+      "content": "<h2><span class=\"dot\"></span> الشرح المبسط (لو أول مرة تسمع عن الموضوع)</h2>\n<p>تخيل إن عندك صاحب ذكي جدًا، قرا ملايين الكتب والمقالات، وبيقدر يرد عليك في أي سؤال، يكتبلك إيميل، يحلل صورة، أو حتى يكتب كود برمجة — ده بشكل مبسط جدًا هو \"الذكاء الاصطناعي\" (Artificial Intelligence أو AI اختصارًا).</p>\n<p>الذكاء الاصطناعي هو مجال في علوم الكمبيوتر بيحاول يخلي الآلة (الكمبيوتر) \"تفكر\" أو تتصرف بطريقة شبيهة بالإنسان: تتعلم من الأمثلة، تلاحظ الأنماط، وتاخد قرارات أو تنتج محتوى بناءً على اللي اتعلمته.</p>\n<div class=\"illustration\">\n<div class=\"glyph\">🧩</div>\n        مخطط توضيحي: بيانات ضخمة (نصوص، صور، أصوات) → نموذج ذكاء اصطناعي بيتعلم الأنماط منها → نتيجة (إجابة، صورة، قرار)\n      </div>\n<p>مثال يومي: لما تفتح تطبيق زي نتفليكس ويقترحلك أفلام تحبها، أو لما جوجل مابس يختارلك أسرع طريق — ده كله ذكاء اصطناعي شغال في الخلفية من غير ما تحس بيه.</p>\n<h2><span class=\"dot\"></span> الشرح الاحترافي (التعريف الدقيق)</h2>\n<p>الذكاء الاصطناعي هو فرع من علوم الحاسب يهتم ببناء أنظمة قادرة على أداء مهام كانت تتطلب \"ذكاءً بشريًا\" — زي الفهم اللغوي، التعرف على الأنماط البصرية، اتخاذ القرار، والتعلم من التجربة.</p>\n<p>يندرج تحت مظلة الذكاء الاصطناعي عدة فروع متداخلة:</p>\n<table class=\"compare\">\n<tr><th>المصطلح</th><th>يعني إيه بالظبط</th></tr>\n<tr><td>Artificial Intelligence (AI)</td><td>المجال الأشمل: أي نظام بيحاكي سلوك ذكي</td></tr>\n<tr><td>Machine Learning (ML)</td><td>فرع من AI: النظام بيتعلم من البيانات بدل ما يتبرمج بقواعد ثابتة</td></tr>\n<tr><td>Deep Learning (DL)</td><td>فرع من ML: بيستخدم شبكات عصبية متعددة الطبقات لتعلم أنماط معقدة</td></tr>\n<tr><td>Generative AI</td><td>فرع حديث: بينتج محتوى جديد (نص، صورة، صوت) بدل ما يكتفي بالتصنيف أو التنبؤ</td></tr>\n</table>\n<p>يعني ChatGPT مثلاً هو \"نموذج توليدي\" (Generative Model) مبني على \"تعلم عميق\" (Deep Learning)، وهو بدوره فرع من \"تعلم الآلة\" (Machine Learning)، اللي هو فرع من \"الذكاء الاصطناعي\" (AI) بشكل عام.</p>\n<h2><span class=\"dot\"></span> خطوات فهم الموضوع بالترتيب</h2>\n<h3>الخطوة 1: افهم الفرق بين البرمجة التقليدية والذكاء الاصطناعي</h3>\n<p>في البرمجة التقليدية، المبرمج بيكتب قواعد واضحة (\"لو حصل كذا، اعمل كذا\"). في الذكاء الاصطناعي، بنديله كمية كبيرة من الأمثلة، وهو بيكتشف القاعدة بنفسه.</p>\n<h3>الخطوة 2: افهم إيه هي \"البيانات\" ودورها</h3>\n<p>البيانات هي \"غذاء\" النموذج — كل ما كانت البيانات أكبر وأنضف وأكثر تنوعًا، كل ما النموذج بيبقى أدق في تعلمه.</p>\n<h3>الخطوة 3: افهم الفرق بين \"التدريب\" و\"الاستخدام\"</h3>\n<p>مرحلة التدريب (Training) هي لما النموذج بيتعلم من البيانات — وده بياخد وقت وموارد ضخمة. مرحلة الاستخدام (Inference) هي لما إحنا كمستخدمين بنسأل النموذج سؤال وهو بيرد بناءً على اللي اتعلمه قبل كده.</p>\n<h3>الخطوة 4: افهم حدود الذكاء الاصطناعي</h3>\n<p>الذكاء الاصطناعي مش \"بيفهم\" بالمعنى البشري — هو بيتنبأ بأكثر إجابة محتملة بناءً على الأنماط اللي اتعلمها. عشان كده ممكن يغلط أو \"يهلوس\" (Hallucinate) لو السؤال برا نطاق معرفته.</p>",
+      "examples": "<h2><span class=\"dot\"></span> أمثلة عملية</h2>\n<p><strong>مثال 1 — تصنيف الصور:</strong> نموذج ذكاء اصطناعي اتدرب على آلاف صور القطط والكلاب، ودلوقتي لو ورّيته صورة جديدة يقدر يقولك \"قطة\" أو \"كلب\" بنسبة ثقة معينة.</p>\n<p><strong>مثال 2 — توليد النصوص:</strong> لما تكتب لـ ChatGPT \"اكتبلي وصف منتج لسماعة لاسلكية\"، النموذج بيحلل السياق وبيولّد نص جديد كلمة كلمة بناءً على احتمالية كل كلمة تيجي بعد اللي قبلها.</p>\n<div class=\"illustration\">\n<div class=\"glyph\">📊</div>\n        رسم توضيحي: مدخل (سؤال أو صورة) → معالجة داخل النموذج (طبقات شبكة عصبية) → مخرج (نص، تصنيف، أو قرار)\n      </div>\n<h2><span class=\"dot\"></span> استخدامات حقيقية في حياتنا</h2>\n<ul class=\"usecase-list\">\n<li>🏥 <strong>الطب:</strong> تحليل الأشعة السينية للكشف المبكر عن الأورام</li>\n<li>🚗 <strong>القيادة الذاتية:</strong> تحليل الطريق واتخاذ قرارات لحظية</li>\n<li>💰 <strong>البنوك:</strong> كشف عمليات الاحتيال في المعاملات المالية</li>\n<li>🛍️ <strong>التجارة الإلكترونية:</strong> اقتراح منتجات مناسبة لكل عميل</li>\n<li>🌾 <strong>الزراعة:</strong> تحليل صور الأقمار الصناعية لتحديد صحة المحاصيل</li>\n<li>🎓 <strong>التعليم:</strong> منصات تعلم تتكيف مع مستوى كل طالب</li>\n</ul>",
+      "tips": "<h2><span class=\"dot\"></span> أفضل الممارسات للمبتدئين</h2>\n<div class=\"callout tip\"><strong>نصيحة 1:</strong> ابدأ باستخدام أدوات جاهزة زي ChatGPT أو Claude قبل ما تتعمق في الجانب التقني — التجربة العملية بتسرّع فهمك.</div>\n<div class=\"callout tip\"><strong>نصيحة 2:</strong> تعامل مع الذكاء الاصطناعي كـ\"مساعد\" مش كمصدر معلومة نهائي — دايمًا راجع المعلومات المهمة.</div>\n<div class=\"callout pro\"><strong>Pro Tip:</strong> افهم الفرق بين الأدوات \"التوليدية\" (زي ChatGPT وMidjourney) والأدوات \"التحليلية\" (زي أنظمة التوصية) — هيساعدك تختار الأداة المناسبة لمشكلتك.</div>\n<h2><span class=\"dot\"></span> أخطاء شائعة لازم تتجنبها</h2>\n<div class=\"callout mistake\"><strong>خطأ 1:</strong> الاعتقاد إن الذكاء الاصطناعي \"بيفهم\" زي الإنسان — في الواقع هو بيتنبأ بأنماط إحصائية.</div>\n<div class=\"callout mistake\"><strong>خطأ 2:</strong> الثقة الكاملة في أي إجابة من غير مراجعة، خصوصًا في المواضيع الطبية أو القانونية أو المالية.</div>\n<div class=\"callout mistake\"><strong>خطأ 3:</strong> الخلط بين \"الذكاء الاصطناعي\" و\"الروبوتات\" — الروبوت هو جسم مادي، والذكاء الاصطناعي هو \"العقل\" اللي ممكن يتحط جوه الروبوت أو جوه برنامج عادي.</div>",
+      "exercise": "<h2><span class=\"dot\"></span> تمرين عملي</h2>\n<div class=\"assignment-box\">\n<h3 style=\"margin-top:0;color:var(--gold);\">التمرين</h3>\n<p>افتح أي أداة ذكاء اصطناعي مجانية (زي ChatGPT أو Claude)، واسألها 3 أسئلة مختلفة:</p>\n<ol>\n<li>سؤال معلومة عامة (مثلاً: \"ايه هي عاصمة اليابان؟\")</li>\n<li>سؤال يحتاج إبداع (مثلاً: \"اكتبلي بيت شعر عن القمر\")</li>\n<li>سؤال شخصي رأي (مثلاً: \"ايه رأيك في العمل من المنزل؟\")</li>\n</ol>\n<p>بعد كده، اكتب ملاحظاتك: هل حسيت إن الإجابات مختلفة في الجودة؟ هل قدرت تلاحظ حدود قدرة النموذج في أي سؤال؟</p>\n</div>",
+      "quiz": {
+        "questions": [
+          {
+            "question": "1. الذكاء الاصطناعي بيتعلم بشكل أساسي من إيه؟",
+            "options": [
+              {
+                "text": "قواعد مكتوبة يدويًا فقط",
+                "correct": false
+              },
+              {
+                "text": "البيانات والأمثلة",
+                "correct": true
+              },
+              {
+                "text": "التخمين العشوائي",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "question": "2. أي فرع من دول هو الأشمل؟",
+            "options": [
+              {
+                "text": "Deep Learning",
+                "correct": false
+              },
+              {
+                "text": "Machine Learning",
+                "correct": false
+              },
+              {
+                "text": "Artificial Intelligence",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "question": "3. \"الهلوسة\" (Hallucination) في سياق الذكاء الاصطناعي تعني إيه؟",
+            "options": [
+              {
+                "text": "النموذج بيقول معلومة غير صحيحة بثقة",
+                "correct": true
+              },
+              {
+                "text": "النموذج بيتوقف عن العمل",
+                "correct": false
+              },
+              {
+                "text": "النموذج بيطلب صورة",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "question": "4. ChatGPT مثال على أي نوع؟",
+            "options": [
+              {
+                "text": "روبوت مادي",
+                "correct": false
+              },
+              {
+                "text": "نموذج ذكاء اصطناعي توليدي",
+                "correct": true
+              },
+              {
+                "text": "قاعدة بيانات فقط",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "question": "5. مرحلة \"Inference\" تعني إيه؟",
+            "options": [
+              {
+                "text": "مرحلة جمع البيانات",
+                "correct": false
+              },
+              {
+                "text": "مرحلة تدريب النموذج",
+                "correct": false
+              },
+              {
+                "text": "مرحلة استخدام النموذج المدرَّب للرد على أسئلة جديدة",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "question": "6. أي جملة صح؟",
+            "options": [
+              {
+                "text": "كل روبوت لازم يكون فيه ذكاء اصطناعي",
+                "correct": false
+              },
+              {
+                "text": "الذكاء الاصطناعي ممكن يشتغل من غير جسم مادي (زي برنامج على الموبايل)",
+                "correct": true
+              },
+              {
+                "text": "الذكاء الاصطناعي هو نفسه الروبوت",
+                "correct": false
+              }
+            ]
+          }
+        ],
+        "html": "<div class=\"quiz-box\">\n<div class=\"quiz-q\">\n<p class=\"qtext\">1. الذكاء الاصطناعي بيتعلم بشكل أساسي من إيه؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>قواعد مكتوبة يدويًا فقط</label>\n<label data-correct=\"true\"><input name=\"q1\" type=\"radio\"/>البيانات والأمثلة</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>التخمين العشوائي</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">2. أي فرع من دول هو الأشمل؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>Deep Learning</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>Machine Learning</label>\n<label data-correct=\"true\"><input name=\"q2\" type=\"radio\"/>Artificial Intelligence</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">3. \"الهلوسة\" (Hallucination) في سياق الذكاء الاصطناعي تعني إيه؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q3\" type=\"radio\"/>النموذج بيقول معلومة غير صحيحة بثقة</label>\n<label data-correct=\"false\"><input name=\"q3\" type=\"radio\"/>النموذج بيتوقف عن العمل</label>\n<label data-correct=\"false\"><input name=\"q3\" type=\"radio\"/>النموذج بيطلب صورة</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">4. ChatGPT مثال على أي نوع؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"q4\" type=\"radio\"/>روبوت مادي</label>\n<label data-correct=\"true\"><input name=\"q4\" type=\"radio\"/>نموذج ذكاء اصطناعي توليدي</label>\n<label data-correct=\"false\"><input name=\"q4\" type=\"radio\"/>قاعدة بيانات فقط</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">5. مرحلة \"Inference\" تعني إيه؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"q5\" type=\"radio\"/>مرحلة جمع البيانات</label>\n<label data-correct=\"false\"><input name=\"q5\" type=\"radio\"/>مرحلة تدريب النموذج</label>\n<label data-correct=\"true\"><input name=\"q5\" type=\"radio\"/>مرحلة استخدام النموذج المدرَّب للرد على أسئلة جديدة</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">6. أي جملة صح؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"q6\" type=\"radio\"/>كل روبوت لازم يكون فيه ذكاء اصطناعي</label>\n<label data-correct=\"true\"><input name=\"q6\" type=\"radio\"/>الذكاء الاصطناعي ممكن يشتغل من غير جسم مادي (زي برنامج على الموبايل)</label>\n<label data-correct=\"false\"><input name=\"q6\" type=\"radio\"/>الذكاء الاصطناعي هو نفسه الروبوت</label>\n</div>\n</div>\n<p class=\"quiz-result\"></p>\n</div>"
+      },
+      "resources": "<h2><span class=\"dot\"></span> ملخص سريع للتحميل</h2>\n<div class=\"cheat-box\">\n<p style=\"color:var(--text);margin-bottom:14px;\">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p>\n<button class=\"btn btn-outline print-cheat-btn\">🖨️ تحميل / طباعة الملخص</button>\n</div>\n<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\">\n<summary>هل لازم أعرف برمجة عشان أفهم الذكاء الاصطناعي؟</summary>\n<p>لأ، مش شرط. تقدر تستخدم أدوات الذكاء الاصطناعي وتفهم مفاهيمه الأساسية من غير أي خلفية برمجية. البرمجة مهمة أكتر لو حابب تبني نماذج بنفسك.</p>\n</details>\n<details class=\"faq-item\">\n<summary>إيه الفرق بين AI و Automation؟</summary>\n<p>الأتمتة (Automation) بتنفذ خطوات ثابتة ومحددة مسبقًا. الذكاء الاصطناعي بياخد قرارات بناءً على تحليل بيانات، مش بس خطوات ثابتة.</p>\n</details>\n<details class=\"faq-item\">\n<summary>هل الذكاء الاصطناعي هيلغي وظائف؟</summary>\n<p>هيغيّر طبيعة كتير من الوظائف وهيلغي بعضها، لكنه كمان هيخلق وظائف جديدة. أهم حاجة إنك تتعلم تستخدمه كأداة تزيد من إنتاجيتك.</p>\n</details>",
+      "prerequisites": [],
+      "nextLesson": "generative-ai",
+      "summary": "<h2><span class=\"dot\"></span> الملخص وأهم النقاط</h2>\n<div class=\"cheat-box\">\n<ul>\n<li>الذكاء الاصطناعي هو مجال بيخلي الآلة تتصرف بذكاء شبيه بالإنسان.</li>\n<li>تعلم الآلة والتعلم العميق والذكاء التوليدي كلها فروع متداخلة تحت مظلة الذكاء الاصطناعي.</li>\n<li>النماذج بتتعلم من البيانات في مرحلة التدريب، وبعدين بتستخدم اللي اتعلمته في مرحلة الاستخدام.</li>\n<li>الذكاء الاصطناعي بيتنبأ بأنماط، مش \"بيفهم\" بالمعنى البشري، فلازم تراجع مخرجاته دايمًا.</li>\n</ul>\n</div>",
+      "sections": [
+        {
+          "id": "lesson-what-is-ai-beginner",
+          "label": "الشرح المبسط",
+          "key": "beginner",
+          "html": "<h2><span class=\"dot\"></span> الشرح المبسط (لو أول مرة تسمع عن الموضوع)</h2>\n<p>تخيل إن عندك صاحب ذكي جدًا، قرا ملايين الكتب والمقالات، وبيقدر يرد عليك في أي سؤال، يكتبلك إيميل، يحلل صورة، أو حتى يكتب كود برمجة — ده بشكل مبسط جدًا هو \"الذكاء الاصطناعي\" (Artificial Intelligence أو AI اختصارًا).</p>\n<p>الذكاء الاصطناعي هو مجال في علوم الكمبيوتر بيحاول يخلي الآلة (الكمبيوتر) \"تفكر\" أو تتصرف بطريقة شبيهة بالإنسان: تتعلم من الأمثلة، تلاحظ الأنماط، وتاخد قرارات أو تنتج محتوى بناءً على اللي اتعلمته.</p>\n<div class=\"illustration\">\n<div class=\"glyph\">🧩</div>\n        مخطط توضيحي: بيانات ضخمة (نصوص، صور، أصوات) → نموذج ذكاء اصطناعي بيتعلم الأنماط منها → نتيجة (إجابة، صورة، قرار)\n      </div>\n<p>مثال يومي: لما تفتح تطبيق زي نتفليكس ويقترحلك أفلام تحبها، أو لما جوجل مابس يختارلك أسرع طريق — ده كله ذكاء اصطناعي شغال في الخلفية من غير ما تحس بيه.</p>"
+        },
+        {
+          "id": "lesson-what-is-ai-professional",
+          "label": "الشرح الاحترافي",
+          "key": "professional",
+          "html": "<h2><span class=\"dot\"></span> الشرح الاحترافي (التعريف الدقيق)</h2>\n<p>الذكاء الاصطناعي هو فرع من علوم الحاسب يهتم ببناء أنظمة قادرة على أداء مهام كانت تتطلب \"ذكاءً بشريًا\" — زي الفهم اللغوي، التعرف على الأنماط البصرية، اتخاذ القرار، والتعلم من التجربة.</p>\n<p>يندرج تحت مظلة الذكاء الاصطناعي عدة فروع متداخلة:</p>\n<table class=\"compare\">\n<tr><th>المصطلح</th><th>يعني إيه بالظبط</th></tr>\n<tr><td>Artificial Intelligence (AI)</td><td>المجال الأشمل: أي نظام بيحاكي سلوك ذكي</td></tr>\n<tr><td>Machine Learning (ML)</td><td>فرع من AI: النظام بيتعلم من البيانات بدل ما يتبرمج بقواعد ثابتة</td></tr>\n<tr><td>Deep Learning (DL)</td><td>فرع من ML: بيستخدم شبكات عصبية متعددة الطبقات لتعلم أنماط معقدة</td></tr>\n<tr><td>Generative AI</td><td>فرع حديث: بينتج محتوى جديد (نص، صورة، صوت) بدل ما يكتفي بالتصنيف أو التنبؤ</td></tr>\n</table>\n<p>يعني ChatGPT مثلاً هو \"نموذج توليدي\" (Generative Model) مبني على \"تعلم عميق\" (Deep Learning)، وهو بدوره فرع من \"تعلم الآلة\" (Machine Learning)، اللي هو فرع من \"الذكاء الاصطناعي\" (AI) بشكل عام.</p>"
+        },
+        {
+          "id": "lesson-what-is-ai-steps",
+          "label": "خطوات الفهم",
+          "key": "steps",
+          "html": "<h2><span class=\"dot\"></span> خطوات فهم الموضوع بالترتيب</h2>\n<h3>الخطوة 1: افهم الفرق بين البرمجة التقليدية والذكاء الاصطناعي</h3>\n<p>في البرمجة التقليدية، المبرمج بيكتب قواعد واضحة (\"لو حصل كذا، اعمل كذا\"). في الذكاء الاصطناعي، بنديله كمية كبيرة من الأمثلة، وهو بيكتشف القاعدة بنفسه.</p>\n<h3>الخطوة 2: افهم إيه هي \"البيانات\" ودورها</h3>\n<p>البيانات هي \"غذاء\" النموذج — كل ما كانت البيانات أكبر وأنضف وأكثر تنوعًا، كل ما النموذج بيبقى أدق في تعلمه.</p>\n<h3>الخطوة 3: افهم الفرق بين \"التدريب\" و\"الاستخدام\"</h3>\n<p>مرحلة التدريب (Training) هي لما النموذج بيتعلم من البيانات — وده بياخد وقت وموارد ضخمة. مرحلة الاستخدام (Inference) هي لما إحنا كمستخدمين بنسأل النموذج سؤال وهو بيرد بناءً على اللي اتعلمه قبل كده.</p>\n<h3>الخطوة 4: افهم حدود الذكاء الاصطناعي</h3>\n<p>الذكاء الاصطناعي مش \"بيفهم\" بالمعنى البشري — هو بيتنبأ بأكثر إجابة محتملة بناءً على الأنماط اللي اتعلمها. عشان كده ممكن يغلط أو \"يهلوس\" (Hallucinate) لو السؤال برا نطاق معرفته.</p>"
+        },
+        {
+          "id": "lesson-what-is-ai-examples",
+          "label": "أمثلة عملية",
+          "key": "examples",
+          "html": "<h2><span class=\"dot\"></span> أمثلة عملية</h2>\n<p><strong>مثال 1 — تصنيف الصور:</strong> نموذج ذكاء اصطناعي اتدرب على آلاف صور القطط والكلاب، ودلوقتي لو ورّيته صورة جديدة يقدر يقولك \"قطة\" أو \"كلب\" بنسبة ثقة معينة.</p>\n<p><strong>مثال 2 — توليد النصوص:</strong> لما تكتب لـ ChatGPT \"اكتبلي وصف منتج لسماعة لاسلكية\"، النموذج بيحلل السياق وبيولّد نص جديد كلمة كلمة بناءً على احتمالية كل كلمة تيجي بعد اللي قبلها.</p>\n<div class=\"illustration\">\n<div class=\"glyph\">📊</div>\n        رسم توضيحي: مدخل (سؤال أو صورة) → معالجة داخل النموذج (طبقات شبكة عصبية) → مخرج (نص، تصنيف، أو قرار)\n      </div>"
+        },
+        {
+          "id": "lesson-what-is-ai-usecases",
+          "label": "استخدامات حقيقية",
+          "key": "usecases",
+          "html": "<h2><span class=\"dot\"></span> استخدامات حقيقية في حياتنا</h2>\n<ul class=\"usecase-list\">\n<li>🏥 <strong>الطب:</strong> تحليل الأشعة السينية للكشف المبكر عن الأورام</li>\n<li>🚗 <strong>القيادة الذاتية:</strong> تحليل الطريق واتخاذ قرارات لحظية</li>\n<li>💰 <strong>البنوك:</strong> كشف عمليات الاحتيال في المعاملات المالية</li>\n<li>🛍️ <strong>التجارة الإلكترونية:</strong> اقتراح منتجات مناسبة لكل عميل</li>\n<li>🌾 <strong>الزراعة:</strong> تحليل صور الأقمار الصناعية لتحديد صحة المحاصيل</li>\n<li>🎓 <strong>التعليم:</strong> منصات تعلم تتكيف مع مستوى كل طالب</li>\n</ul>"
+        },
+        {
+          "id": "lesson-what-is-ai-practices",
+          "label": "أفضل الممارسات",
+          "key": "practices",
+          "html": "<h2><span class=\"dot\"></span> أفضل الممارسات للمبتدئين</h2>\n<div class=\"callout tip\"><strong>نصيحة 1:</strong> ابدأ باستخدام أدوات جاهزة زي ChatGPT أو Claude قبل ما تتعمق في الجانب التقني — التجربة العملية بتسرّع فهمك.</div>\n<div class=\"callout tip\"><strong>نصيحة 2:</strong> تعامل مع الذكاء الاصطناعي كـ\"مساعد\" مش كمصدر معلومة نهائي — دايمًا راجع المعلومات المهمة.</div>\n<div class=\"callout pro\"><strong>Pro Tip:</strong> افهم الفرق بين الأدوات \"التوليدية\" (زي ChatGPT وMidjourney) والأدوات \"التحليلية\" (زي أنظمة التوصية) — هيساعدك تختار الأداة المناسبة لمشكلتك.</div>"
+        },
+        {
+          "id": "lesson-what-is-ai-mistakes",
+          "label": "أخطاء شائعة",
+          "key": "mistakes",
+          "html": "<h2><span class=\"dot\"></span> أخطاء شائعة لازم تتجنبها</h2>\n<div class=\"callout mistake\"><strong>خطأ 1:</strong> الاعتقاد إن الذكاء الاصطناعي \"بيفهم\" زي الإنسان — في الواقع هو بيتنبأ بأنماط إحصائية.</div>\n<div class=\"callout mistake\"><strong>خطأ 2:</strong> الثقة الكاملة في أي إجابة من غير مراجعة، خصوصًا في المواضيع الطبية أو القانونية أو المالية.</div>\n<div class=\"callout mistake\"><strong>خطأ 3:</strong> الخلط بين \"الذكاء الاصطناعي\" و\"الروبوتات\" — الروبوت هو جسم مادي، والذكاء الاصطناعي هو \"العقل\" اللي ممكن يتحط جوه الروبوت أو جوه برنامج عادي.</div>"
+        },
+        {
+          "id": "lesson-what-is-ai-summary",
+          "label": "الملخص",
+          "key": "summary",
+          "html": "<h2><span class=\"dot\"></span> الملخص وأهم النقاط</h2>\n<div class=\"cheat-box\">\n<ul>\n<li>الذكاء الاصطناعي هو مجال بيخلي الآلة تتصرف بذكاء شبيه بالإنسان.</li>\n<li>تعلم الآلة والتعلم العميق والذكاء التوليدي كلها فروع متداخلة تحت مظلة الذكاء الاصطناعي.</li>\n<li>النماذج بتتعلم من البيانات في مرحلة التدريب، وبعدين بتستخدم اللي اتعلمته في مرحلة الاستخدام.</li>\n<li>الذكاء الاصطناعي بيتنبأ بأنماط، مش \"بيفهم\" بالمعنى البشري، فلازم تراجع مخرجاته دايمًا.</li>\n</ul>\n</div>"
+        },
+        {
+          "id": "lesson-what-is-ai-quiz",
+          "label": "اختبار الدرس",
+          "key": "quiz",
+          "html": "<div class=\"quiz-box\">\n<div class=\"quiz-q\">\n<p class=\"qtext\">1. الذكاء الاصطناعي بيتعلم بشكل أساسي من إيه؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>قواعد مكتوبة يدويًا فقط</label>\n<label data-correct=\"true\"><input name=\"q1\" type=\"radio\"/>البيانات والأمثلة</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>التخمين العشوائي</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">2. أي فرع من دول هو الأشمل؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>Deep Learning</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>Machine Learning</label>\n<label data-correct=\"true\"><input name=\"q2\" type=\"radio\"/>Artificial Intelligence</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">3. \"الهلوسة\" (Hallucination) في سياق الذكاء الاصطناعي تعني إيه؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q3\" type=\"radio\"/>النموذج بيقول معلومة غير صحيحة بثقة</label>\n<label data-correct=\"false\"><input name=\"q3\" type=\"radio\"/>النموذج بيتوقف عن العمل</label>\n<label data-correct=\"false\"><input name=\"q3\" type=\"radio\"/>النموذج بيطلب صورة</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">4. ChatGPT مثال على أي نوع؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"q4\" type=\"radio\"/>روبوت مادي</label>\n<label data-correct=\"true\"><input name=\"q4\" type=\"radio\"/>نموذج ذكاء اصطناعي توليدي</label>\n<label data-correct=\"false\"><input name=\"q4\" type=\"radio\"/>قاعدة بيانات فقط</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">5. مرحلة \"Inference\" تعني إيه؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"q5\" type=\"radio\"/>مرحلة جمع البيانات</label>\n<label data-correct=\"false\"><input name=\"q5\" type=\"radio\"/>مرحلة تدريب النموذج</label>\n<label data-correct=\"true\"><input name=\"q5\" type=\"radio\"/>مرحلة استخدام النموذج المدرَّب للرد على أسئلة جديدة</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">6. أي جملة صح؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"q6\" type=\"radio\"/>كل روبوت لازم يكون فيه ذكاء اصطناعي</label>\n<label data-correct=\"true\"><input name=\"q6\" type=\"radio\"/>الذكاء الاصطناعي ممكن يشتغل من غير جسم مادي (زي برنامج على الموبايل)</label>\n<label data-correct=\"false\"><input name=\"q6\" type=\"radio\"/>الذكاء الاصطناعي هو نفسه الروبوت</label>\n</div>\n</div>\n<p class=\"quiz-result\"></p>\n</div>"
+        },
+        {
+          "id": "lesson-what-is-ai-assignment",
+          "label": "تمرين عملي",
+          "key": "assignment",
+          "html": "<h2><span class=\"dot\"></span> تمرين عملي</h2>\n<div class=\"assignment-box\">\n<h3 style=\"margin-top:0;color:var(--gold);\">التمرين</h3>\n<p>افتح أي أداة ذكاء اصطناعي مجانية (زي ChatGPT أو Claude)، واسألها 3 أسئلة مختلفة:</p>\n<ol>\n<li>سؤال معلومة عامة (مثلاً: \"ايه هي عاصمة اليابان؟\")</li>\n<li>سؤال يحتاج إبداع (مثلاً: \"اكتبلي بيت شعر عن القمر\")</li>\n<li>سؤال شخصي رأي (مثلاً: \"ايه رأيك في العمل من المنزل؟\")</li>\n</ol>\n<p>بعد كده، اكتب ملاحظاتك: هل حسيت إن الإجابات مختلفة في الجودة؟ هل قدرت تلاحظ حدود قدرة النموذج في أي سؤال؟</p>\n</div>"
+        },
+        {
+          "id": "lesson-what-is-ai-cheatsheet",
+          "label": "ملخص للتحميل",
+          "key": "cheatsheet",
+          "html": "<h2><span class=\"dot\"></span> ملخص سريع للتحميل</h2>\n<div class=\"cheat-box\">\n<p style=\"color:var(--text);margin-bottom:14px;\">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p>\n<button class=\"btn btn-outline print-cheat-btn\">🖨️ تحميل / طباعة الملخص</button>\n</div>"
+        },
+        {
+          "id": "lesson-what-is-ai-faq",
+          "label": "الأسئلة الشائعة",
+          "key": "faq",
+          "html": "<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\">\n<summary>هل لازم أعرف برمجة عشان أفهم الذكاء الاصطناعي؟</summary>\n<p>لأ، مش شرط. تقدر تستخدم أدوات الذكاء الاصطناعي وتفهم مفاهيمه الأساسية من غير أي خلفية برمجية. البرمجة مهمة أكتر لو حابب تبني نماذج بنفسك.</p>\n</details>\n<details class=\"faq-item\">\n<summary>إيه الفرق بين AI و Automation؟</summary>\n<p>الأتمتة (Automation) بتنفذ خطوات ثابتة ومحددة مسبقًا. الذكاء الاصطناعي بياخد قرارات بناءً على تحليل بيانات، مش بس خطوات ثابتة.</p>\n</details>\n<details class=\"faq-item\">\n<summary>هل الذكاء الاصطناعي هيلغي وظائف؟</summary>\n<p>هيغيّر طبيعة كتير من الوظائف وهيلغي بعضها، لكنه كمان هيخلق وظائف جديدة. أهم حاجة إنك تتعلم تستخدمه كأداة تزيد من إنتاجيتك.</p>\n</details>"
+        }
+      ],
+      "nextLessonTitle": "ما هو الذكاء الاصطناعي التوليدي؟"
+    },
+    {
+      "id": "generative-ai",
+      "title": "ما هو الذكاء الاصطناعي التوليدي؟",
+      "slug": "generative-ai",
+      "description": "الشرح المبسط الذكاء الاصطناعي التوليدي (Generative AI) هو النوع من الذكاء الاصطناعي اللي بدل ما \"يصنّف\" أو \"يتنبأ\" بس، بيقدر \"ينتج\" حاجة جديدة من الصفر: نص، صورة، فيديو، صوت، أو حتى كود برمجي.",
+      "level": "مبتدئ",
+      "category": "ai-fundamentals",
+      "duration": null,
+      "order": 2,
+      "status": "published",
+      "content": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>الذكاء الاصطناعي التوليدي (Generative AI) هو النوع من الذكاء الاصطناعي اللي بدل ما \"يصنّف\" أو \"يتنبأ\" بس، بيقدر \"ينتج\" حاجة جديدة من الصفر: نص، صورة، فيديو، صوت، أو حتى كود برمجي.</p>\n<p>يعني بدل ما تقوله \"هل الصورة دي قطة ولا كلب؟\" (تصنيف)، تقوله \"ارسملي قطة بتلعب في حديقة\" وهو يرسملك صورة جديدة بالكامل لم تكن موجودة من قبل.</p>\n<div class=\"illustration\">\n<div class=\"glyph\">✨</div>\n        الفرق: الذكاء الاصطناعي التقليدي بيحلل ويصنّف، والذكاء الاصطناعي التوليدي \"بيبتكر\" محتوى جديد\n      </div>\n<h2><span class=\"dot\"></span> الشرح الاحترافي</h2>\n<p>النماذج التوليدية بتتعلم \"التوزيع الاحتمالي\" لبيانات ضخمة (نصوص، صور...) أثناء التدريب، وبعدين بتستخدم المعرفة دي عشان \"تعيّن\" أو \"تولّد\" عينات جديدة تشبه إحصائيًا البيانات اللي اتدربت عليها.</p>\n<p>أشهر المعماريات المستخدمة في هذا المجال:</p>\n<table class=\"compare\">\n<tr><th>النوع</th><th>الاستخدام الأساسي</th></tr>\n<tr><td>Transformers (زي GPT)</td><td>توليد النصوص والحوار والكود</td></tr>\n<tr><td>Diffusion Models</td><td>توليد الصور (زي Midjourney، DALL·E)</td></tr>\n<tr><td>GANs</td><td>توليد صور واقعية عن طريق تنافس شبكتين عصبيتين</td></tr>\n</table>\n<h2><span class=\"dot\"></span> خطوات فهم الموضوع</h2>\n<h3>الخطوة 1: النموذج بيتدرب على كمية ضخمة من الأمثلة</h3>\n<p>مثلاً نموذج توليد النصوص بيتدرب على مليارات الصفحات من الإنترنت والكتب.</p>\n<h3>الخطوة 2: النموذج بيتعلم \"الأنماط\" مش \"يحفظ\" المحتوى</h3>\n<p>النموذج مش بيخزن نسخة من كل جملة قراها، هو بيتعلم احتمالية إن كلمة معينة تيجي بعد كلمة تانية في سياق معين.</p>\n<h3>الخطوة 3: وقت التوليد، النموذج بيبني المحتوى تدريجيًا</h3>\n<p>في النصوص، بيتولد كلمة بكلمة (أو \"توكن\" بتوكن). في الصور، بيبدأ من \"ضوضاء عشوائية\" وبيقلل الضوضاء دي تدريجيًا لحد ما تظهر صورة واضحة (في حالة Diffusion Models).</p>",
+      "examples": "<h2><span class=\"dot\"></span> أمثلة عملية</h2>\n<p><strong>توليد نص:</strong> اطلب من ChatGPT \"اكتبلي بوست لينكدإن عن أهمية التعلم المستمر\" — هيولّد نص جديد كل مرة، حتى لو سألته نفس السؤال.</p>\n<p><strong>توليد صورة:</strong> اطلب من Midjourney \"شعار مطعم إيطالي بأسلوب مينيمال\" — هيولّد 4 صور جديدة تمامًا، مفيش صورة منهم كانت موجودة قبل كده.</p>\n<h2><span class=\"dot\"></span> استخدامات حقيقية</h2>\n<ul class=\"usecase-list\">\n<li>📝 كتابة محتوى تسويقي ومقالات</li>\n<li>🎨 تصميم شعارات وصور إعلانية</li>\n<li>💻 كتابة وتصحيح الأكواد البرمجية</li>\n<li>🎙️ توليد أصوات طبيعية (Text-to-Speech)</li>\n<li>🎬 توليد مقاطع فيديو قصيرة من نص</li>\n<li>🌐 ترجمة وتلخيص المستندات</li>\n</ul>",
+      "tips": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout tip\"><strong>نصيحة:</strong> كل ما وصفت اللي عايزه بتفاصيل أكتر (السياق، الأسلوب، الجمهور المستهدف)، كل ما النتيجة اللي بتطلع كانت أدق وأقرب لتوقعك.</div>\n<div class=\"callout pro\"><strong>Pro Tip:</strong> جرّب نفس الطلب أكتر من مرة — النماذج التوليدية عندها عنصر عشوائية، فممكن تطلع نتائج مختلفة كل مرة وتختار أحسنها.</div>\n<h2><span class=\"dot\"></span> أخطاء شائعة</h2>\n<div class=\"callout mistake\"><strong>خطأ:</strong> استخدام المحتوى المولّد زي ما هو من غير مراجعة أو تعديل، خصوصًا في محتوى للنشر الرسمي.</div>\n<div class=\"callout mistake\"><strong>خطأ:</strong> الاعتقاد إن الصور أو النصوص المولّدة \"حقيقية\" 100% — ممكن تحتوي تفاصيل غير دقيقة (زي عدد أصابع غلط في الصور مثلاً).</div>",
+      "exercise": "<h2><span class=\"dot\"></span> تمرين عملي</h2>\n<div class=\"assignment-box\">\n<h3 style=\"margin-top:0;color:var(--gold);\">التمرين</h3>\n<p>استخدم أي أداة توليد نص (ChatGPT مثلاً) واطلب نفس الطلب 3 مرات متتالية: \"اكتبلي عنوان جذاب لمقال عن فوائد القراءة\". لاحظ الفروق بين النتائج التلاتة، واختار أفضل عنوان وقولي ليه اخترته.</p>\n</div>",
+      "quiz": {
+        "questions": [
+          {
+            "question": "1. الذكاء الاصطناعي التوليدي بيختلف عن التقليدي في إيه؟",
+            "options": [
+              {
+                "text": "بيولّد محتوى جديد بدل ما يكتفي بالتصنيف",
+                "correct": true
+              },
+              {
+                "text": "بيشتغل بدون بيانات",
+                "correct": false
+              },
+              {
+                "text": "مفيش فرق",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "question": "2. Diffusion Models بتُستخدم غالبًا في توليد إيه؟",
+            "options": [
+              {
+                "text": "النصوص فقط",
+                "correct": false
+              },
+              {
+                "text": "الصور",
+                "correct": true
+              },
+              {
+                "text": "قواعد البيانات",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "question": "3. توليد النص بيتم بطريقة إيه؟",
+            "options": [
+              {
+                "text": "توكن (كلمة/جزء كلمة) بعد التاني بناءً على احتمالية",
+                "correct": true
+              },
+              {
+                "text": "نسخ جملة كاملة محفوظة",
+                "correct": false
+              },
+              {
+                "text": "ترجمة حرفية",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "question": "4. ليه ممكن نفس البرومبت يطلع نتيجة مختلفة كل مرة؟",
+            "options": [
+              {
+                "text": "في عنصر عشوائية في عملية التوليد",
+                "correct": true
+              },
+              {
+                "text": "النموذج بيتعطل",
+                "correct": false
+              },
+              {
+                "text": "في خطأ في الإنترنت",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "question": "5. أي مثال ده على استخدام توليدي؟",
+            "options": [
+              {
+                "text": "فلترة الإيميلات المزعجة (Spam)",
+                "correct": false
+              },
+              {
+                "text": "كتابة مقال جديد بالكامل من عنوان",
+                "correct": true
+              },
+              {
+                "text": "التعرف على الوجه في صورة أمنية",
+                "correct": false
+              }
+            ]
+          }
+        ],
+        "html": "<div class=\"quiz-box\">\n<div class=\"quiz-q\">\n<p class=\"qtext\">1. الذكاء الاصطناعي التوليدي بيختلف عن التقليدي في إيه؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"g1\" type=\"radio\"/>بيولّد محتوى جديد بدل ما يكتفي بالتصنيف</label>\n<label data-correct=\"false\"><input name=\"g1\" type=\"radio\"/>بيشتغل بدون بيانات</label>\n<label data-correct=\"false\"><input name=\"g1\" type=\"radio\"/>مفيش فرق</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">2. Diffusion Models بتُستخدم غالبًا في توليد إيه؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"g2\" type=\"radio\"/>النصوص فقط</label>\n<label data-correct=\"true\"><input name=\"g2\" type=\"radio\"/>الصور</label>\n<label data-correct=\"false\"><input name=\"g2\" type=\"radio\"/>قواعد البيانات</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">3. توليد النص بيتم بطريقة إيه؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"g3\" type=\"radio\"/>توكن (كلمة/جزء كلمة) بعد التاني بناءً على احتمالية</label>\n<label data-correct=\"false\"><input name=\"g3\" type=\"radio\"/>نسخ جملة كاملة محفوظة</label>\n<label data-correct=\"false\"><input name=\"g3\" type=\"radio\"/>ترجمة حرفية</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">4. ليه ممكن نفس البرومبت يطلع نتيجة مختلفة كل مرة؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"g4\" type=\"radio\"/>في عنصر عشوائية في عملية التوليد</label>\n<label data-correct=\"false\"><input name=\"g4\" type=\"radio\"/>النموذج بيتعطل</label>\n<label data-correct=\"false\"><input name=\"g4\" type=\"radio\"/>في خطأ في الإنترنت</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">5. أي مثال ده على استخدام توليدي؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"g5\" type=\"radio\"/>فلترة الإيميلات المزعجة (Spam)</label>\n<label data-correct=\"true\"><input name=\"g5\" type=\"radio\"/>كتابة مقال جديد بالكامل من عنوان</label>\n<label data-correct=\"false\"><input name=\"g5\" type=\"radio\"/>التعرف على الوجه في صورة أمنية</label>\n</div>\n</div>\n<p class=\"quiz-result\"></p>\n</div>"
+      },
+      "resources": "<h2><span class=\"dot\"></span> ملخص سريع للتحميل</h2>\n<div class=\"cheat-box\">\n<button class=\"btn btn-outline print-cheat-btn\">🖨️ تحميل / طباعة الملخص</button>\n</div>\n<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\">\n<summary>هل المحتوى المولّد له حقوق ملكية؟</summary>\n<p>الموضوع لسه بيتطور قانونيًا ومختلف من دولة لدولة ومن أداة لأداة، فراجع شروط الاستخدام الخاصة بكل أداة قبل الاستخدام التجاري.</p>\n</details>\n<details class=\"faq-item\">\n<summary>هل ChatGPT وMidjourney نفس النوع من النماذج؟</summary>\n<p>لأ، ChatGPT مبني على معمارية Transformer لتوليد النصوص، وMidjourney مبني على Diffusion Models لتوليد الصور — كل واحد متخصص في نوع مختلف من المحتوى.</p>\n</details>",
+      "prerequisites": [
+        "what-is-ai"
+      ],
+      "nextLesson": "history-of-ai",
+      "summary": "<h2><span class=\"dot\"></span> الملخص</h2>\n<div class=\"cheat-box\">\n<ul>\n<li>الذكاء الاصطناعي التوليدي بيبتكر محتوى جديد، مش بس بيصنّف أو يتنبأ.</li>\n<li>بيتعلم أنماط احتمالية من بيانات ضخمة أثناء التدريب.</li>\n<li>التوليد بيحصل تدريجيًا: كلمة بكلمة في النصوص، وتقليل ضوضاء في الصور.</li>\n<li>لازم تراجع أي محتوى مولّد قبل النشر أو الاستخدام الرسمي.</li>\n</ul>\n</div>",
+      "sections": [
+        {
+          "id": "lesson-generative-ai-beginner",
+          "label": "الشرح المبسط",
+          "key": "beginner",
+          "html": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>الذكاء الاصطناعي التوليدي (Generative AI) هو النوع من الذكاء الاصطناعي اللي بدل ما \"يصنّف\" أو \"يتنبأ\" بس، بيقدر \"ينتج\" حاجة جديدة من الصفر: نص، صورة، فيديو، صوت، أو حتى كود برمجي.</p>\n<p>يعني بدل ما تقوله \"هل الصورة دي قطة ولا كلب؟\" (تصنيف)، تقوله \"ارسملي قطة بتلعب في حديقة\" وهو يرسملك صورة جديدة بالكامل لم تكن موجودة من قبل.</p>\n<div class=\"illustration\">\n<div class=\"glyph\">✨</div>\n        الفرق: الذكاء الاصطناعي التقليدي بيحلل ويصنّف، والذكاء الاصطناعي التوليدي \"بيبتكر\" محتوى جديد\n      </div>"
+        },
+        {
+          "id": "lesson-generative-ai-professional",
+          "label": "الشرح الاحترافي",
+          "key": "professional",
+          "html": "<h2><span class=\"dot\"></span> الشرح الاحترافي</h2>\n<p>النماذج التوليدية بتتعلم \"التوزيع الاحتمالي\" لبيانات ضخمة (نصوص، صور...) أثناء التدريب، وبعدين بتستخدم المعرفة دي عشان \"تعيّن\" أو \"تولّد\" عينات جديدة تشبه إحصائيًا البيانات اللي اتدربت عليها.</p>\n<p>أشهر المعماريات المستخدمة في هذا المجال:</p>\n<table class=\"compare\">\n<tr><th>النوع</th><th>الاستخدام الأساسي</th></tr>\n<tr><td>Transformers (زي GPT)</td><td>توليد النصوص والحوار والكود</td></tr>\n<tr><td>Diffusion Models</td><td>توليد الصور (زي Midjourney، DALL·E)</td></tr>\n<tr><td>GANs</td><td>توليد صور واقعية عن طريق تنافس شبكتين عصبيتين</td></tr>\n</table>"
+        },
+        {
+          "id": "lesson-generative-ai-steps",
+          "label": "خطوات الفهم",
+          "key": "steps",
+          "html": "<h2><span class=\"dot\"></span> خطوات فهم الموضوع</h2>\n<h3>الخطوة 1: النموذج بيتدرب على كمية ضخمة من الأمثلة</h3>\n<p>مثلاً نموذج توليد النصوص بيتدرب على مليارات الصفحات من الإنترنت والكتب.</p>\n<h3>الخطوة 2: النموذج بيتعلم \"الأنماط\" مش \"يحفظ\" المحتوى</h3>\n<p>النموذج مش بيخزن نسخة من كل جملة قراها، هو بيتعلم احتمالية إن كلمة معينة تيجي بعد كلمة تانية في سياق معين.</p>\n<h3>الخطوة 3: وقت التوليد، النموذج بيبني المحتوى تدريجيًا</h3>\n<p>في النصوص، بيتولد كلمة بكلمة (أو \"توكن\" بتوكن). في الصور، بيبدأ من \"ضوضاء عشوائية\" وبيقلل الضوضاء دي تدريجيًا لحد ما تظهر صورة واضحة (في حالة Diffusion Models).</p>"
+        },
+        {
+          "id": "lesson-generative-ai-examples",
+          "label": "أمثلة عملية",
+          "key": "examples",
+          "html": "<h2><span class=\"dot\"></span> أمثلة عملية</h2>\n<p><strong>توليد نص:</strong> اطلب من ChatGPT \"اكتبلي بوست لينكدإن عن أهمية التعلم المستمر\" — هيولّد نص جديد كل مرة، حتى لو سألته نفس السؤال.</p>\n<p><strong>توليد صورة:</strong> اطلب من Midjourney \"شعار مطعم إيطالي بأسلوب مينيمال\" — هيولّد 4 صور جديدة تمامًا، مفيش صورة منهم كانت موجودة قبل كده.</p>"
+        },
+        {
+          "id": "lesson-generative-ai-usecases",
+          "label": "استخدامات حقيقية",
+          "key": "usecases",
+          "html": "<h2><span class=\"dot\"></span> استخدامات حقيقية</h2>\n<ul class=\"usecase-list\">\n<li>📝 كتابة محتوى تسويقي ومقالات</li>\n<li>🎨 تصميم شعارات وصور إعلانية</li>\n<li>💻 كتابة وتصحيح الأكواد البرمجية</li>\n<li>🎙️ توليد أصوات طبيعية (Text-to-Speech)</li>\n<li>🎬 توليد مقاطع فيديو قصيرة من نص</li>\n<li>🌐 ترجمة وتلخيص المستندات</li>\n</ul>"
+        },
+        {
+          "id": "lesson-generative-ai-practices",
+          "label": "أفضل الممارسات",
+          "key": "practices",
+          "html": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout tip\"><strong>نصيحة:</strong> كل ما وصفت اللي عايزه بتفاصيل أكتر (السياق، الأسلوب، الجمهور المستهدف)، كل ما النتيجة اللي بتطلع كانت أدق وأقرب لتوقعك.</div>\n<div class=\"callout pro\"><strong>Pro Tip:</strong> جرّب نفس الطلب أكتر من مرة — النماذج التوليدية عندها عنصر عشوائية، فممكن تطلع نتائج مختلفة كل مرة وتختار أحسنها.</div>"
+        },
+        {
+          "id": "lesson-generative-ai-mistakes",
+          "label": "أخطاء شائعة",
+          "key": "mistakes",
+          "html": "<h2><span class=\"dot\"></span> أخطاء شائعة</h2>\n<div class=\"callout mistake\"><strong>خطأ:</strong> استخدام المحتوى المولّد زي ما هو من غير مراجعة أو تعديل، خصوصًا في محتوى للنشر الرسمي.</div>\n<div class=\"callout mistake\"><strong>خطأ:</strong> الاعتقاد إن الصور أو النصوص المولّدة \"حقيقية\" 100% — ممكن تحتوي تفاصيل غير دقيقة (زي عدد أصابع غلط في الصور مثلاً).</div>"
+        },
+        {
+          "id": "lesson-generative-ai-summary",
+          "label": "الملخص",
+          "key": "summary",
+          "html": "<h2><span class=\"dot\"></span> الملخص</h2>\n<div class=\"cheat-box\">\n<ul>\n<li>الذكاء الاصطناعي التوليدي بيبتكر محتوى جديد، مش بس بيصنّف أو يتنبأ.</li>\n<li>بيتعلم أنماط احتمالية من بيانات ضخمة أثناء التدريب.</li>\n<li>التوليد بيحصل تدريجيًا: كلمة بكلمة في النصوص، وتقليل ضوضاء في الصور.</li>\n<li>لازم تراجع أي محتوى مولّد قبل النشر أو الاستخدام الرسمي.</li>\n</ul>\n</div>"
+        },
+        {
+          "id": "lesson-generative-ai-quiz",
+          "label": "اختبار الدرس",
+          "key": "quiz",
+          "html": "<div class=\"quiz-box\">\n<div class=\"quiz-q\">\n<p class=\"qtext\">1. الذكاء الاصطناعي التوليدي بيختلف عن التقليدي في إيه؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"g1\" type=\"radio\"/>بيولّد محتوى جديد بدل ما يكتفي بالتصنيف</label>\n<label data-correct=\"false\"><input name=\"g1\" type=\"radio\"/>بيشتغل بدون بيانات</label>\n<label data-correct=\"false\"><input name=\"g1\" type=\"radio\"/>مفيش فرق</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">2. Diffusion Models بتُستخدم غالبًا في توليد إيه؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"g2\" type=\"radio\"/>النصوص فقط</label>\n<label data-correct=\"true\"><input name=\"g2\" type=\"radio\"/>الصور</label>\n<label data-correct=\"false\"><input name=\"g2\" type=\"radio\"/>قواعد البيانات</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">3. توليد النص بيتم بطريقة إيه؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"g3\" type=\"radio\"/>توكن (كلمة/جزء كلمة) بعد التاني بناءً على احتمالية</label>\n<label data-correct=\"false\"><input name=\"g3\" type=\"radio\"/>نسخ جملة كاملة محفوظة</label>\n<label data-correct=\"false\"><input name=\"g3\" type=\"radio\"/>ترجمة حرفية</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">4. ليه ممكن نفس البرومبت يطلع نتيجة مختلفة كل مرة؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"g4\" type=\"radio\"/>في عنصر عشوائية في عملية التوليد</label>\n<label data-correct=\"false\"><input name=\"g4\" type=\"radio\"/>النموذج بيتعطل</label>\n<label data-correct=\"false\"><input name=\"g4\" type=\"radio\"/>في خطأ في الإنترنت</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">5. أي مثال ده على استخدام توليدي؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"g5\" type=\"radio\"/>فلترة الإيميلات المزعجة (Spam)</label>\n<label data-correct=\"true\"><input name=\"g5\" type=\"radio\"/>كتابة مقال جديد بالكامل من عنوان</label>\n<label data-correct=\"false\"><input name=\"g5\" type=\"radio\"/>التعرف على الوجه في صورة أمنية</label>\n</div>\n</div>\n<p class=\"quiz-result\"></p>\n</div>"
+        },
+        {
+          "id": "lesson-generative-ai-assignment",
+          "label": "تمرين عملي",
+          "key": "assignment",
+          "html": "<h2><span class=\"dot\"></span> تمرين عملي</h2>\n<div class=\"assignment-box\">\n<h3 style=\"margin-top:0;color:var(--gold);\">التمرين</h3>\n<p>استخدم أي أداة توليد نص (ChatGPT مثلاً) واطلب نفس الطلب 3 مرات متتالية: \"اكتبلي عنوان جذاب لمقال عن فوائد القراءة\". لاحظ الفروق بين النتائج التلاتة، واختار أفضل عنوان وقولي ليه اخترته.</p>\n</div>"
+        },
+        {
+          "id": "lesson-generative-ai-cheatsheet",
+          "label": "ملخص للتحميل",
+          "key": "cheatsheet",
+          "html": "<h2><span class=\"dot\"></span> ملخص سريع للتحميل</h2>\n<div class=\"cheat-box\">\n<button class=\"btn btn-outline print-cheat-btn\">🖨️ تحميل / طباعة الملخص</button>\n</div>"
+        },
+        {
+          "id": "lesson-generative-ai-faq",
+          "label": "الأسئلة الشائعة",
+          "key": "faq",
+          "html": "<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\">\n<summary>هل المحتوى المولّد له حقوق ملكية؟</summary>\n<p>الموضوع لسه بيتطور قانونيًا ومختلف من دولة لدولة ومن أداة لأداة، فراجع شروط الاستخدام الخاصة بكل أداة قبل الاستخدام التجاري.</p>\n</details>\n<details class=\"faq-item\">\n<summary>هل ChatGPT وMidjourney نفس النوع من النماذج؟</summary>\n<p>لأ، ChatGPT مبني على معمارية Transformer لتوليد النصوص، وMidjourney مبني على Diffusion Models لتوليد الصور — كل واحد متخصص في نوع مختلف من المحتوى.</p>\n</details>"
+        }
+      ],
+      "nextLessonTitle": "تاريخ الذكاء الاصطناعي"
+    },
+    {
+      "id": "ai-fundamentals-lesson-3",
+      "title": "تاريخ الذكاء الاصطناعي",
+      "slug": "history-of-ai",
+      "description": null,
+      "level": "مبتدئ",
+      "category": "ai-fundamentals",
+      "duration": null,
+      "order": 3,
+      "status": "published",
+      "content": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>الذكاء الاصطناعي مش اختراع السنين الأخيرة — الفكرة عمرها أكتر من 70 سنة. الناس كانت بتحلم من زمان إن الكمبيوتر يقدر \"يفكر\"، بس الإمكانيات التقنية مكنتش موجودة. القصة مرت بمراحل صعود وهبوط قبل ما توصل لـ ChatGPT اللي إنت شايفه دلوقتي.</p>\n<div class=\"illustration\"><div class=\"glyph\">🕰️</div>مسار الذكاء الاصطناعي مش خط مستقيم صاعد — فيه فترات حماس كبير وفترات \"شتاء\" اتوقف فيها التمويل والأبحاث تقريبًا.</div>\n<h2><span class=\"dot\"></span> الشرح الاحترافي</h2>\n<h3>البداية (1950s)</h3>\n<p>سنة 1950 آلان تورينج نشر سؤال بسيط غيّر كل حاجة: \"هل الآلة تقدر تفكر؟\" واقترح اختبار تورينج الشهير. سنة 1956 مصطلح \"Artificial Intelligence\" اتقال رسميًا لأول مرة في مؤتمر Dartmouth.</p>\n<h3>شتاءات الذكاء الاصطناعي (AI Winters)</h3>\n<p>في السبعينات والتمانينات، الوعود الكبيرة اللي اتقالت مكنتش قدرت تتحقق بالإمكانيات التقنية وقتها (قوة معالجة ضعيفة، بيانات قليلة)، فالتمويل اتقطع مرتين — الفترتين دول بيتسموا \"شتاء الذكاء الاصطناعي\".</p>\n<h3>عودة الظهور (2012 فصاعدًا)</h3>\n<p>سنة 2012 نموذج AlexNet حقق نتيجة مذهلة في مسابقة تصنيف صور، وده أثبت إن الشبكات العصبية العميقة (Deep Learning) شغالة فعلاً لو معاها بيانات وقوة معالجة كفاية (GPUs). من هنا بدأ التسارع اللي وصلنا بيه لـ ChatGPT سنة 2022.</p>\n<h2><span class=\"dot\"></span> خطوات الفهم</h2>\n<table class=\"compare\">\n<tr><th>الفترة</th><th>اللي حصل</th></tr>\n<tr><td>1950-1956</td><td>الأفكار النظرية الأولى + ميلاد المصطلح</td></tr>\n<tr><td>1970s-1980s</td><td>شتاء الذكاء الاصطناعي الأول</td></tr>\n<tr><td>1990s</td><td>Deep Blue بيهزم بطل شطرنج عالمي</td></tr>\n<tr><td>2012</td><td>ثورة Deep Learning تبدأ فعليًا</td></tr>\n<tr><td>2022</td><td>ChatGPT يوصل لعامة الناس</td></tr>\n</table>",
+      "examples": "<h2><span class=\"dot\"></span> أمثلة عملية</h2>\n<p>سنة 1997، Deep Blue (كمبيوتر IBM) هزم بطل العالم في الشطرنج جاري كاسباروف — كانت أول مرة آلة تهزم إنسان في لعبة استراتيجية معقدة على أعلى مستوى، وده لفت نظر العالم كله للمجال.</p>\n<h2><span class=\"dot\"></span> استخدامات حقيقية</h2>\n<ul class=\"usecase-list\">\n<li>فهم ليه ChatGPT ظهر فجأة \"بقوة\" سنة 2022 مش قبلها بكتير</li>\n<li>تقييم إذا كانت \"الموجة\" الحالية هتكمل ولا هتبقى شتاء تالت</li>\n<li>فهم إزاي التمويل والاستثمار في AI بيتأثر بدورات الحماس والإحباط دي</li>\n</ul>",
+      "tips": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout pro\"><strong>نصيحة محترف:</strong> لما تقرا خبر \"ثورة AI جديدة\"، اسأل نفسك: ده تطور تقني حقيقي (زي AlexNet) ولا مجرد ضجة تسويقية؟ التاريخ بيعلّمنا إن الاتنين بيحصلوا.</div>\n<h2><span class=\"dot\"></span> أخطاء شائعة</h2>\n<div class=\"callout mistake\"><strong>خطأ شائع:</strong> اعتقاد إن الذكاء الاصطناعي \"حاجة جديدة اخترعوها فجأة\". الحقيقة إنه مجال بحثي عمره عقود، واللي جديد هو التطبيقات اللي وصلت لإيدينا، مش الفكرة نفسها.</div>",
+      "exercise": "<h2><span class=\"dot\"></span> تمرين عملي</h2>\n<div class=\"assignment-box\"><p>دوّر بنفسك على حدث واحد من تاريخ الذكاء الاصطناعي (غير اللي ذكرناه في الدرس) واكتب في 3 أسطر: إيه اللي حصل، وليه كان مهم.</p></div>",
+      "quiz": {
+        "questions": [
+          {
+            "question": "مصطلح Artificial Intelligence اتقال رسميًا لأول مرة سنة كام؟",
+            "options": [
+              {
+                "text": "1956",
+                "correct": true
+              },
+              {
+                "text": "1997",
+                "correct": false
+              },
+              {
+                "text": "2012",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "question": "إيه اللي فعّل موجة الذكاء الاصطناعي الحالية؟",
+            "options": [
+              {
+                "text": "Deep Learning من 2012 فصاعدًا",
+                "correct": true
+              },
+              {
+                "text": "اختراع الإنترنت",
+                "correct": false
+              },
+              {
+                "text": "اختبار تورينج",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "question": "Deep Blue اتشهر بإيه؟",
+            "options": [
+              {
+                "text": "هزيمة بطل عالمي في الشطرنج",
+                "correct": true
+              },
+              {
+                "text": "توليد صور",
+                "correct": false
+              },
+              {
+                "text": "الترجمة الآلية",
+                "correct": false
+              }
+            ]
+          }
+        ],
+        "html": "<h2><span class=\"dot\"></span> اختبار سريع</h2>\n<div class=\"quiz-box\">\n<div class=\"quiz-q\">\n<p class=\"qtext\">1. مصطلح Artificial Intelligence اتقال رسميًا لأول مرة سنة كام؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q1\" type=\"radio\"/>1956</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>1997</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>2012</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">2. إيه اللي فعّل موجة الذكاء الاصطناعي الحالية؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q2\" type=\"radio\"/>Deep Learning من 2012 فصاعدًا</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>اختراع الإنترنت</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>اختبار تورينج</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">3. Deep Blue اتشهر بإيه؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q3\" type=\"radio\"/>هزيمة بطل عالمي في الشطرنج</label>\n<label data-correct=\"false\"><input name=\"q3\" type=\"radio\"/>توليد صور</label>\n<label data-correct=\"false\"><input name=\"q3\" type=\"radio\"/>الترجمة الآلية</label>\n</div>\n</div>\n<p class=\"quiz-result\"></p>\n</div>"
+      },
+      "resources": "<h2><span class=\"dot\"></span> ملخص سريع للتحميل</h2>\n<div class=\"cheat-box\"><p style=\"color:var(--text);margin-bottom:14px;\">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p><button class=\"btn btn-outline print-cheat-btn\">🖨️ تحميل / طباعة الملخص</button></div>\n<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\"><summary>ليه سموه \"شتاء\"؟</summary><p>لأن التمويل والاهتمام بالمجال \"برد\" فجأة بعد فترة حماس، زي ما الطبيعة بتهدى في الشتاء.</p></details>\n<details class=\"faq-item\"><summary>هل ممكن يحصل شتاء تالت؟</summary><p>نظريًا آه، لو التطبيقات الحالية مقدرتش تحقق العائد الاقتصادي المتوقع منها. النقاش ده موجود فعليًا بين الباحثين.</p></details>",
+      "prerequisites": [
+        "generative-ai"
+      ],
+      "nextLesson": "machine-learning-basics",
+      "summary": "<h2><span class=\"dot\"></span> الملخص</h2>\n<ul>\n<li>الذكاء الاصطناعي كمصطلح عمره من 1956</li>\n<li>المجال مرّ بفترتين \"شتاء\" بسبب وعود ماتحققتش</li>\n<li>Deep Learning من 2012 هو اللي فعّل الموجة الحالية</li>\n<li>ChatGPT (2022) هو أول مرة المجال يوصل بشكل مباشر لعامة الناس</li>\n</ul>",
+      "nextLessonTitle": "أساسيات تعلم الآلة (Machine Learning)",
+      "sections": [
+        {
+          "key": "beginner",
+          "label": "الشرح المبسط",
+          "anchorId": "lesson-history-of-ai-beginner",
+          "html": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>الذكاء الاصطناعي مش اختراع السنين الأخيرة — الفكرة عمرها أكتر من 70 سنة. الناس كانت بتحلم من زمان إن الكمبيوتر يقدر \"يفكر\"، بس الإمكانيات التقنية مكنتش موجودة. القصة مرت بمراحل صعود وهبوط قبل ما توصل لـ ChatGPT اللي إنت شايفه دلوقتي.</p>\n<div class=\"illustration\"><div class=\"glyph\">🕰️</div>مسار الذكاء الاصطناعي مش خط مستقيم صاعد — فيه فترات حماس كبير وفترات \"شتاء\" اتوقف فيها التمويل والأبحاث تقريبًا.</div>"
+        },
+        {
+          "key": "professional",
+          "label": "الشرح الاحترافي",
+          "anchorId": "lesson-history-of-ai-professional",
+          "html": "<h2><span class=\"dot\"></span> الشرح الاحترافي</h2>\n<h3>البداية (1950s)</h3>\n<p>سنة 1950 آلان تورينج نشر سؤال بسيط غيّر كل حاجة: \"هل الآلة تقدر تفكر؟\" واقترح اختبار تورينج الشهير. سنة 1956 مصطلح \"Artificial Intelligence\" اتقال رسميًا لأول مرة في مؤتمر Dartmouth.</p>\n<h3>شتاءات الذكاء الاصطناعي (AI Winters)</h3>\n<p>في السبعينات والتمانينات، الوعود الكبيرة اللي اتقالت مكنتش قدرت تتحقق بالإمكانيات التقنية وقتها (قوة معالجة ضعيفة، بيانات قليلة)، فالتمويل اتقطع مرتين — الفترتين دول بيتسموا \"شتاء الذكاء الاصطناعي\".</p>\n<h3>عودة الظهور (2012 فصاعدًا)</h3>\n<p>سنة 2012 نموذج AlexNet حقق نتيجة مذهلة في مسابقة تصنيف صور، وده أثبت إن الشبكات العصبية العميقة (Deep Learning) شغالة فعلاً لو معاها بيانات وقوة معالجة كفاية (GPUs). من هنا بدأ التسارع اللي وصلنا بيه لـ ChatGPT سنة 2022.</p>"
+        },
+        {
+          "key": "steps",
+          "label": "خطوات الفهم",
+          "anchorId": "lesson-history-of-ai-steps",
+          "html": "<h2><span class=\"dot\"></span> خطوات الفهم</h2>\n<table class=\"compare\">\n<tr><th>الفترة</th><th>اللي حصل</th></tr>\n<tr><td>1950-1956</td><td>الأفكار النظرية الأولى + ميلاد المصطلح</td></tr>\n<tr><td>1970s-1980s</td><td>شتاء الذكاء الاصطناعي الأول</td></tr>\n<tr><td>1990s</td><td>Deep Blue بيهزم بطل شطرنج عالمي</td></tr>\n<tr><td>2012</td><td>ثورة Deep Learning تبدأ فعليًا</td></tr>\n<tr><td>2022</td><td>ChatGPT يوصل لعامة الناس</td></tr>\n</table>"
+        },
+        {
+          "key": "examples",
+          "label": "أمثلة عملية",
+          "anchorId": "lesson-history-of-ai-examples",
+          "html": "<h2><span class=\"dot\"></span> أمثلة عملية</h2>\n<p>سنة 1997، Deep Blue (كمبيوتر IBM) هزم بطل العالم في الشطرنج جاري كاسباروف — كانت أول مرة آلة تهزم إنسان في لعبة استراتيجية معقدة على أعلى مستوى، وده لفت نظر العالم كله للمجال.</p>"
+        },
+        {
+          "key": "usecases",
+          "label": "استخدامات حقيقية",
+          "anchorId": "lesson-history-of-ai-usecases",
+          "html": "<h2><span class=\"dot\"></span> استخدامات حقيقية</h2>\n<ul class=\"usecase-list\">\n<li>فهم ليه ChatGPT ظهر فجأة \"بقوة\" سنة 2022 مش قبلها بكتير</li>\n<li>تقييم إذا كانت \"الموجة\" الحالية هتكمل ولا هتبقى شتاء تالت</li>\n<li>فهم إزاي التمويل والاستثمار في AI بيتأثر بدورات الحماس والإحباط دي</li>\n</ul>"
+        },
+        {
+          "key": "practices",
+          "label": "أفضل الممارسات",
+          "anchorId": "lesson-history-of-ai-practices",
+          "html": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout pro\"><strong>نصيحة محترف:</strong> لما تقرا خبر \"ثورة AI جديدة\"، اسأل نفسك: ده تطور تقني حقيقي (زي AlexNet) ولا مجرد ضجة تسويقية؟ التاريخ بيعلّمنا إن الاتنين بيحصلوا.</div>"
+        },
+        {
+          "key": "mistakes",
+          "label": "أخطاء شائعة",
+          "anchorId": "lesson-history-of-ai-mistakes",
+          "html": "<h2><span class=\"dot\"></span> أخطاء شائعة</h2>\n<div class=\"callout mistake\"><strong>خطأ شائع:</strong> اعتقاد إن الذكاء الاصطناعي \"حاجة جديدة اخترعوها فجأة\". الحقيقة إنه مجال بحثي عمره عقود، واللي جديد هو التطبيقات اللي وصلت لإيدينا، مش الفكرة نفسها.</div>"
+        },
+        {
+          "key": "summary",
+          "label": "الملخص",
+          "anchorId": "lesson-history-of-ai-summary",
+          "html": "<h2><span class=\"dot\"></span> الملخص</h2>\n<ul>\n<li>الذكاء الاصطناعي كمصطلح عمره من 1956</li>\n<li>المجال مرّ بفترتين \"شتاء\" بسبب وعود ماتحققتش</li>\n<li>Deep Learning من 2012 هو اللي فعّل الموجة الحالية</li>\n<li>ChatGPT (2022) هو أول مرة المجال يوصل بشكل مباشر لعامة الناس</li>\n</ul>"
+        },
+        {
+          "key": "quiz",
+          "label": "اختبار الدرس",
+          "anchorId": "lesson-history-of-ai-quiz",
+          "html": "<h2><span class=\"dot\"></span> اختبار سريع</h2>\n<div class=\"quiz-box\">\n<div class=\"quiz-q\">\n<p class=\"qtext\">1. مصطلح Artificial Intelligence اتقال رسميًا لأول مرة سنة كام؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q1\" type=\"radio\"/>1956</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>1997</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>2012</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">2. إيه اللي فعّل موجة الذكاء الاصطناعي الحالية؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q2\" type=\"radio\"/>Deep Learning من 2012 فصاعدًا</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>اختراع الإنترنت</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>اختبار تورينج</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">3. Deep Blue اتشهر بإيه؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q3\" type=\"radio\"/>هزيمة بطل عالمي في الشطرنج</label>\n<label data-correct=\"false\"><input name=\"q3\" type=\"radio\"/>توليد صور</label>\n<label data-correct=\"false\"><input name=\"q3\" type=\"radio\"/>الترجمة الآلية</label>\n</div>\n</div>\n<p class=\"quiz-result\"></p>\n</div>"
+        },
+        {
+          "key": "assignment",
+          "label": "تمرين عملي",
+          "anchorId": "lesson-history-of-ai-assignment",
+          "html": "<h2><span class=\"dot\"></span> تمرين عملي</h2>\n<div class=\"assignment-box\"><p>دوّر بنفسك على حدث واحد من تاريخ الذكاء الاصطناعي (غير اللي ذكرناه في الدرس) واكتب في 3 أسطر: إيه اللي حصل، وليه كان مهم.</p></div>"
+        },
+        {
+          "key": "cheatsheet",
+          "label": "ملخص للتحميل",
+          "anchorId": "lesson-history-of-ai-cheatsheet",
+          "html": "<h2><span class=\"dot\"></span> ملخص سريع للتحميل</h2>\n<div class=\"cheat-box\"><p style=\"color:var(--text);margin-bottom:14px;\">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p><button class=\"btn btn-outline print-cheat-btn\">🖨️ تحميل / طباعة الملخص</button></div>"
+        },
+        {
+          "key": "faq",
+          "label": "الأسئلة الشائعة",
+          "anchorId": "lesson-history-of-ai-faq",
+          "html": "<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\"><summary>ليه سموه \"شتاء\"؟</summary><p>لأن التمويل والاهتمام بالمجال \"برد\" فجأة بعد فترة حماس، زي ما الطبيعة بتهدى في الشتاء.</p></details>\n<details class=\"faq-item\"><summary>هل ممكن يحصل شتاء تالت؟</summary><p>نظريًا آه، لو التطبيقات الحالية مقدرتش تحقق العائد الاقتصادي المتوقع منها. النقاش ده موجود فعليًا بين الباحثين.</p></details>"
+        }
+      ]
+    },
+    {
+      "id": "ai-fundamentals-lesson-4",
+      "title": "أساسيات تعلم الآلة (Machine Learning)",
+      "slug": "machine-learning-basics",
+      "description": null,
+      "level": "مبتدئ",
+      "category": "ai-fundamentals",
+      "duration": null,
+      "order": 4,
+      "status": "published",
+      "content": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>تعلم الآلة هو الطريقة اللي بيها الكمبيوتر \"يتعلم\" من أمثلة بدل ما حد يكتبله قواعد ثابتة. بدل ما تكتب كود يقول \"لو الإيميل فيه كلمة فلوس مجانية، يبقى سبام\"، بتدّي الكمبيوتر آلاف الإيميلات المصنّفة (سبام / مش سبام)، وهو بنفسه يكتشف الأنماط.</p>\n<div class=\"illustration\"><div class=\"glyph\">📈</div>فكّر فيه زي طفل بيتعلم يميّز القطط من الكلاب مش بحفظ تعريف، لكن بشوف مئات الصور لحد ما يكوّن إحساس بالفرق.</div>\n<h2><span class=\"dot\"></span> الشرح الاحترافي</h2>\n<p>تعلم الآلة (ML) هو فرع من الذكاء الاصطناعي بيعتمد على خوارزميات إحصائية تبني \"نموذج\" (Model) من بيانات تدريب (Training Data)، بدل برمجة صريحة لكل حالة. بيتقسم غالبًا لـ3 أنواع رئيسية:</p>\n<h3>Supervised Learning (تعلم موجَّه)</h3>\n<p>البيانات بتيجي معاها الإجابة الصح (Label). مثال: صور قطط وكلاب، كل صورة معنونة بنوعها.</p>\n<h3>Unsupervised Learning (تعلم غير موجَّه)</h3>\n<p>البيانات من غير إجابات جاهزة، والنموذج بيكتشف تجمعات (Clusters) أو أنماط بنفسه.</p>\n<h3>Reinforcement Learning (تعلم بالتعزيز)</h3>\n<p>النموذج بيتعلم بالتجربة والخطأ عن طريق مكافآت وعقوبات — ده اللي استُخدم مثلاً في تدريب نماذج تلعب ألعاب فيديو بمستوى احترافي.</p>\n<h2><span class=\"dot\"></span> خطوات الفهم</h2>\n<ol>\n<li>تجميع بيانات كافية ومناسبة للمشكلة</li>\n<li>تنظيف البيانات (Data Cleaning)</li>\n<li>اختيار خوارزمية مناسبة</li>\n<li>تدريب النموذج (Training)</li>\n<li>اختبار النموذج على بيانات مالوش شافها قبل كده (Testing)</li>\n<li>تحسين النموذج لو الأداء ضعيف</li>\n</ol>",
+      "examples": "<h2><span class=\"dot\"></span> أمثلة عملية</h2>\n<p>نظام فلترة السبام في الإيميل: النموذج اتدرّب على ملايين الإيميلات المصنّفة سبام/مش سبام، وبقى يقدر يتنبأ بإيميل جديد لسه ماشافوش قبل كده.</p>\n<h2><span class=\"dot\"></span> استخدامات حقيقية</h2>\n<ul class=\"usecase-list\">\n<li>توصيات نتفليكس وأمازون (إيه اللي هيعجبك بعد كده)</li>\n<li>كشف الاحتيال في عمليات البنوك</li>\n<li>التعرف على الوجوه في الموبايل</li>\n<li>التنبؤ بأسعار الأسهم أو الطقس</li>\n</ul>",
+      "tips": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout pro\"><strong>نصيحة محترف:</strong> جودة البيانات أهم من كمية الخوارزميات. نموذج بسيط ببيانات نضيفة غالبًا بيهزم نموذج معقد ببيانات وسخة.</div>\n<h2><span class=\"dot\"></span> أخطاء شائعة</h2>\n<div class=\"callout mistake\"><strong>خطأ شائع:</strong> اختبار النموذج على نفس البيانات اللي اتدرّب عليها — ده بيدّي نتيجة ممتازة وهمية (Overfitting) ومش بيعكس الأداء الحقيقي على بيانات جديدة.</div>",
+      "exercise": "<h2><span class=\"dot\"></span> تمرين عملي</h2>\n<div class=\"assignment-box\"><p>فكّر في تطبيق بتستخدمه يوميًا (نتفليكس، إنستجرام، جوجل مابس) وحدد: هو مستخدم Machine Learning في إيه بالظبط من وجهة نظرك؟</p></div>",
+      "quiz": {
+        "questions": [
+          {
+            "question": "إيه الفرق الأساسي بين تعلم الآلة والبرمجة التقليدية؟",
+            "options": [
+              {
+                "text": "النموذج بيتعلم من أمثلة بدل قواعد مكتوبة يدويًا",
+                "correct": true
+              },
+              {
+                "text": "تعلم الآلة أسرع في التنفيذ دايمًا",
+                "correct": false
+              },
+              {
+                "text": "مفيش فرق حقيقي",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "question": "Supervised Learning محتاج إيه أساسًا؟",
+            "options": [
+              {
+                "text": "بيانات معنونة بإجاباتها الصح",
+                "correct": true
+              },
+              {
+                "text": "مكافآت وعقوبات",
+                "correct": false
+              },
+              {
+                "text": "بيانات من غير أي تصنيف",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "question": "Overfitting بيحصل إزاي؟",
+            "options": [
+              {
+                "text": "لما تختبر النموذج على نفس بيانات التدريب",
+                "correct": true
+              },
+              {
+                "text": "لما البيانات كتير جدًا",
+                "correct": false
+              },
+              {
+                "text": "لما تستخدم خوارزمية بسيطة",
+                "correct": false
+              }
+            ]
+          }
+        ],
+        "html": "<h2><span class=\"dot\"></span> اختبار سريع</h2>\n<div class=\"quiz-box\">\n<div class=\"quiz-q\">\n<p class=\"qtext\">1. إيه الفرق الأساسي بين تعلم الآلة والبرمجة التقليدية؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q1\" type=\"radio\"/>النموذج بيتعلم من أمثلة بدل قواعد مكتوبة يدويًا</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>تعلم الآلة أسرع في التنفيذ دايمًا</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>مفيش فرق حقيقي</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">2. Supervised Learning محتاج إيه أساسًا؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q2\" type=\"radio\"/>بيانات معنونة بإجاباتها الصح</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>مكافآت وعقوبات</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>بيانات من غير أي تصنيف</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">3. Overfitting بيحصل إزاي؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q3\" type=\"radio\"/>لما تختبر النموذج على نفس بيانات التدريب</label>\n<label data-correct=\"false\"><input name=\"q3\" type=\"radio\"/>لما البيانات كتير جدًا</label>\n<label data-correct=\"false\"><input name=\"q3\" type=\"radio\"/>لما تستخدم خوارزمية بسيطة</label>\n</div>\n</div>\n<p class=\"quiz-result\"></p>\n</div>"
+      },
+      "resources": "<h2><span class=\"dot\"></span> ملخص سريع للتحميل</h2>\n<div class=\"cheat-box\"><p style=\"color:var(--text);margin-bottom:14px;\">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p><button class=\"btn btn-outline print-cheat-btn\">🖨️ تحميل / طباعة الملخص</button></div>\n<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\"><summary>هل لازم أعرف رياضيات عشان أفهم Machine Learning؟</summary><p>عشان تستخدمه كمستخدم أو تفهم مفاهيمه، لأ. عشان تبني نماذج بنفسك من الصفر، هتحتاج إحصاء وجبر خطي أساسي.</p></details>\n<details class=\"faq-item\"><summary>هل Machine Learning و Deep Learning نفس الحاجة؟</summary><p>لأ، Deep Learning فرع من Machine Learning بيستخدم شبكات عصبية بعدد طبقات كبير — هنشرحه بالتفصيل في الدرس الجاي.</p></details>",
+      "prerequisites": [
+        "history-of-ai"
+      ],
+      "nextLesson": "deep-learning-basics",
+      "summary": "<h2><span class=\"dot\"></span> الملخص</h2>\n<ul>\n<li>تعلم الآلة = تعلم من أمثلة بدل قواعد مكتوبة يدويًا</li>\n<li>3 أنواع رئيسية: Supervised، Unsupervised، Reinforcement</li>\n<li>جودة البيانات أهم عنصر في نجاح النموذج</li>\n</ul>",
+      "nextLessonTitle": "أساسيات التعلم العميق (Deep Learning)",
+      "sections": [
+        {
+          "key": "beginner",
+          "label": "الشرح المبسط",
+          "anchorId": "lesson-machine-learning-basics-beginner",
+          "html": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>تعلم الآلة هو الطريقة اللي بيها الكمبيوتر \"يتعلم\" من أمثلة بدل ما حد يكتبله قواعد ثابتة. بدل ما تكتب كود يقول \"لو الإيميل فيه كلمة فلوس مجانية، يبقى سبام\"، بتدّي الكمبيوتر آلاف الإيميلات المصنّفة (سبام / مش سبام)، وهو بنفسه يكتشف الأنماط.</p>\n<div class=\"illustration\"><div class=\"glyph\">📈</div>فكّر فيه زي طفل بيتعلم يميّز القطط من الكلاب مش بحفظ تعريف، لكن بشوف مئات الصور لحد ما يكوّن إحساس بالفرق.</div>"
+        },
+        {
+          "key": "professional",
+          "label": "الشرح الاحترافي",
+          "anchorId": "lesson-machine-learning-basics-professional",
+          "html": "<h2><span class=\"dot\"></span> الشرح الاحترافي</h2>\n<p>تعلم الآلة (ML) هو فرع من الذكاء الاصطناعي بيعتمد على خوارزميات إحصائية تبني \"نموذج\" (Model) من بيانات تدريب (Training Data)، بدل برمجة صريحة لكل حالة. بيتقسم غالبًا لـ3 أنواع رئيسية:</p>\n<h3>Supervised Learning (تعلم موجَّه)</h3>\n<p>البيانات بتيجي معاها الإجابة الصح (Label). مثال: صور قطط وكلاب، كل صورة معنونة بنوعها.</p>\n<h3>Unsupervised Learning (تعلم غير موجَّه)</h3>\n<p>البيانات من غير إجابات جاهزة، والنموذج بيكتشف تجمعات (Clusters) أو أنماط بنفسه.</p>\n<h3>Reinforcement Learning (تعلم بالتعزيز)</h3>\n<p>النموذج بيتعلم بالتجربة والخطأ عن طريق مكافآت وعقوبات — ده اللي استُخدم مثلاً في تدريب نماذج تلعب ألعاب فيديو بمستوى احترافي.</p>"
+        },
+        {
+          "key": "steps",
+          "label": "خطوات الفهم",
+          "anchorId": "lesson-machine-learning-basics-steps",
+          "html": "<h2><span class=\"dot\"></span> خطوات الفهم</h2>\n<ol>\n<li>تجميع بيانات كافية ومناسبة للمشكلة</li>\n<li>تنظيف البيانات (Data Cleaning)</li>\n<li>اختيار خوارزمية مناسبة</li>\n<li>تدريب النموذج (Training)</li>\n<li>اختبار النموذج على بيانات مالوش شافها قبل كده (Testing)</li>\n<li>تحسين النموذج لو الأداء ضعيف</li>\n</ol>"
+        },
+        {
+          "key": "examples",
+          "label": "أمثلة عملية",
+          "anchorId": "lesson-machine-learning-basics-examples",
+          "html": "<h2><span class=\"dot\"></span> أمثلة عملية</h2>\n<p>نظام فلترة السبام في الإيميل: النموذج اتدرّب على ملايين الإيميلات المصنّفة سبام/مش سبام، وبقى يقدر يتنبأ بإيميل جديد لسه ماشافوش قبل كده.</p>"
+        },
+        {
+          "key": "usecases",
+          "label": "استخدامات حقيقية",
+          "anchorId": "lesson-machine-learning-basics-usecases",
+          "html": "<h2><span class=\"dot\"></span> استخدامات حقيقية</h2>\n<ul class=\"usecase-list\">\n<li>توصيات نتفليكس وأمازون (إيه اللي هيعجبك بعد كده)</li>\n<li>كشف الاحتيال في عمليات البنوك</li>\n<li>التعرف على الوجوه في الموبايل</li>\n<li>التنبؤ بأسعار الأسهم أو الطقس</li>\n</ul>"
+        },
+        {
+          "key": "practices",
+          "label": "أفضل الممارسات",
+          "anchorId": "lesson-machine-learning-basics-practices",
+          "html": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout pro\"><strong>نصيحة محترف:</strong> جودة البيانات أهم من كمية الخوارزميات. نموذج بسيط ببيانات نضيفة غالبًا بيهزم نموذج معقد ببيانات وسخة.</div>"
+        },
+        {
+          "key": "mistakes",
+          "label": "أخطاء شائعة",
+          "anchorId": "lesson-machine-learning-basics-mistakes",
+          "html": "<h2><span class=\"dot\"></span> أخطاء شائعة</h2>\n<div class=\"callout mistake\"><strong>خطأ شائع:</strong> اختبار النموذج على نفس البيانات اللي اتدرّب عليها — ده بيدّي نتيجة ممتازة وهمية (Overfitting) ومش بيعكس الأداء الحقيقي على بيانات جديدة.</div>"
+        },
+        {
+          "key": "summary",
+          "label": "الملخص",
+          "anchorId": "lesson-machine-learning-basics-summary",
+          "html": "<h2><span class=\"dot\"></span> الملخص</h2>\n<ul>\n<li>تعلم الآلة = تعلم من أمثلة بدل قواعد مكتوبة يدويًا</li>\n<li>3 أنواع رئيسية: Supervised، Unsupervised، Reinforcement</li>\n<li>جودة البيانات أهم عنصر في نجاح النموذج</li>\n</ul>"
+        },
+        {
+          "key": "quiz",
+          "label": "اختبار الدرس",
+          "anchorId": "lesson-machine-learning-basics-quiz",
+          "html": "<h2><span class=\"dot\"></span> اختبار سريع</h2>\n<div class=\"quiz-box\">\n<div class=\"quiz-q\">\n<p class=\"qtext\">1. إيه الفرق الأساسي بين تعلم الآلة والبرمجة التقليدية؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q1\" type=\"radio\"/>النموذج بيتعلم من أمثلة بدل قواعد مكتوبة يدويًا</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>تعلم الآلة أسرع في التنفيذ دايمًا</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>مفيش فرق حقيقي</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">2. Supervised Learning محتاج إيه أساسًا؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q2\" type=\"radio\"/>بيانات معنونة بإجاباتها الصح</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>مكافآت وعقوبات</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>بيانات من غير أي تصنيف</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">3. Overfitting بيحصل إزاي؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q3\" type=\"radio\"/>لما تختبر النموذج على نفس بيانات التدريب</label>\n<label data-correct=\"false\"><input name=\"q3\" type=\"radio\"/>لما البيانات كتير جدًا</label>\n<label data-correct=\"false\"><input name=\"q3\" type=\"radio\"/>لما تستخدم خوارزمية بسيطة</label>\n</div>\n</div>\n<p class=\"quiz-result\"></p>\n</div>"
+        },
+        {
+          "key": "assignment",
+          "label": "تمرين عملي",
+          "anchorId": "lesson-machine-learning-basics-assignment",
+          "html": "<h2><span class=\"dot\"></span> تمرين عملي</h2>\n<div class=\"assignment-box\"><p>فكّر في تطبيق بتستخدمه يوميًا (نتفليكس، إنستجرام، جوجل مابس) وحدد: هو مستخدم Machine Learning في إيه بالظبط من وجهة نظرك؟</p></div>"
+        },
+        {
+          "key": "cheatsheet",
+          "label": "ملخص للتحميل",
+          "anchorId": "lesson-machine-learning-basics-cheatsheet",
+          "html": "<h2><span class=\"dot\"></span> ملخص سريع للتحميل</h2>\n<div class=\"cheat-box\"><p style=\"color:var(--text);margin-bottom:14px;\">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p><button class=\"btn btn-outline print-cheat-btn\">🖨️ تحميل / طباعة الملخص</button></div>"
+        },
+        {
+          "key": "faq",
+          "label": "الأسئلة الشائعة",
+          "anchorId": "lesson-machine-learning-basics-faq",
+          "html": "<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\"><summary>هل لازم أعرف رياضيات عشان أفهم Machine Learning؟</summary><p>عشان تستخدمه كمستخدم أو تفهم مفاهيمه، لأ. عشان تبني نماذج بنفسك من الصفر، هتحتاج إحصاء وجبر خطي أساسي.</p></details>\n<details class=\"faq-item\"><summary>هل Machine Learning و Deep Learning نفس الحاجة؟</summary><p>لأ، Deep Learning فرع من Machine Learning بيستخدم شبكات عصبية بعدد طبقات كبير — هنشرحه بالتفصيل في الدرس الجاي.</p></details>"
+        }
+      ]
+    },
+    {
+      "id": "ai-fundamentals-lesson-5",
+      "title": "أساسيات التعلم العميق (Deep Learning)",
+      "slug": "deep-learning-basics",
+      "description": null,
+      "level": "مبتدئ",
+      "category": "ai-fundamentals",
+      "duration": null,
+      "order": 5,
+      "status": "published",
+      "content": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>التعلم العميق (Deep Learning) هو فرع من تعلم الآلة بيستخدم \"طبقات\" كتير من المعالجة فوق بعض — زي طبقات كيكة — كل طبقة بتاخد نتيجة اللي قبلها وتحسّنها شوية. \"العمق\" في الاسم بيقصد عدد الطبقات دي.</p>\n<div class=\"illustration\"><div class=\"glyph\">🧅</div>فكّر فيه زي تقشير بصلة: كل طبقة بتكشفلك تفصيلة أعمق من اللي قبلها — من حواف بسيطة في صورة، لحد التعرف على \"ده وش قطة\" في الآخر.</div>\n<h2><span class=\"dot\"></span> الشرح الاحترافي</h2>\n<p>التعلم العميق بيعتمد على الشبكات العصبية الاصطناعية (هنشرحها بالتفصيل في الدرس الجاي) لكن بعدد طبقات كبير (Deep = عميقة). كل طبقة بتتعلم تمثيل (Representation) أعقد من اللي قبلها بشكل تلقائي، من غير ما مهندس يحدد يدويًا \"ابحث عن حافة هنا\".</p>\n<p>ده اللي خلّى Deep Learning يتفوق في مهام معقدة زي التعرف على الصور والصوت واللغة الطبيعية — لأنه مش محتاج حد يستخرج السمات (Features) يدويًا، هو بيتعلمها بنفسه من البيانات.</p>\n<h2><span class=\"dot\"></span> خطوات الفهم</h2>\n<ol>\n<li>البيانات الخام بتدخل الطبقة الأولى (مثلاً بكسلات صورة)</li>\n<li>كل طبقة بتستخرج نمط أعقد شوية من اللي قبلها</li>\n<li>الطبقات الأخيرة بتربط الأنماط دي بقرار نهائي (مثلاً \"ده قطة\")</li>\n<li>النموذج بيقارن قراره بالإجابة الصح ويعدّل نفسه (Backpropagation)</li>\n</ol>",
+      "examples": "<h2><span class=\"dot\"></span> أمثلة عملية</h2>\n<p>التعرف على الوجوه في تطبيقات الموبايل: أول طبقات بتكتشف حواف وألوان بسيطة، طبقات وسطى بتكتشف عيون وأنف، والطبقات الأخيرة بتقرر \"ده وش مين بالظبط\".</p>\n<h2><span class=\"dot\"></span> استخدامات حقيقية</h2>\n<ul class=\"usecase-list\">\n<li>التعرف على الصوت (زي Siri وGoogle Assistant)</li>\n<li>السيارات ذاتية القيادة (فهم المشهد حواليها)</li>\n<li>الترجمة الآلية الحديثة</li>\n<li>النماذج اللغوية الكبيرة زي ChatGPT نفسه</li>\n</ul>",
+      "tips": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout pro\"><strong>نصيحة محترف:</strong> Deep Learning محتاج بيانات كتير جدًا عشان يشتغل كويس. لو بياناتك قليلة، خوارزميات Machine Learning التقليدية الأبسط ممكن تدّي نتيجة أحسن.</div>\n<h2><span class=\"dot\"></span> أخطاء شائعة</h2>\n<div class=\"callout mistake\"><strong>خطأ شائع:</strong> اعتقاد إن \"أعمق = أحسن دايمًا\". طبقات زيادة عن الحاجة ببيانات قليلة بتؤدي لـ Overfitting بدل تحسين النتيجة.</div>",
+      "exercise": "<h2><span class=\"dot\"></span> تمرين عملي</h2>\n<div class=\"assignment-box\"><p>اكتب بالعربي في 3 أسطر: إيه الفرق اللي فهمته بين Machine Learning العادي و Deep Learning؟</p></div>",
+      "quiz": {
+        "questions": [
+          {
+            "question": "إيه معنى العمق في Deep Learning؟",
+            "options": [
+              {
+                "text": "عدد الطبقات الكتير في الشبكة",
+                "correct": true
+              },
+              {
+                "text": "صعوبة الخوارزمية",
+                "correct": false
+              },
+              {
+                "text": "حجم الكود",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "question": "Deep Learning بيتفوق في إيه تحديدًا؟",
+            "options": [
+              {
+                "text": "المهام المعقدة زي الصور والصوت واللغة",
+                "correct": true
+              },
+              {
+                "text": "البيانات القليلة جدًا",
+                "correct": false
+              },
+              {
+                "text": "الحسابات الرياضية البسيطة",
+                "correct": false
+              }
+            ]
+          }
+        ],
+        "html": "<h2><span class=\"dot\"></span> اختبار سريع</h2>\n<div class=\"quiz-box\">\n<div class=\"quiz-q\">\n<p class=\"qtext\">1. إيه معنى العمق في Deep Learning؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q1\" type=\"radio\"/>عدد الطبقات الكتير في الشبكة</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>صعوبة الخوارزمية</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>حجم الكود</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">2. Deep Learning بيتفوق في إيه تحديدًا؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q2\" type=\"radio\"/>المهام المعقدة زي الصور والصوت واللغة</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>البيانات القليلة جدًا</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>الحسابات الرياضية البسيطة</label>\n</div>\n</div>\n<p class=\"quiz-result\"></p>\n</div>"
+      },
+      "resources": "<h2><span class=\"dot\"></span> ملخص سريع للتحميل</h2>\n<div class=\"cheat-box\"><p style=\"color:var(--text);margin-bottom:14px;\">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p><button class=\"btn btn-outline print-cheat-btn\">🖨️ تحميل / طباعة الملخص</button></div>\n<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\"><summary>ليه اسمه \"عميق\"؟</summary><p>بسبب عدد الطبقات الكبير اللي البيانات بتعدي عليها، مش بمعنى \"صعب\" أو \"متقدم\" حرفيًا.</p></details>",
+      "prerequisites": [
+        "machine-learning-basics"
+      ],
+      "nextLesson": "neural-networks",
+      "summary": "<h2><span class=\"dot\"></span> الملخص</h2>\n<ul>\n<li>Deep Learning = تعلم آلة بطبقات معالجة كتير فوق بعض</li>\n<li>كل طبقة بتتعلم تمثيل أعقد بشكل تلقائي من غير تدخل بشري</li>\n<li>محتاج بيانات ضخمة وقوة معالجة عالية</li>\n</ul>",
+      "nextLessonTitle": "الشبكات العصبية (Neural Networks)",
+      "sections": [
+        {
+          "key": "beginner",
+          "label": "الشرح المبسط",
+          "anchorId": "lesson-deep-learning-basics-beginner",
+          "html": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>التعلم العميق (Deep Learning) هو فرع من تعلم الآلة بيستخدم \"طبقات\" كتير من المعالجة فوق بعض — زي طبقات كيكة — كل طبقة بتاخد نتيجة اللي قبلها وتحسّنها شوية. \"العمق\" في الاسم بيقصد عدد الطبقات دي.</p>\n<div class=\"illustration\"><div class=\"glyph\">🧅</div>فكّر فيه زي تقشير بصلة: كل طبقة بتكشفلك تفصيلة أعمق من اللي قبلها — من حواف بسيطة في صورة، لحد التعرف على \"ده وش قطة\" في الآخر.</div>"
+        },
+        {
+          "key": "professional",
+          "label": "الشرح الاحترافي",
+          "anchorId": "lesson-deep-learning-basics-professional",
+          "html": "<h2><span class=\"dot\"></span> الشرح الاحترافي</h2>\n<p>التعلم العميق بيعتمد على الشبكات العصبية الاصطناعية (هنشرحها بالتفصيل في الدرس الجاي) لكن بعدد طبقات كبير (Deep = عميقة). كل طبقة بتتعلم تمثيل (Representation) أعقد من اللي قبلها بشكل تلقائي، من غير ما مهندس يحدد يدويًا \"ابحث عن حافة هنا\".</p>\n<p>ده اللي خلّى Deep Learning يتفوق في مهام معقدة زي التعرف على الصور والصوت واللغة الطبيعية — لأنه مش محتاج حد يستخرج السمات (Features) يدويًا، هو بيتعلمها بنفسه من البيانات.</p>"
+        },
+        {
+          "key": "steps",
+          "label": "خطوات الفهم",
+          "anchorId": "lesson-deep-learning-basics-steps",
+          "html": "<h2><span class=\"dot\"></span> خطوات الفهم</h2>\n<ol>\n<li>البيانات الخام بتدخل الطبقة الأولى (مثلاً بكسلات صورة)</li>\n<li>كل طبقة بتستخرج نمط أعقد شوية من اللي قبلها</li>\n<li>الطبقات الأخيرة بتربط الأنماط دي بقرار نهائي (مثلاً \"ده قطة\")</li>\n<li>النموذج بيقارن قراره بالإجابة الصح ويعدّل نفسه (Backpropagation)</li>\n</ol>"
+        },
+        {
+          "key": "examples",
+          "label": "أمثلة عملية",
+          "anchorId": "lesson-deep-learning-basics-examples",
+          "html": "<h2><span class=\"dot\"></span> أمثلة عملية</h2>\n<p>التعرف على الوجوه في تطبيقات الموبايل: أول طبقات بتكتشف حواف وألوان بسيطة، طبقات وسطى بتكتشف عيون وأنف، والطبقات الأخيرة بتقرر \"ده وش مين بالظبط\".</p>"
+        },
+        {
+          "key": "usecases",
+          "label": "استخدامات حقيقية",
+          "anchorId": "lesson-deep-learning-basics-usecases",
+          "html": "<h2><span class=\"dot\"></span> استخدامات حقيقية</h2>\n<ul class=\"usecase-list\">\n<li>التعرف على الصوت (زي Siri وGoogle Assistant)</li>\n<li>السيارات ذاتية القيادة (فهم المشهد حواليها)</li>\n<li>الترجمة الآلية الحديثة</li>\n<li>النماذج اللغوية الكبيرة زي ChatGPT نفسه</li>\n</ul>"
+        },
+        {
+          "key": "practices",
+          "label": "أفضل الممارسات",
+          "anchorId": "lesson-deep-learning-basics-practices",
+          "html": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout pro\"><strong>نصيحة محترف:</strong> Deep Learning محتاج بيانات كتير جدًا عشان يشتغل كويس. لو بياناتك قليلة، خوارزميات Machine Learning التقليدية الأبسط ممكن تدّي نتيجة أحسن.</div>"
+        },
+        {
+          "key": "mistakes",
+          "label": "أخطاء شائعة",
+          "anchorId": "lesson-deep-learning-basics-mistakes",
+          "html": "<h2><span class=\"dot\"></span> أخطاء شائعة</h2>\n<div class=\"callout mistake\"><strong>خطأ شائع:</strong> اعتقاد إن \"أعمق = أحسن دايمًا\". طبقات زيادة عن الحاجة ببيانات قليلة بتؤدي لـ Overfitting بدل تحسين النتيجة.</div>"
+        },
+        {
+          "key": "summary",
+          "label": "الملخص",
+          "anchorId": "lesson-deep-learning-basics-summary",
+          "html": "<h2><span class=\"dot\"></span> الملخص</h2>\n<ul>\n<li>Deep Learning = تعلم آلة بطبقات معالجة كتير فوق بعض</li>\n<li>كل طبقة بتتعلم تمثيل أعقد بشكل تلقائي من غير تدخل بشري</li>\n<li>محتاج بيانات ضخمة وقوة معالجة عالية</li>\n</ul>"
+        },
+        {
+          "key": "quiz",
+          "label": "اختبار الدرس",
+          "anchorId": "lesson-deep-learning-basics-quiz",
+          "html": "<h2><span class=\"dot\"></span> اختبار سريع</h2>\n<div class=\"quiz-box\">\n<div class=\"quiz-q\">\n<p class=\"qtext\">1. إيه معنى العمق في Deep Learning؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q1\" type=\"radio\"/>عدد الطبقات الكتير في الشبكة</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>صعوبة الخوارزمية</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>حجم الكود</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">2. Deep Learning بيتفوق في إيه تحديدًا؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q2\" type=\"radio\"/>المهام المعقدة زي الصور والصوت واللغة</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>البيانات القليلة جدًا</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>الحسابات الرياضية البسيطة</label>\n</div>\n</div>\n<p class=\"quiz-result\"></p>\n</div>"
+        },
+        {
+          "key": "assignment",
+          "label": "تمرين عملي",
+          "anchorId": "lesson-deep-learning-basics-assignment",
+          "html": "<h2><span class=\"dot\"></span> تمرين عملي</h2>\n<div class=\"assignment-box\"><p>اكتب بالعربي في 3 أسطر: إيه الفرق اللي فهمته بين Machine Learning العادي و Deep Learning؟</p></div>"
+        },
+        {
+          "key": "cheatsheet",
+          "label": "ملخص للتحميل",
+          "anchorId": "lesson-deep-learning-basics-cheatsheet",
+          "html": "<h2><span class=\"dot\"></span> ملخص سريع للتحميل</h2>\n<div class=\"cheat-box\"><p style=\"color:var(--text);margin-bottom:14px;\">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p><button class=\"btn btn-outline print-cheat-btn\">🖨️ تحميل / طباعة الملخص</button></div>"
+        },
+        {
+          "key": "faq",
+          "label": "الأسئلة الشائعة",
+          "anchorId": "lesson-deep-learning-basics-faq",
+          "html": "<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\"><summary>ليه اسمه \"عميق\"؟</summary><p>بسبب عدد الطبقات الكبير اللي البيانات بتعدي عليها، مش بمعنى \"صعب\" أو \"متقدم\" حرفيًا.</p></details>"
+        }
+      ]
+    },
+    {
+      "id": "ai-fundamentals-lesson-6",
+      "title": "الشبكات العصبية (Neural Networks)",
+      "slug": "neural-networks",
+      "description": null,
+      "level": "مبتدئ",
+      "category": "ai-fundamentals",
+      "duration": null,
+      "order": 6,
+      "status": "published",
+      "content": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>الشبكة العصبية الاصطناعية هي البنية اللي بيقوم عليها Deep Learning، واتسمّت كده لأنها مستوحاة (بشكل مبسط جدًا) من طريقة اشتغال خلايا المخ (العصبونات) اللي بتبعت إشارات لبعض.</p>\n<div class=\"illustration\"><div class=\"glyph\">🕸️</div>تخيّل شبكة من النقط متوصلة ببعض بخطوط — كل نقطة بتاخد إشارة، تعالجها، وتبعتها للنقط اللي بعدها. الشبكة كلها بتتعلم تقوّي أو تضعّف الخطوط دي على حسب الأداء.</div>\n<h2><span class=\"dot\"></span> الشرح الاحترافي</h2>\n<p>الشبكة العصبية بتتكوّن من \"عصبونات\" (Neurons/Nodes) مرتبة في طبقات: طبقة إدخال (Input)، طبقة أو أكتر مخفية (Hidden Layers)، وطبقة إخراج (Output). كل اتصال بين عصبونين ليه \"وزن\" (Weight) — رقم بيحدد قوة تأثير الإشارة.</p>\n<p>عملية التدريب بتضبط الأوزان دي تدريجيًا (عن طريق خوارزمية اسمها Backpropagation) لحد ما الشبكة تطلع نتائج دقيقة. عدد الطبقات المخفية الكبير هو اللي بيخلّي الشبكة \"عميقة\" (Deep Neural Network).</p>\n<h2><span class=\"dot\"></span> خطوات الفهم</h2>\n<ol>\n<li>البيانات بتدخل من طبقة الإدخال</li>\n<li>كل عصبون بيجمع الإشارات الداخلة له مضروبة في أوزانها</li>\n<li>الإشارة بتعدي على \"دالة تفعيل\" (Activation Function) تقرر لو تتنقل للطبقة اللي بعدها</li>\n<li>الطبقة الأخيرة بتطلع النتيجة النهائية</li>\n</ol>",
+      "examples": "<h2><span class=\"dot\"></span> أمثلة عملية</h2>\n<p>شبكة عصبية بسيطة ممكن تتدرّب تتنبأ بسعر شقة بناءً على المساحة وعدد الغرف والموقع — كل عامل ده بيدخل كـ \"إشارة\" في طبقة الإدخال.</p>\n<h2><span class=\"dot\"></span> استخدامات حقيقية</h2>\n<ul class=\"usecase-list\">\n<li>التعرف على الكتابة اليدوية</li>\n<li>أنظمة التوصية</li>\n<li>تحليل المشاعر في النصوص</li>\n<li>النماذج اللغوية الكبيرة (LLMs) نفسها مبنية على نوع متقدم من الشبكات العصبية اسمه Transformer</li>\n</ul>",
+      "tips": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout pro\"><strong>نصيحة محترف:</strong> مش لازم تفهم رياضيات الشبكات العصبية بالتفصيل عشان تستخدم أدوات AI. الفهم المفاهيمي (زي اللي في الدرس ده) كافي جدًا لمعظم الاستخدامات العملية.</div>\n<h2><span class=\"dot\"></span> أخطاء شائعة</h2>\n<div class=\"callout mistake\"><strong>خطأ شائع:</strong> الخلط بين \"الشبكة العصبية الاصطناعية\" و\"المخ البشري الحقيقي\" — التشابه سطحي جدًا ومجرد إلهام أولي، مش محاكاة دقيقة لطريقة تفكير الإنسان.</div>",
+      "exercise": "<h2><span class=\"dot\"></span> تمرين عملي</h2>\n<div class=\"assignment-box\"><p>ارسم (على ورقة أو أي أداة) شبكة عصبية بسيطة بطبقة إدخال فيها 3 عصبونات، طبقة مخفية فيها 4، وطبقة إخراج فيها عصبون واحد — بس عشان تتخيل الشكل.</p></div>",
+      "quiz": {
+        "questions": [
+          {
+            "question": "الرابط بين عصبونين في الشبكة العصبية بيتحدد بإيه؟",
+            "options": [
+              {
+                "text": "وزن (Weight) بيحدد قوة تأثير الإشارة",
+                "correct": true
+              },
+              {
+                "text": "لون العصبون",
+                "correct": false
+              },
+              {
+                "text": "سرعة المعالج",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "question": "إيه اللي بيضبط أوزان الشبكة أثناء التدريب؟",
+            "options": [
+              {
+                "text": "خوارزمية Backpropagation",
+                "correct": true
+              },
+              {
+                "text": "المستخدم يدويًا لكل وزن",
+                "correct": false
+              },
+              {
+                "text": "لا حاجة، الأوزان ثابتة",
+                "correct": false
+              }
+            ]
+          }
+        ],
+        "html": "<h2><span class=\"dot\"></span> اختبار سريع</h2>\n<div class=\"quiz-box\">\n<div class=\"quiz-q\">\n<p class=\"qtext\">1. الرابط بين عصبونين في الشبكة العصبية بيتحدد بإيه؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q1\" type=\"radio\"/>وزن (Weight) بيحدد قوة تأثير الإشارة</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>لون العصبون</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>سرعة المعالج</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">2. إيه اللي بيضبط أوزان الشبكة أثناء التدريب؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q2\" type=\"radio\"/>خوارزمية Backpropagation</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>المستخدم يدويًا لكل وزن</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>لا حاجة، الأوزان ثابتة</label>\n</div>\n</div>\n<p class=\"quiz-result\"></p>\n</div>"
+      },
+      "resources": "<h2><span class=\"dot\"></span> ملخص سريع للتحميل</h2>\n<div class=\"cheat-box\"><p style=\"color:var(--text);margin-bottom:14px;\">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p><button class=\"btn btn-outline print-cheat-btn\">🖨️ تحميل / طباعة الملخص</button></div>\n<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\"><summary>هل الشبكة العصبية بتفكر فعلاً زي المخ؟</summary><p>لأ، التشابه في التسمية بس مستوحى من فكرة عامة جدًا. الآلية الرياضية الفعلية مختلفة تمامًا عن كيمياء المخ الحقيقي.</p></details>",
+      "prerequisites": [
+        "deep-learning-basics"
+      ],
+      "nextLesson": "large-language-models",
+      "summary": "<h2><span class=\"dot\"></span> الملخص</h2>\n<ul>\n<li>الشبكة العصبية = عصبونات مرتبة في طبقات متصلة بأوزان</li>\n<li>التدريب = ضبط الأوزان دي لتقليل الخطأ</li>\n<li>الطبقات المخفية الكتيرة = شبكة \"عميقة\" (Deep Learning)</li>\n</ul>",
+      "nextLessonTitle": "النماذج اللغوية الكبيرة (LLMs)",
+      "sections": [
+        {
+          "key": "beginner",
+          "label": "الشرح المبسط",
+          "anchorId": "lesson-neural-networks-beginner",
+          "html": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>الشبكة العصبية الاصطناعية هي البنية اللي بيقوم عليها Deep Learning، واتسمّت كده لأنها مستوحاة (بشكل مبسط جدًا) من طريقة اشتغال خلايا المخ (العصبونات) اللي بتبعت إشارات لبعض.</p>\n<div class=\"illustration\"><div class=\"glyph\">🕸️</div>تخيّل شبكة من النقط متوصلة ببعض بخطوط — كل نقطة بتاخد إشارة، تعالجها، وتبعتها للنقط اللي بعدها. الشبكة كلها بتتعلم تقوّي أو تضعّف الخطوط دي على حسب الأداء.</div>"
+        },
+        {
+          "key": "professional",
+          "label": "الشرح الاحترافي",
+          "anchorId": "lesson-neural-networks-professional",
+          "html": "<h2><span class=\"dot\"></span> الشرح الاحترافي</h2>\n<p>الشبكة العصبية بتتكوّن من \"عصبونات\" (Neurons/Nodes) مرتبة في طبقات: طبقة إدخال (Input)، طبقة أو أكتر مخفية (Hidden Layers)، وطبقة إخراج (Output). كل اتصال بين عصبونين ليه \"وزن\" (Weight) — رقم بيحدد قوة تأثير الإشارة.</p>\n<p>عملية التدريب بتضبط الأوزان دي تدريجيًا (عن طريق خوارزمية اسمها Backpropagation) لحد ما الشبكة تطلع نتائج دقيقة. عدد الطبقات المخفية الكبير هو اللي بيخلّي الشبكة \"عميقة\" (Deep Neural Network).</p>"
+        },
+        {
+          "key": "steps",
+          "label": "خطوات الفهم",
+          "anchorId": "lesson-neural-networks-steps",
+          "html": "<h2><span class=\"dot\"></span> خطوات الفهم</h2>\n<ol>\n<li>البيانات بتدخل من طبقة الإدخال</li>\n<li>كل عصبون بيجمع الإشارات الداخلة له مضروبة في أوزانها</li>\n<li>الإشارة بتعدي على \"دالة تفعيل\" (Activation Function) تقرر لو تتنقل للطبقة اللي بعدها</li>\n<li>الطبقة الأخيرة بتطلع النتيجة النهائية</li>\n</ol>"
+        },
+        {
+          "key": "examples",
+          "label": "أمثلة عملية",
+          "anchorId": "lesson-neural-networks-examples",
+          "html": "<h2><span class=\"dot\"></span> أمثلة عملية</h2>\n<p>شبكة عصبية بسيطة ممكن تتدرّب تتنبأ بسعر شقة بناءً على المساحة وعدد الغرف والموقع — كل عامل ده بيدخل كـ \"إشارة\" في طبقة الإدخال.</p>"
+        },
+        {
+          "key": "usecases",
+          "label": "استخدامات حقيقية",
+          "anchorId": "lesson-neural-networks-usecases",
+          "html": "<h2><span class=\"dot\"></span> استخدامات حقيقية</h2>\n<ul class=\"usecase-list\">\n<li>التعرف على الكتابة اليدوية</li>\n<li>أنظمة التوصية</li>\n<li>تحليل المشاعر في النصوص</li>\n<li>النماذج اللغوية الكبيرة (LLMs) نفسها مبنية على نوع متقدم من الشبكات العصبية اسمه Transformer</li>\n</ul>"
+        },
+        {
+          "key": "practices",
+          "label": "أفضل الممارسات",
+          "anchorId": "lesson-neural-networks-practices",
+          "html": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout pro\"><strong>نصيحة محترف:</strong> مش لازم تفهم رياضيات الشبكات العصبية بالتفصيل عشان تستخدم أدوات AI. الفهم المفاهيمي (زي اللي في الدرس ده) كافي جدًا لمعظم الاستخدامات العملية.</div>"
+        },
+        {
+          "key": "mistakes",
+          "label": "أخطاء شائعة",
+          "anchorId": "lesson-neural-networks-mistakes",
+          "html": "<h2><span class=\"dot\"></span> أخطاء شائعة</h2>\n<div class=\"callout mistake\"><strong>خطأ شائع:</strong> الخلط بين \"الشبكة العصبية الاصطناعية\" و\"المخ البشري الحقيقي\" — التشابه سطحي جدًا ومجرد إلهام أولي، مش محاكاة دقيقة لطريقة تفكير الإنسان.</div>"
+        },
+        {
+          "key": "summary",
+          "label": "الملخص",
+          "anchorId": "lesson-neural-networks-summary",
+          "html": "<h2><span class=\"dot\"></span> الملخص</h2>\n<ul>\n<li>الشبكة العصبية = عصبونات مرتبة في طبقات متصلة بأوزان</li>\n<li>التدريب = ضبط الأوزان دي لتقليل الخطأ</li>\n<li>الطبقات المخفية الكتيرة = شبكة \"عميقة\" (Deep Learning)</li>\n</ul>"
+        },
+        {
+          "key": "quiz",
+          "label": "اختبار الدرس",
+          "anchorId": "lesson-neural-networks-quiz",
+          "html": "<h2><span class=\"dot\"></span> اختبار سريع</h2>\n<div class=\"quiz-box\">\n<div class=\"quiz-q\">\n<p class=\"qtext\">1. الرابط بين عصبونين في الشبكة العصبية بيتحدد بإيه؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q1\" type=\"radio\"/>وزن (Weight) بيحدد قوة تأثير الإشارة</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>لون العصبون</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>سرعة المعالج</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">2. إيه اللي بيضبط أوزان الشبكة أثناء التدريب؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q2\" type=\"radio\"/>خوارزمية Backpropagation</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>المستخدم يدويًا لكل وزن</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>لا حاجة، الأوزان ثابتة</label>\n</div>\n</div>\n<p class=\"quiz-result\"></p>\n</div>"
+        },
+        {
+          "key": "assignment",
+          "label": "تمرين عملي",
+          "anchorId": "lesson-neural-networks-assignment",
+          "html": "<h2><span class=\"dot\"></span> تمرين عملي</h2>\n<div class=\"assignment-box\"><p>ارسم (على ورقة أو أي أداة) شبكة عصبية بسيطة بطبقة إدخال فيها 3 عصبونات، طبقة مخفية فيها 4، وطبقة إخراج فيها عصبون واحد — بس عشان تتخيل الشكل.</p></div>"
+        },
+        {
+          "key": "cheatsheet",
+          "label": "ملخص للتحميل",
+          "anchorId": "lesson-neural-networks-cheatsheet",
+          "html": "<h2><span class=\"dot\"></span> ملخص سريع للتحميل</h2>\n<div class=\"cheat-box\"><p style=\"color:var(--text);margin-bottom:14px;\">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p><button class=\"btn btn-outline print-cheat-btn\">🖨️ تحميل / طباعة الملخص</button></div>"
+        },
+        {
+          "key": "faq",
+          "label": "الأسئلة الشائعة",
+          "anchorId": "lesson-neural-networks-faq",
+          "html": "<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\"><summary>هل الشبكة العصبية بتفكر فعلاً زي المخ؟</summary><p>لأ، التشابه في التسمية بس مستوحى من فكرة عامة جدًا. الآلية الرياضية الفعلية مختلفة تمامًا عن كيمياء المخ الحقيقي.</p></details>"
+        }
+      ]
+    },
+    {
+      "id": "ai-fundamentals-lesson-7",
+      "title": "النماذج اللغوية الكبيرة (LLMs)",
+      "slug": "large-language-models",
+      "description": null,
+      "level": "مبتدئ",
+      "category": "ai-fundamentals",
+      "duration": null,
+      "order": 7,
+      "status": "published",
+      "content": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>النموذج اللغوي الكبير (Large Language Model) هو نوع من الذكاء الاصطناعي اتدرّب على كمية هائلة من النصوص (كتب، مواقع، مقالات) عشان يتعلم إزاي اللغة شغالة، ويقدر يولّد نص جديد يشبه الكتابة البشرية. ChatGPT وClaude وGemini كلهم أمثلة على LLMs.</p>\n<div class=\"illustration\"><div class=\"glyph\">📚</div>تخيّل حد قرا ملايين الكتب والمقالات، وبقى عنده حس قوي جدًا بـ\"إيه الكلمة المتوقعة بعد كده\" في أي جملة — ده تقريبًا اللي الـ LLM بيعمله.</div>\n<h2><span class=\"dot\"></span> الشرح الاحترافي</h2>\n<p>الـ LLMs الحديثة مبنية على بنية اسمها Transformer (اتقدّمت سنة 2017)، واللي بتسمح للنموذج \"يركّز\" (Attention) على أجزاء مختلفة من النص المدخل في نفس الوقت، بدل ما يقرا كلمة كلمة بترتيب صارم زي النماذج الأقدم.</p>\n<p>النموذج بيتدرّب على التنبؤ بالتوكن (Token — كلمة أو جزء كلمة) الجاي بناءً على السياق قبله، وبعد التدريب على بيانات ضخمة جدًا (تريليونات كلمة)، بيطلع قادر يولّد نصوص متماسكة، يترجم، يلخّص، ويجاوب على أسئلة.</p>\n<h2><span class=\"dot\"></span> خطوات الفهم</h2>\n<ol>\n<li>النموذج بياخد النص اللي كتبته (البرومبت) كسياق</li>\n<li>بيحسب احتمالية كل توكن ممكن يجي بعد كده</li>\n<li>بيختار توكن (بعنصر عشوائية بسيط) ويضيفه للنص</li>\n<li>بيكرر العملية دي توكن بعد توكن لحد ما يكوّن الرد كامل</li>\n</ol>",
+      "examples": "<h2><span class=\"dot\"></span> أمثلة عملية</h2>\n<p>لما تكتب \"القاهرة عاصمة...\"، النموذج بيحسب إن كلمة \"مصر\" ليها احتمالية عالية جدًا تيجي بعد كده، بناءً على ملايين الأمثلة الشبيهة اللي شافها وقت التدريب.</p>\n<h2><span class=\"dot\"></span> استخدامات حقيقية</h2>\n<ul class=\"usecase-list\">\n<li>المساعدين الشخصيين (ChatGPT، Claude)</li>\n<li>الترجمة الفورية</li>\n<li>تلخيص المستندات الطويلة</li>\n<li>مساعدة المبرمجين في كتابة الكود</li>\n</ul>",
+      "tips": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout pro\"><strong>نصيحة محترف:</strong> افهم إن النموذج بيتنبأ بالكلمة الجاية إحصائيًا، مش \"بيفهم\" بالمعنى البشري. ده بيساعدك تتوقع نقاط ضعفه (زي الهلوسة — اختلاق معلومات غير صحيحة بثقة).</div>\n<h2><span class=\"dot\"></span> أخطاء شائعة</h2>\n<div class=\"callout mistake\"><strong>خطأ شائع:</strong> الثقة الكاملة في أي معلومة يقولها النموذج من غير تحقق، خصوصًا في التواريخ والأرقام والحقائق الدقيقة — النماذج ممكن \"تهلوس\" معلومات غلط بثقة تامة.</div>",
+      "exercise": "<h2><span class=\"dot\"></span> تمرين عملي</h2>\n<div class=\"assignment-box\"><p>اسأل أي أداة AI عن معلومة تقدر تتأكد منها بنفسك (تاريخ حدث، رقم إحصائي)، وتحقق هل إجابته دقيقة 100% ولا فيها تفاصيل غلط.</p></div>",
+      "quiz": {
+        "questions": [
+          {
+            "question": "الـ LLMs الحديثة مبنية على أي بنية؟",
+            "options": [
+              {
+                "text": "Transformer",
+                "correct": true
+              },
+              {
+                "text": "Blockchain",
+                "correct": false
+              },
+              {
+                "text": "SQL Database",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "question": "النموذج بيولّد النص إزاي أساسًا؟",
+            "options": [
+              {
+                "text": "بالتنبؤ بالتوكن الجاي بناءً على السياق",
+                "correct": true
+              },
+              {
+                "text": "بنسخ جمل محفوظة كاملة",
+                "correct": false
+              },
+              {
+                "text": "بترجمة حرفية من قاعدة بيانات",
+                "correct": false
+              }
+            ]
+          }
+        ],
+        "html": "<h2><span class=\"dot\"></span> اختبار سريع</h2>\n<div class=\"quiz-box\">\n<div class=\"quiz-q\">\n<p class=\"qtext\">1. الـ LLMs الحديثة مبنية على أي بنية؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q1\" type=\"radio\"/>Transformer</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>Blockchain</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>SQL Database</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">2. النموذج بيولّد النص إزاي أساسًا؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q2\" type=\"radio\"/>بالتنبؤ بالتوكن الجاي بناءً على السياق</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>بنسخ جمل محفوظة كاملة</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>بترجمة حرفية من قاعدة بيانات</label>\n</div>\n</div>\n<p class=\"quiz-result\"></p>\n</div>"
+      },
+      "resources": "<h2><span class=\"dot\"></span> ملخص سريع للتحميل</h2>\n<div class=\"cheat-box\"><p style=\"color:var(--text);margin-bottom:14px;\">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p><button class=\"btn btn-outline print-cheat-btn\">🖨️ تحميل / طباعة الملخص</button></div>\n<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\"><summary>ليه بيسموه \"كبير\"؟</summary><p>بسبب عدد المعاملات (Parameters) الضخم جدًا فيه — بيوصل لمليارات أو تريليونات، وده اللي بيدّيه قدرته اللغوية القوية.</p></details>",
+      "prerequisites": [
+        "neural-networks"
+      ],
+      "nextLesson": "ai-ethics",
+      "summary": "<h2><span class=\"dot\"></span> الملخص</h2>\n<ul>\n<li>LLM = نموذج اتدرّب على نصوص ضخمة عشان يتنبأ بالكلمة الجاية</li>\n<li>مبني على بنية Transformer وآلية Attention</li>\n<li>قوي في اللغة، لكن ممكن \"يهلوس\" معلومات غير دقيقة</li>\n</ul>",
+      "nextLessonTitle": "أخلاقيات الذكاء الاصطناعي (AI Ethics)",
+      "sections": [
+        {
+          "key": "beginner",
+          "label": "الشرح المبسط",
+          "anchorId": "lesson-large-language-models-beginner",
+          "html": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>النموذج اللغوي الكبير (Large Language Model) هو نوع من الذكاء الاصطناعي اتدرّب على كمية هائلة من النصوص (كتب، مواقع، مقالات) عشان يتعلم إزاي اللغة شغالة، ويقدر يولّد نص جديد يشبه الكتابة البشرية. ChatGPT وClaude وGemini كلهم أمثلة على LLMs.</p>\n<div class=\"illustration\"><div class=\"glyph\">📚</div>تخيّل حد قرا ملايين الكتب والمقالات، وبقى عنده حس قوي جدًا بـ\"إيه الكلمة المتوقعة بعد كده\" في أي جملة — ده تقريبًا اللي الـ LLM بيعمله.</div>"
+        },
+        {
+          "key": "professional",
+          "label": "الشرح الاحترافي",
+          "anchorId": "lesson-large-language-models-professional",
+          "html": "<h2><span class=\"dot\"></span> الشرح الاحترافي</h2>\n<p>الـ LLMs الحديثة مبنية على بنية اسمها Transformer (اتقدّمت سنة 2017)، واللي بتسمح للنموذج \"يركّز\" (Attention) على أجزاء مختلفة من النص المدخل في نفس الوقت، بدل ما يقرا كلمة كلمة بترتيب صارم زي النماذج الأقدم.</p>\n<p>النموذج بيتدرّب على التنبؤ بالتوكن (Token — كلمة أو جزء كلمة) الجاي بناءً على السياق قبله، وبعد التدريب على بيانات ضخمة جدًا (تريليونات كلمة)، بيطلع قادر يولّد نصوص متماسكة، يترجم، يلخّص، ويجاوب على أسئلة.</p>"
+        },
+        {
+          "key": "steps",
+          "label": "خطوات الفهم",
+          "anchorId": "lesson-large-language-models-steps",
+          "html": "<h2><span class=\"dot\"></span> خطوات الفهم</h2>\n<ol>\n<li>النموذج بياخد النص اللي كتبته (البرومبت) كسياق</li>\n<li>بيحسب احتمالية كل توكن ممكن يجي بعد كده</li>\n<li>بيختار توكن (بعنصر عشوائية بسيط) ويضيفه للنص</li>\n<li>بيكرر العملية دي توكن بعد توكن لحد ما يكوّن الرد كامل</li>\n</ol>"
+        },
+        {
+          "key": "examples",
+          "label": "أمثلة عملية",
+          "anchorId": "lesson-large-language-models-examples",
+          "html": "<h2><span class=\"dot\"></span> أمثلة عملية</h2>\n<p>لما تكتب \"القاهرة عاصمة...\"، النموذج بيحسب إن كلمة \"مصر\" ليها احتمالية عالية جدًا تيجي بعد كده، بناءً على ملايين الأمثلة الشبيهة اللي شافها وقت التدريب.</p>"
+        },
+        {
+          "key": "usecases",
+          "label": "استخدامات حقيقية",
+          "anchorId": "lesson-large-language-models-usecases",
+          "html": "<h2><span class=\"dot\"></span> استخدامات حقيقية</h2>\n<ul class=\"usecase-list\">\n<li>المساعدين الشخصيين (ChatGPT، Claude)</li>\n<li>الترجمة الفورية</li>\n<li>تلخيص المستندات الطويلة</li>\n<li>مساعدة المبرمجين في كتابة الكود</li>\n</ul>"
+        },
+        {
+          "key": "practices",
+          "label": "أفضل الممارسات",
+          "anchorId": "lesson-large-language-models-practices",
+          "html": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout pro\"><strong>نصيحة محترف:</strong> افهم إن النموذج بيتنبأ بالكلمة الجاية إحصائيًا، مش \"بيفهم\" بالمعنى البشري. ده بيساعدك تتوقع نقاط ضعفه (زي الهلوسة — اختلاق معلومات غير صحيحة بثقة).</div>"
+        },
+        {
+          "key": "mistakes",
+          "label": "أخطاء شائعة",
+          "anchorId": "lesson-large-language-models-mistakes",
+          "html": "<h2><span class=\"dot\"></span> أخطاء شائعة</h2>\n<div class=\"callout mistake\"><strong>خطأ شائع:</strong> الثقة الكاملة في أي معلومة يقولها النموذج من غير تحقق، خصوصًا في التواريخ والأرقام والحقائق الدقيقة — النماذج ممكن \"تهلوس\" معلومات غلط بثقة تامة.</div>"
+        },
+        {
+          "key": "summary",
+          "label": "الملخص",
+          "anchorId": "lesson-large-language-models-summary",
+          "html": "<h2><span class=\"dot\"></span> الملخص</h2>\n<ul>\n<li>LLM = نموذج اتدرّب على نصوص ضخمة عشان يتنبأ بالكلمة الجاية</li>\n<li>مبني على بنية Transformer وآلية Attention</li>\n<li>قوي في اللغة، لكن ممكن \"يهلوس\" معلومات غير دقيقة</li>\n</ul>"
+        },
+        {
+          "key": "quiz",
+          "label": "اختبار الدرس",
+          "anchorId": "lesson-large-language-models-quiz",
+          "html": "<h2><span class=\"dot\"></span> اختبار سريع</h2>\n<div class=\"quiz-box\">\n<div class=\"quiz-q\">\n<p class=\"qtext\">1. الـ LLMs الحديثة مبنية على أي بنية؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q1\" type=\"radio\"/>Transformer</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>Blockchain</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>SQL Database</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">2. النموذج بيولّد النص إزاي أساسًا؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q2\" type=\"radio\"/>بالتنبؤ بالتوكن الجاي بناءً على السياق</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>بنسخ جمل محفوظة كاملة</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>بترجمة حرفية من قاعدة بيانات</label>\n</div>\n</div>\n<p class=\"quiz-result\"></p>\n</div>"
+        },
+        {
+          "key": "assignment",
+          "label": "تمرين عملي",
+          "anchorId": "lesson-large-language-models-assignment",
+          "html": "<h2><span class=\"dot\"></span> تمرين عملي</h2>\n<div class=\"assignment-box\"><p>اسأل أي أداة AI عن معلومة تقدر تتأكد منها بنفسك (تاريخ حدث، رقم إحصائي)، وتحقق هل إجابته دقيقة 100% ولا فيها تفاصيل غلط.</p></div>"
+        },
+        {
+          "key": "cheatsheet",
+          "label": "ملخص للتحميل",
+          "anchorId": "lesson-large-language-models-cheatsheet",
+          "html": "<h2><span class=\"dot\"></span> ملخص سريع للتحميل</h2>\n<div class=\"cheat-box\"><p style=\"color:var(--text);margin-bottom:14px;\">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p><button class=\"btn btn-outline print-cheat-btn\">🖨️ تحميل / طباعة الملخص</button></div>"
+        },
+        {
+          "key": "faq",
+          "label": "الأسئلة الشائعة",
+          "anchorId": "lesson-large-language-models-faq",
+          "html": "<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\"><summary>ليه بيسموه \"كبير\"؟</summary><p>بسبب عدد المعاملات (Parameters) الضخم جدًا فيه — بيوصل لمليارات أو تريليونات، وده اللي بيدّيه قدرته اللغوية القوية.</p></details>"
+        }
+      ]
+    },
+    {
+      "id": "ai-fundamentals-lesson-8",
+      "title": "أخلاقيات الذكاء الاصطناعي (AI Ethics)",
+      "slug": "ai-ethics",
+      "description": null,
+      "level": "مبتدئ",
+      "category": "ai-fundamentals",
+      "duration": null,
+      "order": 8,
+      "status": "published",
+      "content": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>أخلاقيات الذكاء الاصطناعي هي مجموعة المبادئ اللي بتحكم إزاي نصمم ونستخدم أنظمة الذكاء الاصطناعي بطريقة عادلة ومسؤولة، من غير ما تضر بالناس أو تنشر معلومات غلط أو تنحاز ضد فئة معينة.</p>\n<div class=\"illustration\"><div class=\"glyph\">⚖️</div>زي أي أداة قوية — سكينة ممكن تفيد في المطبخ أو تأذي حد — القوة نفسها مش المشكلة، إزاي بنستخدمها هي المهم.</div>\n<h2><span class=\"dot\"></span> الشرح الاحترافي</h2>\n<p>أهم القضايا الأخلاقية في الذكاء الاصطناعي بتشمل:</p>\n<h3>التحيّز (Bias)</h3>\n<p>لو بيانات التدريب فيها تحيّز (مثلاً تمثيل غير عادل لفئة معينة)، النموذج هيكرر أو حتى يضخّم التحيّز ده في قراراته.</p>\n<h3>الخصوصية</h3>\n<p>كتير من النماذج اتدرّبت على بيانات من الإنترنت، وده بيثير أسئلة عن حقوق أصحاب المحتوى الأصلي وخصوصية البيانات الشخصية.</p>\n<h3>الشفافية والمسؤولية</h3>\n<p>لما نظام AI ياخد قرار مؤثر (زي رفض قرض بنكي)، مين المسؤول لو القرار ده غلط أو غير عادل؟</p>\n<h2><span class=\"dot\"></span> خطوات الفهم</h2>\n<ol>\n<li>افهم إن النموذج بيعكس البيانات اللي اتدرّب عليها، بإيجابياتها وسلبياتها</li>\n<li>راجع أي قرار مهم بيطلع من AI بعين نقدية، خصوصًا لو بيأثر على حد تاني</li>\n<li>افهم حدود الخصوصية لما تستخدم بيانات حساسة مع أدوات AI</li>\n</ol>",
+      "examples": "<h2><span class=\"dot\"></span> أمثلة عملية</h2>\n<p>نظام توظيف مؤتمت اتدرّب على بيانات تاريخية من شركة كان فيها تحيّز في التوظيف — ممكن يكرر نفس التحيّز ده تلقائيًا في ترشيحاته المستقبلية من غير قصد من مصمميه.</p>\n<h2><span class=\"dot\"></span> استخدامات حقيقية</h2>\n<ul class=\"usecase-list\">\n<li>مراجعة قرارات AI في مجالات حساسة (توظيف، قروض، طب)</li>\n<li>التأكد من عدم مشاركة بيانات حساسة مع أدوات AI عامة</li>\n<li>التحقق من مصداقية المحتوى المولّد بـ AI قبل نشره</li>\n</ul>",
+      "tips": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout pro\"><strong>نصيحة محترف:</strong> ما تدخلش بيانات حساسة (أرقام قومية، بيانات مالية دقيقة لعملاء) في أدوات AI عامة إلا لو متأكد من سياسة الخصوصية بتاعتها.</div>\n<h2><span class=\"dot\"></span> أخطاء شائعة</h2>\n<div class=\"callout mistake\"><strong>خطأ شائع:</strong> اعتبار قرار AI \"موضوعي 100%\" لمجرد إنه صادر من آلة — الآلة بتعكس البيانات والتصميم اللي بُنيت بيهم، ومش محايدة تلقائيًا.</div>",
+      "exercise": "<h2><span class=\"dot\"></span> تمرين عملي</h2>\n<div class=\"assignment-box\"><p>فكّر في موقف واحد ممكن AI فيه ياخد قرار غير عادل بسبب تحيّز في البيانات (مثلاً في التوظيف أو الائتمان)، واكتبه في سطرين.</p></div>",
+      "quiz": {
+        "questions": [
+          {
+            "question": "ليه ممكن نموذج AI يكون متحيّز؟",
+            "options": [
+              {
+                "text": "لو بيانات التدريب نفسها فيها تحيّز",
+                "correct": true
+              },
+              {
+                "text": "النماذج كلها محايدة 100% دايمًا",
+                "correct": false
+              },
+              {
+                "text": "بسبب سرعة المعالج",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "question": "قرار AI في مجال حساس زي التوظيف لازم يتعامل معاه إزاي؟",
+            "options": [
+              {
+                "text": "بمراجعة بشرية نقدية قبل الاعتماد عليه",
+                "correct": true
+              },
+              {
+                "text": "بالثقة الكاملة فيه من غير مراجعة",
+                "correct": false
+              },
+              {
+                "text": "بتجاهله تمامًا",
+                "correct": false
+              }
+            ]
+          }
+        ],
+        "html": "<h2><span class=\"dot\"></span> اختبار سريع</h2>\n<div class=\"quiz-box\">\n<div class=\"quiz-q\">\n<p class=\"qtext\">1. ليه ممكن نموذج AI يكون متحيّز؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q1\" type=\"radio\"/>لو بيانات التدريب نفسها فيها تحيّز</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>النماذج كلها محايدة 100% دايمًا</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>بسبب سرعة المعالج</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">2. قرار AI في مجال حساس زي التوظيف لازم يتعامل معاه إزاي؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q2\" type=\"radio\"/>بمراجعة بشرية نقدية قبل الاعتماد عليه</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>بالثقة الكاملة فيه من غير مراجعة</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>بتجاهله تمامًا</label>\n</div>\n</div>\n<p class=\"quiz-result\"></p>\n</div>"
+      },
+      "resources": "<h2><span class=\"dot\"></span> ملخص سريع للتحميل</h2>\n<div class=\"cheat-box\"><p style=\"color:var(--text);margin-bottom:14px;\">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p><button class=\"btn btn-outline print-cheat-btn\">🖨️ تحميل / طباعة الملخص</button></div>\n<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\"><summary>هل ممكن نخلّي AI محايد 100%؟</summary><p>صعب جدًا نضمن ده بشكل كامل، لكن ممكن نقلل التحيّز بمراجعة البيانات وتصميم النظام بعناية ومراجعة بشرية مستمرة.</p></details>",
+      "prerequisites": [
+        "large-language-models"
+      ],
+      "nextLesson": "ai-career-path",
+      "summary": "<h2><span class=\"dot\"></span> الملخص</h2>\n<ul>\n<li>أخلاقيات AI بتغطي التحيّز، الخصوصية، والشفافية</li>\n<li>النموذج بيعكس بياناته — مش محايد تلقائيًا</li>\n<li>القرارات المهمة المبنية على AI محتاجة مراجعة بشرية</li>\n</ul>",
+      "nextLessonTitle": "المسار المهني في الذكاء الاصطناعي",
+      "sections": [
+        {
+          "key": "beginner",
+          "label": "الشرح المبسط",
+          "anchorId": "lesson-ai-ethics-beginner",
+          "html": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>أخلاقيات الذكاء الاصطناعي هي مجموعة المبادئ اللي بتحكم إزاي نصمم ونستخدم أنظمة الذكاء الاصطناعي بطريقة عادلة ومسؤولة، من غير ما تضر بالناس أو تنشر معلومات غلط أو تنحاز ضد فئة معينة.</p>\n<div class=\"illustration\"><div class=\"glyph\">⚖️</div>زي أي أداة قوية — سكينة ممكن تفيد في المطبخ أو تأذي حد — القوة نفسها مش المشكلة، إزاي بنستخدمها هي المهم.</div>"
+        },
+        {
+          "key": "professional",
+          "label": "الشرح الاحترافي",
+          "anchorId": "lesson-ai-ethics-professional",
+          "html": "<h2><span class=\"dot\"></span> الشرح الاحترافي</h2>\n<p>أهم القضايا الأخلاقية في الذكاء الاصطناعي بتشمل:</p>\n<h3>التحيّز (Bias)</h3>\n<p>لو بيانات التدريب فيها تحيّز (مثلاً تمثيل غير عادل لفئة معينة)، النموذج هيكرر أو حتى يضخّم التحيّز ده في قراراته.</p>\n<h3>الخصوصية</h3>\n<p>كتير من النماذج اتدرّبت على بيانات من الإنترنت، وده بيثير أسئلة عن حقوق أصحاب المحتوى الأصلي وخصوصية البيانات الشخصية.</p>\n<h3>الشفافية والمسؤولية</h3>\n<p>لما نظام AI ياخد قرار مؤثر (زي رفض قرض بنكي)، مين المسؤول لو القرار ده غلط أو غير عادل؟</p>"
+        },
+        {
+          "key": "steps",
+          "label": "خطوات الفهم",
+          "anchorId": "lesson-ai-ethics-steps",
+          "html": "<h2><span class=\"dot\"></span> خطوات الفهم</h2>\n<ol>\n<li>افهم إن النموذج بيعكس البيانات اللي اتدرّب عليها، بإيجابياتها وسلبياتها</li>\n<li>راجع أي قرار مهم بيطلع من AI بعين نقدية، خصوصًا لو بيأثر على حد تاني</li>\n<li>افهم حدود الخصوصية لما تستخدم بيانات حساسة مع أدوات AI</li>\n</ol>"
+        },
+        {
+          "key": "examples",
+          "label": "أمثلة عملية",
+          "anchorId": "lesson-ai-ethics-examples",
+          "html": "<h2><span class=\"dot\"></span> أمثلة عملية</h2>\n<p>نظام توظيف مؤتمت اتدرّب على بيانات تاريخية من شركة كان فيها تحيّز في التوظيف — ممكن يكرر نفس التحيّز ده تلقائيًا في ترشيحاته المستقبلية من غير قصد من مصمميه.</p>"
+        },
+        {
+          "key": "usecases",
+          "label": "استخدامات حقيقية",
+          "anchorId": "lesson-ai-ethics-usecases",
+          "html": "<h2><span class=\"dot\"></span> استخدامات حقيقية</h2>\n<ul class=\"usecase-list\">\n<li>مراجعة قرارات AI في مجالات حساسة (توظيف، قروض، طب)</li>\n<li>التأكد من عدم مشاركة بيانات حساسة مع أدوات AI عامة</li>\n<li>التحقق من مصداقية المحتوى المولّد بـ AI قبل نشره</li>\n</ul>"
+        },
+        {
+          "key": "practices",
+          "label": "أفضل الممارسات",
+          "anchorId": "lesson-ai-ethics-practices",
+          "html": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout pro\"><strong>نصيحة محترف:</strong> ما تدخلش بيانات حساسة (أرقام قومية، بيانات مالية دقيقة لعملاء) في أدوات AI عامة إلا لو متأكد من سياسة الخصوصية بتاعتها.</div>"
+        },
+        {
+          "key": "mistakes",
+          "label": "أخطاء شائعة",
+          "anchorId": "lesson-ai-ethics-mistakes",
+          "html": "<h2><span class=\"dot\"></span> أخطاء شائعة</h2>\n<div class=\"callout mistake\"><strong>خطأ شائع:</strong> اعتبار قرار AI \"موضوعي 100%\" لمجرد إنه صادر من آلة — الآلة بتعكس البيانات والتصميم اللي بُنيت بيهم، ومش محايدة تلقائيًا.</div>"
+        },
+        {
+          "key": "summary",
+          "label": "الملخص",
+          "anchorId": "lesson-ai-ethics-summary",
+          "html": "<h2><span class=\"dot\"></span> الملخص</h2>\n<ul>\n<li>أخلاقيات AI بتغطي التحيّز، الخصوصية، والشفافية</li>\n<li>النموذج بيعكس بياناته — مش محايد تلقائيًا</li>\n<li>القرارات المهمة المبنية على AI محتاجة مراجعة بشرية</li>\n</ul>"
+        },
+        {
+          "key": "quiz",
+          "label": "اختبار الدرس",
+          "anchorId": "lesson-ai-ethics-quiz",
+          "html": "<h2><span class=\"dot\"></span> اختبار سريع</h2>\n<div class=\"quiz-box\">\n<div class=\"quiz-q\">\n<p class=\"qtext\">1. ليه ممكن نموذج AI يكون متحيّز؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q1\" type=\"radio\"/>لو بيانات التدريب نفسها فيها تحيّز</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>النماذج كلها محايدة 100% دايمًا</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>بسبب سرعة المعالج</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">2. قرار AI في مجال حساس زي التوظيف لازم يتعامل معاه إزاي؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q2\" type=\"radio\"/>بمراجعة بشرية نقدية قبل الاعتماد عليه</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>بالثقة الكاملة فيه من غير مراجعة</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>بتجاهله تمامًا</label>\n</div>\n</div>\n<p class=\"quiz-result\"></p>\n</div>"
+        },
+        {
+          "key": "assignment",
+          "label": "تمرين عملي",
+          "anchorId": "lesson-ai-ethics-assignment",
+          "html": "<h2><span class=\"dot\"></span> تمرين عملي</h2>\n<div class=\"assignment-box\"><p>فكّر في موقف واحد ممكن AI فيه ياخد قرار غير عادل بسبب تحيّز في البيانات (مثلاً في التوظيف أو الائتمان)، واكتبه في سطرين.</p></div>"
+        },
+        {
+          "key": "cheatsheet",
+          "label": "ملخص للتحميل",
+          "anchorId": "lesson-ai-ethics-cheatsheet",
+          "html": "<h2><span class=\"dot\"></span> ملخص سريع للتحميل</h2>\n<div class=\"cheat-box\"><p style=\"color:var(--text);margin-bottom:14px;\">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p><button class=\"btn btn-outline print-cheat-btn\">🖨️ تحميل / طباعة الملخص</button></div>"
+        },
+        {
+          "key": "faq",
+          "label": "الأسئلة الشائعة",
+          "anchorId": "lesson-ai-ethics-faq",
+          "html": "<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\"><summary>هل ممكن نخلّي AI محايد 100%؟</summary><p>صعب جدًا نضمن ده بشكل كامل، لكن ممكن نقلل التحيّز بمراجعة البيانات وتصميم النظام بعناية ومراجعة بشرية مستمرة.</p></details>"
+        }
+      ]
+    },
+    {
+      "id": "ai-fundamentals-lesson-9",
+      "title": "المسار المهني في الذكاء الاصطناعي",
+      "slug": "ai-career-path",
+      "description": null,
+      "level": "مبتدئ",
+      "category": "ai-fundamentals",
+      "duration": null,
+      "order": 9,
+      "status": "published",
+      "content": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>مجال الذكاء الاصطناعي مش وظيفة واحدة بس — فيه مسارات مختلفة تناسب اهتمامات وخلفيات مختلفة: من الشخص اللي بيحب الرياضيات والبرمجة العميقة، للشخص اللي بيحب استخدام الأدوات بذكاء من غير ما يكتب كود أصلاً.</p>\n<div class=\"illustration\"><div class=\"glyph\">🧭</div>زي أي صناعة كبيرة (الطب مثلاً فيه جراح وصيدلي وباحث)، الذكاء الاصطناعي فيه أدوار متنوعة جدًا، مش بس \"مبرمج AI\".</div>\n<h2><span class=\"dot\"></span> الشرح الاحترافي</h2>\n<h3>Machine Learning Engineer</h3>\n<p>بيبني ويدرّب النماذج فعليًا. محتاج خلفية قوية في البرمجة والرياضيات والإحصاء.</p>\n<h3>Data Scientist</h3>\n<p>بيحلل البيانات ويستخرج منها رؤى، وأحيانًا بيبني نماذج تنبؤية بسيطة.</p>\n<h3>AI Prompt Engineer / AI Specialist</h3>\n<p>متخصص في استخدام أدوات AI الموجودة بكفاءة عالية لحل مشاكل عملية — مش بالضرورة محتاج خلفية برمجة عميقة.</p>\n<h3>AI Product Manager</h3>\n<p>بيربط بين الفريق التقني واحتياجات السوق، وبيقرر أي ميزات AI تتضاف للمنتج.</p>\n<h2><span class=\"dot\"></span> خطوات الفهم</h2>\n<ol>\n<li>حدد اهتمامك: بناء نماذج تقنيًا، ولا استخدام أدوات AI بذكاء لحل مشاكل؟</li>\n<li>لو تقني: ابدأ بأساسيات البرمجة (Python) والإحصاء</li>\n<li>لو تطبيقي: ركّز على هندسة البرومبت وفهم الأدوات المتاحة (زي المسار اللي بتاخده دلوقتي)</li>\n<li>ابني مشاريع عملية صغيرة تقدر تعرضها كـ Portfolio</li>\n</ol>",
+      "examples": "<h2><span class=\"dot\"></span> أمثلة عملية</h2>\n<p>شخص عنده خلفية تسويق ممكن يتخصص في \"AI for Marketing\" — استخدام أدوات AI لكتابة محتوى وتحليل بيانات العملاء — من غير ما يحتاج يتعلم بناء نماذج من الصفر.</p>\n<h2><span class=\"dot\"></span> استخدامات حقيقية</h2>\n<ul class=\"usecase-list\">\n<li>الانتقال لوظيفة تستخدم AI في مجالك الحالي (تسويق، تصميم، مبيعات)</li>\n<li>بناء مشاريع جانبية باستخدام أدوات AI لتقوية الـ Portfolio</li>\n<li>التخصص في مجال تقني عميق زي بناء النماذج لو ده اهتمامك</li>\n</ul>",
+      "tips": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout pro\"><strong>نصيحة محترف:</strong> ابدأ بالتطبيق العملي (استخدام الأدوات وهندسة البرومبت) قبل ما تقرر تتعمق في الجانب التقني الرياضي — هتفهم المجال أحسن وتقرر بوعي أكتر.</div>\n<h2><span class=\"dot\"></span> أخطاء شائعة</h2>\n<div class=\"callout mistake\"><strong>خطأ شائع:</strong> الاعتقاد إنك لازم تتعلم رياضيات معقدة وبرمجة متقدمة عشان \"تشتغل في AI\" — كتير من الأدوار (زي AI Specialist) محتاجة مهارات تطبيقية أكتر من نظرية عميقة.</div>",
+      "exercise": "<h2><span class=\"dot\"></span> تمرين عملي</h2>\n<div class=\"assignment-box\"><p>اكتب في 3 أسطر: أي مسار من اللي ذكرناهم أقرب لاهتماماتك، وليه؟</p></div>",
+      "quiz": {
+        "questions": [
+          {
+            "question": "أي دور مش لازم يكون عنده خلفية برمجة عميقة بالضرورة؟",
+            "options": [
+              {
+                "text": "AI Prompt Engineer / AI Specialist",
+                "correct": true
+              },
+              {
+                "text": "Machine Learning Engineer",
+                "correct": false
+              },
+              {
+                "text": "Data Scientist المتخصص في بناء نماذج",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "question": "نصيحة الدرس للمبتدئ في اختيار مساره؟",
+            "options": [
+              {
+                "text": "يبدأ بالتطبيق العملي قبل ما يقرر يتعمق تقنيًا",
+                "correct": true
+              },
+              {
+                "text": "يتعلم رياضيات متقدمة الأول قبل أي حاجة",
+                "correct": false
+              },
+              {
+                "text": "يختار مسار عشوائي من غير تفكير",
+                "correct": false
+              }
+            ]
+          }
+        ],
+        "html": "<h2><span class=\"dot\"></span> اختبار سريع</h2>\n<div class=\"quiz-box\">\n<div class=\"quiz-q\">\n<p class=\"qtext\">1. أي دور مش لازم يكون عنده خلفية برمجة عميقة بالضرورة؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q1\" type=\"radio\"/>AI Prompt Engineer / AI Specialist</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>Machine Learning Engineer</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>Data Scientist المتخصص في بناء نماذج</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">2. نصيحة الدرس للمبتدئ في اختيار مساره؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q2\" type=\"radio\"/>يبدأ بالتطبيق العملي قبل ما يقرر يتعمق تقنيًا</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>يتعلم رياضيات متقدمة الأول قبل أي حاجة</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>يختار مسار عشوائي من غير تفكير</label>\n</div>\n</div>\n<p class=\"quiz-result\"></p>\n</div>"
+      },
+      "resources": "<h2><span class=\"dot\"></span> ملخص سريع للتحميل</h2>\n<div class=\"cheat-box\"><p style=\"color:var(--text);margin-bottom:14px;\">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p><button class=\"btn btn-outline print-cheat-btn\">🖨️ تحميل / طباعة الملخص</button></div>\n<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\"><summary>لازم أتعلم برمجة عشان أشتغل في المجال؟</summary><p>يعتمد على المسار — لو هتبني نماذج، آه. لو هتستخدم أدوات AI بذكاء في مجالك الحالي، لأ بالضرورة.</p></details>",
+      "prerequisites": [
+        "ai-ethics"
+      ],
+      "nextLesson": null,
+      "summary": "<h2><span class=\"dot\"></span> الملخص</h2>\n<ul>\n<li>مجال الذكاء الاصطناعي فيه مسارات متنوعة، مش بس \"مبرمج AI\"</li>\n<li>الأدوار التطبيقية (Prompt Engineering، AI Specialist) مش محتاجة خلفية برمجية عميقة بالضرورة</li>\n<li>ابدأ بالتطبيق العملي قبل ما تقرر تخصصك بدقة</li>\n</ul>",
+      "nextLessonTitle": null,
+      "sections": [
+        {
+          "key": "beginner",
+          "label": "الشرح المبسط",
+          "anchorId": "lesson-ai-career-path-beginner",
+          "html": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>مجال الذكاء الاصطناعي مش وظيفة واحدة بس — فيه مسارات مختلفة تناسب اهتمامات وخلفيات مختلفة: من الشخص اللي بيحب الرياضيات والبرمجة العميقة، للشخص اللي بيحب استخدام الأدوات بذكاء من غير ما يكتب كود أصلاً.</p>\n<div class=\"illustration\"><div class=\"glyph\">🧭</div>زي أي صناعة كبيرة (الطب مثلاً فيه جراح وصيدلي وباحث)، الذكاء الاصطناعي فيه أدوار متنوعة جدًا، مش بس \"مبرمج AI\".</div>"
+        },
+        {
+          "key": "professional",
+          "label": "الشرح الاحترافي",
+          "anchorId": "lesson-ai-career-path-professional",
+          "html": "<h2><span class=\"dot\"></span> الشرح الاحترافي</h2>\n<h3>Machine Learning Engineer</h3>\n<p>بيبني ويدرّب النماذج فعليًا. محتاج خلفية قوية في البرمجة والرياضيات والإحصاء.</p>\n<h3>Data Scientist</h3>\n<p>بيحلل البيانات ويستخرج منها رؤى، وأحيانًا بيبني نماذج تنبؤية بسيطة.</p>\n<h3>AI Prompt Engineer / AI Specialist</h3>\n<p>متخصص في استخدام أدوات AI الموجودة بكفاءة عالية لحل مشاكل عملية — مش بالضرورة محتاج خلفية برمجة عميقة.</p>\n<h3>AI Product Manager</h3>\n<p>بيربط بين الفريق التقني واحتياجات السوق، وبيقرر أي ميزات AI تتضاف للمنتج.</p>"
+        },
+        {
+          "key": "steps",
+          "label": "خطوات الفهم",
+          "anchorId": "lesson-ai-career-path-steps",
+          "html": "<h2><span class=\"dot\"></span> خطوات الفهم</h2>\n<ol>\n<li>حدد اهتمامك: بناء نماذج تقنيًا، ولا استخدام أدوات AI بذكاء لحل مشاكل؟</li>\n<li>لو تقني: ابدأ بأساسيات البرمجة (Python) والإحصاء</li>\n<li>لو تطبيقي: ركّز على هندسة البرومبت وفهم الأدوات المتاحة (زي المسار اللي بتاخده دلوقتي)</li>\n<li>ابني مشاريع عملية صغيرة تقدر تعرضها كـ Portfolio</li>\n</ol>"
+        },
+        {
+          "key": "examples",
+          "label": "أمثلة عملية",
+          "anchorId": "lesson-ai-career-path-examples",
+          "html": "<h2><span class=\"dot\"></span> أمثلة عملية</h2>\n<p>شخص عنده خلفية تسويق ممكن يتخصص في \"AI for Marketing\" — استخدام أدوات AI لكتابة محتوى وتحليل بيانات العملاء — من غير ما يحتاج يتعلم بناء نماذج من الصفر.</p>"
+        },
+        {
+          "key": "usecases",
+          "label": "استخدامات حقيقية",
+          "anchorId": "lesson-ai-career-path-usecases",
+          "html": "<h2><span class=\"dot\"></span> استخدامات حقيقية</h2>\n<ul class=\"usecase-list\">\n<li>الانتقال لوظيفة تستخدم AI في مجالك الحالي (تسويق، تصميم، مبيعات)</li>\n<li>بناء مشاريع جانبية باستخدام أدوات AI لتقوية الـ Portfolio</li>\n<li>التخصص في مجال تقني عميق زي بناء النماذج لو ده اهتمامك</li>\n</ul>"
+        },
+        {
+          "key": "practices",
+          "label": "أفضل الممارسات",
+          "anchorId": "lesson-ai-career-path-practices",
+          "html": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout pro\"><strong>نصيحة محترف:</strong> ابدأ بالتطبيق العملي (استخدام الأدوات وهندسة البرومبت) قبل ما تقرر تتعمق في الجانب التقني الرياضي — هتفهم المجال أحسن وتقرر بوعي أكتر.</div>"
+        },
+        {
+          "key": "mistakes",
+          "label": "أخطاء شائعة",
+          "anchorId": "lesson-ai-career-path-mistakes",
+          "html": "<h2><span class=\"dot\"></span> أخطاء شائعة</h2>\n<div class=\"callout mistake\"><strong>خطأ شائع:</strong> الاعتقاد إنك لازم تتعلم رياضيات معقدة وبرمجة متقدمة عشان \"تشتغل في AI\" — كتير من الأدوار (زي AI Specialist) محتاجة مهارات تطبيقية أكتر من نظرية عميقة.</div>"
+        },
+        {
+          "key": "summary",
+          "label": "الملخص",
+          "anchorId": "lesson-ai-career-path-summary",
+          "html": "<h2><span class=\"dot\"></span> الملخص</h2>\n<ul>\n<li>مجال الذكاء الاصطناعي فيه مسارات متنوعة، مش بس \"مبرمج AI\"</li>\n<li>الأدوار التطبيقية (Prompt Engineering، AI Specialist) مش محتاجة خلفية برمجية عميقة بالضرورة</li>\n<li>ابدأ بالتطبيق العملي قبل ما تقرر تخصصك بدقة</li>\n</ul>"
+        },
+        {
+          "key": "quiz",
+          "label": "اختبار الدرس",
+          "anchorId": "lesson-ai-career-path-quiz",
+          "html": "<h2><span class=\"dot\"></span> اختبار سريع</h2>\n<div class=\"quiz-box\">\n<div class=\"quiz-q\">\n<p class=\"qtext\">1. أي دور مش لازم يكون عنده خلفية برمجة عميقة بالضرورة؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q1\" type=\"radio\"/>AI Prompt Engineer / AI Specialist</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>Machine Learning Engineer</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>Data Scientist المتخصص في بناء نماذج</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">2. نصيحة الدرس للمبتدئ في اختيار مساره؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q2\" type=\"radio\"/>يبدأ بالتطبيق العملي قبل ما يقرر يتعمق تقنيًا</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>يتعلم رياضيات متقدمة الأول قبل أي حاجة</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>يختار مسار عشوائي من غير تفكير</label>\n</div>\n</div>\n<p class=\"quiz-result\"></p>\n</div>"
+        },
+        {
+          "key": "assignment",
+          "label": "تمرين عملي",
+          "anchorId": "lesson-ai-career-path-assignment",
+          "html": "<h2><span class=\"dot\"></span> تمرين عملي</h2>\n<div class=\"assignment-box\"><p>اكتب في 3 أسطر: أي مسار من اللي ذكرناهم أقرب لاهتماماتك، وليه؟</p></div>"
+        },
+        {
+          "key": "cheatsheet",
+          "label": "ملخص للتحميل",
+          "anchorId": "lesson-ai-career-path-cheatsheet",
+          "html": "<h2><span class=\"dot\"></span> ملخص سريع للتحميل</h2>\n<div class=\"cheat-box\"><p style=\"color:var(--text);margin-bottom:14px;\">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p><button class=\"btn btn-outline print-cheat-btn\">🖨️ تحميل / طباعة الملخص</button></div>"
+        },
+        {
+          "key": "faq",
+          "label": "الأسئلة الشائعة",
+          "anchorId": "lesson-ai-career-path-faq",
+          "html": "<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\"><summary>لازم أتعلم برمجة عشان أشتغل في المجال؟</summary><p>يعتمد على المسار — لو هتبني نماذج، آه. لو هتستخدم أدوات AI بذكاء في مجالك الحالي، لأ بالضرورة.</p></details>"
+        }
+      ]
+    }
+  ]
+}

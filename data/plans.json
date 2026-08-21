@@ -1,0 +1,61 @@
+{
+  "note": "لا يوجد نظام دفع تلقائي حقيقي حاليًا. خطة PRO تُفعّل يدويًا عبر واتساب باستخدام نظام أكواد الفتح الموجود بالفعل (js/access.js). خطة BUSINESS تواصل مباشر مع المؤسس.",
+  "plans": [
+    {
+      "id": "free",
+      "name": "FREE",
+      "nameAr": "مجاني",
+      "priceLabel": "0 جنيه",
+      "billingNote": "للأبد، من غير أي التزام",
+      "badge": null,
+      "ctaLabel": "ابدأ مجانًا",
+      "ctaRoute": "path/ai-fundamentals",
+      "features": [
+        {"label": "مسار أساسيات الذكاء الاصطناعي كامل (9 دروس)", "included": true},
+        {"label": "مكتبة البرومبتات كاملة", "included": true},
+        {"label": "أدلة الأدوات (ChatGPT، Claude، Gemini، Midjourney، Perplexity)", "included": true},
+        {"label": "اختبارات ولوحة تقدم شخصية", "included": true},
+        {"label": "شهادة إتمام (محلية على جهازك)", "included": true},
+        {"label": "دروس هندسة البرومبت المتقدمة (17 درس)", "included": false},
+        {"label": "دعم مباشر عبر واتساب", "included": false}
+      ]
+    },
+    {
+      "id": "pro",
+      "name": "PRO",
+      "nameAr": "احترافي",
+      "priceLabel": "حسب المحتوى",
+      "billingNote": "دفعة واحدة لكل مسار متقدم — عبر واتساب حاليًا",
+      "badge": "الأكثر طلبًا",
+      "ctaLabel": "اطلب عبر واتساب",
+      "ctaRoute": null,
+      "ctaWhatsapp": true,
+      "features": [
+        {"label": "كل مميزات خطة FREE", "included": true},
+        {"label": "مسار هندسة البرومبت كامل (17 درس)", "included": true},
+        {"label": "دروس ومسارات متقدمة إضافية (تُضاف تباعًا)", "included": true},
+        {"label": "أولوية في الرد على أسئلتك عبر واتساب", "included": true},
+        {"label": "شهادة إتمام لكل مسار تخلّصه", "included": true},
+        {"label": "استشارة عمل (Business Consulting)", "included": false}
+      ]
+    },
+    {
+      "id": "business",
+      "name": "BUSINESS",
+      "nameAr": "أعمال / فرق",
+      "priceLabel": "تواصل معنا",
+      "billingNote": "لأصحاب الأعمال والفرق",
+      "badge": null,
+      "ctaLabel": "تواصل للأعمال",
+      "ctaRoute": null,
+      "ctaWhatsapp": true,
+      "features": [
+        {"label": "كل مميزات خطة PRO", "included": true},
+        {"label": "تدريب فريقك على الذكاء الاصطناعي وهندسة البرومبت", "included": true},
+        {"label": "استشارات أتمتة وحلول AI مخصصة لشركتك", "included": true},
+        {"label": "محتوى وأدلة مخصصة لمجال عملك", "included": true},
+        {"label": "دعم مباشر ومتابعة دورية", "included": true}
+      ]
+    }
+  ]
+}
