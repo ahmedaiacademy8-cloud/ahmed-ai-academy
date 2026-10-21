@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الشبكات العصبية (Neural Networks) — Ahmed AI Academy</title>
+<meta name="description" content="">
+<link rel="canonical" href="https://ahmedmohmedabdullah.github.io/ahmed-ai-academy/lessons/neural-networks/">
+<link rel="icon" href="../../assets/favicon/favicon.ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap">
+<link rel="stylesheet" href="../../css/global.css"><link rel="stylesheet" href="../../css/academy.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "الشبكات العصبية (Neural Networks)", "inLanguage": "ar", "url": "https://ahmedmohmedabdullah.github.io/ahmed-ai-academy/lessons/neural-networks/", "isPartOf": "أساسيات الذكاء الاصطناعي", "publisher": {"@type": "EducationalOrganization", "name": "Ahmed AI Academy"}}</script></head>
+<body><main style="max-width:860px;margin:0 auto;padding:24px 16px">
+<nav aria-label="مسار التنقل"><a href="../../index.html">الرئيسية</a> › <a href="../../academy.html#path/ai-fundamentals">أساسيات الذكاء الاصطناعي</a></nav>
+<h1>الشبكات العصبية (Neural Networks)</h1>
+<p><a class="btn btn-gold" href="../../academy.html#lesson/neural-networks">افتح النسخة التفاعلية (اختبار وتقدم)</a></p>
+<h2><span class="dot"></span> الشرح المبسط</h2>
+<p>الشبكة العصبية الاصطناعية هي البنية اللي بيقوم عليها Deep Learning، واتسمّت كده لأنها مستوحاة (بشكل مبسط جدًا) من طريقة اشتغال خلايا المخ (العصبونات) اللي بتبعت إشارات لبعض.</p>
+<div class="illustration"><div class="glyph">🕸️</div>تخيّل شبكة من النقط متوصلة ببعض بخطوط — كل نقطة بتاخد إشارة، تعالجها، وتبعتها للنقط اللي بعدها. الشبكة كلها بتتعلم تقوّي أو تضعّف الخطوط دي على حسب الأداء.</div>
+<h2><span class="dot"></span> الشرح الاحترافي</h2>
+<p>الشبكة العصبية بتتكوّن من "عصبونات" (Neurons/Nodes) مرتبة في طبقات: طبقة إدخال (Input)، طبقة أو أكتر مخفية (Hidden Layers)، وطبقة إخراج (Output). كل اتصال بين عصبونين ليه "وزن" (Weight) — رقم بيحدد قوة تأثير الإشارة.</p>
+<p>عملية التدريب بتضبط الأوزان دي تدريجيًا (عن طريق خوارزمية اسمها Backpropagation) لحد ما الشبكة تطلع نتائج دقيقة. عدد الطبقات المخفية الكبير هو اللي بيخلّي الشبكة "عميقة" (Deep Neural Network).</p>
+<h2><span class="dot"></span> خطوات الفهم</h2>
+<ol>
+<li>البيانات بتدخل من طبقة الإدخال</li>
+<li>كل عصبون بيجمع الإشارات الداخلة له مضروبة في أوزانها</li>
+<li>الإشارة بتعدي على "دالة تفعيل" (Activation Function) تقرر لو تتنقل للطبقة اللي بعدها</li>
+<li>الطبقة الأخيرة بتطلع النتيجة النهائية</li>
+</ol>
+<h2><span class="dot"></span> أمثلة عملية</h2>
+<p>شبكة عصبية بسيطة ممكن تتدرّب تتنبأ بسعر شقة بناءً على المساحة وعدد الغرف والموقع — كل عامل ده بيدخل كـ "إشارة" في طبقة الإدخال.</p>
+<h2><span class="dot"></span> استخدامات حقيقية</h2>
+<ul class="usecase-list">
+<li>التعرف على الكتابة اليدوية</li>
+<li>أنظمة التوصية</li>
+<li>تحليل المشاعر في النصوص</li>
+<li>النماذج اللغوية الكبيرة (LLMs) نفسها مبنية على نوع متقدم من الشبكات العصبية اسمه Transformer</li>
+</ul>
+<h2><span class="dot"></span> أفضل الممارسات</h2>
+<div class="callout pro"><strong>نصيحة محترف:</strong> مش لازم تفهم رياضيات الشبكات العصبية بالتفصيل عشان تستخدم أدوات AI. الفهم المفاهيمي (زي اللي في الدرس ده) كافي جدًا لمعظم الاستخدامات العملية.</div>
+<h2><span class="dot"></span> أخطاء شائعة</h2>
+<div class="callout mistake"><strong>خطأ شائع:</strong> الخلط بين "الشبكة العصبية الاصطناعية" و"المخ البشري الحقيقي" — التشابه سطحي جدًا ومجرد إلهام أولي، مش محاكاة دقيقة لطريقة تفكير الإنسان.</div>
+<h2><span class="dot"></span> الملخص</h2>
+<ul>
+<li>الشبكة العصبية = عصبونات مرتبة في طبقات متصلة بأوزان</li>
+<li>التدريب = ضبط الأوزان دي لتقليل الخطأ</li>
+<li>الطبقات المخفية الكتيرة = شبكة "عميقة" (Deep Learning)</li>
+</ul>
+<h2><span class="dot"></span> تمرين عملي</h2>
+<div class="assignment-box"><p>ارسم (على ورقة أو أي أداة) شبكة عصبية بسيطة بطبقة إدخال فيها 3 عصبونات، طبقة مخفية فيها 4، وطبقة إخراج فيها عصبون واحد — بس عشان تتخيل الشكل.</p></div>
+<h2><span class="dot"></span> ملخص سريع للتحميل</h2>
+<div class="cheat-box"><p style="color:var(--text);margin-bottom:14px;">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p><button class="btn btn-outline print-cheat-btn">🖨️ تحميل / طباعة الملخص</button></div>
+<h2><span class="dot"></span> الأسئلة الشائعة</h2>
+<details class="faq-item"><summary>هل الشبكة العصبية بتفكر فعلاً زي المخ؟</summary><p>لأ، التشابه في التسمية بس مستوحى من فكرة عامة جدًا. الآلية الرياضية الفعلية مختلفة تمامًا عن كيمياء المخ الحقيقي.</p></details>
+<section aria-label="وسائط الدرس"><h2>فيديو الدرس</h2><p>الفيديو التعليمي قريبًا.</p><h2>ملفات المراجعة</h2><p>ستُضاف هنا.</p></section>
+</main></body></html>

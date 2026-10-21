@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تقنية Few-Shot Prompting — Ahmed AI Academy</title>
+<meta name="description" content="الشرح المبسط تخيل إنك بتدرّب حد جديد على شغلانة، وبدل ما تشرحله بالكلام بس، بتوريه 2-3 أمثلة فعلية لشغل اتعمل صح قبل كده.">
+<link rel="canonical" href="https://ahmedmohmedabdullah.github.io/ahmed-ai-academy/lessons/few-shot-prompting/">
+<link rel="icon" href="../../assets/favicon/favicon.ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap">
+<link rel="stylesheet" href="../../css/global.css"><link rel="stylesheet" href="../../css/academy.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "تقنية Few-Shot Prompting", "inLanguage": "ar", "url": "https://ahmedmohmedabdullah.github.io/ahmed-ai-academy/lessons/few-shot-prompting/", "isPartOf": "هندسة البرومبت الاحترافية", "publisher": {"@type": "EducationalOrganization", "name": "Ahmed AI Academy"}}</script></head>
+<body><main style="max-width:860px;margin:0 auto;padding:24px 16px">
+<nav aria-label="مسار التنقل"><a href="../../index.html">الرئيسية</a> › <a href="../../academy.html#path/prompt-engineering">هندسة البرومبت الاحترافية</a></nav>
+<h1>تقنية Few-Shot Prompting</h1>
+<p><a class="btn btn-gold" href="../../academy.html#lesson/few-shot-prompting">افتح النسخة التفاعلية (اختبار وتقدم)</a></p>
+<h2><span class="dot"></span> الشرح المبسط</h2>
+<p>تخيل إنك بتدرّب حد جديد على شغلانة، وبدل ما تشرحله بالكلام بس، بتوريه 2-3 أمثلة فعلية لشغل اتعمل صح قبل كده. ده بالظبط اللي بتعمله تقنية "Few-Shot Prompting" مع النموذج: بتديله كام مثال قبل ما تطلب منه المهمة الحقيقية.</p>
+<p>ده عكس "Zero-Shot Prompting" اللي فيه بتطلب من النموذج ينفذ المهمة من غير ما تديله أي مثال.</p>
+<h2><span class="dot"></span> الشرح الاحترافي</h2>
+<p>Few-Shot Prompting هي تقنية بتوضّح للنموذج "النمط" (Pattern) المطلوب عن طريق تضمين عدد صغير من الأمثلة (عادة 2-5) جوه البرومبت نفسه، من غير ما تحتاج تعمل إعادة تدريب (Fine-tuning) للنموذج.</p>
+<p>النموذج بيستخدم الأمثلة دي كـ"سياق مرجعي" (In-Context Learning) عشان يفهم الشكل، الأسلوب، أو المنطق المطلوب، وبعدين يطبقه على المدخل الجديد.</p>
+<h2><span class="dot"></span> خطوات كتابة برومبت Few-Shot</h2>
+<h3>1. اكتب 2-3 أمثلة بصيغة "مدخل → مخرج"</h3>
+<h3>2. حافظ على نفس الصيغة والتنسيق في كل الأمثلة</h3>
+<h3>3. ضيف المدخل الجديد في الآخر واطلب من النموذج يكمل بنفس النمط</h3>
+<pre class="code-block">صنّف الجملة التالية كـ "إيجابية" أو "سلبية":
+
+الجملة: "المنتج كان ممتاز والتوصيل سريع"
+التصنيف: إيجابية
+
+الجملة: "الخدمة كانت سيئة وانتظرت كتير"
+التصنيف: سلبية
+
+الجملة: "السعر مناسب لكن الجودة عادية"
+التصنيف: </pre>
+<h2><span class="dot"></span> أمثلة عملية</h2>
+<p>لو عايز النموذج يكتب أوصاف منتجات بأسلوب معين، وريه 2 مثال بنفس الأسلوب المطلوب، وهيكمل بنفس الأسلوب على منتجات جديدة تديله إياها.</p>
+<h2><span class="dot"></span> استخدامات حقيقية</h2>
+<ul class="usecase-list">
+<li>🏷️ تصنيف تعليقات العملاء (إيجابي/سلبي/محايد)</li>
+<li>📐 تنسيق بيانات بصيغة ثابتة (تحويل نص لجدول مثلاً)</li>
+<li>✍️ محاكاة أسلوب كتابة معين بثبات</li>
+<li>🔤 استخراج معلومات محددة من نصوص طويلة</li>
+</ul>
+<h2><span class="dot"></span> أفضل الممارسات</h2>
+<div class="callout tip"><strong>نصيحة:</strong> اختار أمثلة متنوعة تغطي الحالات المختلفة (مش كلها إيجابية مثلاً) عشان النموذج يفهم الحدود صح.</div>
+<div class="callout pro"><strong>Pro Tip:</strong> لو المهمة بسيطة جدًا، جرب Zero-Shot الأول قبل ما تتعب نفسك في كتابة أمثلة — أحيانًا مش هتحتاجها.</div>
+<h2><span class="dot"></span> أخطاء شائعة</h2>
+<div class="callout mistake"><strong>خطأ:</strong> تضارب في تنسيق الأمثلة (مثال بصيغة مختلفة عن التاني) بيربك النموذج.</div>
+<div class="callout mistake"><strong>خطأ:</strong> استخدام أمثلة كتير جدًا من غير داعي، ده بياخد مساحة من الـ"context" من غير فايدة إضافية حقيقية.</div>
+<h2><span class="dot"></span> الملخص</h2>
+<div class="cheat-box">
+<ul>
+<li>Few-Shot Prompting بيدي النموذج أمثلة قبل المهمة الحقيقية.</li>
+<li>بيساعد النموذج يفهم النمط أو الأسلوب أو الصيغة المطلوبة بدقة أعلى.</li>
+<li>مهم تحافظ على تناسق تنسيق الأمثلة كلها.</li>
+</ul>
+</div>
+<h2><span class="dot"></span> تمرين عملي</h2>
+<div class="assignment-box">
+<h3 style="margin-top:0;color:var(--gold);">التمرين</h3>
+<p>اكتب برومبت Few-Shot بـ3 أمثلة يحوّل اسم منتج ووصف قصير لعنوان إعلاني جذاب، وجربه في أي أداة ذكاء اصطناعي على منتج رابع من اختيارك.</p>
+</div>
+<h2><span class="dot"></span> ملخص سريع للتحميل</h2>
+<div class="cheat-box">
+<button class="btn btn-outline print-cheat-btn">🖨️ تحميل / طباعة الملخص</button>
+</div>
+<h2><span class="dot"></span> الأسئلة الشائعة</h2>
+<details class="faq-item">
+<summary>كام مثال المفروض أستخدم بالظبط؟</summary>
+<p>عادة 2-5 أمثلة كافية. الزيادة عن كده نادرًا ما بتحسّن النتيجة بشكل ملحوظ وبتاخد مساحة إضافية من البرومبت.</p>
+</details>
+<section aria-label="وسائط الدرس"><h2>فيديو الدرس</h2><p>الفيديو التعليمي قريبًا.</p><h2>ملفات المراجعة</h2><p>ستُضاف هنا.</p></section>
+</main></body></html>

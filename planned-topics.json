@@ -1,0 +1,15 @@
+{
+  "_note": "Topic skeleton ONLY (no text from the encyclopedia). Every item is status 'planned' until original content is written from official sources. No fake videos/links.",
+  "topics": [
+    {"id":"ai-glossary","title":"مصطلحات الذكاء الاصطناعي","type":"glossary","level":"مبتدئ","overlapsWith":["what-is-ai","ai-fundamentals-lesson-4","ai-fundamentals-lesson-5"],"status":"planned","video":{"status":"none"},"sources":[]},
+    {"id":"tools-general-comparison","title":"مقارنة الأدوات العامة","type":"tool-guide","level":"مبتدئ","overlapsWith":["chatgpt","claude","gemini","perplexity"],"status":"planned","video":{"status":"none"},"sources":[]},
+    {"id":"tools-image-design","title":"أدوات الصورة والتصميم","type":"tool-guide","level":"مبتدئ","overlapsWith":["midjourney","prompt-engineering-lesson-8"],"status":"planned","video":{"status":"none"},"sources":[]},
+    {"id":"tools-audio","title":"أدوات الصوت","type":"tool-guide","level":"مبتدئ","overlapsWith":[],"status":"planned","video":{"status":"none"},"sources":[]},
+    {"id":"tools-video","title":"أدوات الفيديو","type":"tool-guide","level":"متوسط","overlapsWith":["prompt-engineering-lesson-9"],"status":"planned","video":{"status":"none"},"sources":[]},
+    {"id":"ai-research-data","title":"الذكاء الاصطناعي للبحث وتحليل البيانات","type":"course","level":"متوسط","overlapsWith":["perplexity"],"status":"planned","video":{"status":"none"},"sources":[]},
+    {"id":"ai-business-marketing","title":"الذكاء الاصطناعي للتسويق والأعمال","type":"course","level":"متوسط","overlapsWith":["prompt-engineering-lesson-11","prompt-engineering-lesson-12","prompt-engineering-lesson-13"],"status":"planned","video":{"status":"none"},"sources":[]},
+    {"id":"ai-for-learning","title":"التعلّم بالذكاء الاصطناعي","type":"guide","level":"مبتدئ","overlapsWith":[],"status":"planned","video":{"status":"none"},"sources":[]},
+    {"id":"responsible-ai","title":"الاستخدام المسؤول والحوكمة","type":"lesson","level":"متوسط","overlapsWith":["ai-fundamentals-lesson-8"],"status":"planned","video":{"status":"none"},"sources":[]},
+    {"id":"ai-careers","title":"المهن والمهارات","type":"lesson","level":"مبتدئ","overlapsWith":["ai-fundamentals-lesson-9"],"status":"planned","video":{"status":"none"},"sources":[]}
+  ]
+}

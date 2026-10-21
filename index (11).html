@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>النماذج اللغوية الكبيرة (LLMs) — Ahmed AI Academy</title>
+<meta name="description" content="">
+<link rel="canonical" href="https://ahmedmohmedabdullah.github.io/ahmed-ai-academy/lessons/large-language-models/">
+<link rel="icon" href="../../assets/favicon/favicon.ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap">
+<link rel="stylesheet" href="../../css/global.css"><link rel="stylesheet" href="../../css/academy.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "النماذج اللغوية الكبيرة (LLMs)", "inLanguage": "ar", "url": "https://ahmedmohmedabdullah.github.io/ahmed-ai-academy/lessons/large-language-models/", "isPartOf": "أساسيات الذكاء الاصطناعي", "publisher": {"@type": "EducationalOrganization", "name": "Ahmed AI Academy"}}</script></head>
+<body><main style="max-width:860px;margin:0 auto;padding:24px 16px">
+<nav aria-label="مسار التنقل"><a href="../../index.html">الرئيسية</a> › <a href="../../academy.html#path/ai-fundamentals">أساسيات الذكاء الاصطناعي</a></nav>
+<h1>النماذج اللغوية الكبيرة (LLMs)</h1>
+<p><a class="btn btn-gold" href="../../academy.html#lesson/large-language-models">افتح النسخة التفاعلية (اختبار وتقدم)</a></p>
+<h2><span class="dot"></span> الشرح المبسط</h2>
+<p>النموذج اللغوي الكبير (Large Language Model) هو نوع من الذكاء الاصطناعي اتدرّب على كمية هائلة من النصوص (كتب، مواقع، مقالات) عشان يتعلم إزاي اللغة شغالة، ويقدر يولّد نص جديد يشبه الكتابة البشرية. ChatGPT وClaude وGemini كلهم أمثلة على LLMs.</p>
+<div class="illustration"><div class="glyph">📚</div>تخيّل حد قرا ملايين الكتب والمقالات، وبقى عنده حس قوي جدًا بـ"إيه الكلمة المتوقعة بعد كده" في أي جملة — ده تقريبًا اللي الـ LLM بيعمله.</div>
+<h2><span class="dot"></span> الشرح الاحترافي</h2>
+<p>الـ LLMs الحديثة مبنية على بنية اسمها Transformer (اتقدّمت سنة 2017)، واللي بتسمح للنموذج "يركّز" (Attention) على أجزاء مختلفة من النص المدخل في نفس الوقت، بدل ما يقرا كلمة كلمة بترتيب صارم زي النماذج الأقدم.</p>
+<p>النموذج بيتدرّب على التنبؤ بالتوكن (Token — كلمة أو جزء كلمة) الجاي بناءً على السياق قبله، وبعد التدريب على بيانات ضخمة جدًا (تريليونات كلمة)، بيطلع قادر يولّد نصوص متماسكة، يترجم، يلخّص، ويجاوب على أسئلة.</p>
+<h2><span class="dot"></span> خطوات الفهم</h2>
+<ol>
+<li>النموذج بياخد النص اللي كتبته (البرومبت) كسياق</li>
+<li>بيحسب احتمالية كل توكن ممكن يجي بعد كده</li>
+<li>بيختار توكن (بعنصر عشوائية بسيط) ويضيفه للنص</li>
+<li>بيكرر العملية دي توكن بعد توكن لحد ما يكوّن الرد كامل</li>
+</ol>
+<h2><span class="dot"></span> أمثلة عملية</h2>
+<p>لما تكتب "القاهرة عاصمة..."، النموذج بيحسب إن كلمة "مصر" ليها احتمالية عالية جدًا تيجي بعد كده، بناءً على ملايين الأمثلة الشبيهة اللي شافها وقت التدريب.</p>
+<h2><span class="dot"></span> استخدامات حقيقية</h2>
+<ul class="usecase-list">
+<li>المساعدين الشخصيين (ChatGPT، Claude)</li>
+<li>الترجمة الفورية</li>
+<li>تلخيص المستندات الطويلة</li>
+<li>مساعدة المبرمجين في كتابة الكود</li>
+</ul>
+<h2><span class="dot"></span> أفضل الممارسات</h2>
+<div class="callout pro"><strong>نصيحة محترف:</strong> افهم إن النموذج بيتنبأ بالكلمة الجاية إحصائيًا، مش "بيفهم" بالمعنى البشري. ده بيساعدك تتوقع نقاط ضعفه (زي الهلوسة — اختلاق معلومات غير صحيحة بثقة).</div>
+<h2><span class="dot"></span> أخطاء شائعة</h2>
+<div class="callout mistake"><strong>خطأ شائع:</strong> الثقة الكاملة في أي معلومة يقولها النموذج من غير تحقق، خصوصًا في التواريخ والأرقام والحقائق الدقيقة — النماذج ممكن "تهلوس" معلومات غلط بثقة تامة.</div>
+<h2><span class="dot"></span> الملخص</h2>
+<ul>
+<li>LLM = نموذج اتدرّب على نصوص ضخمة عشان يتنبأ بالكلمة الجاية</li>
+<li>مبني على بنية Transformer وآلية Attention</li>
+<li>قوي في اللغة، لكن ممكن "يهلوس" معلومات غير دقيقة</li>
+</ul>
+<h2><span class="dot"></span> تمرين عملي</h2>
+<div class="assignment-box"><p>اسأل أي أداة AI عن معلومة تقدر تتأكد منها بنفسك (تاريخ حدث، رقم إحصائي)، وتحقق هل إجابته دقيقة 100% ولا فيها تفاصيل غلط.</p></div>
+<h2><span class="dot"></span> ملخص سريع للتحميل</h2>
+<div class="cheat-box"><p style="color:var(--text);margin-bottom:14px;">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p><button class="btn btn-outline print-cheat-btn">🖨️ تحميل / طباعة الملخص</button></div>
+<h2><span class="dot"></span> الأسئلة الشائعة</h2>
+<details class="faq-item"><summary>ليه بيسموه "كبير"؟</summary><p>بسبب عدد المعاملات (Parameters) الضخم جدًا فيه — بيوصل لمليارات أو تريليونات، وده اللي بيدّيه قدرته اللغوية القوية.</p></details>
+<section aria-label="وسائط الدرس"><h2>فيديو الدرس</h2><p>الفيديو التعليمي قريبًا.</p><h2>ملفات المراجعة</h2><p>ستُضاف هنا.</p></section>
+</main></body></html>

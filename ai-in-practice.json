@@ -1,0 +1,1265 @@
+{
+ "pathId": "ai-in-practice",
+ "pathTitle": "الذكاء الاصطناعي عمليًا: الأدوات والفرص",
+ "lessons": [
+  {
+   "id": "what-can-you-do-with-ai",
+   "title": "إيه اللي تقدر تعمله بالذكاء الاصطناعي؟",
+   "slug": "what-can-you-do-with-ai",
+   "description": "جولة عملية في أهم الحاجات اللي الذكاء الاصطناعي يقدر يساعدك فيها: كتابة، تلخيص، ترجمة، تصميم، صوت وفيديو، بيانات، برمجة وأتمتة.",
+   "level": "مبتدئ",
+   "category": "ai-in-practice",
+   "duration": null,
+   "order": 1,
+   "status": "published",
+   "content": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>لو عرفت <a href=\"#lesson/what-is-ai\">يعني إيه ذكاء اصطناعي</a>، السؤال التاني الطبيعي: أستفيد منه إزاي؟ الإجابة إن الذكاء الاصطناعي مش أداة واحدة، ده مجموعة قدرات بتتوزع على ست مجالات تقريبًا:</p><ul><li><strong>النصوص:</strong> كتابة، تلخيص، ترجمة، تحسين الصياغة، شرح الدروس، وتجهيز رسائل وإيميلات.</li><li><strong>الصور والتصميم:</strong> توليد صور، تصميم منشورات وعروض تقديمية، وتعديل الصور.</li><li><strong>الصوت والفيديو:</strong> تحويل النص لصوت، تفريغ الكلام لنص، ومساعدة في المونتاج وكتابة السيناريوهات.</li><li><strong>البحث والمعلومات:</strong> جمع معلومات وتلخيص مصادر ومقارنة الخيارات، مع ضرورة مراجعة المصادر.</li><li><strong>البيانات والبرمجة:</strong> شرح الأكواد، اكتشاف الأخطاء، تنظيف الجداول وتحليلها.</li><li><strong>الأتمتة:</strong> تنفيذ مهام متكررة أو متعددة الخطوات بشكل شبه آلي.</li></ul><div class=\"callout tip\"><strong>القاعدة الذهبية:</strong> الذكاء الاصطناعي بيسرّع الشغل، لكن المسؤولية عن النتيجة النهائية عليك. راجع أي معلومة أو رقم أو اقتباس مهم قبل ما تعتمد عليه.</div>",
+   "examples": "<h2><span class=\"dot\"></span> أمثلة عملية بأوامر جاهزة</h2>\n<p><strong>1) تلخيص:</strong> «لخّصلي النص ده في 5 نقاط بلغة بسيطة، وبعدين اقترح 3 أسئلة أراجع بيها نفسي».</p><p><strong>2) كتابة إيميل:</strong> «اكتبلي إيميل مهذب لعميل بيسأل عن تأخير الطلب. الأسلوب رسمي ومختصر، ولا تعد بموعد محدد».</p><p><strong>3) خطة مذاكرة:</strong> «عندي امتحان بعد 10 أيام في مادة كذا. المنهج فيه 8 أبواب وعندي ساعتين يوميًا. اعمللي جدول بسيط».</p><p><strong>4) أفكار محتوى:</strong> «اقترح 10 أفكار لمنشورات تعليمية قصيرة عن الذكاء الاصطناعي لمبتدئين، مع جملة افتتاحية لكل فكرة».</p><p><strong>5) مراجعة كود:</strong> «اشرحلي الكود ده سطر بسطر، وقولي لو فيه أخطاء محتملة».</p>",
+   "tips": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout tip\"><strong>نصيحة:</strong> ابدأ بمهمة صغيرة من شغلك أو دراستك الحقيقية بدل التجربة العشوائية.</div><div class=\"callout tip\"><strong>نصيحة:</strong> احتفظ بالأوامر اللي نجحت معاك في ملف، وعدّلها كل مرة.</div><div class=\"callout tip\"><strong>نصيحة:</strong> جرّب نفس الطلب في أداتين وقارن.</div>",
+   "exercise": "<div class=\"assignment-box\">\n<h3 style=\"margin-top:0;color:var(--gold);\">التمرين</h3>\n<p>اختار مهمة حقيقية صغيرة (إيميل، ملخص، خطة أسبوع)، ونفّذها بأداة ذكاء اصطناعي، وبعدين اكتب في ورقة: إيه اللي اتحسن؟ وإيه اللي اضطريت تعدله بنفسك؟ وإيه المعلومة اللي راجعتها؟</p>\n</div>",
+   "quiz": {
+    "questions": [
+     {
+      "question": "1. أنسب خطوة بعد ما الأداة تديك إجابة فيها أرقام؟",
+      "options": [
+       {
+        "text": "أنسخها كما هي",
+        "correct": false
+       },
+       {
+        "text": "أتحقق منها من مصدر موثوق",
+        "correct": true
+       },
+       {
+        "text": "أتجاهل الأرقام",
+        "correct": false
+       }
+      ]
+     },
+     {
+      "question": "2. أيهم مجال لا يغطيه الذكاء الاصطناعي عادةً؟",
+      "options": [
+       {
+        "text": "تلخيص نصوص",
+        "correct": false
+       },
+       {
+        "text": "تحويل الكلام لنص",
+        "correct": false
+       },
+       {
+        "text": "ضمان صحة كل معلومة بدون مراجعة",
+        "correct": true
+       }
+      ]
+     },
+     {
+      "question": "3. إيه اللي المفروض ما تشاركوش في أي أداة بدون فهم سياسة الخصوصية؟",
+      "options": [
+       {
+        "text": "سؤال عام عن التاريخ",
+        "correct": false
+       },
+       {
+        "text": "بيانات عملاء وكلمات مرور",
+        "correct": true
+       },
+       {
+        "text": "طلب فكرة منشور",
+        "correct": false
+       }
+      ]
+     },
+     {
+      "question": "4. أفضل طريقة تتعلم بيها استخدام الذكاء الاصطناعي؟",
+      "options": [
+       {
+        "text": "تجربة مهام حقيقية من حياتك ومراجعتها",
+        "correct": true
+       },
+       {
+        "text": "حفظ أسماء الأدوات فقط",
+        "correct": false
+       },
+       {
+        "text": "انتظار أداة مثالية",
+        "correct": false
+       }
+      ]
+     }
+    ]
+   },
+   "resources": "<h2><span class=\"dot\"></span> مصادر رسمية</h2><ul><li><a href=\"https://openai.com\" target=\"_blank\" rel=\"noopener\">OpenAI</a></li><li><a href=\"https://gemini.google.com\" target=\"_blank\" rel=\"noopener\">Google Gemini</a></li><li><a href=\"https://claude.ai\" target=\"_blank\" rel=\"noopener\">Anthropic Claude</a></li><li><a href=\"https://notebook.google\" target=\"_blank\" rel=\"noopener\">Gemini Notebook (NotebookLM سابقًا)</a></li><li><a href=\"https://perplexity.ai\" target=\"_blank\" rel=\"noopener\">Perplexity</a></li></ul><p><small>آخر مراجعة للمحتوى: 18 أكتوبر 2026. أدوات الذكاء الاصطناعي وخططها وأسعارها بتتغير بسرعة، فراجع الموقع الرسمي لكل أداة قبل ما تعتمد على أي معلومة متغيرة.</small></p>",
+   "prerequisites": [],
+   "nextLesson": "top-ai-tools",
+   "summary": "الذكاء الاصطناعي بيساعد في النصوص والصور والصوت والبحث والبيانات والأتمتة. ابدأ بمهمة حقيقية صغيرة، اكتب سياق واضح، وراجع النتيجة دايمًا قبل الاعتماد عليها.",
+   "sections": [
+    {
+     "key": "beginner",
+     "id": "lesson-what-can-you-do-with-ai-beginner",
+     "label": "الشرح المبسط",
+     "html": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>لو عرفت <a href=\"#lesson/what-is-ai\">يعني إيه ذكاء اصطناعي</a>، السؤال التاني الطبيعي: أستفيد منه إزاي؟ الإجابة إن الذكاء الاصطناعي مش أداة واحدة، ده مجموعة قدرات بتتوزع على ست مجالات تقريبًا:</p><ul><li><strong>النصوص:</strong> كتابة، تلخيص، ترجمة، تحسين الصياغة، شرح الدروس، وتجهيز رسائل وإيميلات.</li><li><strong>الصور والتصميم:</strong> توليد صور، تصميم منشورات وعروض تقديمية، وتعديل الصور.</li><li><strong>الصوت والفيديو:</strong> تحويل النص لصوت، تفريغ الكلام لنص، ومساعدة في المونتاج وكتابة السيناريوهات.</li><li><strong>البحث والمعلومات:</strong> جمع معلومات وتلخيص مصادر ومقارنة الخيارات، مع ضرورة مراجعة المصادر.</li><li><strong>البيانات والبرمجة:</strong> شرح الأكواد، اكتشاف الأخطاء، تنظيف الجداول وتحليلها.</li><li><strong>الأتمتة:</strong> تنفيذ مهام متكررة أو متعددة الخطوات بشكل شبه آلي.</li></ul><div class=\"callout tip\"><strong>القاعدة الذهبية:</strong> الذكاء الاصطناعي بيسرّع الشغل، لكن المسؤولية عن النتيجة النهائية عليك. راجع أي معلومة أو رقم أو اقتباس مهم قبل ما تعتمد عليه.</div>"
+    },
+    {
+     "key": "steps",
+     "id": "lesson-what-can-you-do-with-ai-steps",
+     "label": "الخطوات",
+     "html": "<h2><span class=\"dot\"></span> خطوات تنفيذ أي مهمة بالذكاء الاصطناعي</h2>\n<p>اتبع نفس الخطوات تقريبًا مع أي مهمة:</p><ol><li><strong>حدد الهدف:</strong> عايز إيه بالظبط؟ (ملخص؟ خطة؟ تصميم؟)</li><li><strong>اكتب السياق:</strong> مين الجمهور؟ إيه الأسلوب؟ إيه المعلومات المتاحة؟</li><li><strong>اطلب بصيغة واضحة:</strong> الشكل المطلوب وعدد الكلمات أو النقاط.</li><li><strong>راجع وعدّل:</strong> اطلب تحسينات محددة بدل ما تبدأ من الصفر.</li><li><strong>تحقق قبل الاستخدام:</strong> الحقائق والأرقام والأسماء من مصدر موثوق.</li></ol>"
+    },
+    {
+     "key": "examples",
+     "id": "lesson-what-can-you-do-with-ai-examples",
+     "label": "أمثلة عملية",
+     "html": "<h2><span class=\"dot\"></span> أمثلة عملية بأوامر جاهزة</h2>\n<p><strong>1) تلخيص:</strong> «لخّصلي النص ده في 5 نقاط بلغة بسيطة، وبعدين اقترح 3 أسئلة أراجع بيها نفسي».</p><p><strong>2) كتابة إيميل:</strong> «اكتبلي إيميل مهذب لعميل بيسأل عن تأخير الطلب. الأسلوب رسمي ومختصر، ولا تعد بموعد محدد».</p><p><strong>3) خطة مذاكرة:</strong> «عندي امتحان بعد 10 أيام في مادة كذا. المنهج فيه 8 أبواب وعندي ساعتين يوميًا. اعمللي جدول بسيط».</p><p><strong>4) أفكار محتوى:</strong> «اقترح 10 أفكار لمنشورات تعليمية قصيرة عن الذكاء الاصطناعي لمبتدئين، مع جملة افتتاحية لكل فكرة».</p><p><strong>5) مراجعة كود:</strong> «اشرحلي الكود ده سطر بسطر، وقولي لو فيه أخطاء محتملة».</p>"
+    },
+    {
+     "key": "usecases",
+     "id": "lesson-what-can-you-do-with-ai-usecases",
+     "label": "استخدامات حقيقية",
+     "html": "<h2><span class=\"dot\"></span> استخدامات حقيقية</h2>\n<p><strong>للطالب:</strong> شرح المفاهيم الصعبة بأمثلة، وتحويل الملاحظات لأسئلة مراجعة.</p><p><strong>للموظف:</strong> صياغة التقارير والإيميلات، وتلخيص الاجتماعات، وترتيب المهام.</p><p><strong>لصاحب مشروع صغير:</strong> أفكار محتوى، ردود جاهزة على الاستفسارات المتكررة، وتحليل مبدئي للمنافسين.</p><p><strong>لصانع المحتوى:</strong> العصف الذهني، وكتابة السيناريوهات، وتحسين العناوين.</p>"
+    },
+    {
+     "key": "practices",
+     "id": "lesson-what-can-you-do-with-ai-practices",
+     "label": "أفضل الممارسات",
+     "html": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout tip\"><strong>نصيحة:</strong> ابدأ بمهمة صغيرة من شغلك أو دراستك الحقيقية بدل التجربة العشوائية.</div><div class=\"callout tip\"><strong>نصيحة:</strong> احتفظ بالأوامر اللي نجحت معاك في ملف، وعدّلها كل مرة.</div><div class=\"callout tip\"><strong>نصيحة:</strong> جرّب نفس الطلب في أداتين وقارن.</div>"
+    },
+    {
+     "key": "mistakes",
+     "id": "lesson-what-can-you-do-with-ai-mistakes",
+     "label": "أخطاء ومخاطر",
+     "html": "<h2><span class=\"dot\"></span> أخطاء شائعة</h2>\n<div class=\"callout warn\"><strong>الثقة العمياء:</strong> النموذج ممكن يقول معلومة غلط بثقة (هلوسة). راجع المصادر.</div><div class=\"callout warn\"><strong>مشاركة بيانات حساسة:</strong> ما تكتبش كلمات مرور أو بيانات عملاء أو أوراق خاصة في أي أداة إلا لو فاهم سياسة الخصوصية بتاعتها.</div><div class=\"callout warn\"><strong>النسخ بدون مراجعة:</strong> المحتوى اللي بيطلع لازم يتعدل ويتراجع باسمك.</div>"
+    },
+    {
+     "key": "summary",
+     "id": "lesson-what-can-you-do-with-ai-summary",
+     "label": "الملخص",
+     "html": "<h2><span class=\"dot\"></span> الملخص</h2>\n<p>الذكاء الاصطناعي بيساعد في النصوص والصور والصوت والبحث والبيانات والأتمتة. ابدأ بمهمة حقيقية صغيرة، اكتب سياق واضح، وراجع النتيجة دايمًا قبل الاعتماد عليها.</p>"
+    },
+    {
+     "key": "quiz",
+     "id": "lesson-what-can-you-do-with-ai-quiz",
+     "label": "اختبار قصير",
+     "html": "<h2><span class=\"dot\"></span> اختبار قصير</h2>\n<div class=\"quiz-box\">\n<div class=\"quiz-q\">\n<p class=\"qtext\">1. أنسب خطوة بعد ما الأداة تديك إجابة فيها أرقام؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>أنسخها كما هي</label>\n<label data-correct=\"true\"><input name=\"q1\" type=\"radio\"/>أتحقق منها من مصدر موثوق</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>أتجاهل الأرقام</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">2. أيهم مجال لا يغطيه الذكاء الاصطناعي عادةً؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>تلخيص نصوص</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>تحويل الكلام لنص</label>\n<label data-correct=\"true\"><input name=\"q2\" type=\"radio\"/>ضمان صحة كل معلومة بدون مراجعة</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">3. إيه اللي المفروض ما تشاركوش في أي أداة بدون فهم سياسة الخصوصية؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"q3\" type=\"radio\"/>سؤال عام عن التاريخ</label>\n<label data-correct=\"true\"><input name=\"q3\" type=\"radio\"/>بيانات عملاء وكلمات مرور</label>\n<label data-correct=\"false\"><input name=\"q3\" type=\"radio\"/>طلب فكرة منشور</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">4. أفضل طريقة تتعلم بيها استخدام الذكاء الاصطناعي؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q4\" type=\"radio\"/>تجربة مهام حقيقية من حياتك ومراجعتها</label>\n<label data-correct=\"false\"><input name=\"q4\" type=\"radio\"/>حفظ أسماء الأدوات فقط</label>\n<label data-correct=\"false\"><input name=\"q4\" type=\"radio\"/>انتظار أداة مثالية</label>\n</div>\n</div>\n<p class=\"quiz-result\"></p>\n</div>"
+    },
+    {
+     "key": "assignment",
+     "id": "lesson-what-can-you-do-with-ai-assignment",
+     "label": "تمرين عملي",
+     "html": "<h2><span class=\"dot\"></span> تمرين عملي</h2>\n<div class=\"assignment-box\">\n<h3 style=\"margin-top:0;color:var(--gold);\">التمرين</h3>\n<p>اختار مهمة حقيقية صغيرة (إيميل، ملخص، خطة أسبوع)، ونفّذها بأداة ذكاء اصطناعي، وبعدين اكتب في ورقة: إيه اللي اتحسن؟ وإيه اللي اضطريت تعدله بنفسك؟ وإيه المعلومة اللي راجعتها؟</p>\n</div>"
+    },
+    {
+     "key": "cheatsheet",
+     "id": "lesson-what-can-you-do-with-ai-cheatsheet",
+     "label": "ملخص للتحميل",
+     "html": "<h2><span class=\"dot\"></span> ملخص سريع للتحميل</h2>\n<div class=\"cheat-box\">\n<p style=\"color:var(--text);margin-bottom:14px;\">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p>\n<button class=\"btn btn-outline print-cheat-btn\">🖨️ تحميل / طباعة الملخص</button>\n</div>"
+    },
+    {
+     "key": "faq",
+     "id": "lesson-what-can-you-do-with-ai-faq",
+     "label": "أسئلة شائعة",
+     "html": "<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\">\n<summary>هل الذكاء الاصطناعي يغني عن الخبرة؟</summary>\n<p>لأ. هو بيسرّع، لكن الحكم والمراجعة والمسؤولية عندك.</p>\n</details>\n<details class=\"faq-item\">\n<summary>أبدأ بأداة مجانية؟</summary>\n<p>أيوه، أغلب الأدوات الكبيرة ليها استخدام مجاني بحدود، والحدود بتتغير فراجع الموقع الرسمي.</p>\n</details>\n"
+    },
+    {
+     "key": "resources",
+     "id": "lesson-what-can-you-do-with-ai-resources",
+     "label": "مصادر",
+     "html": "<h2><span class=\"dot\"></span> مصادر رسمية</h2><ul><li><a href=\"https://openai.com\" target=\"_blank\" rel=\"noopener\">OpenAI</a></li><li><a href=\"https://gemini.google.com\" target=\"_blank\" rel=\"noopener\">Google Gemini</a></li><li><a href=\"https://claude.ai\" target=\"_blank\" rel=\"noopener\">Anthropic Claude</a></li><li><a href=\"https://notebook.google\" target=\"_blank\" rel=\"noopener\">Gemini Notebook (NotebookLM سابقًا)</a></li><li><a href=\"https://perplexity.ai\" target=\"_blank\" rel=\"noopener\">Perplexity</a></li></ul><p><small>آخر مراجعة للمحتوى: 18 أكتوبر 2026. أدوات الذكاء الاصطناعي وخططها وأسعارها بتتغير بسرعة، فراجع الموقع الرسمي لكل أداة قبل ما تعتمد على أي معلومة متغيرة.</small></p>"
+    }
+   ],
+   "nextLessonTitle": "أهم أدوات الذكاء الاصطناعي وإزاي تختار الأنسب",
+   "lastReviewed": "2026-10-18",
+   "reviewStatus": "original-content-needs-human-review"
+  },
+  {
+   "id": "top-ai-tools",
+   "title": "أهم أدوات الذكاء الاصطناعي وإزاي تختار الأنسب",
+   "slug": "top-ai-tools",
+   "description": "خريطة مبسطة لأشهر أدوات الذكاء الاصطناعي في 2026 حسب الاستخدام، مع روابطها الرسمية ومعايير الاختيار.",
+   "level": "مبتدئ",
+   "category": "ai-in-practice",
+   "duration": null,
+   "order": 2,
+   "status": "published",
+   "content": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>مفيش أداة «الأفضل» للكل. الأدوات الكبيرة بتتنافس وبتتطور باستمرار، واللي بيفيدك فعلًا هو اختيار الأداة حسب مهمتك. الكتابات العامة عن 2026 بتتفق على فكرة واحدة: ابنِ «مجموعة أدوات» بدل ما تعتمد على أداة واحدة.</p><table style=\"width:100%;border-collapse:collapse\"><thead><tr><th>الاستخدام</th><th>أمثلة معروفة</th><th>الموقع الرسمي</th></tr></thead><tbody><tr><td>مساعد عام (كتابة، شرح، برمجة)</td><td>ChatGPT</td><td dir=\"ltr\"><a href=\"https://chatgpt.com\" target=\"_blank\" rel=\"noopener\">chatgpt.com</a></td></tr><tr><td>مساعد مرتبط بخدمات جوجل</td><td>Google Gemini</td><td dir=\"ltr\"><a href=\"https://gemini.google.com\" target=\"_blank\" rel=\"noopener\">gemini.google.com</a></td></tr><tr><td>كتابة طويلة وتحليل مستندات</td><td>Claude</td><td dir=\"ltr\"><a href=\"https://claude.ai\" target=\"_blank\" rel=\"noopener\">claude.ai</a></td></tr><tr><td>بحث مع مصادر</td><td>Perplexity</td><td dir=\"ltr\"><a href=\"https://perplexity.ai\" target=\"_blank\" rel=\"noopener\">perplexity.ai</a></td></tr><tr><td>دراسة من مصادرك أنت</td><td>Gemini Notebook (اسمه السابق NotebookLM)</td><td dir=\"ltr\"><a href=\"https://notebook.google\" target=\"_blank\" rel=\"noopener\">notebook.google</a></td></tr><tr><td>تصميم ومنشورات وعروض</td><td>Canva</td><td dir=\"ltr\"><a href=\"https://canva.com\" target=\"_blank\" rel=\"noopener\">canva.com</a></td></tr><tr><td>مونتاج فيديو قصير</td><td>CapCut</td><td dir=\"ltr\"><a href=\"https://capcut.com\" target=\"_blank\" rel=\"noopener\">capcut.com</a></td></tr><tr><td>تنظيم المهام والملاحظات</td><td>Notion</td><td dir=\"ltr\"><a href=\"https://notion.com\" target=\"_blank\" rel=\"noopener\">notion.com</a></td></tr><tr><td>مساعد داخل أدوات المكتب</td><td>Microsoft Copilot</td><td dir=\"ltr\"><a href=\"https://copilot.microsoft.com\" target=\"_blank\" rel=\"noopener\">copilot.microsoft.com</a></td></tr></tbody></table><div class=\"callout tip\"><strong>تحديث رسمي:</strong> جوجل غيّرت اسم NotebookLM إلى «Gemini Notebook» في 16 يوليو 2026، وهو نفس المنتج. وبعض مميزات CapCut متاحة في مناطق معينة فقط حسب موقعهم الرسمي، فتأكد من توفرها في بلدك.</div><div class=\"callout tip\"><strong>مهم:</strong> الأسماء دي أمثلة شائعة، مش ترتيب أفضلية. الخطط المجانية والمدفوعة والمميزات بتتغير، والتحقق منها من الموقع الرسمي.</div>",
+   "examples": "<h2><span class=\"dot\"></span> أمثلة تطبيقية</h2>\n<p><strong>طالب:</strong> يرفع ملخصاته على NotebookLM ويسأل عن نقاط المراجعة من مصادره هو. <strong>صانع محتوى:</strong> فكرة بمساعد عام، تصميم بـ Canva، مونتاج بـ CapCut. <strong>صاحب مشروع:</strong> ردود جاهزة ومحتوى بمساعد عام، وبحث عن المنافسين بأداة بحث بتعرض مصادرها.</p>",
+   "tips": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout tip\"><strong>نصيحة:</strong> سجّل تاريخ آخر مرة راجعت فيها خطة أي أداة مدفوعة.</div><div class=\"callout tip\"><strong>نصيحة:</strong> الأدوات اللي بتعرض مصادرها أسهل في التحقق من المعلومات.</div>",
+   "exercise": "<div class=\"assignment-box\">\n<h3 style=\"margin-top:0;color:var(--gold);\">التمرين</h3>\n<p>اختار مهمة واحدة من شغلك أو دراستك، ونفّذها بأداتين مختلفتين، واكتب جدول صغير: جودة النتيجة، دعم العربي، سهولة الاستخدام، حدود الخطة المجانية. وقرر أنهي أنسب ليك.</p>\n</div>",
+   "quiz": {
+    "questions": [
+     {
+      "question": "1. أحسن طريقة لاختيار أداة؟",
+      "options": [
+       {
+        "text": "اللي بيتكلم عنها الناس أكتر فقط",
+        "correct": false
+       },
+       {
+        "text": "حسب المهمة بعد تجربة مجانية",
+        "correct": true
+       },
+       {
+        "text": "أغلى خطة",
+        "correct": false
+       }
+      ]
+     },
+     {
+      "question": "2. أداة بتشتغل على مصادرك أنت في الدراسة؟",
+      "options": [
+       {
+        "text": "Gemini Notebook (NotebookLM سابقًا)",
+        "correct": true
+       },
+       {
+        "text": "CapCut",
+        "correct": false
+       },
+       {
+        "text": "Canva",
+        "correct": false
+       }
+      ]
+     },
+     {
+      "question": "3. فين تتأكد من خطط الأسعار؟",
+      "options": [
+       {
+        "text": "منشور على السوشيال ميديا",
+        "correct": false
+       },
+       {
+        "text": "الموقع الرسمي للأداة",
+        "correct": true
+       },
+       {
+        "text": "رأي صديق",
+        "correct": false
+       }
+      ]
+     },
+     {
+      "question": "4. لو هتشتغل بالأداة مع عملاء، تراجع إيه؟",
+      "options": [
+       {
+        "text": "سياسة الخصوصية وشروط الاستخدام التجاري",
+        "correct": true
+       },
+       {
+        "text": "لون الشعار",
+        "correct": false
+       },
+       {
+        "text": "عدد المتابعين",
+        "correct": false
+       }
+      ]
+     }
+    ]
+   },
+   "resources": "<h2><span class=\"dot\"></span> مصادر رسمية</h2><ul><li><a href=\"https://openai.com\" target=\"_blank\" rel=\"noopener\">OpenAI</a></li><li><a href=\"https://gemini.google.com\" target=\"_blank\" rel=\"noopener\">Google Gemini</a></li><li><a href=\"https://claude.ai\" target=\"_blank\" rel=\"noopener\">Anthropic Claude</a></li><li><a href=\"https://notebook.google\" target=\"_blank\" rel=\"noopener\">Gemini Notebook (NotebookLM سابقًا)</a></li><li><a href=\"https://perplexity.ai\" target=\"_blank\" rel=\"noopener\">Perplexity</a></li></ul><p><small>آخر مراجعة للمحتوى: 18 أكتوبر 2026. أدوات الذكاء الاصطناعي وخططها وأسعارها بتتغير بسرعة، فراجع الموقع الرسمي لكل أداة قبل ما تعتمد على أي معلومة متغيرة.</small></p>",
+   "prerequisites": [],
+   "nextLesson": "make-money-with-ai",
+   "summary": "اختار الأداة حسب المهمة، جرّب المجاني الأول، راجع الخصوصية والاستخدام التجاري، وابنِ مجموعة صغيرة من الأدوات بدل أداة واحدة. وراجع الخطط والأسعار من الموقع الرسمي.",
+   "sections": [
+    {
+     "key": "beginner",
+     "id": "lesson-top-ai-tools-beginner",
+     "label": "الشرح المبسط",
+     "html": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>مفيش أداة «الأفضل» للكل. الأدوات الكبيرة بتتنافس وبتتطور باستمرار، واللي بيفيدك فعلًا هو اختيار الأداة حسب مهمتك. الكتابات العامة عن 2026 بتتفق على فكرة واحدة: ابنِ «مجموعة أدوات» بدل ما تعتمد على أداة واحدة.</p><table style=\"width:100%;border-collapse:collapse\"><thead><tr><th>الاستخدام</th><th>أمثلة معروفة</th><th>الموقع الرسمي</th></tr></thead><tbody><tr><td>مساعد عام (كتابة، شرح، برمجة)</td><td>ChatGPT</td><td dir=\"ltr\"><a href=\"https://chatgpt.com\" target=\"_blank\" rel=\"noopener\">chatgpt.com</a></td></tr><tr><td>مساعد مرتبط بخدمات جوجل</td><td>Google Gemini</td><td dir=\"ltr\"><a href=\"https://gemini.google.com\" target=\"_blank\" rel=\"noopener\">gemini.google.com</a></td></tr><tr><td>كتابة طويلة وتحليل مستندات</td><td>Claude</td><td dir=\"ltr\"><a href=\"https://claude.ai\" target=\"_blank\" rel=\"noopener\">claude.ai</a></td></tr><tr><td>بحث مع مصادر</td><td>Perplexity</td><td dir=\"ltr\"><a href=\"https://perplexity.ai\" target=\"_blank\" rel=\"noopener\">perplexity.ai</a></td></tr><tr><td>دراسة من مصادرك أنت</td><td>Gemini Notebook (اسمه السابق NotebookLM)</td><td dir=\"ltr\"><a href=\"https://notebook.google\" target=\"_blank\" rel=\"noopener\">notebook.google</a></td></tr><tr><td>تصميم ومنشورات وعروض</td><td>Canva</td><td dir=\"ltr\"><a href=\"https://canva.com\" target=\"_blank\" rel=\"noopener\">canva.com</a></td></tr><tr><td>مونتاج فيديو قصير</td><td>CapCut</td><td dir=\"ltr\"><a href=\"https://capcut.com\" target=\"_blank\" rel=\"noopener\">capcut.com</a></td></tr><tr><td>تنظيم المهام والملاحظات</td><td>Notion</td><td dir=\"ltr\"><a href=\"https://notion.com\" target=\"_blank\" rel=\"noopener\">notion.com</a></td></tr><tr><td>مساعد داخل أدوات المكتب</td><td>Microsoft Copilot</td><td dir=\"ltr\"><a href=\"https://copilot.microsoft.com\" target=\"_blank\" rel=\"noopener\">copilot.microsoft.com</a></td></tr></tbody></table><div class=\"callout tip\"><strong>تحديث رسمي:</strong> جوجل غيّرت اسم NotebookLM إلى «Gemini Notebook» في 16 يوليو 2026، وهو نفس المنتج. وبعض مميزات CapCut متاحة في مناطق معينة فقط حسب موقعهم الرسمي، فتأكد من توفرها في بلدك.</div><div class=\"callout tip\"><strong>مهم:</strong> الأسماء دي أمثلة شائعة، مش ترتيب أفضلية. الخطط المجانية والمدفوعة والمميزات بتتغير، والتحقق منها من الموقع الرسمي.</div>"
+    },
+    {
+     "key": "steps",
+     "id": "lesson-top-ai-tools-steps",
+     "label": "الخطوات",
+     "html": "<h2><span class=\"dot\"></span> إزاي تختار الأداة المناسبة</h2>\n<ol><li><strong>حدد المهمة:</strong> كتابة؟ بحث؟ تصميم؟ مذاكرة؟</li><li><strong>جرب الخطة المجانية</strong> بمهمة حقيقية قبل أي اشتراك.</li><li><strong>اتأكد من اللغة العربية:</strong> جرّب نفس الطلب بالعربي وراجع جودة النتيجة.</li><li><strong>اقرأ سياسة الخصوصية والاستخدام التجاري</strong> لو هتشتغل بيها مع عملاء.</li><li><strong>قارن أداتين</strong> على نفس المهمة قبل ما تقرر.</li></ol>"
+    },
+    {
+     "key": "examples",
+     "id": "lesson-top-ai-tools-examples",
+     "label": "أمثلة عملية",
+     "html": "<h2><span class=\"dot\"></span> أمثلة تطبيقية</h2>\n<p><strong>طالب:</strong> يرفع ملخصاته على NotebookLM ويسأل عن نقاط المراجعة من مصادره هو. <strong>صانع محتوى:</strong> فكرة بمساعد عام، تصميم بـ Canva، مونتاج بـ CapCut. <strong>صاحب مشروع:</strong> ردود جاهزة ومحتوى بمساعد عام، وبحث عن المنافسين بأداة بحث بتعرض مصادرها.</p>"
+    },
+    {
+     "key": "usecases",
+     "id": "lesson-top-ai-tools-usecases",
+     "label": "استخدامات حقيقية",
+     "html": "<h2><span class=\"dot\"></span> استخدامات حقيقية</h2>\n<p>اعتماد مجموعة صغيرة من 3 أدوات: واحدة عامة، واحدة للبحث أو الدراسة، وواحدة للتصميم أو الفيديو حسب شغلك. زوّد أداة جديدة بس لما تحتاج مهمة ما تقدرش تعملها بالموجود.</p>"
+    },
+    {
+     "key": "practices",
+     "id": "lesson-top-ai-tools-practices",
+     "label": "أفضل الممارسات",
+     "html": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout tip\"><strong>نصيحة:</strong> سجّل تاريخ آخر مرة راجعت فيها خطة أي أداة مدفوعة.</div><div class=\"callout tip\"><strong>نصيحة:</strong> الأدوات اللي بتعرض مصادرها أسهل في التحقق من المعلومات.</div>"
+    },
+    {
+     "key": "mistakes",
+     "id": "lesson-top-ai-tools-mistakes",
+     "label": "أخطاء ومخاطر",
+     "html": "<h2><span class=\"dot\"></span> أخطاء شائعة</h2>\n<div class=\"callout warn\"><strong>تجميع أدوات كتير:</strong> الانشغال بالأدوات بدل المهارة.</div><div class=\"callout warn\"><strong>الاشتراك قبل التجربة:</strong> جرّب الأول بالخطة المجانية.</div><div class=\"callout warn\"><strong>الاعتماد على لقطات التواصل الاجتماعي:</strong> كتير من الإعلانات عن «أداة خارقة» تسويق. شوف الموقع الرسمي.</div>"
+    },
+    {
+     "key": "summary",
+     "id": "lesson-top-ai-tools-summary",
+     "label": "الملخص",
+     "html": "<h2><span class=\"dot\"></span> الملخص</h2>\n<p>اختار الأداة حسب المهمة، جرّب المجاني الأول، راجع الخصوصية والاستخدام التجاري، وابنِ مجموعة صغيرة من الأدوات بدل أداة واحدة. وراجع الخطط والأسعار من الموقع الرسمي.</p>"
+    },
+    {
+     "key": "quiz",
+     "id": "lesson-top-ai-tools-quiz",
+     "label": "اختبار قصير",
+     "html": "<h2><span class=\"dot\"></span> اختبار قصير</h2>\n<div class=\"quiz-box\">\n<div class=\"quiz-q\">\n<p class=\"qtext\">1. أحسن طريقة لاختيار أداة؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>اللي بيتكلم عنها الناس أكتر فقط</label>\n<label data-correct=\"true\"><input name=\"q1\" type=\"radio\"/>حسب المهمة بعد تجربة مجانية</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>أغلى خطة</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">2. أداة بتشتغل على مصادرك أنت في الدراسة؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q2\" type=\"radio\"/>Gemini Notebook (NotebookLM سابقًا)</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>CapCut</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>Canva</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">3. فين تتأكد من خطط الأسعار؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"q3\" type=\"radio\"/>منشور على السوشيال ميديا</label>\n<label data-correct=\"true\"><input name=\"q3\" type=\"radio\"/>الموقع الرسمي للأداة</label>\n<label data-correct=\"false\"><input name=\"q3\" type=\"radio\"/>رأي صديق</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">4. لو هتشتغل بالأداة مع عملاء، تراجع إيه؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q4\" type=\"radio\"/>سياسة الخصوصية وشروط الاستخدام التجاري</label>\n<label data-correct=\"false\"><input name=\"q4\" type=\"radio\"/>لون الشعار</label>\n<label data-correct=\"false\"><input name=\"q4\" type=\"radio\"/>عدد المتابعين</label>\n</div>\n</div>\n<p class=\"quiz-result\"></p>\n</div>"
+    },
+    {
+     "key": "assignment",
+     "id": "lesson-top-ai-tools-assignment",
+     "label": "تمرين عملي",
+     "html": "<h2><span class=\"dot\"></span> تمرين عملي</h2>\n<div class=\"assignment-box\">\n<h3 style=\"margin-top:0;color:var(--gold);\">التمرين</h3>\n<p>اختار مهمة واحدة من شغلك أو دراستك، ونفّذها بأداتين مختلفتين، واكتب جدول صغير: جودة النتيجة، دعم العربي، سهولة الاستخدام، حدود الخطة المجانية. وقرر أنهي أنسب ليك.</p>\n</div>"
+    },
+    {
+     "key": "cheatsheet",
+     "id": "lesson-top-ai-tools-cheatsheet",
+     "label": "ملخص للتحميل",
+     "html": "<h2><span class=\"dot\"></span> ملخص سريع للتحميل</h2>\n<div class=\"cheat-box\">\n<p style=\"color:var(--text);margin-bottom:14px;\">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p>\n<button class=\"btn btn-outline print-cheat-btn\">🖨️ تحميل / طباعة الملخص</button>\n</div>"
+    },
+    {
+     "key": "faq",
+     "id": "lesson-top-ai-tools-faq",
+     "label": "أسئلة شائعة",
+     "html": "<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\">\n<summary>أشترك في كذا أداة؟</summary>\n<p>لأ، ابدأ بأداة عامة مجانية، وزوّد لما تحتاج فعلًا.</p>\n</details>\n<details class=\"faq-item\">\n<summary>إزاي أعرف إن الأداة موثوقة؟</summary>\n<p>موقع رسمي واضح، سياسة خصوصية، وتجارب موثقة من مصادر متعددة.</p>\n</details>\n"
+    },
+    {
+     "key": "resources",
+     "id": "lesson-top-ai-tools-resources",
+     "label": "مصادر",
+     "html": "<h2><span class=\"dot\"></span> مصادر رسمية</h2><ul><li><a href=\"https://openai.com\" target=\"_blank\" rel=\"noopener\">OpenAI</a></li><li><a href=\"https://gemini.google.com\" target=\"_blank\" rel=\"noopener\">Google Gemini</a></li><li><a href=\"https://claude.ai\" target=\"_blank\" rel=\"noopener\">Anthropic Claude</a></li><li><a href=\"https://notebook.google\" target=\"_blank\" rel=\"noopener\">Gemini Notebook (NotebookLM سابقًا)</a></li><li><a href=\"https://perplexity.ai\" target=\"_blank\" rel=\"noopener\">Perplexity</a></li></ul><p><small>آخر مراجعة للمحتوى: 18 أكتوبر 2026. أدوات الذكاء الاصطناعي وخططها وأسعارها بتتغير بسرعة، فراجع الموقع الرسمي لكل أداة قبل ما تعتمد على أي معلومة متغيرة.</small></p>"
+    }
+   ],
+   "nextLessonTitle": "كيف تربح من الذكاء الاصطناعي بواقعية",
+   "lastReviewed": "2026-10-18",
+   "reviewStatus": "original-content-needs-human-review"
+  },
+  {
+   "id": "make-money-with-ai",
+   "title": "كيف تربح من الذكاء الاصطناعي بواقعية",
+   "slug": "make-money-with-ai",
+   "description": "طرق واقعية للاستفادة المهنية من الذكاء الاصطناعي: خدمات، تعليم، أتمتة ومحتوى، مع خطوات البداية والمخاطر، ومن غير وعود بدخل مضمون.",
+   "level": "مبتدئ",
+   "category": "ai-in-practice",
+   "duration": null,
+   "order": 3,
+   "status": "published",
+   "content": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>الذكاء الاصطناعي ما بيجيبش فلوس لوحده. اللي بيكسب فعلًا هو اللي بيحل مشكلة حقيقية لعميل بجودة أسرع أو أرخص أو أحسن، وبيستخدم الأداة كمساعد في الشغل. وماحدش يقدر يضمنلك دخل معين.</p><div class=\"callout warn\"><strong>تنبيه:</strong> أي إعلان بيوعد بربح مضمون أو «دخل سريع بدون مجهود» غالبًا نصب أو تسويق مبالغ فيه. ما تدفعش لأي كورس أو عرض بدون ما تتأكد من صاحبه وتجارب حقيقية.</div><p>أشهر المسارات الواقعية:</p><ul><li><strong>خدمات بمراجعة بشرية:</strong> كتابة وتحرير وترجمة وتفريغ صوتي، حيث الذكاء الاصطناعي يسرّع وأنت بتراجع وتضمن الجودة.</li><li><strong>خدمات بصرية:</strong> تصميم منشورات وعروض وفيديوهات قصيرة.</li><li><strong>إدارة محتوى السوشيال ميديا</strong> لمشاريع صغيرة.</li><li><strong>أتمتة مهام</strong> متكررة لأصحاب الأعمال (ردود جاهزة، تنظيم بيانات، تقارير).</li><li><strong>التعليم والتدريب:</strong> تعليم أدوات الذكاء الاصطناعي لغيرك بعد ما تتقنها.</li><li><strong>منتجات رقمية أصلية:</strong> قوالب وملفات تنظيم من إعدادك أنت.</li></ul>",
+   "examples": "<h2><span class=\"dot\"></span> أمثلة تطبيقية</h2>\n<p><strong>تحرير نصوص:</strong> بتستخدم أداة لتحسين صياغة مقال، وبتراجعه بنفسك وتصحح المعلومات قبل التسليم.</p><p><strong>منشورات لمطعم صغير:</strong> أفكار بمساعد عام، تصميم بـ Canva، وجدول نشر أسبوعي.</p><p><strong>رد جاهز على الاستفسارات:</strong> مجموعة ردود لأسئلة متكررة لمتجر، بتتعدل بصوت المتجر.</p>",
+   "tips": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout tip\"><strong>نصيحة:</strong> الجودة والمصداقية أهم من السرعة. عميل واحد راضي أفضل من عشرة غير راضيين.</div><div class=\"callout tip\"><strong>نصيحة:</strong> احتفظ بنسخ العمل والتعديلات اللي عملتها يدويًا.</div>",
+   "exercise": "<div class=\"assignment-box\">\n<h3 style=\"margin-top:0;color:var(--gold);\">التمرين</h3>\n<p>اكتب في صفحة واحدة: المهارة اللي هتبدأ بيها، الأدوات اللي هتستخدمها، 3 نماذج أعمال هتجهزها، وجملة تشرح بيها للعميل إزاي بتراجع الجودة. ما تذكرش أرقام دخل متوقعة.</p>\n</div>",
+   "quiz": {
+    "questions": [
+     {
+      "question": "1. إيه أصدق وصف للربح من الذكاء الاصطناعي؟",
+      "options": [
+       {
+        "text": "مضمون لأي حد بسرعة",
+        "correct": false
+       },
+       {
+        "text": "بييجي من حل مشكلة حقيقية بجودة ومراجعة",
+        "correct": true
+       },
+       {
+        "text": "بدون أي مجهود",
+        "correct": false
+       }
+      ]
+     },
+     {
+      "question": "2. قبل التسليم للعميل المفروض؟",
+      "options": [
+       {
+        "text": "أسلّم نتيجة الأداة كما هي",
+        "correct": false
+       },
+       {
+        "text": "أراجع وأصحح وأعدّل",
+        "correct": true
+       },
+       {
+        "text": "أتجنب ذكر أي تفاصيل",
+        "correct": false
+       }
+      ]
+     },
+     {
+      "question": "3. أول خطوة منطقية للبداية؟",
+      "options": [
+       {
+        "text": "اختيار مهارة واحدة وإتقان أداتين تلاتة",
+        "correct": true
+       },
+       {
+        "text": "تعلم 20 أداة",
+        "correct": false
+       },
+       {
+        "text": "شراء أغلى كورس",
+        "correct": false
+       }
+      ]
+     },
+     {
+      "question": "4. بيانات العميل الحساسة؟",
+      "options": [
+       {
+        "text": "أحطها في أي أداة",
+        "correct": false
+       },
+       {
+        "text": "ما أحطهاش إلا بإذنه وفهم سياسة الأداة",
+        "correct": true
+       },
+       {
+        "text": "أنشرها كنموذج",
+        "correct": false
+       }
+      ]
+     }
+    ]
+   },
+   "resources": "<h2><span class=\"dot\"></span> مصادر رسمية</h2><ul><li><a href=\"https://openai.com\" target=\"_blank\" rel=\"noopener\">OpenAI</a></li><li><a href=\"https://gemini.google.com\" target=\"_blank\" rel=\"noopener\">Google Gemini</a></li><li><a href=\"https://claude.ai\" target=\"_blank\" rel=\"noopener\">Anthropic Claude</a></li><li><a href=\"https://notebook.google\" target=\"_blank\" rel=\"noopener\">Gemini Notebook (NotebookLM سابقًا)</a></li><li><a href=\"https://perplexity.ai\" target=\"_blank\" rel=\"noopener\">Perplexity</a></li></ul><p><small>آخر مراجعة للمحتوى: 18 أكتوبر 2026. أدوات الذكاء الاصطناعي وخططها وأسعارها بتتغير بسرعة، فراجع الموقع الرسمي لكل أداة قبل ما تعتمد على أي معلومة متغيرة.</small></p>",
+   "prerequisites": [],
+   "nextLesson": "ai-whats-new",
+   "summary": "الربح الواقعي بييجي من حل مشكلة حقيقية لعميل بمهارة وجودة، مش من الأداة لوحدها. ابدأ بمهارة واحدة، اعمل نماذج، كن صريح مع العملاء، وراجع الحقوق والخصوصية. ولا أحد يضمن دخل.",
+   "sections": [
+    {
+     "key": "beginner",
+     "id": "lesson-make-money-with-ai-beginner",
+     "label": "الشرح المبسط",
+     "html": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>الذكاء الاصطناعي ما بيجيبش فلوس لوحده. اللي بيكسب فعلًا هو اللي بيحل مشكلة حقيقية لعميل بجودة أسرع أو أرخص أو أحسن، وبيستخدم الأداة كمساعد في الشغل. وماحدش يقدر يضمنلك دخل معين.</p><div class=\"callout warn\"><strong>تنبيه:</strong> أي إعلان بيوعد بربح مضمون أو «دخل سريع بدون مجهود» غالبًا نصب أو تسويق مبالغ فيه. ما تدفعش لأي كورس أو عرض بدون ما تتأكد من صاحبه وتجارب حقيقية.</div><p>أشهر المسارات الواقعية:</p><ul><li><strong>خدمات بمراجعة بشرية:</strong> كتابة وتحرير وترجمة وتفريغ صوتي، حيث الذكاء الاصطناعي يسرّع وأنت بتراجع وتضمن الجودة.</li><li><strong>خدمات بصرية:</strong> تصميم منشورات وعروض وفيديوهات قصيرة.</li><li><strong>إدارة محتوى السوشيال ميديا</strong> لمشاريع صغيرة.</li><li><strong>أتمتة مهام</strong> متكررة لأصحاب الأعمال (ردود جاهزة، تنظيم بيانات، تقارير).</li><li><strong>التعليم والتدريب:</strong> تعليم أدوات الذكاء الاصطناعي لغيرك بعد ما تتقنها.</li><li><strong>منتجات رقمية أصلية:</strong> قوالب وملفات تنظيم من إعدادك أنت.</li></ul>"
+    },
+    {
+     "key": "steps",
+     "id": "lesson-make-money-with-ai-steps",
+     "label": "الخطوات",
+     "html": "<h2><span class=\"dot\"></span> خطوات البداية</h2>\n<ol><li><strong>اختار مهارة واحدة</strong> مش خمسة (مثلًا: تلخيص وتحرير نصوص، أو تصميم منشورات).</li><li><strong>اتقن أداتين تلاتة</strong> فقط تخدم المهارة دي.</li><li><strong>اعمل 3 نماذج أعمال</strong> حقيقية (ممكن لمشاريع تجريبية أو لأصدقاء بإذنهم).</li><li><strong>جهز معرض أعمال بسيط</strong> يشرح المشكلة والنتيجة بدون ادعاءات مبالغ فيها.</li><li><strong>ابدأ بعملاء صغار</strong> وسعّر بعد ما تعرف وقتك الفعلي.</li><li><strong>اطلب رأي العميل</strong> وحسّن الخدمة.</li></ol>"
+    },
+    {
+     "key": "examples",
+     "id": "lesson-make-money-with-ai-examples",
+     "label": "أمثلة عملية",
+     "html": "<h2><span class=\"dot\"></span> أمثلة تطبيقية</h2>\n<p><strong>تحرير نصوص:</strong> بتستخدم أداة لتحسين صياغة مقال، وبتراجعه بنفسك وتصحح المعلومات قبل التسليم.</p><p><strong>منشورات لمطعم صغير:</strong> أفكار بمساعد عام، تصميم بـ Canva، وجدول نشر أسبوعي.</p><p><strong>رد جاهز على الاستفسارات:</strong> مجموعة ردود لأسئلة متكررة لمتجر، بتتعدل بصوت المتجر.</p>"
+    },
+    {
+     "key": "usecases",
+     "id": "lesson-make-money-with-ai-usecases",
+     "label": "استخدامات حقيقية",
+     "html": "<h2><span class=\"dot\"></span> إزاي تقدم نفسك بشكل صحيح</h2>\n<p>اشرح للعميل بصراحة إنك بتستخدم أدوات ذكاء اصطناعي في العمل وإنك بتراجع النتيجة، وخصوصًا لو منصة أو عميل بيشترط الإفصاح. حدد النطاق والتسليمات والمراجعات قبل ما تبدأ.</p>"
+    },
+    {
+     "key": "practices",
+     "id": "lesson-make-money-with-ai-practices",
+     "label": "أفضل الممارسات",
+     "html": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout tip\"><strong>نصيحة:</strong> الجودة والمصداقية أهم من السرعة. عميل واحد راضي أفضل من عشرة غير راضيين.</div><div class=\"callout tip\"><strong>نصيحة:</strong> احتفظ بنسخ العمل والتعديلات اللي عملتها يدويًا.</div>"
+    },
+    {
+     "key": "mistakes",
+     "id": "lesson-make-money-with-ai-mistakes",
+     "label": "أخطاء ومخاطر",
+     "html": "<h2><span class=\"dot\"></span> مخاطر لازم تعرفها</h2>\n<div class=\"callout warn\"><strong>الحقوق:</strong> راجع شروط كل أداة بخصوص الاستخدام التجاري للمخرجات، وما تبيعش محتوى منسوخ من غيرك. مثال: Canva بتذكر على موقعها إن مخرجات الذكاء الاصطناعي ممكن ما تبقاش حصرية ليك، وإنك المسؤول عن التأكد إنها مناسبة للاستخدام التجاري.</div><div class=\"callout warn\"><strong>الخصوصية:</strong> بيانات العميل ما تتحطش في أداة بدون إذنه وفهمك لسياستها.</div><div class=\"callout warn\"><strong>تسليم بدون مراجعة:</strong> ده أسرع طريق لخسارة السمعة.</div><div class=\"callout warn\"><strong>الوعود:</strong> ما تعدش عميل بنتيجة (مبيعات، متابعين) ما تتحكمش فيها.</div>"
+    },
+    {
+     "key": "summary",
+     "id": "lesson-make-money-with-ai-summary",
+     "label": "الملخص",
+     "html": "<h2><span class=\"dot\"></span> الملخص</h2>\n<p>الربح الواقعي بييجي من حل مشكلة حقيقية لعميل بمهارة وجودة، مش من الأداة لوحدها. ابدأ بمهارة واحدة، اعمل نماذج، كن صريح مع العملاء، وراجع الحقوق والخصوصية. ولا أحد يضمن دخل.</p>"
+    },
+    {
+     "key": "quiz",
+     "id": "lesson-make-money-with-ai-quiz",
+     "label": "اختبار قصير",
+     "html": "<h2><span class=\"dot\"></span> اختبار قصير</h2>\n<div class=\"quiz-box\">\n<div class=\"quiz-q\">\n<p class=\"qtext\">1. إيه أصدق وصف للربح من الذكاء الاصطناعي؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>مضمون لأي حد بسرعة</label>\n<label data-correct=\"true\"><input name=\"q1\" type=\"radio\"/>بييجي من حل مشكلة حقيقية بجودة ومراجعة</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>بدون أي مجهود</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">2. قبل التسليم للعميل المفروض؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>أسلّم نتيجة الأداة كما هي</label>\n<label data-correct=\"true\"><input name=\"q2\" type=\"radio\"/>أراجع وأصحح وأعدّل</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>أتجنب ذكر أي تفاصيل</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">3. أول خطوة منطقية للبداية؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q3\" type=\"radio\"/>اختيار مهارة واحدة وإتقان أداتين تلاتة</label>\n<label data-correct=\"false\"><input name=\"q3\" type=\"radio\"/>تعلم 20 أداة</label>\n<label data-correct=\"false\"><input name=\"q3\" type=\"radio\"/>شراء أغلى كورس</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">4. بيانات العميل الحساسة؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"q4\" type=\"radio\"/>أحطها في أي أداة</label>\n<label data-correct=\"true\"><input name=\"q4\" type=\"radio\"/>ما أحطهاش إلا بإذنه وفهم سياسة الأداة</label>\n<label data-correct=\"false\"><input name=\"q4\" type=\"radio\"/>أنشرها كنموذج</label>\n</div>\n</div>\n<p class=\"quiz-result\"></p>\n</div>"
+    },
+    {
+     "key": "assignment",
+     "id": "lesson-make-money-with-ai-assignment",
+     "label": "تمرين عملي",
+     "html": "<h2><span class=\"dot\"></span> تمرين عملي</h2>\n<div class=\"assignment-box\">\n<h3 style=\"margin-top:0;color:var(--gold);\">التمرين</h3>\n<p>اكتب في صفحة واحدة: المهارة اللي هتبدأ بيها، الأدوات اللي هتستخدمها، 3 نماذج أعمال هتجهزها، وجملة تشرح بيها للعميل إزاي بتراجع الجودة. ما تذكرش أرقام دخل متوقعة.</p>\n</div>"
+    },
+    {
+     "key": "cheatsheet",
+     "id": "lesson-make-money-with-ai-cheatsheet",
+     "label": "ملخص للتحميل",
+     "html": "<h2><span class=\"dot\"></span> ملخص سريع للتحميل</h2>\n<div class=\"cheat-box\">\n<p style=\"color:var(--text);margin-bottom:14px;\">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p>\n<button class=\"btn btn-outline print-cheat-btn\">🖨️ تحميل / طباعة الملخص</button>\n</div>"
+    },
+    {
+     "key": "faq",
+     "id": "lesson-make-money-with-ai-faq",
+     "label": "أسئلة شائعة",
+     "html": "<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\">\n<summary>كام ممكن أكسب؟</summary>\n<p>مفيش رقم صحيح لحد، لأنه بيعتمد على مهارتك وجودتك والسوق والتسويق.</p>\n</details>\n<details class=\"faq-item\">\n<summary>محتاج كورس مدفوع؟</summary>\n<p>مش شرط. ابدأ بمصادر مجانية ونماذج عملية، وتأكد من أي عرض مدفوع قبل ما تدفع.</p>\n</details>\n"
+    },
+    {
+     "key": "resources",
+     "id": "lesson-make-money-with-ai-resources",
+     "label": "مصادر",
+     "html": "<h2><span class=\"dot\"></span> مصادر رسمية</h2><ul><li><a href=\"https://openai.com\" target=\"_blank\" rel=\"noopener\">OpenAI</a></li><li><a href=\"https://gemini.google.com\" target=\"_blank\" rel=\"noopener\">Google Gemini</a></li><li><a href=\"https://claude.ai\" target=\"_blank\" rel=\"noopener\">Anthropic Claude</a></li><li><a href=\"https://notebook.google\" target=\"_blank\" rel=\"noopener\">Gemini Notebook (NotebookLM سابقًا)</a></li><li><a href=\"https://perplexity.ai\" target=\"_blank\" rel=\"noopener\">Perplexity</a></li></ul><p><small>آخر مراجعة للمحتوى: 18 أكتوبر 2026. أدوات الذكاء الاصطناعي وخططها وأسعارها بتتغير بسرعة، فراجع الموقع الرسمي لكل أداة قبل ما تعتمد على أي معلومة متغيرة.</small></p>"
+    }
+   ],
+   "nextLessonTitle": "إيه الجديد في عالم الذكاء الاصطناعي؟ (اتجاهات 2026)",
+   "lastReviewed": "2026-10-18",
+   "reviewStatus": "original-content-needs-human-review"
+  },
+  {
+   "id": "ai-whats-new",
+   "title": "إيه الجديد في عالم الذكاء الاصطناعي؟ (اتجاهات 2026)",
+   "slug": "ai-whats-new",
+   "description": "أبرز الاتجاهات اللي بتظهر في 2026: وكلاء الذكاء الاصطناعي، الذكاء داخل أدوات المكتب، الأدوات متعددة الوسائط، وكيف تتابع الجديد بدون ما تقع في الضجيج.",
+   "level": "مبتدئ",
+   "category": "ai-in-practice",
+   "duration": null,
+   "order": 4,
+   "status": "published",
+   "content": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>المحتوى اللي بيتنشر عن 2026 بيتكرر فيه كذا اتجاه، وده تلخيص عام (مش أخبار رسمية محددة):</p><ul><li><strong>وكلاء الذكاء الاصطناعي (AI Agents):</strong> بدل ما الأداة ترد بس، بتنفذ مهمة من عدة خطوات نيابة عنك تحت إشرافك.</li><li><strong>الذكاء داخل أدوات المكتب:</strong> ميزات ذكاء اصطناعي جوه برامج زي Microsoft 365 وGoogle Workspace اللي الناس بتستخدمها أصلًا.</li><li><strong>الأدوات متعددة الوسائط:</strong> نص وصورة وصوت وفيديو في أداة واحدة.</li><li><strong>حلول للمشاريع الصغيرة:</strong> شركات كبرى بتقدم حزم موجهة لأصحاب الأعمال الصغيرة.</li><li><strong>الاهتمام بالاستخدام المسؤول:</strong> خصوصية البيانات والشفافية والتحقق.</li></ul><div class=\"callout tip\"><strong>مثال من المواقع الرسمية (أكتوبر 2026):</strong> OpenAI أعلنت في 7 أكتوبر 2026 عن «GPT-6» وواجهة ذكية جديدة، وAnthropic أعلنت في نفس اليوم عن «Haiku 5.5». وجوجل أعادت تسمية NotebookLM إلى Gemini Notebook في يوليو 2026. المعنى إن الشركات الكبرى بتطلق نماذج وتغيّر أسماء منتجاتها كل بضعة أسابيع، فاعتمد على المهارة مش على اسم نموذج بعينه.</div><div class=\"callout tip\"><strong>ملاحظة:</strong> التفاصيل الدقيقة (أسماء الميزات، توفرها في بلدك، أسعارها) لازم تتأكد منها من الموقع الرسمي للأداة، لأن ده المجال بيتغير كل أسبوع.</div>",
+   "examples": "<h2><span class=\"dot\"></span> أمثلة تطبيقية</h2>\n<p>بدل ما تلخّص اجتماعًا بنفسك: جرّب ميزة التلخيص الموجودة في أداة الاجتماعات اللي بتستخدمها (لو متاحة)، وراجع الملخص. وبدل ما تدخل 5 مواقع لتجميع معلومات: استخدم أداة بحث بتعرض مصادرها وافتح المصادر بنفسك.</p>",
+   "tips": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout tip\"><strong>نصيحة:</strong> لما تجرب وكيل ذكي، ابدأ بمهام قليلة المخاطر ولا تدّيله صلاحيات على حسابات حساسة بدون فهم كامل.</div>",
+   "exercise": "<div class=\"assignment-box\">\n<h3 style=\"margin-top:0;color:var(--gold);\">التمرين</h3>\n<p>اختار ميزة ذكاء اصطناعي جديدة سمعت عنها، وتأكد من وجودها من موقع الأداة الرسمي، وجرّبها على مهمة صغيرة، واكتب 3 نقاط: بتوفر إيه؟ فين عيوبها؟ هل هتستخدمها؟</p>\n</div>",
+   "quiz": {
+    "questions": [
+     {
+      "question": "1. إيه هو AI Agent؟",
+      "options": [
+       {
+        "text": "أداة بتنفذ مهمة من عدة خطوات تحت إشرافك",
+        "correct": true
+       },
+       {
+        "text": "تطبيق لتغيير الصور فقط",
+        "correct": false
+       },
+       {
+        "text": "نوع من الكيبورد",
+        "correct": false
+       }
+      ]
+     },
+     {
+      "question": "2. أفضل مصدر لمعرفة ميزة جديدة؟",
+      "options": [
+       {
+        "text": "الموقع الرسمي للأداة وتجربتها",
+        "correct": true
+       },
+       {
+        "text": "أي منشور إعلاني",
+        "correct": false
+       },
+       {
+        "text": "الإشاعات",
+        "correct": false
+       }
+      ]
+     },
+     {
+      "question": "3. لما تجرب وكيل ذكي لأول مرة؟",
+      "options": [
+       {
+        "text": "أديله صلاحيات كاملة",
+        "correct": false
+       },
+       {
+        "text": "أبدأ بمهام قليلة المخاطر",
+        "correct": true
+       },
+       {
+        "text": "أستخدمه على بيانات حساسة",
+        "correct": false
+       }
+      ]
+     }
+    ]
+   },
+   "resources": "<h2><span class=\"dot\"></span> مصادر رسمية</h2><ul><li><a href=\"https://openai.com\" target=\"_blank\" rel=\"noopener\">OpenAI</a></li><li><a href=\"https://gemini.google.com\" target=\"_blank\" rel=\"noopener\">Google Gemini</a></li><li><a href=\"https://claude.ai\" target=\"_blank\" rel=\"noopener\">Anthropic Claude</a></li><li><a href=\"https://notebook.google\" target=\"_blank\" rel=\"noopener\">Gemini Notebook (NotebookLM سابقًا)</a></li><li><a href=\"https://perplexity.ai\" target=\"_blank\" rel=\"noopener\">Perplexity</a></li></ul><p><small>آخر مراجعة للمحتوى: 18 أكتوبر 2026. أدوات الذكاء الاصطناعي وخططها وأسعارها بتتغير بسرعة، فراجع الموقع الرسمي لكل أداة قبل ما تعتمد على أي معلومة متغيرة.</small></p>",
+   "prerequisites": [],
+   "nextLesson": "ai-for-studying",
+   "summary": "اتجاهات 2026: وكلاء، ذكاء داخل أدوات المكتب، أدوات متعددة الوسائط، وحلول للمشاريع الصغيرة. تابع من مصادر رسمية، جرّب بنفسك، وراجع الخصوصية.",
+   "sections": [
+    {
+     "key": "beginner",
+     "id": "lesson-ai-whats-new-beginner",
+     "label": "الشرح المبسط",
+     "html": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>المحتوى اللي بيتنشر عن 2026 بيتكرر فيه كذا اتجاه، وده تلخيص عام (مش أخبار رسمية محددة):</p><ul><li><strong>وكلاء الذكاء الاصطناعي (AI Agents):</strong> بدل ما الأداة ترد بس، بتنفذ مهمة من عدة خطوات نيابة عنك تحت إشرافك.</li><li><strong>الذكاء داخل أدوات المكتب:</strong> ميزات ذكاء اصطناعي جوه برامج زي Microsoft 365 وGoogle Workspace اللي الناس بتستخدمها أصلًا.</li><li><strong>الأدوات متعددة الوسائط:</strong> نص وصورة وصوت وفيديو في أداة واحدة.</li><li><strong>حلول للمشاريع الصغيرة:</strong> شركات كبرى بتقدم حزم موجهة لأصحاب الأعمال الصغيرة.</li><li><strong>الاهتمام بالاستخدام المسؤول:</strong> خصوصية البيانات والشفافية والتحقق.</li></ul><div class=\"callout tip\"><strong>مثال من المواقع الرسمية (أكتوبر 2026):</strong> OpenAI أعلنت في 7 أكتوبر 2026 عن «GPT-6» وواجهة ذكية جديدة، وAnthropic أعلنت في نفس اليوم عن «Haiku 5.5». وجوجل أعادت تسمية NotebookLM إلى Gemini Notebook في يوليو 2026. المعنى إن الشركات الكبرى بتطلق نماذج وتغيّر أسماء منتجاتها كل بضعة أسابيع، فاعتمد على المهارة مش على اسم نموذج بعينه.</div><div class=\"callout tip\"><strong>ملاحظة:</strong> التفاصيل الدقيقة (أسماء الميزات، توفرها في بلدك، أسعارها) لازم تتأكد منها من الموقع الرسمي للأداة، لأن ده المجال بيتغير كل أسبوع.</div>"
+    },
+    {
+     "key": "steps",
+     "id": "lesson-ai-whats-new-steps",
+     "label": "الخطوات",
+     "html": "<h2><span class=\"dot\"></span> إزاي تتابع الجديد بذكاء</h2>\n<ol><li><strong>اختار 3 مصادر رسمية</strong> (مدونات الشركات المطورة) واقرأ إعلاناتها مباشرة.</li><li><strong>اتعامل بحذر مع المنشورات الترويجية</strong> على السوشيال ميديا. دورها غالبًا تسويقي.</li><li><strong>جرّب الميزة الجديدة بنفسك</strong> على مهمة حقيقية قبل ما تحكم عليها.</li><li><strong>اسأل:</strong> هل تحل مشكلة عندي؟ هل بياناتي آمنة؟ هل التكلفة تستاهل؟</li><li><strong>سجّل اللي استفدته</strong> وحدّث مجموعة أدواتك مرة كل شهر أو شهرين.</li></ol>"
+    },
+    {
+     "key": "examples",
+     "id": "lesson-ai-whats-new-examples",
+     "label": "أمثلة عملية",
+     "html": "<h2><span class=\"dot\"></span> أمثلة تطبيقية</h2>\n<p>بدل ما تلخّص اجتماعًا بنفسك: جرّب ميزة التلخيص الموجودة في أداة الاجتماعات اللي بتستخدمها (لو متاحة)، وراجع الملخص. وبدل ما تدخل 5 مواقع لتجميع معلومات: استخدم أداة بحث بتعرض مصادرها وافتح المصادر بنفسك.</p>"
+    },
+    {
+     "key": "usecases",
+     "id": "lesson-ai-whats-new-usecases",
+     "label": "استخدامات حقيقية",
+     "html": "<h2><span class=\"dot\"></span> الأثر على شغلك</h2>\n<p>الوكلاء والأدوات المدمجة بتوفر وقت المهام الروتينية، لكن بتزود الحاجة لمراجعة بشرية ومعرفة بحدود الأدوات والصلاحيات اللي بتديها لها.</p>"
+    },
+    {
+     "key": "practices",
+     "id": "lesson-ai-whats-new-practices",
+     "label": "أفضل الممارسات",
+     "html": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout tip\"><strong>نصيحة:</strong> لما تجرب وكيل ذكي، ابدأ بمهام قليلة المخاطر ولا تدّيله صلاحيات على حسابات حساسة بدون فهم كامل.</div>"
+    },
+    {
+     "key": "mistakes",
+     "id": "lesson-ai-whats-new-mistakes",
+     "label": "أخطاء ومخاطر",
+     "html": "<h2><span class=\"dot\"></span> أخطاء شائعة</h2>\n<div class=\"callout warn\"><strong>مطاردة كل جديد:</strong> التركيز على المهارة أهم من أحدث ميزة.</div><div class=\"callout warn\"><strong>تصديق العناوين المبالغ فيها:</strong> «هيغير كل حاجة» غالبًا مبالغة.</div>"
+    },
+    {
+     "key": "summary",
+     "id": "lesson-ai-whats-new-summary",
+     "label": "الملخص",
+     "html": "<h2><span class=\"dot\"></span> الملخص</h2>\n<p>اتجاهات 2026: وكلاء، ذكاء داخل أدوات المكتب، أدوات متعددة الوسائط، وحلول للمشاريع الصغيرة. تابع من مصادر رسمية، جرّب بنفسك، وراجع الخصوصية.</p>"
+    },
+    {
+     "key": "quiz",
+     "id": "lesson-ai-whats-new-quiz",
+     "label": "اختبار قصير",
+     "html": "<h2><span class=\"dot\"></span> اختبار قصير</h2>\n<div class=\"quiz-box\">\n<div class=\"quiz-q\">\n<p class=\"qtext\">1. إيه هو AI Agent؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q1\" type=\"radio\"/>أداة بتنفذ مهمة من عدة خطوات تحت إشرافك</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>تطبيق لتغيير الصور فقط</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>نوع من الكيبورد</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">2. أفضل مصدر لمعرفة ميزة جديدة؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q2\" type=\"radio\"/>الموقع الرسمي للأداة وتجربتها</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>أي منشور إعلاني</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>الإشاعات</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">3. لما تجرب وكيل ذكي لأول مرة؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"q3\" type=\"radio\"/>أديله صلاحيات كاملة</label>\n<label data-correct=\"true\"><input name=\"q3\" type=\"radio\"/>أبدأ بمهام قليلة المخاطر</label>\n<label data-correct=\"false\"><input name=\"q3\" type=\"radio\"/>أستخدمه على بيانات حساسة</label>\n</div>\n</div>\n<p class=\"quiz-result\"></p>\n</div>"
+    },
+    {
+     "key": "assignment",
+     "id": "lesson-ai-whats-new-assignment",
+     "label": "تمرين عملي",
+     "html": "<h2><span class=\"dot\"></span> تمرين عملي</h2>\n<div class=\"assignment-box\">\n<h3 style=\"margin-top:0;color:var(--gold);\">التمرين</h3>\n<p>اختار ميزة ذكاء اصطناعي جديدة سمعت عنها، وتأكد من وجودها من موقع الأداة الرسمي، وجرّبها على مهمة صغيرة، واكتب 3 نقاط: بتوفر إيه؟ فين عيوبها؟ هل هتستخدمها؟</p>\n</div>"
+    },
+    {
+     "key": "cheatsheet",
+     "id": "lesson-ai-whats-new-cheatsheet",
+     "label": "ملخص للتحميل",
+     "html": "<h2><span class=\"dot\"></span> ملخص سريع للتحميل</h2>\n<div class=\"cheat-box\">\n<p style=\"color:var(--text);margin-bottom:14px;\">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p>\n<button class=\"btn btn-outline print-cheat-btn\">🖨️ تحميل / طباعة الملخص</button>\n</div>"
+    },
+    {
+     "key": "faq",
+     "id": "lesson-ai-whats-new-faq",
+     "label": "أسئلة شائعة",
+     "html": "<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\">\n<summary>أتابع كل الأخبار؟</summary>\n<p>لأ. 3 مصادر رسمية ومراجعة شهرية تكفي لأغلب الناس.</p>\n</details>\n<details class=\"faq-item\">\n<summary>هل الوكلاء يغنوا عن الموظف؟</summary>\n<p>بيقللوا المهام الروتينية، لكن المراجعة والقرار لسه بشري.</p>\n</details>\n"
+    },
+    {
+     "key": "resources",
+     "id": "lesson-ai-whats-new-resources",
+     "label": "مصادر",
+     "html": "<h2><span class=\"dot\"></span> مصادر رسمية</h2><ul><li><a href=\"https://openai.com\" target=\"_blank\" rel=\"noopener\">OpenAI</a></li><li><a href=\"https://gemini.google.com\" target=\"_blank\" rel=\"noopener\">Google Gemini</a></li><li><a href=\"https://claude.ai\" target=\"_blank\" rel=\"noopener\">Anthropic Claude</a></li><li><a href=\"https://notebook.google\" target=\"_blank\" rel=\"noopener\">Gemini Notebook (NotebookLM سابقًا)</a></li><li><a href=\"https://perplexity.ai\" target=\"_blank\" rel=\"noopener\">Perplexity</a></li></ul><p><small>آخر مراجعة للمحتوى: 18 أكتوبر 2026. أدوات الذكاء الاصطناعي وخططها وأسعارها بتتغير بسرعة، فراجع الموقع الرسمي لكل أداة قبل ما تعتمد على أي معلومة متغيرة.</small></p>"
+    }
+   ],
+   "nextLessonTitle": "الذكاء الاصطناعي للدراسة والمذاكرة",
+   "lastReviewed": "2026-10-18",
+   "reviewStatus": "original-content-needs-human-review"
+  },
+  {
+   "id": "ai-for-studying",
+   "title": "الذكاء الاصطناعي للدراسة والمذاكرة",
+   "slug": "ai-for-studying",
+   "description": "إزاي تستخدم أدوات الذكاء الاصطناعي في الفهم والتلخيص والمراجعة وتنظيم المذاكرة بدون ما تعتمد عليها بدل التعلم الحقيقي.",
+   "level": "مبتدئ",
+   "category": "ai-in-practice",
+   "duration": null,
+   "order": 5,
+   "status": "published",
+   "content": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>الذكاء الاصطناعي ممكن يبقى مدرس خصوصي مساعد: يشرح الفكرة بأكتر من طريقة، ويسألك أسئلة، ويلخّص. لكن لو سلّمته الواجب كله، هتخسر الفهم نفسه. الهدف إنه يساعدك تتعلم أسرع، مش يتعلم بدالك.</p><ul><li><strong>الشرح:</strong> اطلب شرح الفكرة بمثال من حياتك وبمستوى مبتدئ.</li><li><strong>التلخيص:</strong> لخّص ملاحظاتك أو فصل من المنهج وبعدين قارن بالأصل.</li><li><strong>المراجعة:</strong> اطلب أسئلة اختبار على مادتك، وجاوب بنفسك قبل ما تشوف الإجابة.</li><li><strong>التنظيم:</strong> جدول مذاكرة حسب عدد الأيام والساعات المتاحة.</li><li><strong>الدراسة من مصادرك:</strong> أدوات زي Gemini Notebook (اسمه السابق NotebookLM) بتشتغل على المستندات اللي تضيفها أنت، وده بيقلل الخروج عن المنهج، مع ضرورة المراجعة.</li></ul><div class=\"callout tip\"><strong>قاعدة:</strong> جاوب الأول بنفسك، وبعدين اطلب التصحيح والشرح.</div>",
+   "examples": "<h2><span class=\"dot\"></span> أوامر جاهزة</h2>\n<p>«اشرحلي مفهوم كذا كأني طالب في أولى ثانوي، وبعدها اديني مثال تاني من الحياة اليومية».</p><p>«ده ملخصي للدرس: [الصق الملخص]. اسألني 8 أسئلة واحد واحد، وما تقولش الإجابة إلا بعد ما أجاوب».</p><p>«عندي 6 أيام للامتحان وساعتين يوميًا و5 فصول. اعمل جدول واقعي فيه يوم مراجعة وراحة».</p>",
+   "tips": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout tip\"><strong>نصيحة:</strong> التذكر النشط (تجاوب من غير ما تبص) أقوى من القراءة المتكررة، واطلب من الأداة أسئلة بدل ملخصات بس.</div><div class=\"callout tip\"><strong>نصيحة:</strong> اسأل «ليه؟» و«إزاي عرفت؟» عشان تتأكد من الفهم.</div>",
+   "exercise": "<div class=\"assignment-box\">\n<h3 style=\"margin-top:0;color:var(--gold);\">التمرين</h3>\n<p>اختار درس من منهجك، واعمل بالأداة: خريطة للدرس، 8 أسئلة، وجاوب عليها قبل التصحيح. اكتب نسبة أسئلتك الصح وإيه النقاط اللي هتراجعها.</p>\n</div>",
+   "quiz": {
+    "questions": [
+     {
+      "question": "1. أحسن استخدام للأداة في المذاكرة؟",
+      "options": [
+       {
+        "text": "تحل الواجب بدالي",
+        "correct": false
+       },
+       {
+        "text": "تسألني أسئلة وأجاوب بنفسي",
+        "correct": true
+       },
+       {
+        "text": "تحفظ بدالي",
+        "correct": false
+       }
+      ]
+     },
+     {
+      "question": "2. لو معلومة مهمة في الشرح؟",
+      "options": [
+       {
+        "text": "أصدقها فورًا",
+        "correct": false
+       },
+       {
+        "text": "أراجعها من الكتاب أو المدرس",
+        "correct": true
+       },
+       {
+        "text": "أتجاهل المراجعة",
+        "correct": false
+       }
+      ]
+     },
+     {
+      "question": "3. أداة بتشتغل على مستنداتك أنت؟",
+      "options": [
+       {
+        "text": "Gemini Notebook (NotebookLM سابقًا)",
+        "correct": true
+       },
+       {
+        "text": "أي لعبة",
+        "correct": false
+       },
+       {
+        "text": "متصفح عادي",
+        "correct": false
+       }
+      ]
+     }
+    ]
+   },
+   "resources": "<h2><span class=\"dot\"></span> مصادر رسمية</h2><ul><li><a href=\"https://openai.com\" target=\"_blank\" rel=\"noopener\">OpenAI</a></li><li><a href=\"https://gemini.google.com\" target=\"_blank\" rel=\"noopener\">Google Gemini</a></li><li><a href=\"https://claude.ai\" target=\"_blank\" rel=\"noopener\">Anthropic Claude</a></li><li><a href=\"https://notebook.google\" target=\"_blank\" rel=\"noopener\">Gemini Notebook (NotebookLM سابقًا)</a></li><li><a href=\"https://perplexity.ai\" target=\"_blank\" rel=\"noopener\">Perplexity</a></li></ul><p><small>آخر مراجعة للمحتوى: 18 أكتوبر 2026. أدوات الذكاء الاصطناعي وخططها وأسعارها بتتغير بسرعة، فراجع الموقع الرسمي لكل أداة قبل ما تعتمد على أي معلومة متغيرة.</small></p>",
+   "prerequisites": [],
+   "nextLesson": "fact-checking-ai",
+   "summary": "استخدم الذكاء الاصطناعي كمدرس مساعد: شرح، أسئلة، تنظيم. جاوب بنفسك الأول، قارن بمصدرك، والتزم بسياسة مكان دراستك.",
+   "sections": [
+    {
+     "key": "beginner",
+     "id": "lesson-ai-for-studying-beginner",
+     "label": "الشرح المبسط",
+     "html": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>الذكاء الاصطناعي ممكن يبقى مدرس خصوصي مساعد: يشرح الفكرة بأكتر من طريقة، ويسألك أسئلة، ويلخّص. لكن لو سلّمته الواجب كله، هتخسر الفهم نفسه. الهدف إنه يساعدك تتعلم أسرع، مش يتعلم بدالك.</p><ul><li><strong>الشرح:</strong> اطلب شرح الفكرة بمثال من حياتك وبمستوى مبتدئ.</li><li><strong>التلخيص:</strong> لخّص ملاحظاتك أو فصل من المنهج وبعدين قارن بالأصل.</li><li><strong>المراجعة:</strong> اطلب أسئلة اختبار على مادتك، وجاوب بنفسك قبل ما تشوف الإجابة.</li><li><strong>التنظيم:</strong> جدول مذاكرة حسب عدد الأيام والساعات المتاحة.</li><li><strong>الدراسة من مصادرك:</strong> أدوات زي Gemini Notebook (اسمه السابق NotebookLM) بتشتغل على المستندات اللي تضيفها أنت، وده بيقلل الخروج عن المنهج، مع ضرورة المراجعة.</li></ul><div class=\"callout tip\"><strong>قاعدة:</strong> جاوب الأول بنفسك، وبعدين اطلب التصحيح والشرح.</div>"
+    },
+    {
+     "key": "steps",
+     "id": "lesson-ai-for-studying-steps",
+     "label": "الخطوات",
+     "html": "<h2><span class=\"dot\"></span> خطة مذاكرة بالذكاء الاصطناعي</h2>\n<ol><li><strong>ارفع أو الصق مادتك</strong> (ملاحظات أو فصل) في أداة بتحترم خصوصيتك.</li><li><strong>اطلب خريطة للموضوع:</strong> العناوين الرئيسية والعلاقات بينها.</li><li><strong>اطلب شرح الأجزاء الصعبة</strong> بمثال بسيط.</li><li><strong>اعمل اختبار لنفسك:</strong> 10 أسئلة متنوعة، جاوب عليها كتابة.</li><li><strong>صحّح بالأداة</strong> وسجّل نقاط ضعفك.</li><li><strong>كرر بعد يومين</strong> على النقاط الضعيفة فقط.</li></ol>"
+    },
+    {
+     "key": "examples",
+     "id": "lesson-ai-for-studying-examples",
+     "label": "أمثلة عملية",
+     "html": "<h2><span class=\"dot\"></span> أوامر جاهزة</h2>\n<p>«اشرحلي مفهوم كذا كأني طالب في أولى ثانوي، وبعدها اديني مثال تاني من الحياة اليومية».</p><p>«ده ملخصي للدرس: [الصق الملخص]. اسألني 8 أسئلة واحد واحد، وما تقولش الإجابة إلا بعد ما أجاوب».</p><p>«عندي 6 أيام للامتحان وساعتين يوميًا و5 فصول. اعمل جدول واقعي فيه يوم مراجعة وراحة».</p>"
+    },
+    {
+     "key": "usecases",
+     "id": "lesson-ai-for-studying-usecases",
+     "label": "استخدامات حقيقية",
+     "html": "<h2><span class=\"dot\"></span> استخدامات حقيقية</h2>\n<p>تعلم لغة (محادثة وتصحيح)، فهم مقال علمي بتبسيط، تجهيز عروض الدراسة، وتحويل ملاحظات المحاضرة لأسئلة مراجعة.</p>"
+    },
+    {
+     "key": "practices",
+     "id": "lesson-ai-for-studying-practices",
+     "label": "أفضل الممارسات",
+     "html": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout tip\"><strong>نصيحة:</strong> التذكر النشط (تجاوب من غير ما تبص) أقوى من القراءة المتكررة، واطلب من الأداة أسئلة بدل ملخصات بس.</div><div class=\"callout tip\"><strong>نصيحة:</strong> اسأل «ليه؟» و«إزاي عرفت؟» عشان تتأكد من الفهم.</div>"
+    },
+    {
+     "key": "mistakes",
+     "id": "lesson-ai-for-studying-mistakes",
+     "label": "أخطاء ومخاطر",
+     "html": "<h2><span class=\"dot\"></span> أخطاء ومخاطر</h2>\n<div class=\"callout warn\"><strong>النسخ في الواجب:</strong> ممكن يخالف قواعد المدرسة أو الجامعة. اتأكد من سياسة مكانك.</div><div class=\"callout warn\"><strong>الثقة في الشرح الغلط:</strong> لو معلومة مهمة، قارنها بالكتاب أو المدرس.</div><div class=\"callout warn\"><strong>الاعتماد الكامل:</strong> لو مش قادر تشرح الفكرة بنفسك، يبقى لسه ما فهمتهاش.</div>"
+    },
+    {
+     "key": "summary",
+     "id": "lesson-ai-for-studying-summary",
+     "label": "الملخص",
+     "html": "<h2><span class=\"dot\"></span> الملخص</h2>\n<p>استخدم الذكاء الاصطناعي كمدرس مساعد: شرح، أسئلة، تنظيم. جاوب بنفسك الأول، قارن بمصدرك، والتزم بسياسة مكان دراستك.</p>"
+    },
+    {
+     "key": "quiz",
+     "id": "lesson-ai-for-studying-quiz",
+     "label": "اختبار قصير",
+     "html": "<h2><span class=\"dot\"></span> اختبار قصير</h2>\n<div class=\"quiz-box\">\n<div class=\"quiz-q\">\n<p class=\"qtext\">1. أحسن استخدام للأداة في المذاكرة؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>تحل الواجب بدالي</label>\n<label data-correct=\"true\"><input name=\"q1\" type=\"radio\"/>تسألني أسئلة وأجاوب بنفسي</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>تحفظ بدالي</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">2. لو معلومة مهمة في الشرح؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>أصدقها فورًا</label>\n<label data-correct=\"true\"><input name=\"q2\" type=\"radio\"/>أراجعها من الكتاب أو المدرس</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>أتجاهل المراجعة</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">3. أداة بتشتغل على مستنداتك أنت؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q3\" type=\"radio\"/>Gemini Notebook (NotebookLM سابقًا)</label>\n<label data-correct=\"false\"><input name=\"q3\" type=\"radio\"/>أي لعبة</label>\n<label data-correct=\"false\"><input name=\"q3\" type=\"radio\"/>متصفح عادي</label>\n</div>\n</div>\n<p class=\"quiz-result\"></p>\n</div>"
+    },
+    {
+     "key": "assignment",
+     "id": "lesson-ai-for-studying-assignment",
+     "label": "تمرين عملي",
+     "html": "<h2><span class=\"dot\"></span> تمرين عملي</h2>\n<div class=\"assignment-box\">\n<h3 style=\"margin-top:0;color:var(--gold);\">التمرين</h3>\n<p>اختار درس من منهجك، واعمل بالأداة: خريطة للدرس، 8 أسئلة، وجاوب عليها قبل التصحيح. اكتب نسبة أسئلتك الصح وإيه النقاط اللي هتراجعها.</p>\n</div>"
+    },
+    {
+     "key": "cheatsheet",
+     "id": "lesson-ai-for-studying-cheatsheet",
+     "label": "ملخص للتحميل",
+     "html": "<h2><span class=\"dot\"></span> ملخص سريع للتحميل</h2>\n<div class=\"cheat-box\">\n<p style=\"color:var(--text);margin-bottom:14px;\">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p>\n<button class=\"btn btn-outline print-cheat-btn\">🖨️ تحميل / طباعة الملخص</button>\n</div>"
+    },
+    {
+     "key": "faq",
+     "id": "lesson-ai-for-studying-faq",
+     "label": "أسئلة شائعة",
+     "html": "<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\">\n<summary>هل ده غش؟</summary>\n<p>حسب قواعد مكانك. استخدامه للفهم والمراجعة عادةً مقبول، لكن تسليم عمل الأداة كأنه عملك قد يخالف اللوائح.</p>\n</details>\n<details class=\"faq-item\">\n<summary>أرفع كتاب كامل؟</summary>\n<p>انتبه لحقوق النشر ولسياسة الأداة، واستخدم موادك أنت أو مواد مسموح بها.</p>\n</details>\n"
+    },
+    {
+     "key": "resources",
+     "id": "lesson-ai-for-studying-resources",
+     "label": "مصادر",
+     "html": "<h2><span class=\"dot\"></span> مصادر رسمية</h2><ul><li><a href=\"https://openai.com\" target=\"_blank\" rel=\"noopener\">OpenAI</a></li><li><a href=\"https://gemini.google.com\" target=\"_blank\" rel=\"noopener\">Google Gemini</a></li><li><a href=\"https://claude.ai\" target=\"_blank\" rel=\"noopener\">Anthropic Claude</a></li><li><a href=\"https://notebook.google\" target=\"_blank\" rel=\"noopener\">Gemini Notebook (NotebookLM سابقًا)</a></li><li><a href=\"https://perplexity.ai\" target=\"_blank\" rel=\"noopener\">Perplexity</a></li></ul><p><small>آخر مراجعة للمحتوى: 18 أكتوبر 2026. أدوات الذكاء الاصطناعي وخططها وأسعارها بتتغير بسرعة، فراجع الموقع الرسمي لكل أداة قبل ما تعتمد على أي معلومة متغيرة.</small></p>"
+    }
+   ],
+   "nextLessonTitle": "التحقق من إجابات الذكاء الاصطناعي وتجنب الهلوسة",
+   "lastReviewed": "2026-10-18",
+   "reviewStatus": "original-content-needs-human-review"
+  },
+  {
+   "id": "fact-checking-ai",
+   "title": "التحقق من إجابات الذكاء الاصطناعي وتجنب الهلوسة",
+   "slug": "fact-checking-ai",
+   "description": "طريقة عملية للتأكد من المعلومات اللي بيقولها الذكاء الاصطناعي: مصادر، أسئلة تحقق، وعلامات الخطر.",
+   "level": "مبتدئ",
+   "category": "ai-in-practice",
+   "duration": null,
+   "order": 6,
+   "status": "published",
+   "content": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>الهلوسة (Hallucination) إن الأداة تقول معلومة غلط بثقة: اسم، رقم، اقتباس، أو مصدر مش موجود. السبب إن النموذج بيولّد نصًا محتملًا، مش بيراجع قاعدة حقائق مضمونة. وبعض الأدوات بتبحث وتعرض مصادر، لكن حتى دي لازم تتراجع.</p><ul><li><strong>أرقام وإحصائيات</strong> بدون مصدر.</li><li><strong>اقتباسات وأسماء أشخاص</strong> وتواريخ.</li><li><strong>مراجع وروابط</strong> ممكن ما تكونش موجودة.</li><li><strong>معلومات حديثة</strong> قد تكون قديمة.</li><li><strong>مجالات حساسة:</strong> صحة وقانون ومال، ولازم متخصص.</li></ul>",
+   "examples": "<h2><span class=\"dot\"></span> أوامر جاهزة</h2>\n<p>«اذكر مصادر أقدر أفتحها وأتأكد منها، ولو مش متأكد من معلومة قول كده بوضوح».</p><p>«راجع إجابتك السابقة وحدد أي جزء فيها ممكن يكون غير دقيق».</p>",
+   "tips": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout tip\"><strong>نصيحة:</strong> اعتبر إجابة الأداة مسودة تحتاج تحقق.</div><div class=\"callout tip\"><strong>نصيحة:</strong> اطلب منها تفصل بين «حقائق» و«رأي» و«افتراض».</div>",
+   "exercise": "<div class=\"assignment-box\">\n<h3 style=\"margin-top:0;color:var(--gold);\">التمرين</h3>\n<p>اسأل أداة عن موضوع تعرفه جيدًا واطلب منها 5 معلومات ومصادرها. افتح المصادر وسجّل كام معلومة طلعت دقيقة وكام لأ.</p>\n</div>",
+   "quiz": {
+    "questions": [
+     {
+      "question": "1. إيه هي الهلوسة؟",
+      "options": [
+       {
+        "text": "معلومة غلط بثقة",
+        "correct": true
+       },
+       {
+        "text": "خطأ في الاتصال",
+        "correct": false
+       },
+       {
+        "text": "نوع من الصور",
+        "correct": false
+       }
+      ]
+     },
+     {
+      "question": "2. أفضل خطوة لمعلومة مهمة؟",
+      "options": [
+       {
+        "text": "أنسخها",
+        "correct": false
+       },
+       {
+        "text": "أفتح مصدرها وأقارنها",
+        "correct": true
+       },
+       {
+        "text": "أنتظر",
+        "correct": false
+       }
+      ]
+     },
+     {
+      "question": "3. مجال حساس؟",
+      "options": [
+       {
+        "text": "وصفة قهوة",
+        "correct": false
+       },
+       {
+        "text": "معلومة طبية أو قانونية",
+        "correct": true
+       },
+       {
+        "text": "اسم لعبة",
+        "correct": false
+       }
+      ]
+     }
+    ]
+   },
+   "resources": "<h2><span class=\"dot\"></span> مصادر رسمية</h2><ul><li><a href=\"https://openai.com\" target=\"_blank\" rel=\"noopener\">OpenAI</a></li><li><a href=\"https://gemini.google.com\" target=\"_blank\" rel=\"noopener\">Google Gemini</a></li><li><a href=\"https://claude.ai\" target=\"_blank\" rel=\"noopener\">Anthropic Claude</a></li><li><a href=\"https://notebook.google\" target=\"_blank\" rel=\"noopener\">Gemini Notebook (NotebookLM سابقًا)</a></li><li><a href=\"https://perplexity.ai\" target=\"_blank\" rel=\"noopener\">Perplexity</a></li></ul><p><small>آخر مراجعة للمحتوى: 18 أكتوبر 2026. أدوات الذكاء الاصطناعي وخططها وأسعارها بتتغير بسرعة، فراجع الموقع الرسمي لكل أداة قبل ما تعتمد على أي معلومة متغيرة.</small></p>",
+   "prerequisites": [],
+   "nextLesson": "ai-automation-agents",
+   "summary": "الهلوسة حقيقية. اطلب مصادر وافتحها، قارن بمصادر مستقلة، وراجع التاريخ، وللمجالات الحساسة ارجع لمتخصص.",
+   "sections": [
+    {
+     "key": "beginner",
+     "id": "lesson-fact-checking-ai-beginner",
+     "label": "الشرح المبسط",
+     "html": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>الهلوسة (Hallucination) إن الأداة تقول معلومة غلط بثقة: اسم، رقم، اقتباس، أو مصدر مش موجود. السبب إن النموذج بيولّد نصًا محتملًا، مش بيراجع قاعدة حقائق مضمونة. وبعض الأدوات بتبحث وتعرض مصادر، لكن حتى دي لازم تتراجع.</p><ul><li><strong>أرقام وإحصائيات</strong> بدون مصدر.</li><li><strong>اقتباسات وأسماء أشخاص</strong> وتواريخ.</li><li><strong>مراجع وروابط</strong> ممكن ما تكونش موجودة.</li><li><strong>معلومات حديثة</strong> قد تكون قديمة.</li><li><strong>مجالات حساسة:</strong> صحة وقانون ومال، ولازم متخصص.</li></ul>"
+    },
+    {
+     "key": "steps",
+     "id": "lesson-fact-checking-ai-steps",
+     "label": "الخطوات",
+     "html": "<h2><span class=\"dot\"></span> طريقة التحقق في 5 خطوات</h2>\n<ol><li><strong>اطلب المصدر</strong> وافتحه بنفسك وتأكد إنه موجود ويقول اللي اتقال.</li><li><strong>قارن بمصدرين مستقلين</strong> على الأقل للمعلومة المهمة.</li><li><strong>اسأل الأداة:</strong> «إيه درجة تأكدك؟ وفين ممكن أكون غلطان؟»</li><li><strong>اتأكد من التاريخ:</strong> المعلومة لسه صالحة؟</li><li><strong>للمجالات الحساسة:</strong> ارجع لمتخصص أو جهة رسمية.</li></ol>"
+    },
+    {
+     "key": "examples",
+     "id": "lesson-fact-checking-ai-examples",
+     "label": "أمثلة عملية",
+     "html": "<h2><span class=\"dot\"></span> أوامر جاهزة</h2>\n<p>«اذكر مصادر أقدر أفتحها وأتأكد منها، ولو مش متأكد من معلومة قول كده بوضوح».</p><p>«راجع إجابتك السابقة وحدد أي جزء فيها ممكن يكون غير دقيق».</p>"
+    },
+    {
+     "key": "usecases",
+     "id": "lesson-fact-checking-ai-usecases",
+     "label": "استخدامات حقيقية",
+     "html": "<h2><span class=\"dot\"></span> مواقف عملية</h2>\n<p>قبل نشر معلومة في منشور أو تقرير أو محتوى لعميل: اعمل مراجعة سريعة للأرقام والأسماء والتواريخ.</p>"
+    },
+    {
+     "key": "practices",
+     "id": "lesson-fact-checking-ai-practices",
+     "label": "أفضل الممارسات",
+     "html": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout tip\"><strong>نصيحة:</strong> اعتبر إجابة الأداة مسودة تحتاج تحقق.</div><div class=\"callout tip\"><strong>نصيحة:</strong> اطلب منها تفصل بين «حقائق» و«رأي» و«افتراض».</div>"
+    },
+    {
+     "key": "mistakes",
+     "id": "lesson-fact-checking-ai-mistakes",
+     "label": "أخطاء ومخاطر",
+     "html": "<h2><span class=\"dot\"></span> أخطاء شائعة</h2>\n<div class=\"callout warn\"><strong>الاكتفاء بسؤال الأداة نفسها «هل إجابتك صح؟»:</strong> ممكن تأكد الغلط. استخدم مصدر خارجي.</div><div class=\"callout warn\"><strong>نسخ مراجع بدون فتحها.</strong></div>"
+    },
+    {
+     "key": "summary",
+     "id": "lesson-fact-checking-ai-summary",
+     "label": "الملخص",
+     "html": "<h2><span class=\"dot\"></span> الملخص</h2>\n<p>الهلوسة حقيقية. اطلب مصادر وافتحها، قارن بمصادر مستقلة، وراجع التاريخ، وللمجالات الحساسة ارجع لمتخصص.</p>"
+    },
+    {
+     "key": "quiz",
+     "id": "lesson-fact-checking-ai-quiz",
+     "label": "اختبار قصير",
+     "html": "<h2><span class=\"dot\"></span> اختبار قصير</h2>\n<div class=\"quiz-box\">\n<div class=\"quiz-q\">\n<p class=\"qtext\">1. إيه هي الهلوسة؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q1\" type=\"radio\"/>معلومة غلط بثقة</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>خطأ في الاتصال</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>نوع من الصور</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">2. أفضل خطوة لمعلومة مهمة؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>أنسخها</label>\n<label data-correct=\"true\"><input name=\"q2\" type=\"radio\"/>أفتح مصدرها وأقارنها</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>أنتظر</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">3. مجال حساس؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"q3\" type=\"radio\"/>وصفة قهوة</label>\n<label data-correct=\"true\"><input name=\"q3\" type=\"radio\"/>معلومة طبية أو قانونية</label>\n<label data-correct=\"false\"><input name=\"q3\" type=\"radio\"/>اسم لعبة</label>\n</div>\n</div>\n<p class=\"quiz-result\"></p>\n</div>"
+    },
+    {
+     "key": "assignment",
+     "id": "lesson-fact-checking-ai-assignment",
+     "label": "تمرين عملي",
+     "html": "<h2><span class=\"dot\"></span> تمرين عملي</h2>\n<div class=\"assignment-box\">\n<h3 style=\"margin-top:0;color:var(--gold);\">التمرين</h3>\n<p>اسأل أداة عن موضوع تعرفه جيدًا واطلب منها 5 معلومات ومصادرها. افتح المصادر وسجّل كام معلومة طلعت دقيقة وكام لأ.</p>\n</div>"
+    },
+    {
+     "key": "cheatsheet",
+     "id": "lesson-fact-checking-ai-cheatsheet",
+     "label": "ملخص للتحميل",
+     "html": "<h2><span class=\"dot\"></span> ملخص سريع للتحميل</h2>\n<div class=\"cheat-box\">\n<p style=\"color:var(--text);margin-bottom:14px;\">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p>\n<button class=\"btn btn-outline print-cheat-btn\">🖨️ تحميل / طباعة الملخص</button>\n</div>"
+    },
+    {
+     "key": "faq",
+     "id": "lesson-fact-checking-ai-faq",
+     "label": "أسئلة شائعة",
+     "html": "<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\">\n<summary>لو الأداة بتعرض مصادر، كده كفاية؟</summary>\n<p>لأ، افتح المصدر وتأكد إنه يدعم الجملة فعلًا.</p>\n</details>\n"
+    },
+    {
+     "key": "resources",
+     "id": "lesson-fact-checking-ai-resources",
+     "label": "مصادر",
+     "html": "<h2><span class=\"dot\"></span> مصادر رسمية</h2><ul><li><a href=\"https://openai.com\" target=\"_blank\" rel=\"noopener\">OpenAI</a></li><li><a href=\"https://gemini.google.com\" target=\"_blank\" rel=\"noopener\">Google Gemini</a></li><li><a href=\"https://claude.ai\" target=\"_blank\" rel=\"noopener\">Anthropic Claude</a></li><li><a href=\"https://notebook.google\" target=\"_blank\" rel=\"noopener\">Gemini Notebook (NotebookLM سابقًا)</a></li><li><a href=\"https://perplexity.ai\" target=\"_blank\" rel=\"noopener\">Perplexity</a></li></ul><p><small>آخر مراجعة للمحتوى: 18 أكتوبر 2026. أدوات الذكاء الاصطناعي وخططها وأسعارها بتتغير بسرعة، فراجع الموقع الرسمي لكل أداة قبل ما تعتمد على أي معلومة متغيرة.</small></p>"
+    }
+   ],
+   "nextLessonTitle": "الأتمتة ووكلاء الذكاء الاصطناعي: بداية آمنة",
+   "lastReviewed": "2026-10-18",
+   "reviewStatus": "original-content-needs-human-review"
+  },
+  {
+   "id": "ai-automation-agents",
+   "title": "الأتمتة ووكلاء الذكاء الاصطناعي: بداية آمنة",
+   "slug": "ai-automation-agents",
+   "description": "يعني إيه أتمتة ووكيل ذكي، الفرق بينهم، ومثال مبسط لبداية آمنة قبل ما تدي أي أداة صلاحيات.",
+   "level": "مبتدئ",
+   "category": "ai-in-practice",
+   "duration": null,
+   "order": 7,
+   "status": "published",
+   "content": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p><strong>الأتمتة (Automation)</strong> بتنفذ خطوات ثابتة (لو حصل كذا، اعمل كذا). <strong>الوكيل الذكي (AI Agent)</strong> بياخد هدف، ويقرر خطوات متعددة وينفذها باستخدام أدوات، وغالبًا مع إشراف منك. الفرق إن الوكيل بيتعامل مع مواقف أقل وضوحًا، لكن ده بيزود احتمال الخطأ.</p><ul><li>أتمتة بسيطة: حفظ مرفقات الإيميل في مجلد وترتيبها.</li><li>أتمتة بالذكاء الاصطناعي: تصنيف الرسائل واقتراح ردود تراجعها قبل الإرسال.</li><li>وكيل: يجمع معلومات من مصادر ويلخصها في تقرير مبدئي.</li></ul><div class=\"callout warn\"><strong>تنبيه:</strong> كل صلاحية بتديها لأداة (قراءة إيميلك، دفع، حذف ملفات) بتكبّر المخاطرة. ابدأ بصلاحيات قراءة فقط.</div>",
+   "examples": "<h2><span class=\"dot\"></span> أمثلة</h2>\n<p>مساعد يقترح ردودًا على استفسارات متكررة وأنت تعتمدها. أو أداة تحوّل اجتماع مسجل لملخص ونقاط عمل تراجعها.</p>",
+   "tips": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout tip\"><strong>نصيحة:</strong> سجل اللي الأداة عملته، وخلّي القدرة على التراجع.</div>",
+   "exercise": "<div class=\"assignment-box\">\n<h3 style=\"margin-top:0;color:var(--gold);\">التمرين</h3>\n<p>حدد مهمة متكررة من يومك، واكتب خطواتها، وحدد أي خطوة ممكن الأداة تساعد فيها وأي خطوة لازم تفضل بإيدك.</p>\n</div>",
+   "quiz": {
+    "questions": [
+     {
+      "question": "1. الفرق بين الأتمتة والوكيل؟",
+      "options": [
+       {
+        "text": "الأتمتة خطوات ثابتة والوكيل بيقرر خطوات متعددة",
+        "correct": true
+       },
+       {
+        "text": "مفيش فرق",
+        "correct": false
+       },
+       {
+        "text": "الوكيل أبطأ دايمًا",
+        "correct": false
+       }
+      ]
+     },
+     {
+      "question": "2. أول صلاحية مناسبة للتجربة؟",
+      "options": [
+       {
+        "text": "حذف الملفات",
+        "correct": false
+       },
+       {
+        "text": "قراءة فقط",
+        "correct": true
+       },
+       {
+        "text": "الدفع",
+        "correct": false
+       }
+      ]
+     },
+     {
+      "question": "3. قبل الإرسال أو الحذف التلقائي؟",
+      "options": [
+       {
+        "text": "بدون موافقة",
+        "correct": false
+       },
+       {
+        "text": "موافقة بشرية",
+        "correct": true
+       },
+       {
+        "text": "تجاهل",
+        "correct": false
+       }
+      ]
+     }
+    ]
+   },
+   "resources": "<h2><span class=\"dot\"></span> مصادر رسمية</h2><ul><li><a href=\"https://openai.com\" target=\"_blank\" rel=\"noopener\">OpenAI</a></li><li><a href=\"https://gemini.google.com\" target=\"_blank\" rel=\"noopener\">Google Gemini</a></li><li><a href=\"https://claude.ai\" target=\"_blank\" rel=\"noopener\">Anthropic Claude</a></li><li><a href=\"https://notebook.google\" target=\"_blank\" rel=\"noopener\">Gemini Notebook (NotebookLM سابقًا)</a></li><li><a href=\"https://perplexity.ai\" target=\"_blank\" rel=\"noopener\">Perplexity</a></li></ul><p><small>آخر مراجعة للمحتوى: 18 أكتوبر 2026. أدوات الذكاء الاصطناعي وخططها وأسعارها بتتغير بسرعة، فراجع الموقع الرسمي لكل أداة قبل ما تعتمد على أي معلومة متغيرة.</small></p>",
+   "prerequisites": [],
+   "nextLesson": "ai-privacy-safety",
+   "summary": "الأتمتة تنفذ خطوات ثابتة، والوكيل يقرر خطوات. ابدأ بمهام قليلة المخاطر وصلاحيات محدودة وموافقة بشرية.",
+   "sections": [
+    {
+     "key": "beginner",
+     "id": "lesson-ai-automation-agents-beginner",
+     "label": "الشرح المبسط",
+     "html": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p><strong>الأتمتة (Automation)</strong> بتنفذ خطوات ثابتة (لو حصل كذا، اعمل كذا). <strong>الوكيل الذكي (AI Agent)</strong> بياخد هدف، ويقرر خطوات متعددة وينفذها باستخدام أدوات، وغالبًا مع إشراف منك. الفرق إن الوكيل بيتعامل مع مواقف أقل وضوحًا، لكن ده بيزود احتمال الخطأ.</p><ul><li>أتمتة بسيطة: حفظ مرفقات الإيميل في مجلد وترتيبها.</li><li>أتمتة بالذكاء الاصطناعي: تصنيف الرسائل واقتراح ردود تراجعها قبل الإرسال.</li><li>وكيل: يجمع معلومات من مصادر ويلخصها في تقرير مبدئي.</li></ul><div class=\"callout warn\"><strong>تنبيه:</strong> كل صلاحية بتديها لأداة (قراءة إيميلك، دفع، حذف ملفات) بتكبّر المخاطرة. ابدأ بصلاحيات قراءة فقط.</div>"
+    },
+    {
+     "key": "steps",
+     "id": "lesson-ai-automation-agents-steps",
+     "label": "الخطوات",
+     "html": "<h2><span class=\"dot\"></span> بداية آمنة</h2>\n<ol><li><strong>اختار مهمة متكررة قليلة المخاطر</strong> (ترتيب ملاحظات، مسودات ردود).</li><li><strong>اكتب خطواتها يدويًا</strong> الأول.</li><li><strong>جرّب بأداة موثوقة</strong> بدون بيانات حساسة.</li><li><strong>خلّي موافقتك شرط</strong> قبل أي إرسال أو حذف أو دفع.</li><li><strong>راجع النتائج أسبوعيًا</strong> وعدّل.</li></ol>"
+    },
+    {
+     "key": "examples",
+     "id": "lesson-ai-automation-agents-examples",
+     "label": "أمثلة عملية",
+     "html": "<h2><span class=\"dot\"></span> أمثلة</h2>\n<p>مساعد يقترح ردودًا على استفسارات متكررة وأنت تعتمدها. أو أداة تحوّل اجتماع مسجل لملخص ونقاط عمل تراجعها.</p>"
+    },
+    {
+     "key": "usecases",
+     "id": "lesson-ai-automation-agents-usecases",
+     "label": "استخدامات حقيقية",
+     "html": "<h2><span class=\"dot\"></span> استخدامات</h2>\n<p>تنظيم مهام، تقارير مبدئية، جمع ومقارنة معلومات، وتجهيز مسودات.</p>"
+    },
+    {
+     "key": "practices",
+     "id": "lesson-ai-automation-agents-practices",
+     "label": "أفضل الممارسات",
+     "html": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout tip\"><strong>نصيحة:</strong> سجل اللي الأداة عملته، وخلّي القدرة على التراجع.</div>"
+    },
+    {
+     "key": "mistakes",
+     "id": "lesson-ai-automation-agents-mistakes",
+     "label": "أخطاء ومخاطر",
+     "html": "<h2><span class=\"dot\"></span> أخطاء ومخاطر</h2>\n<div class=\"callout warn\"><strong>إعطاء صلاحيات واسعة من البداية.</strong></div><div class=\"callout warn\"><strong>تشغيل أتمتة على حسابات العملاء بدون إذنهم.</strong></div>"
+    },
+    {
+     "key": "summary",
+     "id": "lesson-ai-automation-agents-summary",
+     "label": "الملخص",
+     "html": "<h2><span class=\"dot\"></span> الملخص</h2>\n<p>الأتمتة تنفذ خطوات ثابتة، والوكيل يقرر خطوات. ابدأ بمهام قليلة المخاطر وصلاحيات محدودة وموافقة بشرية.</p>"
+    },
+    {
+     "key": "quiz",
+     "id": "lesson-ai-automation-agents-quiz",
+     "label": "اختبار قصير",
+     "html": "<h2><span class=\"dot\"></span> اختبار قصير</h2>\n<div class=\"quiz-box\">\n<div class=\"quiz-q\">\n<p class=\"qtext\">1. الفرق بين الأتمتة والوكيل؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q1\" type=\"radio\"/>الأتمتة خطوات ثابتة والوكيل بيقرر خطوات متعددة</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>مفيش فرق</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>الوكيل أبطأ دايمًا</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">2. أول صلاحية مناسبة للتجربة؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>حذف الملفات</label>\n<label data-correct=\"true\"><input name=\"q2\" type=\"radio\"/>قراءة فقط</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>الدفع</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">3. قبل الإرسال أو الحذف التلقائي؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"q3\" type=\"radio\"/>بدون موافقة</label>\n<label data-correct=\"true\"><input name=\"q3\" type=\"radio\"/>موافقة بشرية</label>\n<label data-correct=\"false\"><input name=\"q3\" type=\"radio\"/>تجاهل</label>\n</div>\n</div>\n<p class=\"quiz-result\"></p>\n</div>"
+    },
+    {
+     "key": "assignment",
+     "id": "lesson-ai-automation-agents-assignment",
+     "label": "تمرين عملي",
+     "html": "<h2><span class=\"dot\"></span> تمرين عملي</h2>\n<div class=\"assignment-box\">\n<h3 style=\"margin-top:0;color:var(--gold);\">التمرين</h3>\n<p>حدد مهمة متكررة من يومك، واكتب خطواتها، وحدد أي خطوة ممكن الأداة تساعد فيها وأي خطوة لازم تفضل بإيدك.</p>\n</div>"
+    },
+    {
+     "key": "cheatsheet",
+     "id": "lesson-ai-automation-agents-cheatsheet",
+     "label": "ملخص للتحميل",
+     "html": "<h2><span class=\"dot\"></span> ملخص سريع للتحميل</h2>\n<div class=\"cheat-box\">\n<p style=\"color:var(--text);margin-bottom:14px;\">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p>\n<button class=\"btn btn-outline print-cheat-btn\">🖨️ تحميل / طباعة الملخص</button>\n</div>"
+    },
+    {
+     "key": "faq",
+     "id": "lesson-ai-automation-agents-faq",
+     "label": "أسئلة شائعة",
+     "html": "<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\">\n<summary>محتاج برمجة؟</summary>\n<p>مش دايمًا، فيه أدوات بدون كود، بس لازم تفهم الصلاحيات والمخاطر.</p>\n</details>\n"
+    },
+    {
+     "key": "resources",
+     "id": "lesson-ai-automation-agents-resources",
+     "label": "مصادر",
+     "html": "<h2><span class=\"dot\"></span> مصادر رسمية</h2><ul><li><a href=\"https://openai.com\" target=\"_blank\" rel=\"noopener\">OpenAI</a></li><li><a href=\"https://gemini.google.com\" target=\"_blank\" rel=\"noopener\">Google Gemini</a></li><li><a href=\"https://claude.ai\" target=\"_blank\" rel=\"noopener\">Anthropic Claude</a></li><li><a href=\"https://notebook.google\" target=\"_blank\" rel=\"noopener\">Gemini Notebook (NotebookLM سابقًا)</a></li><li><a href=\"https://perplexity.ai\" target=\"_blank\" rel=\"noopener\">Perplexity</a></li></ul><p><small>آخر مراجعة للمحتوى: 18 أكتوبر 2026. أدوات الذكاء الاصطناعي وخططها وأسعارها بتتغير بسرعة، فراجع الموقع الرسمي لكل أداة قبل ما تعتمد على أي معلومة متغيرة.</small></p>"
+    }
+   ],
+   "nextLessonTitle": "الخصوصية والأمان عند استخدام أدوات الذكاء الاصطناعي",
+   "lastReviewed": "2026-10-18",
+   "reviewStatus": "original-content-needs-human-review"
+  },
+  {
+   "id": "ai-privacy-safety",
+   "title": "الخصوصية والأمان عند استخدام أدوات الذكاء الاصطناعي",
+   "slug": "ai-privacy-safety",
+   "description": "إيه اللي ينفع وما ينفعش تكتبه للأدوات، وإزاي تحمي بياناتك وبيانات الناس اللي بتتعامل معاهم.",
+   "level": "مبتدئ",
+   "category": "ai-in-practice",
+   "duration": null,
+   "order": 8,
+   "status": "published",
+   "content": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>أي حاجة بتكتبها في أداة ممكن تتخزن أو تتعالج حسب سياسة الشركة وإعداداتك. عشان كده القاعدة: ما تكتبش حاجة مش مستعد تتعرض لجهة تانية، إلا لو فاهم السياسة وبتتحكم في الإعدادات.</p><ul><li><strong>ما تكتبهوش:</strong> كلمات مرور، أرقام بطاقات وحسابات، أوراق هوية، بيانات عملاء بدون إذن، أسرار شغل.</li><li><strong>اقرأ:</strong> سياسة الخصوصية وإعدادات استخدام بياناتك في تحسين النماذج.</li><li><strong>اتحكم:</strong> فعّل خيارات الخصوصية المتاحة وامسح المحادثات الحساسة لو الأداة بتسمح.</li></ul>",
+   "examples": "<h2><span class=\"dot\"></span> أمثلة</h2>\n<p>بدل: «اكتب رد للعميل أحمد محمد رقمه كذا وعنوانه كذا». اكتب: «اكتب رد مهذب لعميل شاكي من تأخير الطلب» وبعدين عدّل التفاصيل بنفسك.</p>",
+   "tips": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout tip\"><strong>نصيحة:</strong> لو مش متأكد من حساسية المعلومة، اعتبرها حساسة.</div>",
+   "exercise": "<div class=\"assignment-box\">\n<h3 style=\"margin-top:0;color:var(--gold);\">التمرين</h3>\n<p>اختار أداة بتستخدمها، وافتح إعدادات الخصوصية فيها وسجّل: هل بياناتك بتتستخدم لتحسين النماذج؟ وإزاي تمسح المحادثات؟ وفعّل التحقق بخطوتين.</p>\n</div>",
+   "quiz": {
+    "questions": [
+     {
+      "question": "1. إيه اللي ما تكتبهوش للأداة؟",
+      "options": [
+       {
+        "text": "سؤال عام",
+        "correct": false
+       },
+       {
+        "text": "كلمة مرور أو بيانات عميل",
+        "correct": true
+       },
+       {
+        "text": "فكرة منشور",
+        "correct": false
+       }
+      ]
+     },
+     {
+      "question": "2. أفضل طريقة لحماية بيانات عميل؟",
+      "options": [
+       {
+        "text": "أخفي أو أستبدل التفاصيل قبل السؤال",
+        "correct": true
+       },
+       {
+        "text": "أرفع كل الملفات",
+        "correct": false
+       },
+       {
+        "text": "أشارك الحساب",
+        "correct": false
+       }
+      ]
+     },
+     {
+      "question": "3. بعد اختيار أداة؟",
+      "options": [
+       {
+        "text": "أقرأ سياسة الخصوصية وأضبط الإعدادات",
+        "correct": true
+       },
+       {
+        "text": "أتجاهلها",
+        "correct": false
+       },
+       {
+        "text": "أنشر بياناتي",
+        "correct": false
+       }
+      ]
+     }
+    ]
+   },
+   "resources": "<h2><span class=\"dot\"></span> مصادر رسمية</h2><ul><li><a href=\"https://openai.com\" target=\"_blank\" rel=\"noopener\">OpenAI</a></li><li><a href=\"https://gemini.google.com\" target=\"_blank\" rel=\"noopener\">Google Gemini</a></li><li><a href=\"https://claude.ai\" target=\"_blank\" rel=\"noopener\">Anthropic Claude</a></li><li><a href=\"https://notebook.google\" target=\"_blank\" rel=\"noopener\">Gemini Notebook (NotebookLM سابقًا)</a></li><li><a href=\"https://perplexity.ai\" target=\"_blank\" rel=\"noopener\">Perplexity</a></li></ul><p><small>آخر مراجعة للمحتوى: 18 أكتوبر 2026. أدوات الذكاء الاصطناعي وخططها وأسعارها بتتغير بسرعة، فراجع الموقع الرسمي لكل أداة قبل ما تعتمد على أي معلومة متغيرة.</small></p>",
+   "prerequisites": [],
+   "nextLesson": null,
+   "summary": "ما تشاركش بيانات حساسة، اقرأ السياسات، فعّل إعدادات الخصوصية، وأخفِ التفاصيل الشخصية قبل ما تسأل.",
+   "sections": [
+    {
+     "key": "beginner",
+     "id": "lesson-ai-privacy-safety-beginner",
+     "label": "الشرح المبسط",
+     "html": "<h2><span class=\"dot\"></span> الشرح المبسط</h2>\n<p>أي حاجة بتكتبها في أداة ممكن تتخزن أو تتعالج حسب سياسة الشركة وإعداداتك. عشان كده القاعدة: ما تكتبش حاجة مش مستعد تتعرض لجهة تانية، إلا لو فاهم السياسة وبتتحكم في الإعدادات.</p><ul><li><strong>ما تكتبهوش:</strong> كلمات مرور، أرقام بطاقات وحسابات، أوراق هوية، بيانات عملاء بدون إذن، أسرار شغل.</li><li><strong>اقرأ:</strong> سياسة الخصوصية وإعدادات استخدام بياناتك في تحسين النماذج.</li><li><strong>اتحكم:</strong> فعّل خيارات الخصوصية المتاحة وامسح المحادثات الحساسة لو الأداة بتسمح.</li></ul>"
+    },
+    {
+     "key": "steps",
+     "id": "lesson-ai-privacy-safety-steps",
+     "label": "الخطوات",
+     "html": "<h2><span class=\"dot\"></span> عادات أمان</h2>\n<ol><li><strong>استبدل الأسماء والأرقام</strong> بعناوين عامة («العميل أ») قبل ما تسأل.</li><li><strong>استخدم حسابات منفصلة</strong> للشغل والاستخدام الشخصي.</li><li><strong>فعّل التحقق بخطوتين</strong> على حسابات الأدوات.</li><li><strong>اتحقق من الروابط والإضافات</strong> قبل التثبيت.</li><li><strong>اسأل الجهة اللي بتشتغل معاها</strong> عن سياستها في استخدام الأدوات.</li></ol>"
+    },
+    {
+     "key": "examples",
+     "id": "lesson-ai-privacy-safety-examples",
+     "label": "أمثلة عملية",
+     "html": "<h2><span class=\"dot\"></span> أمثلة</h2>\n<p>بدل: «اكتب رد للعميل أحمد محمد رقمه كذا وعنوانه كذا». اكتب: «اكتب رد مهذب لعميل شاكي من تأخير الطلب» وبعدين عدّل التفاصيل بنفسك.</p>"
+    },
+    {
+     "key": "usecases",
+     "id": "lesson-ai-privacy-safety-usecases",
+     "label": "استخدامات حقيقية",
+     "html": "<h2><span class=\"dot\"></span> مواقف</h2>\n<p>موظف بيلخص تقرير داخلي، مدرّس بيحلل أوراق طلاب، أو فريلانسر بيتعامل مع ملفات عميل.</p>"
+    },
+    {
+     "key": "practices",
+     "id": "lesson-ai-privacy-safety-practices",
+     "label": "أفضل الممارسات",
+     "html": "<h2><span class=\"dot\"></span> أفضل الممارسات</h2>\n<div class=\"callout tip\"><strong>نصيحة:</strong> لو مش متأكد من حساسية المعلومة، اعتبرها حساسة.</div>"
+    },
+    {
+     "key": "mistakes",
+     "id": "lesson-ai-privacy-safety-mistakes",
+     "label": "أخطاء ومخاطر",
+     "html": "<h2><span class=\"dot\"></span> أخطاء شائعة</h2>\n<div class=\"callout warn\"><strong>لصق ملفات كاملة فيها بيانات شخصية.</strong></div><div class=\"callout warn\"><strong>تحميل إضافات مجهولة تدّعي إنها ذكاء اصطناعي.</strong></div>"
+    },
+    {
+     "key": "summary",
+     "id": "lesson-ai-privacy-safety-summary",
+     "label": "الملخص",
+     "html": "<h2><span class=\"dot\"></span> الملخص</h2>\n<p>ما تشاركش بيانات حساسة، اقرأ السياسات، فعّل إعدادات الخصوصية، وأخفِ التفاصيل الشخصية قبل ما تسأل.</p>"
+    },
+    {
+     "key": "quiz",
+     "id": "lesson-ai-privacy-safety-quiz",
+     "label": "اختبار قصير",
+     "html": "<h2><span class=\"dot\"></span> اختبار قصير</h2>\n<div class=\"quiz-box\">\n<div class=\"quiz-q\">\n<p class=\"qtext\">1. إيه اللي ما تكتبهوش للأداة؟</p>\n<div class=\"opts\">\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>سؤال عام</label>\n<label data-correct=\"true\"><input name=\"q1\" type=\"radio\"/>كلمة مرور أو بيانات عميل</label>\n<label data-correct=\"false\"><input name=\"q1\" type=\"radio\"/>فكرة منشور</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">2. أفضل طريقة لحماية بيانات عميل؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q2\" type=\"radio\"/>أخفي أو أستبدل التفاصيل قبل السؤال</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>أرفع كل الملفات</label>\n<label data-correct=\"false\"><input name=\"q2\" type=\"radio\"/>أشارك الحساب</label>\n</div>\n</div>\n<div class=\"quiz-q\">\n<p class=\"qtext\">3. بعد اختيار أداة؟</p>\n<div class=\"opts\">\n<label data-correct=\"true\"><input name=\"q3\" type=\"radio\"/>أقرأ سياسة الخصوصية وأضبط الإعدادات</label>\n<label data-correct=\"false\"><input name=\"q3\" type=\"radio\"/>أتجاهلها</label>\n<label data-correct=\"false\"><input name=\"q3\" type=\"radio\"/>أنشر بياناتي</label>\n</div>\n</div>\n<p class=\"quiz-result\"></p>\n</div>"
+    },
+    {
+     "key": "assignment",
+     "id": "lesson-ai-privacy-safety-assignment",
+     "label": "تمرين عملي",
+     "html": "<h2><span class=\"dot\"></span> تمرين عملي</h2>\n<div class=\"assignment-box\">\n<h3 style=\"margin-top:0;color:var(--gold);\">التمرين</h3>\n<p>اختار أداة بتستخدمها، وافتح إعدادات الخصوصية فيها وسجّل: هل بياناتك بتتستخدم لتحسين النماذج؟ وإزاي تمسح المحادثات؟ وفعّل التحقق بخطوتين.</p>\n</div>"
+    },
+    {
+     "key": "cheatsheet",
+     "id": "lesson-ai-privacy-safety-cheatsheet",
+     "label": "ملخص للتحميل",
+     "html": "<h2><span class=\"dot\"></span> ملخص سريع للتحميل</h2>\n<div class=\"cheat-box\">\n<p style=\"color:var(--text);margin-bottom:14px;\">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p>\n<button class=\"btn btn-outline print-cheat-btn\">🖨️ تحميل / طباعة الملخص</button>\n</div>"
+    },
+    {
+     "key": "faq",
+     "id": "lesson-ai-privacy-safety-faq",
+     "label": "أسئلة شائعة",
+     "html": "<h2><span class=\"dot\"></span> الأسئلة الشائعة</h2>\n<details class=\"faq-item\">\n<summary>هل المحادثات سرية تمامًا؟</summary>\n<p>لا تفترض ذلك. اقرأ سياسة الأداة وإعداداتها.</p>\n</details>\n"
+    },
+    {
+     "key": "resources",
+     "id": "lesson-ai-privacy-safety-resources",
+     "label": "مصادر",
+     "html": "<h2><span class=\"dot\"></span> مصادر رسمية</h2><ul><li><a href=\"https://openai.com\" target=\"_blank\" rel=\"noopener\">OpenAI</a></li><li><a href=\"https://gemini.google.com\" target=\"_blank\" rel=\"noopener\">Google Gemini</a></li><li><a href=\"https://claude.ai\" target=\"_blank\" rel=\"noopener\">Anthropic Claude</a></li><li><a href=\"https://notebook.google\" target=\"_blank\" rel=\"noopener\">Gemini Notebook (NotebookLM سابقًا)</a></li><li><a href=\"https://perplexity.ai\" target=\"_blank\" rel=\"noopener\">Perplexity</a></li></ul><p><small>آخر مراجعة للمحتوى: 18 أكتوبر 2026. أدوات الذكاء الاصطناعي وخططها وأسعارها بتتغير بسرعة، فراجع الموقع الرسمي لكل أداة قبل ما تعتمد على أي معلومة متغيرة.</small></p>"
+    }
+   ],
+   "nextLessonTitle": null,
+   "lastReviewed": "2026-10-18",
+   "reviewStatus": "original-content-needs-human-review"
+  }
+ ]
+}

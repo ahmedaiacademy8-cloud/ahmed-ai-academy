@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Role Prompting — Ahmed AI Academy</title>
+<meta name="description" content="">
+<link rel="canonical" href="https://ahmedmohmedabdullah.github.io/ahmed-ai-academy/lessons/role-prompting/">
+<link rel="icon" href="../../assets/favicon/favicon.ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap">
+<link rel="stylesheet" href="../../css/global.css"><link rel="stylesheet" href="../../css/academy.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Role Prompting", "inLanguage": "ar", "url": "https://ahmedmohmedabdullah.github.io/ahmed-ai-academy/lessons/role-prompting/", "isPartOf": "هندسة البرومبت الاحترافية", "publisher": {"@type": "EducationalOrganization", "name": "Ahmed AI Academy"}}</script></head>
+<body><main style="max-width:860px;margin:0 auto;padding:24px 16px">
+<nav aria-label="مسار التنقل"><a href="../../index.html">الرئيسية</a> › <a href="../../academy.html#path/prompt-engineering">هندسة البرومبت الاحترافية</a></nav>
+<h1>Role Prompting</h1>
+<p><a class="btn btn-gold" href="../../academy.html#lesson/role-prompting">افتح النسخة التفاعلية (اختبار وتقدم)</a></p>
+<h2><span class="dot"></span> الشرح المبسط</h2>
+<p>Role Prompting معناها إنك تطلب من الذكاء الاصطناعي "يلعب دور" شخصية أو خبير معيّن قبل ما يجاوبك — زي "أنت طبيب" أو "أنت محامي متخصص" أو "أنت كاتب كوميدي". ده بيأثر بشكل كبير على أسلوب وعمق الإجابة.</p>
+<div class="illustration"><div class="glyph">🎭</div>زي ما تسأل نفس السؤال لطبيب ومحاسب — كل واحد هيجاوبك من زاوية مختلفة تمامًا حسب خبرته. Role Prompting بيخلّي النموذج "يتقمّص" الزاوية دي.</div>
+<h2><span class="dot"></span> الشرح الاحترافي</h2>
+<p>Role Prompting بيشتغل لأن النموذج اتدرّب على كمية هائلة من النصوص المكتوبة بأساليب وخبرات مختلفة. لما تحدد دور معيّن ("أنت محلل مالي بخبرة 15 سنة")، النموذج بيميل يستخدم المفردات والعمق والأسلوب المرتبط بالدور ده في بياناته التدريبية.</p>
+<p>الفرق بين Role Prompting والمكونات التانية (Context/Task) هو إنه بيأثر بالأساس على "الصوت" (Voice) والمنظور، مش بس المحتوى.</p>
+<h2><span class="dot"></span> خطوات الفهم</h2>
+<ol>
+<li>حدد الدور بدقة (مش بس "خبير" — قول خبير في إيه بالظبط)</li>
+<li>ممكن تضيف مستوى الخبرة (سنين خبرة، تخصص دقيق)</li>
+<li>اطلب المهمة بعد تحديد الدور</li>
+</ol>
+<h2><span class="dot"></span> أمثلة عملية</h2>
+<pre class="code-block">أنت خبير تغذية رياضية بخبرة 10 سنين مع لاعبين محترفين.
+اقترح وجبة إفطار مناسبة لرياضي بيتمرن الصبح بدري.</pre>
+<h2><span class="dot"></span> استخدامات حقيقية</h2>
+<ul class="usecase-list">
+<li>الحصول على نصيحة من "منظور" متخصص (قانوني، طبي، مالي — مع مراعاة إنها استرشادية مش بديل عن استشارة حقيقية)</li>
+<li>تغيير أسلوب الكتابة (رسمي vs. ودود)</li>
+<li>مراجعة عمل من زاوية ناقد متخصص</li>
+</ul>
+<h2><span class="dot"></span> أفضل الممارسات</h2>
+<div class="callout pro"><strong>نصيحة محترف:</strong> ادمج Role Prompting مع باقي المكونات (Context, Task, Format) اللي اتعلمناها في درس "ما هي هندسة البرومبت" — الدور بمفرده مش كافي لنتيجة ممتازة.</div>
+<h2><span class="dot"></span> أخطاء شائعة</h2>
+<div class="callout mistake"><strong>خطأ شائع:</strong> الاعتماد على "الدور" وحده كأساس لقرارات حساسة (طبية، قانونية، مالية) بدل استشارة متخصص حقيقي — النموذج بيقلّد أسلوب الخبير، مش بديل عن خبرته الفعلية ومسؤوليته.</div>
+<h2><span class="dot"></span> الملخص</h2>
+<ul>
+<li>Role Prompting = تحديد دور/شخصية للنموذج قبل تنفيذ المهمة</li>
+<li>بيأثر على الأسلوب والعمق والمنظور مش بس المحتوى</li>
+<li>مفيد جدًا لما مدموج مع باقي مكونات البرومبت</li>
+</ul>
+<h2><span class="dot"></span> تمرين عملي</h2>
+<div class="assignment-box"><p>اطلب نفس السؤال من أداة AI مرتين بدورين مختلفين (مثلاً "أنت معلم ابتدائي" و"أنت أستاذ جامعي")، وقارن الفرق في الأسلوب.</p></div>
+<h2><span class="dot"></span> ملخص سريع للتحميل</h2>
+<div class="cheat-box"><p style="color:var(--text);margin-bottom:14px;">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p><button class="btn btn-outline print-cheat-btn">🖨️ تحميل / طباعة الملخص</button></div>
+<h2><span class="dot"></span> الأسئلة الشائعة</h2>
+<details class="faq-item"><summary>هل النموذج فعلاً "بيبقى" الدور ده؟</summary><p>لأ، هو مش بيكتسب معرفة حقيقية جديدة، لكنه بيغيّر أسلوب وزاوية الإجابة بناءً على الأنماط اللي اتعلمها من نصوص مكتوبة بنفس الأسلوب ده.</p></details>
+<section aria-label="وسائط الدرس"><h2>فيديو الدرس</h2><p>الفيديو التعليمي قريبًا.</p><h2>ملفات المراجعة</h2><p>ستُضاف هنا.</p></section>
+</main></body></html>

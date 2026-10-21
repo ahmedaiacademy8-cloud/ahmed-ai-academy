@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أساسيات التعلم العميق (Deep Learning) — Ahmed AI Academy</title>
+<meta name="description" content="">
+<link rel="canonical" href="https://ahmedmohmedabdullah.github.io/ahmed-ai-academy/lessons/deep-learning-basics/">
+<link rel="icon" href="../../assets/favicon/favicon.ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap">
+<link rel="stylesheet" href="../../css/global.css"><link rel="stylesheet" href="../../css/academy.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "أساسيات التعلم العميق (Deep Learning)", "inLanguage": "ar", "url": "https://ahmedmohmedabdullah.github.io/ahmed-ai-academy/lessons/deep-learning-basics/", "isPartOf": "أساسيات الذكاء الاصطناعي", "publisher": {"@type": "EducationalOrganization", "name": "Ahmed AI Academy"}}</script></head>
+<body><main style="max-width:860px;margin:0 auto;padding:24px 16px">
+<nav aria-label="مسار التنقل"><a href="../../index.html">الرئيسية</a> › <a href="../../academy.html#path/ai-fundamentals">أساسيات الذكاء الاصطناعي</a></nav>
+<h1>أساسيات التعلم العميق (Deep Learning)</h1>
+<p><a class="btn btn-gold" href="../../academy.html#lesson/deep-learning-basics">افتح النسخة التفاعلية (اختبار وتقدم)</a></p>
+<h2><span class="dot"></span> الشرح المبسط</h2>
+<p>التعلم العميق (Deep Learning) هو فرع من تعلم الآلة بيستخدم "طبقات" كتير من المعالجة فوق بعض — زي طبقات كيكة — كل طبقة بتاخد نتيجة اللي قبلها وتحسّنها شوية. "العمق" في الاسم بيقصد عدد الطبقات دي.</p>
+<div class="illustration"><div class="glyph">🧅</div>فكّر فيه زي تقشير بصلة: كل طبقة بتكشفلك تفصيلة أعمق من اللي قبلها — من حواف بسيطة في صورة، لحد التعرف على "ده وش قطة" في الآخر.</div>
+<h2><span class="dot"></span> الشرح الاحترافي</h2>
+<p>التعلم العميق بيعتمد على الشبكات العصبية الاصطناعية (هنشرحها بالتفصيل في الدرس الجاي) لكن بعدد طبقات كبير (Deep = عميقة). كل طبقة بتتعلم تمثيل (Representation) أعقد من اللي قبلها بشكل تلقائي، من غير ما مهندس يحدد يدويًا "ابحث عن حافة هنا".</p>
+<p>ده اللي خلّى Deep Learning يتفوق في مهام معقدة زي التعرف على الصور والصوت واللغة الطبيعية — لأنه مش محتاج حد يستخرج السمات (Features) يدويًا، هو بيتعلمها بنفسه من البيانات.</p>
+<h2><span class="dot"></span> خطوات الفهم</h2>
+<ol>
+<li>البيانات الخام بتدخل الطبقة الأولى (مثلاً بكسلات صورة)</li>
+<li>كل طبقة بتستخرج نمط أعقد شوية من اللي قبلها</li>
+<li>الطبقات الأخيرة بتربط الأنماط دي بقرار نهائي (مثلاً "ده قطة")</li>
+<li>النموذج بيقارن قراره بالإجابة الصح ويعدّل نفسه (Backpropagation)</li>
+</ol>
+<h2><span class="dot"></span> أمثلة عملية</h2>
+<p>التعرف على الوجوه في تطبيقات الموبايل: أول طبقات بتكتشف حواف وألوان بسيطة، طبقات وسطى بتكتشف عيون وأنف، والطبقات الأخيرة بتقرر "ده وش مين بالظبط".</p>
+<h2><span class="dot"></span> استخدامات حقيقية</h2>
+<ul class="usecase-list">
+<li>التعرف على الصوت (زي Siri وGoogle Assistant)</li>
+<li>السيارات ذاتية القيادة (فهم المشهد حواليها)</li>
+<li>الترجمة الآلية الحديثة</li>
+<li>النماذج اللغوية الكبيرة زي ChatGPT نفسه</li>
+</ul>
+<h2><span class="dot"></span> أفضل الممارسات</h2>
+<div class="callout pro"><strong>نصيحة محترف:</strong> Deep Learning محتاج بيانات كتير جدًا عشان يشتغل كويس. لو بياناتك قليلة، خوارزميات Machine Learning التقليدية الأبسط ممكن تدّي نتيجة أحسن.</div>
+<h2><span class="dot"></span> أخطاء شائعة</h2>
+<div class="callout mistake"><strong>خطأ شائع:</strong> اعتقاد إن "أعمق = أحسن دايمًا". طبقات زيادة عن الحاجة ببيانات قليلة بتؤدي لـ Overfitting بدل تحسين النتيجة.</div>
+<h2><span class="dot"></span> الملخص</h2>
+<ul>
+<li>Deep Learning = تعلم آلة بطبقات معالجة كتير فوق بعض</li>
+<li>كل طبقة بتتعلم تمثيل أعقد بشكل تلقائي من غير تدخل بشري</li>
+<li>محتاج بيانات ضخمة وقوة معالجة عالية</li>
+</ul>
+<h2><span class="dot"></span> تمرين عملي</h2>
+<div class="assignment-box"><p>اكتب بالعربي في 3 أسطر: إيه الفرق اللي فهمته بين Machine Learning العادي و Deep Learning؟</p></div>
+<h2><span class="dot"></span> ملخص سريع للتحميل</h2>
+<div class="cheat-box"><p style="color:var(--text);margin-bottom:14px;">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p><button class="btn btn-outline print-cheat-btn">🖨️ تحميل / طباعة الملخص</button></div>
+<h2><span class="dot"></span> الأسئلة الشائعة</h2>
+<details class="faq-item"><summary>ليه اسمه "عميق"؟</summary><p>بسبب عدد الطبقات الكبير اللي البيانات بتعدي عليها، مش بمعنى "صعب" أو "متقدم" حرفيًا.</p></details>
+<section aria-label="وسائط الدرس"><h2>فيديو الدرس</h2><p>الفيديو التعليمي قريبًا.</p><h2>ملفات المراجعة</h2><p>ستُضاف هنا.</p></section>
+</main></body></html>

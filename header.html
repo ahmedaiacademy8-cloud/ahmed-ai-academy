@@ -1,0 +1,24 @@
+<!--
+  Reusable header/nav markup — reference component.
+  Currently duplicated as static HTML at the top of academy.html
+  (no build step exists yet to "include" this file automatically).
+  When a build step or template system is introduced in a later
+  stage, this is the source of truth to wire up.
+-->
+<header class="a-header">
+  <div class="wrap">
+    <a href="#home" class="a-brand">
+      <img src="assets/images/logo.png" alt="شعار Ahmed AI Academic" width="34" height="34" loading="lazy">
+      أكاديمية <span class="accent">Ahmed AI</span>
+    </a>
+    <button id="navToggle" class="nav-toggle-btn" aria-label="فتح قائمة التنقل" aria-expanded="false" aria-controls="mainNav">☰</button>
+    <nav class="a-nav" id="mainNav" aria-label="التنقل الرئيسي">
+      <a href="#home" data-nav="home">الرئيسية</a>
+      <a href="#path/ai-fundamentals" data-nav="path/ai-fundamentals">أساسيات الذكاء الاصطناعي</a>
+      <a href="#path/prompt-engineering" data-nav="path/prompt-engineering">هندسة البرومبت</a>
+      <a href="#tool/chatgpt" data-nav="tool">أكاديمية الأدوات</a>
+      <a href="#prompts" data-nav="prompts">مكتبة البرومبتات</a>
+      <a href="index.html">الموقع الرئيسي</a>
+    </nav>
+  </div>
+</header>

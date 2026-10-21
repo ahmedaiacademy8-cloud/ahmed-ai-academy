@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ahmedmohmedabdullah.github.io/ahmed-ai-academy/sitemap.xml

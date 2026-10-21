@@ -1,0 +1,274 @@
+/* ============================================================
+   Ahmed AI Academic — Global Design System
+   Shared across index.html and academy.html.
+   Extracted verbatim from academy.html during Foundation Refactor
+   (no visual changes were made — only file location changed).
+   Palette derived from the brand logo: forged-gold + circuit-blue
+   on deep obsidian. Display face: Cairo (geometric, bold, Arabic-
+   native). Body/UI face: IBM Plex Sans Arabic (quiet, legible).
+   ============================================================ */
+
+/* Font loading moved to <link rel="preconnect"> + <link rel="stylesheet">
+   in academy.html <head> (Performance pass) — @import blocks CSSOM
+   construction until the imported file is fetched, which delays first
+   paint. A <link> the browser discovers immediately in <head> and can
+   fetch in parallel with everything else. */
+
+:root {
+  --obsidian: #0a0d12;
+  --obsidian-2: #11151c;
+  --obsidian-3: #171c25;
+  --line: #262d38;
+  --line-soft: #1b212b;
+
+  --gold: #e8b84b;
+  --gold-2: #c9922e;
+  --gold-glow: rgba(232, 184, 75, 0.25);
+
+  --blue: #4fb0ff;
+  --blue-2: #2f6fe0;
+  --blue-glow: rgba(79, 176, 255, 0.25);
+
+  --text: #f2f0ea;
+  --text-dim: #a9b0bc;
+  --text-dim-2: #7b8490; /* Accessibility fix: original #6b7280 measured ~4.0:1 on
+    --obsidian, just under the WCAG AA 4.5:1 minimum for normal-size text. This
+    value keeps the same muted gray look at ~5.1:1. */
+
+  --success: #3ecf8e;
+  --warn: #e8b84b;
+  --danger: #e0605a;
+
+  --radius: 16px;
+  --radius-sm: 10px;
+  --font-display: 'Cairo', 'IBM Plex Sans Arabic', sans-serif;
+  --font-body: 'IBM Plex Sans Arabic', 'Cairo', sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+}
+
+body {
+  margin: 0;
+  background: var(--obsidian);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.75;
+  direction: rtl;
+}
+
+img { max-width: 100%; display: block; }
+
+a { color: inherit; text-decoration: none; }
+
+::selection { background: var(--gold-glow); color: var(--text); }
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--obsidian); }
+::-webkit-scrollbar-thumb { background: var(--line); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold-2); }
+
+:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Skip-link: hidden off-screen by default, but MUST return on-screen
+   when it receives keyboard focus, or it's unusable for the keyboard/
+   screen-reader users it exists for. Previously there was no :focus
+   rule at all, so the link stayed at right:-999px permanently. */
+.skip-link:focus {
+  right: 16px !important;
+  top: 16px !important;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  margin: 0 0 0.5em;
+  letter-spacing: -0.01em;
+}
+
+p { color: var(--text-dim); margin: 0 0 1em; }
+
+/* ---------- background circuit texture (signature motif) ---------- */
+.circuit-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 15% 10%, var(--gold-glow), transparent 40%),
+    radial-gradient(circle at 85% 25%, var(--blue-glow), transparent 45%),
+    var(--obsidian);
+  opacity: 0.7;
+}
+
+/* ---------- layout shell ---------- */
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 6%; }
+
+/* ---------- topbar ---------- */
+.a-header {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  background: rgba(10, 13, 18, 0.85);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line-soft);
+}
+.a-header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  gap: 20px;
+}
+.a-brand { display: flex; align-items: center; gap: 10px; font-family: var(--font-display); font-weight: 800; font-size: 1.05rem; white-space: nowrap; }
+.a-brand img { width: 34px; height: 34px; object-fit: contain; }
+.a-brand .accent { color: var(--gold); }
+
+.a-nav { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
+.a-nav a { color: var(--text-dim); font-size: 0.9rem; font-weight: 600; transition: color .2s ease; }
+.a-nav a:hover, .a-nav a.active { color: var(--gold); }
+
+/* Mobile nav toggle (accessibility addition — Foundation Refactor) */
+.nav-toggle-btn {
+  display: none;
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+@media (max-width: 700px) {
+  .nav-toggle-btn { display: inline-flex; }
+  .a-nav { display: none; flex-direction: column; align-items: flex-start; gap: 4px; position: absolute; top: 72px; inset-inline: 0; background: var(--obsidian-2); border-bottom: 1px solid var(--line-soft); padding: 14px 6%; }
+  .a-nav.open { display: flex; }
+}
+
+.a-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--obsidian-3);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 16px;
+  min-width: 200px;
+}
+.a-search input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  width: 100%;
+}
+.a-search input::placeholder { color: var(--text-dim-2); }
+
+/* ---------- buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 26px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.92rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+  white-space: nowrap;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn-gold { background: linear-gradient(120deg, var(--gold), var(--gold-2)); color: #1a1204; box-shadow: 0 10px 30px -10px var(--gold-glow); }
+.btn-gold:hover { box-shadow: 0 16px 36px -10px var(--gold-glow); }
+.btn-blue { background: linear-gradient(120deg, var(--blue), var(--blue-2)); color: #041022; box-shadow: 0 10px 30px -10px var(--blue-glow); }
+.btn-outline { background: transparent; border-color: var(--line); color: var(--text); }
+.btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+.btn-telegram { background: linear-gradient(120deg, #2AABEE, #229ED9); color: #fff; box-shadow: 0 10px 30px -10px rgba(42,171,238,0.35); }
+.btn-telegram:hover { box-shadow: 0 16px 36px -10px rgba(42,171,238,0.45); }
+.btn-sm { padding: 8px 16px; font-size: 0.82rem; }
+.btn-block { width: 100%; justify-content: center; }
+
+/* ---------- compact icon-only nav actions (search/dashboard/favorites) ---------- */
+.a-nav-icons { display: flex; align-items: center; gap: 6px; }
+.a-nav-icons a {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 34px; height: 34px; border-radius: 10px;
+  background: var(--obsidian-3); border: 1px solid var(--line);
+  font-size: 1rem; text-decoration: none;
+}
+.a-nav-icons a:hover, .a-nav-icons a.active { border-color: var(--gold); background: var(--obsidian-2); }
+@media (max-width: 700px) {
+  .a-nav-icons { gap: 10px; margin: 6px 0; }
+  .a-nav-icons a { width: 40px; height: 40px; }
+}
+
+/* ---------- section heading pattern ---------- */
+.a-section { padding: 64px 6%; }
+.a-section-head { text-align: center; margin-bottom: 44px; }
+.a-section-head .tag { color: var(--blue); font-weight: 700; font-size: 0.82rem; letter-spacing: .04em; }
+.a-section-head h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); margin-top: 8px; }
+.a-section-head p { max-width: 560px; margin: 10px auto 0; }
+
+/* ---------- grid & cards (shared design-system component) ---------- */
+.a-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 22px; }
+.a-grid.cols-2 { grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); }
+
+.a-card {
+  background: linear-gradient(180deg, var(--obsidian-3), var(--obsidian-2));
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 26px;
+  transition: border-color .2s ease, transform .2s ease;
+  display: flex;
+  flex-direction: column;
+}
+.a-card:hover { border-color: var(--gold-2); transform: translateY(-4px); }
+.a-card .icon-tile {
+  width: 48px; height: 48px;
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem;
+  background: linear-gradient(135deg, var(--gold-glow), var(--blue-glow));
+  border: 1px solid var(--line);
+  margin-bottom: 16px;
+}
+.a-card h3 { font-size: 1.08rem; margin-bottom: 8px; }
+.a-card .meta { display: flex; gap: 14px; font-size: 0.78rem; color: var(--text-dim-2); margin: 14px 0; flex-wrap: wrap; }
+.a-card .meta span { display: flex; align-items: center; gap: 5px; }
+.a-card .level {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  color: var(--text-dim);
+  width: fit-content;
+  margin-bottom: 12px;
+}
+.a-card .level.beginner { color: var(--success); border-color: var(--success); }
+.a-card .level.intermediate { color: var(--gold); border-color: var(--gold); }
+.a-card .level.advanced { color: var(--danger); border-color: var(--danger); }
+.a-card .go { margin-top: auto; padding-top: 14px; color: var(--gold); font-weight: 700; font-size: 0.88rem; }
+
+/* ---------- footer ---------- */
+.a-footer { border-top: 1px solid var(--line-soft); padding: 40px 6%; text-align: center; color: var(--text-dim-2); font-size: 0.84rem; }
+.a-footer a { color: var(--gold); }
+
+/* ---------- shared responsive tweaks ---------- */
+@media (max-width: 700px) {
+  .a-hero-ctas { flex-direction: column; }
+}

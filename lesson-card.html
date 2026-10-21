@@ -1,0 +1,22 @@
+<!--
+  Reference markup for one lesson step inside a path's rail.
+  The live version of this logic is implemented in js/router.js
+  (see pathStepMarkup()) since it needs conditional locked/unlocked
+  branches. Kept here as documentation of the two states.
+-->
+
+<!-- Unlocked state -->
+<div class="path-step">
+  <span class="num">الدرس {{order}}</span>
+  <a href="#lesson/{{slug}}">
+    <h4>{{title}} <span style="color:var(--success);font-size:.78rem;">✅ متاح</span></h4>
+  </a>
+</div>
+
+<!-- Locked state -->
+<div class="path-step locked">
+  <span class="num">الدرس {{order}}</span>
+  <a href="javascript:void(0)" aria-disabled="true" tabindex="-1">
+    <h4>{{title}} <span class="soon-badge">🔒 قريبًا</span></h4>
+  </a>
+</div>

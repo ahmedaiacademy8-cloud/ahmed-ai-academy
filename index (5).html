@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ما هو الذكاء الاصطناعي التوليدي؟ — Ahmed AI Academy</title>
+<meta name="description" content="الشرح المبسط الذكاء الاصطناعي التوليدي (Generative AI) هو النوع من الذكاء الاصطناعي اللي بدل ما &quot;يصنّف&quot; أو &quot;يتنبأ&quot; بس، بيقدر &quot;ينتج&quot; حاجة جديدة من الصفر: نص">
+<link rel="canonical" href="https://ahmedmohmedabdullah.github.io/ahmed-ai-academy/lessons/generative-ai/">
+<link rel="icon" href="../../assets/favicon/favicon.ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap">
+<link rel="stylesheet" href="../../css/global.css"><link rel="stylesheet" href="../../css/academy.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "ما هو الذكاء الاصطناعي التوليدي؟", "inLanguage": "ar", "url": "https://ahmedmohmedabdullah.github.io/ahmed-ai-academy/lessons/generative-ai/", "isPartOf": "أساسيات الذكاء الاصطناعي", "publisher": {"@type": "EducationalOrganization", "name": "Ahmed AI Academy"}}</script></head>
+<body><main style="max-width:860px;margin:0 auto;padding:24px 16px">
+<nav aria-label="مسار التنقل"><a href="../../index.html">الرئيسية</a> › <a href="../../academy.html#path/ai-fundamentals">أساسيات الذكاء الاصطناعي</a></nav>
+<h1>ما هو الذكاء الاصطناعي التوليدي؟</h1>
+<p><a class="btn btn-gold" href="../../academy.html#lesson/generative-ai">افتح النسخة التفاعلية (اختبار وتقدم)</a></p>
+<h2><span class="dot"></span> الشرح المبسط</h2>
+<p>الذكاء الاصطناعي التوليدي (Generative AI) هو النوع من الذكاء الاصطناعي اللي بدل ما "يصنّف" أو "يتنبأ" بس، بيقدر "ينتج" حاجة جديدة من الصفر: نص، صورة، فيديو، صوت، أو حتى كود برمجي.</p>
+<p>يعني بدل ما تقوله "هل الصورة دي قطة ولا كلب؟" (تصنيف)، تقوله "ارسملي قطة بتلعب في حديقة" وهو يرسملك صورة جديدة بالكامل لم تكن موجودة من قبل.</p>
+<div class="illustration">
+<div class="glyph">✨</div>
+        الفرق: الذكاء الاصطناعي التقليدي بيحلل ويصنّف، والذكاء الاصطناعي التوليدي "بيبتكر" محتوى جديد
+      </div>
+<h2><span class="dot"></span> الشرح الاحترافي</h2>
+<p>النماذج التوليدية بتتعلم "التوزيع الاحتمالي" لبيانات ضخمة (نصوص، صور...) أثناء التدريب، وبعدين بتستخدم المعرفة دي عشان "تعيّن" أو "تولّد" عينات جديدة تشبه إحصائيًا البيانات اللي اتدربت عليها.</p>
+<p>أشهر المعماريات المستخدمة في هذا المجال:</p>
+<table class="compare">
+<tr><th>النوع</th><th>الاستخدام الأساسي</th></tr>
+<tr><td>Transformers (زي GPT)</td><td>توليد النصوص والحوار والكود</td></tr>
+<tr><td>Diffusion Models</td><td>توليد الصور (زي Midjourney، DALL·E)</td></tr>
+<tr><td>GANs</td><td>توليد صور واقعية عن طريق تنافس شبكتين عصبيتين</td></tr>
+</table>
+<h2><span class="dot"></span> خطوات فهم الموضوع</h2>
+<h3>الخطوة 1: النموذج بيتدرب على كمية ضخمة من الأمثلة</h3>
+<p>مثلاً نموذج توليد النصوص بيتدرب على مليارات الصفحات من الإنترنت والكتب.</p>
+<h3>الخطوة 2: النموذج بيتعلم "الأنماط" مش "يحفظ" المحتوى</h3>
+<p>النموذج مش بيخزن نسخة من كل جملة قراها، هو بيتعلم احتمالية إن كلمة معينة تيجي بعد كلمة تانية في سياق معين.</p>
+<h3>الخطوة 3: وقت التوليد، النموذج بيبني المحتوى تدريجيًا</h3>
+<p>في النصوص، بيتولد كلمة بكلمة (أو "توكن" بتوكن). في الصور، بيبدأ من "ضوضاء عشوائية" وبيقلل الضوضاء دي تدريجيًا لحد ما تظهر صورة واضحة (في حالة Diffusion Models).</p>
+<h2><span class="dot"></span> أمثلة عملية</h2>
+<p><strong>توليد نص:</strong> اطلب من ChatGPT "اكتبلي بوست لينكدإن عن أهمية التعلم المستمر" — هيولّد نص جديد كل مرة، حتى لو سألته نفس السؤال.</p>
+<p><strong>توليد صورة:</strong> اطلب من Midjourney "شعار مطعم إيطالي بأسلوب مينيمال" — هيولّد 4 صور جديدة تمامًا، مفيش صورة منهم كانت موجودة قبل كده.</p>
+<h2><span class="dot"></span> استخدامات حقيقية</h2>
+<ul class="usecase-list">
+<li>📝 كتابة محتوى تسويقي ومقالات</li>
+<li>🎨 تصميم شعارات وصور إعلانية</li>
+<li>💻 كتابة وتصحيح الأكواد البرمجية</li>
+<li>🎙️ توليد أصوات طبيعية (Text-to-Speech)</li>
+<li>🎬 توليد مقاطع فيديو قصيرة من نص</li>
+<li>🌐 ترجمة وتلخيص المستندات</li>
+</ul>
+<h2><span class="dot"></span> أفضل الممارسات</h2>
+<div class="callout tip"><strong>نصيحة:</strong> كل ما وصفت اللي عايزه بتفاصيل أكتر (السياق، الأسلوب، الجمهور المستهدف)، كل ما النتيجة اللي بتطلع كانت أدق وأقرب لتوقعك.</div>
+<div class="callout pro"><strong>Pro Tip:</strong> جرّب نفس الطلب أكتر من مرة — النماذج التوليدية عندها عنصر عشوائية، فممكن تطلع نتائج مختلفة كل مرة وتختار أحسنها.</div>
+<h2><span class="dot"></span> أخطاء شائعة</h2>
+<div class="callout mistake"><strong>خطأ:</strong> استخدام المحتوى المولّد زي ما هو من غير مراجعة أو تعديل، خصوصًا في محتوى للنشر الرسمي.</div>
+<div class="callout mistake"><strong>خطأ:</strong> الاعتقاد إن الصور أو النصوص المولّدة "حقيقية" 100% — ممكن تحتوي تفاصيل غير دقيقة (زي عدد أصابع غلط في الصور مثلاً).</div>
+<h2><span class="dot"></span> الملخص</h2>
+<div class="cheat-box">
+<ul>
+<li>الذكاء الاصطناعي التوليدي بيبتكر محتوى جديد، مش بس بيصنّف أو يتنبأ.</li>
+<li>بيتعلم أنماط احتمالية من بيانات ضخمة أثناء التدريب.</li>
+<li>التوليد بيحصل تدريجيًا: كلمة بكلمة في النصوص، وتقليل ضوضاء في الصور.</li>
+<li>لازم تراجع أي محتوى مولّد قبل النشر أو الاستخدام الرسمي.</li>
+</ul>
+</div>
+<h2><span class="dot"></span> تمرين عملي</h2>
+<div class="assignment-box">
+<h3 style="margin-top:0;color:var(--gold);">التمرين</h3>
+<p>استخدم أي أداة توليد نص (ChatGPT مثلاً) واطلب نفس الطلب 3 مرات متتالية: "اكتبلي عنوان جذاب لمقال عن فوائد القراءة". لاحظ الفروق بين النتائج التلاتة، واختار أفضل عنوان وقولي ليه اخترته.</p>
+</div>
+<h2><span class="dot"></span> ملخص سريع للتحميل</h2>
+<div class="cheat-box">
+<button class="btn btn-outline print-cheat-btn">🖨️ تحميل / طباعة الملخص</button>
+</div>
+<h2><span class="dot"></span> الأسئلة الشائعة</h2>
+<details class="faq-item">
+<summary>هل المحتوى المولّد له حقوق ملكية؟</summary>
+<p>الموضوع لسه بيتطور قانونيًا ومختلف من دولة لدولة ومن أداة لأداة، فراجع شروط الاستخدام الخاصة بكل أداة قبل الاستخدام التجاري.</p>
+</details>
+<details class="faq-item">
+<summary>هل ChatGPT وMidjourney نفس النوع من النماذج؟</summary>
+<p>لأ، ChatGPT مبني على معمارية Transformer لتوليد النصوص، وMidjourney مبني على Diffusion Models لتوليد الصور — كل واحد متخصص في نوع مختلف من المحتوى.</p>
+</details>
+<section aria-label="وسائط الدرس"><h2>فيديو الدرس</h2><p>الفيديو التعليمي قريبًا.</p><h2>ملفات المراجعة</h2><p>ستُضاف هنا.</p></section>
+</main></body></html>

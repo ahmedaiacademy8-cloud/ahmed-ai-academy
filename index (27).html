@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ما هي هندسة البرومبت؟ (Prompt Engineering) — Ahmed AI Academy</title>
+<meta name="description" content="الشرح المبسط &quot;البرومبت&quot; (Prompt) هو ببساطة الرسالة أو الأمر اللي بتكتبه لأداة الذكاء الاصطناعي عشان تطلب منها حاجة.">
+<link rel="canonical" href="https://ahmedmohmedabdullah.github.io/ahmed-ai-academy/lessons/what-is-prompt-engineering/">
+<link rel="icon" href="../../assets/favicon/favicon.ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap">
+<link rel="stylesheet" href="../../css/global.css"><link rel="stylesheet" href="../../css/academy.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "ما هي هندسة البرومبت؟ (Prompt Engineering)", "inLanguage": "ar", "url": "https://ahmedmohmedabdullah.github.io/ahmed-ai-academy/lessons/what-is-prompt-engineering/", "isPartOf": "هندسة البرومبت الاحترافية", "publisher": {"@type": "EducationalOrganization", "name": "Ahmed AI Academy"}}</script></head>
+<body><main style="max-width:860px;margin:0 auto;padding:24px 16px">
+<nav aria-label="مسار التنقل"><a href="../../index.html">الرئيسية</a> › <a href="../../academy.html#path/prompt-engineering">هندسة البرومبت الاحترافية</a></nav>
+<h1>ما هي هندسة البرومبت؟ (Prompt Engineering)</h1>
+<p><a class="btn btn-gold" href="../../academy.html#lesson/what-is-prompt-engineering">افتح النسخة التفاعلية (اختبار وتقدم)</a></p>
+<h2><span class="dot"></span> الشرح المبسط</h2>
+<p>"البرومبت" (Prompt) هو ببساطة الرسالة أو الأمر اللي بتكتبه لأداة الذكاء الاصطناعي عشان تطلب منها حاجة. و"هندسة البرومبت" هي فن وعلم صياغة الرسالة دي بطريقة تخلي الرد اللي بتاخده أفضل ما يمكن.</p>
+<p>نفس الأداة، لو سألتها بطريقتين مختلفتين، ممكن تديك ردين مختلفين جدًا في الجودة. هندسة البرومبت هي المهارة اللي بتتعلم بيها إزاي تسأل صح.</p>
+<div class="illustration">
+<div class="glyph">🎯</div>
+        برومبت ضعيف: "اكتبلي عن القهوة" ← رد عام وسطحي<br/>
+        برومبت قوي: "اكتبلي فقرة تسويقية عن قهوة الإسبريسو المختصة، بأسلوب حماسي، تستهدف عشاق القهوة، في حدود 60 كلمة" ← رد دقيق ومخصص
+      </div>
+<h2><span class="dot"></span> الشرح الاحترافي</h2>
+<p>من الناحية التقنية، البرومبت هو "السياق" (Context) اللي بيتحط قدام النموذج قبل ما يبدأ يولّد رد. النموذج بيحسب احتمالية كل كلمة تالية بناءً على كل الكلام اللي في البرومبت — فكل كلمة تضيفها أو تشيلها بتأثر على التوزيع الاحتمالي وبالتالي على الناتج.</p>
+<p>هندسة البرومبت مش مجرد "حظ" أو تجربة عشوائية، لكنها مبنية على أنماط مثبتة بالتجربة زي: تحديد الدور (Role)، إعطاء أمثلة (Few-Shot)، تقسيم المهمة لخطوات (Chain of Thought)، وتحديد صيغة المخرج (Output Format).</p>
+<h2><span class="dot"></span> بنية البرومبت الاحترافي (الأجزاء الأساسية)</h2>
+<h3>1. الدور (Role)</h3>
+<p>حدد للنموذج مين هو المفروض يمثله: "أنت مدرب لياقة بدنية محترف..."</p>
+<h3>2. المهمة (Task)</h3>
+<p>اذكر بالظبط عايز إيه: "صمملي خطة تمرين لمدة أسبوع..."</p>
+<h3>3. السياق (Context)</h3>
+<p>أعطِ تفاصيل مهمة: "الشخص مبتدئ، وعنده إصابة قديمة في الركبة..."</p>
+<h3>4. صيغة المخرج (Format)</h3>
+<p>حدد شكل الرد: "اكتبلي الرد في جدول، بعمودين: اليوم والتمرين."</p>
+<pre class="code-block">أنت مدرب لياقة بدنية محترف.
+المهمة: صمم خطة تمرين منزلي لمدة أسبوع لمبتدئ.
+السياق: الشخص عنده إصابة قديمة بسيطة في الركبة، ومعاه بس دمبل خفيف.
+صيغة الرد: جدول بعمودين (اليوم / التمرين)، مع ملاحظة أمان تحت كل تمرين.</pre>
+<h2><span class="dot"></span> أمثلة عملية (قبل وبعد)</h2>
+<table class="compare">
+<tr><th>برومبت ضعيف</th><th>برومبت محسّن</th></tr>
+<tr><td>"اكتبلي إيميل"</td><td>"اكتبلي إيميل رسمي لمديري، أعتذر فيه عن التأخير في تسليم تقرير، بأسلوب مهني ومختصر، في حدود 4 أسطر"</td></tr>
+<tr><td>"لخصلي المقال ده"</td><td>"لخصلي المقال ده في 5 نقاط رئيسية، بأسلوب مبسط يفهمه شخص مش متخصص"</td></tr>
+</table>
+<h2><span class="dot"></span> استخدامات حقيقية</h2>
+<ul class="usecase-list">
+<li>✉️ صياغة إيميلات احترافية بسرعة</li>
+<li>📊 تلخيص تقارير طويلة في نقاط</li>
+<li>💻 كتابة وتصحيح أكواد برمجية</li>
+<li>🎯 كتابة محتوى تسويقي مستهدف</li>
+<li>📚 تحضير أسئلة اختبارات تعليمية</li>
+</ul>
+<h2><span class="dot"></span> أفضل الممارسات</h2>
+<div class="callout tip"><strong>نصيحة:</strong> كل ما كنت أوضح في تحديد الجمهور المستهدف والهدف من الرد، كل ما كانت النتيجة أدق.</div>
+<div class="callout pro"><strong>Pro Tip:</strong> اطلب من النموذج نفسه يحسّن برومبتك: "حسّن الطلب ده عشان يديني نتيجة أفضل: [برومبتك]".</div>
+<h2><span class="dot"></span> أخطاء شائعة</h2>
+<div class="callout mistake"><strong>خطأ:</strong> كتابة طلب عام جدًا من غير تفاصيل ("اكتبلي حاجة حلوة عن التسويق").</div>
+<div class="callout mistake"><strong>خطأ:</strong> حشو البرومبت بمعلومات كتير غير ضرورية، ده بيشتت النموذج بدل ما يساعده.</div>
+<h2><span class="dot"></span> الملخص</h2>
+<div class="cheat-box">
+<ul>
+<li>البرومبت هو الأمر اللي بيحدد شكل وجودة رد النموذج.</li>
+<li>البرومبت الاحترافي بيتكون من: الدور، المهمة، السياق، وصيغة المخرج.</li>
+<li>التفاصيل الواضحة والمحددة بتحسّن جودة الناتج بشكل كبير.</li>
+</ul>
+</div>
+<h2><span class="dot"></span> تمرين عملي</h2>
+<div class="assignment-box">
+<h3 style="margin-top:0;color:var(--gold);">التمرين</h3>
+<p>خد أي طلب بسيط كنت هتكتبه (زي "اكتبلي بوست")، وحوّله لبرومبت احترافي كامل باستخدام العناصر الأربعة: الدور، المهمة، السياق، وصيغة المخرج. جرب الاتنين في أداة ذكاء اصطناعي وقارن الفرق.</p>
+</div>
+<h2><span class="dot"></span> ملخص سريع للتحميل</h2>
+<div class="cheat-box">
+<button class="btn btn-outline print-cheat-btn">🖨️ تحميل / طباعة الملخص</button>
+</div>
+<h2><span class="dot"></span> الأسئلة الشائعة</h2>
+<details class="faq-item">
+<summary>هل هندسة البرومبت تخصص وظيفي حقيقي؟</summary>
+<p>أيوه، ظهرت وظائف باسم "Prompt Engineer" في شركات كتير، لكن المهارة دي بقت مطلوبة كمان كجزء أساسي من أي وظيفة بتستخدم أدوات ذكاء اصطناعي.</p>
+</details>
+<details class="faq-item">
+<summary>هل نفس البرومبت بيشتغل بنفس الكفاءة في كل الأدوات؟</summary>
+<p>غالبًا المبادئ العامة بتتشابه، لكن كل أداة (ChatGPT، Claude، Gemini) ليها بعض الفروق الدقيقة في الاستجابة، فمفيد تجرب وتعدّل حسب الأداة.</p>
+</details>
+<section aria-label="وسائط الدرس"><h2>فيديو الدرس</h2><p>الفيديو التعليمي قريبًا.</p><h2>ملفات المراجعة</h2><p>ستُضاف هنا.</p></section>
+</main></body></html>

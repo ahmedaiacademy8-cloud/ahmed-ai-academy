@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chain of Thought Prompting — Ahmed AI Academy</title>
+<meta name="description" content="">
+<link rel="canonical" href="https://ahmedmohmedabdullah.github.io/ahmed-ai-academy/lessons/chain-of-thought-prompting/">
+<link rel="icon" href="../../assets/favicon/favicon.ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap">
+<link rel="stylesheet" href="../../css/global.css"><link rel="stylesheet" href="../../css/academy.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Chain of Thought Prompting", "inLanguage": "ar", "url": "https://ahmedmohmedabdullah.github.io/ahmed-ai-academy/lessons/chain-of-thought-prompting/", "isPartOf": "هندسة البرومبت الاحترافية", "publisher": {"@type": "EducationalOrganization", "name": "Ahmed AI Academy"}}</script></head>
+<body><main style="max-width:860px;margin:0 auto;padding:24px 16px">
+<nav aria-label="مسار التنقل"><a href="../../index.html">الرئيسية</a> › <a href="../../academy.html#path/prompt-engineering">هندسة البرومبت الاحترافية</a></nav>
+<h1>Chain of Thought Prompting</h1>
+<p><a class="btn btn-gold" href="../../academy.html#lesson/chain-of-thought-prompting">افتح النسخة التفاعلية (اختبار وتقدم)</a></p>
+<h2><span class="dot"></span> الشرح المبسط</h2>
+<p>Chain of Thought (سلسلة التفكير) معناها إنك تطلب من الذكاء الاصطناعي "يفكر بصوت عالي" خطوة بخطوة قبل ما يديك الإجابة النهائية، بدل ما يقولك الإجابة على طول. ده بيحسّن الدقة جدًا في المسائل اللي محتاجة تفكير منطقي أو حسابي.</p>
+<div class="illustration"><div class="glyph">🧩</div>زي ما تطلب من طالب في مسألة رياضيات "وريني الخطوات" بدل ما يقولك الناتج بس — الخطوات نفسها بتقلل احتمالية الغلط.</div>
+<h2><span class="dot"></span> الشرح الاحترافي</h2>
+<p>Chain of Thought Prompting تقنية بتشجّع النموذج يقسّم المسألة المعقدة لخطوات متتالية صغيرة قبل الوصول للإجابة. الأبحاث أثبتت إن ده بيحسّن الأداء بشكل ملحوظ في المهام اللي فيها استدلال منطقي متعدد الخطوات (رياضيات، منطق، تحليل).</p>
+<p>أبسط طريقة تفعّلها: تضيف جملة زي "فكّر خطوة بخطوة" (Let's think step by step) في آخر البرومبت.</p>
+<h2><span class="dot"></span> خطوات الفهم</h2>
+<ol>
+<li>اكتب المسألة أو السؤال بوضوح</li>
+<li>ضيف تعليمة صريحة تطلب التفكير خطوة بخطوة</li>
+<li>خلي النموذج يشرح كل خطوة قبل ما يوصل للنتيجة</li>
+<li>راجع الخطوات نفسها — أحيانًا الغلط بيبان فيها قبل ما يوصل للنتيجة النهائية</li>
+</ol>
+<h2><span class="dot"></span> أمثلة عملية</h2>
+<pre class="code-block">عندي 3 قمصان بـ 150 جنيه للقميص، واشتريت بنطلونين بـ 300 جنيه للبنطلون.
+احسب الإجمالي، وفكّر خطوة بخطوة قبل ما تديني الرقم النهائي.</pre>
+<h2><span class="dot"></span> استخدامات حقيقية</h2>
+<ul class="usecase-list">
+<li>مسائل رياضية أو حسابية</li>
+<li>تحليل منطقي معقد (لو كذا شرط اتحقق، يبقى...)</li>
+<li>تصحيح كود برمجي (تتبع الخطأ خطوة بخطوة)</li>
+<li>اتخاذ قرار بمعايير متعددة</li>
+</ul>
+<h2><span class="dot"></span> أفضل الممارسات</h2>
+<div class="callout pro"><strong>نصيحة محترف:</strong> جرّب دايمًا Chain of Thought لو حسّيت النموذج بيغلط في مسائل فيها أكتر من خطوة منطقية — الفرق في الدقة بيكون كبير جدًا في الحالات دي.</div>
+<h2><span class="dot"></span> أخطاء شائعة</h2>
+<div class="callout mistake"><strong>خطأ شائع:</strong> استخدام Chain of Thought في أسئلة بسيطة جدًا (زي "عاصمة مصر إيه؟") — ده بس بيطوّل الإجابة من غير أي فايدة حقيقية في الدقة.</div>
+<h2><span class="dot"></span> الملخص</h2>
+<ul>
+<li>Chain of Thought = طلب التفكير خطوة بخطوة قبل الإجابة النهائية</li>
+<li>بيحسّن الدقة جدًا في المهام اللي فيها استدلال منطقي متعدد الخطوات</li>
+<li>مش مفيد في الأسئلة البسيطة المباشرة</li>
+</ul>
+<h2><span class="dot"></span> تمرين عملي</h2>
+<div class="assignment-box"><p>اكتب مسألة منطقية بسيطة من عندك (فيها أكتر من خطوة)، واطلب من أداة AI تحلها مرة عادي ومرة بـ "فكّر خطوة بخطوة" — قارن الإجابتين.</p></div>
+<h2><span class="dot"></span> ملخص سريع للتحميل</h2>
+<div class="cheat-box"><p style="color:var(--text);margin-bottom:14px;">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p><button class="btn btn-outline print-cheat-btn">🖨️ تحميل / طباعة الملخص</button></div>
+<h2><span class="dot"></span> الأسئلة الشائعة</h2>
+<details class="faq-item"><summary>هل ده بيبطّئ الإجابة؟</summary><p>آه، الإجابة بتطول شوية لأنها بتشمل الخطوات، لكن الدقة بتزيد بشكل ملحوظ في المسائل المعقدة.</p></details>
+<section aria-label="وسائط الدرس"><h2>فيديو الدرس</h2><p>الفيديو التعليمي قريبًا.</p><h2>ملفات المراجعة</h2><p>ستُضاف هنا.</p></section>
+</main></body></html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zero-Shot Prompting — Ahmed AI Academy</title>
+<meta name="description" content="">
+<link rel="canonical" href="https://ahmedmohmedabdullah.github.io/ahmed-ai-academy/lessons/zero-shot-prompting/">
+<link rel="icon" href="../../assets/favicon/favicon.ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap">
+<link rel="stylesheet" href="../../css/global.css"><link rel="stylesheet" href="../../css/academy.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Zero-Shot Prompting", "inLanguage": "ar", "url": "https://ahmedmohmedabdullah.github.io/ahmed-ai-academy/lessons/zero-shot-prompting/", "isPartOf": "هندسة البرومبت الاحترافية", "publisher": {"@type": "EducationalOrganization", "name": "Ahmed AI Academy"}}</script></head>
+<body><main style="max-width:860px;margin:0 auto;padding:24px 16px">
+<nav aria-label="مسار التنقل"><a href="../../index.html">الرئيسية</a> › <a href="../../academy.html#path/prompt-engineering">هندسة البرومبت الاحترافية</a></nav>
+<h1>Zero-Shot Prompting</h1>
+<p><a class="btn btn-gold" href="../../academy.html#lesson/zero-shot-prompting">افتح النسخة التفاعلية (اختبار وتقدم)</a></p>
+<h2><span class="dot"></span> الشرح المبسط</h2>
+<p>Zero-Shot Prompting معناها إنك تطلب من الذكاء الاصطناعي ينفّذ مهمة من غير ما تديله ولا مثال واحد على شكل الإجابة المطلوبة. يعني بتثق إن النموذج "فاهم" المهمة من وصفها بس.</p>
+<div class="illustration"><div class="glyph">🎯</div>زي ما تقول لموظف جديد "لخّصلي الإيميل ده" من غير ما تورّيه إزاي التلخيص المطلوب شكله — بتعتمد على فهمه العام.</div>
+<h2><span class="dot"></span> الشرح الاحترافي</h2>
+<p>"Zero-Shot" معناها حرفيًا "بدون أمثلة تدريبية" (Zero examples/shots). النماذج اللغوية الكبيرة الحديثة (زي GPT-4) قادرة تنفّذ مهام كتير بنجاح معقول في وضع Zero-Shot، لأنها اتدرّبت أصلاً على كمية هائلة من النصوص اللي فيها أنماط شبيهة.</p>
+<p>ده بيخليها أسرع طريقة تكتب بيها برومبت — مفيش وقت تضيعه في كتابة أمثلة — لكن الدقة بتقل كل ما المهمة كانت معقدة أو غير مألوفة للنموذج.</p>
+<h2><span class="dot"></span> خطوات الفهم</h2>
+<ol>
+<li>حدد المهمة بوضوح ودقة (بدون أمثلة)</li>
+<li>وضّح شكل الإخراج المطلوب (نقاط؟ فقرة؟ جدول؟)</li>
+<li>لو النتيجة مش دقيقة، فكّر تنتقل لـ One-Shot أو Few-Shot (الدروس الجاية)</li>
+</ol>
+<h2><span class="dot"></span> أمثلة عملية</h2>
+<pre class="code-block">صنّف الجملة دي كإيجابية أو سلبية أو محايدة:
+"الخدمة كانت بطيئة لكن الأكل لذيذ."</pre>
+<p>ده مثال Zero-Shot كلاسيكي — النموذج هيفهم المطلوب من غير ما تديله أمثلة سابقة على تصنيف جمل تانية.</p>
+<h2><span class="dot"></span> استخدامات حقيقية</h2>
+<ul class="usecase-list">
+<li>تلخيص نص سريع</li>
+<li>تصنيف بسيط (إيجابي/سلبي)</li>
+<li>الإجابة على أسئلة عامة</li>
+<li>ترجمة نص</li>
+</ul>
+<h2><span class="dot"></span> أفضل الممارسات</h2>
+<div class="callout pro"><strong>نصيحة محترف:</strong> استخدم Zero-Shot للمهام الشائعة والواضحة. لو حسّيت النموذج "مش فاهم بالظبط" الشكل اللي عايزه، ده إشارة إنك محتاج تدّيله مثال (One-Shot أو Few-Shot).</div>
+<h2><span class="dot"></span> أخطاء شائعة</h2>
+<div class="callout mistake"><strong>خطأ شائع:</strong> استخدام Zero-Shot في مهام معقدة جدًا أو غير مألوفة (زي تنسيق مخصص جدًا لشركتك) وتوقع دقة عالية — النموذج هيخمّن الشكل، ومش هيطلع زي ما تتخيله بالظبط.</div>
+<h2><span class="dot"></span> الملخص</h2>
+<ul>
+<li>Zero-Shot = طلب مهمة بدون أي أمثلة</li>
+<li>مناسب للمهام الواضحة والشائعة</li>
+<li>لو الدقة قلّت، انتقل لـ One-Shot أو Few-Shot</li>
+</ul>
+<h2><span class="dot"></span> تمرين عملي</h2>
+<div class="assignment-box"><p>اكتب برومبت Zero-Shot تطلب فيه من أداة AI تلخّص فقرة من 5 أسطر في سطر واحد بس. جرّبه وشوف النتيجة.</p></div>
+<h2><span class="dot"></span> ملخص سريع للتحميل</h2>
+<div class="cheat-box"><p style="color:var(--text);margin-bottom:14px;">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p><button class="btn btn-outline print-cheat-btn">🖨️ تحميل / طباعة الملخص</button></div>
+<h2><span class="dot"></span> الأسئلة الشائعة</h2>
+<details class="faq-item"><summary>Zero-Shot يعني النموذج ماتدربش خالص؟</summary><p>لأ، النموذج اتدرّب على بيانات ضخمة قبل كده. "Zero-Shot" بيقصد إنك إنت مش بتدّيله أمثلة في البرومبت نفسه.</p></details>
+<section aria-label="وسائط الدرس"><h2>فيديو الدرس</h2><p>الفيديو التعليمي قريبًا.</p><h2>ملفات المراجعة</h2><p>ستُضاف هنا.</p></section>
+</main></body></html>

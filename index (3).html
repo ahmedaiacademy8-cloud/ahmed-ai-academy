@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One-Shot Prompting — Ahmed AI Academy</title>
+<meta name="description" content="">
+<link rel="canonical" href="https://ahmedmohmedabdullah.github.io/ahmed-ai-academy/lessons/one-shot-prompting/">
+<link rel="icon" href="../../assets/favicon/favicon.ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap">
+<link rel="stylesheet" href="../../css/global.css"><link rel="stylesheet" href="../../css/academy.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "One-Shot Prompting", "inLanguage": "ar", "url": "https://ahmedmohmedabdullah.github.io/ahmed-ai-academy/lessons/one-shot-prompting/", "isPartOf": "هندسة البرومبت الاحترافية", "publisher": {"@type": "EducationalOrganization", "name": "Ahmed AI Academy"}}</script></head>
+<body><main style="max-width:860px;margin:0 auto;padding:24px 16px">
+<nav aria-label="مسار التنقل"><a href="../../index.html">الرئيسية</a> › <a href="../../academy.html#path/prompt-engineering">هندسة البرومبت الاحترافية</a></nav>
+<h1>One-Shot Prompting</h1>
+<p><a class="btn btn-gold" href="../../academy.html#lesson/one-shot-prompting">افتح النسخة التفاعلية (اختبار وتقدم)</a></p>
+<h2><span class="dot"></span> الشرح المبسط</h2>
+<p>One-Shot Prompting معناها إنك بتديله مثال واحد بس على شكل الإجابة اللي عايزها، وبعدين بتطلب منه ينفّذ نفس الأسلوب على حاجة جديدة.</p>
+<div class="illustration"><div class="glyph">☝️</div>زي ما تورّي الموظف الجديد مثال واحد "خد، لخّص زي كده"، وهو يقلّد نفس الأسلوب مع حاجة تانية.</div>
+<h2><span class="dot"></span> الشرح الاحترافي</h2>
+<p>One-Shot هو نقطة وسط بين Zero-Shot (بدون أمثلة) و Few-Shot (أمثلة متعددة، شرحناها في الدرس اللي فات). مثال واحد بيدّي النموذج إحساس بالتنسيق، النبرة، أو الشكل المطلوب من غير ما تاخد مساحة كبيرة من البرومبت.</p>
+<p>مفيد جدًا لما المهمة عندها شكل إخراج محدد (Format) لكن مش معقدة كفاية تحتاج أمثلة متعددة.</p>
+<h2><span class="dot"></span> خطوات الفهم</h2>
+<ol>
+<li>اكتب مثال واحد واضح للمدخل والمخرج المطلوب</li>
+<li>اطلب من النموذج ينفّذ نفس الأسلوب على مدخل جديد</li>
+<li>راجع النتيجة — لو مش دقيقة، جرّب تحسّن المثال نفسه</li>
+</ol>
+<h2><span class="dot"></span> أمثلة عملية</h2>
+<pre class="code-block">حوّل الجملة لصيغة رسمية:
+مثال: "عايز أعرف الفلوس فين" → "أرغب في الاستفسار عن حالة المبلغ المالي"
+
+حوّل الجملة دي: "مش عارف اتصل ليه"</pre>
+<h2><span class="dot"></span> استخدامات حقيقية</h2>
+<ul class="usecase-list">
+<li>تنسيق ثابت لكتابة عناوين المنتجات</li>
+<li>تحويل نبرة الكلام (رسمي/عامي)</li>
+<li>تنسيق بيانات بشكل موحّد (زي تحويل تاريخ لصيغة معينة)</li>
+</ul>
+<h2><span class="dot"></span> أفضل الممارسات</h2>
+<div class="callout pro"><strong>نصيحة محترف:</strong> اختار مثالك بعناية — النموذج هيقلّد أسلوبه بالظبط، فلو المثال فيه غلطة أو أسلوب مش دقيق، هتتكرر في النتيجة.</div>
+<h2><span class="dot"></span> أخطاء شائعة</h2>
+<div class="callout mistake"><strong>خطأ شائع:</strong> استخدام مثال غامض أو قصير جدًا مايوضّحش المطلوب فعلاً — النموذج هيخمّن الباقي بنفس منطق Zero-Shot تقريبًا.</div>
+<h2><span class="dot"></span> الملخص</h2>
+<ul>
+<li>One-Shot = مثال واحد بس لتوضيح الأسلوب المطلوب</li>
+<li>مفيد للمهام اللي محتاجة تنسيق محدد بسيط</li>
+<li>جودة المثال بتحدد جودة النتيجة</li>
+</ul>
+<h2><span class="dot"></span> تمرين عملي</h2>
+<div class="assignment-box"><p>اكتب برومبت One-Shot لتحويل أسماء منتجات عادية لعناوين تسويقية جذابة، بمثال واحد بس.</p></div>
+<h2><span class="dot"></span> ملخص سريع للتحميل</h2>
+<div class="cheat-box"><p style="color:var(--text);margin-bottom:14px;">اضغط الزرار عشان تفتح نسخة قابلة للطباعة أو الحفظ كـ PDF من ملخص الدرس.</p><button class="btn btn-outline print-cheat-btn">🖨️ تحميل / طباعة الملخص</button></div>
+<h2><span class="dot"></span> الأسئلة الشائعة</h2>
+<details class="faq-item"><summary>One-Shot أحسن من Zero-Shot دايمًا؟</summary><p>مش بالضرورة — لو المهمة بسيطة وواضحة، Zero-Shot أسرع وكافي. One-Shot بيفيد لما محتاج شكل إخراج محدد.</p></details>
+<section aria-label="وسائط الدرس"><h2>فيديو الدرس</h2><p>الفيديو التعليمي قريبًا.</p><h2>ملفات المراجعة</h2><p>ستُضاف هنا.</p></section>
+</main></body></html>
